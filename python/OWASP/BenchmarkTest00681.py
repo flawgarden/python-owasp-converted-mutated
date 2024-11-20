@@ -1,0 +1,39 @@
+
+from flask import Flask, request, render_template
+import sqlite3
+
+app = Flask(__name__, static_url_path='/static', static_folder='static')
+
+@app.route("/sqli-01/BenchmarkTest00681", methods=['GET', 'POST'])
+def benchmark_test():
+    if request.method == 'GET':
+        return benchmark_test_post()
+    return benchmark_test_post()
+
+def benchmark_test_post():
+    response = app.response_class()
+    param = request.args.get("BenchmarkTest00681", "")
+    bar = param
+
+    sql = "SELECT * from USERS where USERNAME='foo' and PASSWORD='" + bar + "'"
+
+    try:
+        conn = sqlite3.connect('database.db')  # Replace with your database connection
+        cursor = conn.cursor()
+        cursor.execute(sql)
+        rows = cursor.fetchall()
+
+        # Assuming there's a helper function for printing results
+        print_results(rows, sql, response)
+
+    except sqlite3.Error as e:
+        response.data = "Error processing request."
+        return response
+    
+    return response
+
+def print_results(rows, sql, response):
+    response.data = str(rows)  # Replace with actual result rendering logic
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0')

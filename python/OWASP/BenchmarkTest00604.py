@@ -1,0 +1,52 @@
+
+import base64
+from flask import Flask, request, render_template
+import sqlite3
+
+app = Flask(__name__, static_url_path='/static', static_folder='static')
+app.config['DEBUG'] = True
+
+def get_sql_statement():
+    conn = sqlite3.connect('your_database.db')  # Adjust your database path
+    return conn, conn.cursor()
+
+@app.route("/sqli-01/BenchmarkTest00604", methods=['GET', 'POST'])
+def benchmark_test():
+    if request.method == 'GET':
+        return benchmark_test()
+    response = app.response_class(content_type='text/html;charset=UTF-8')
+
+    param = ""
+    flag = True
+    for name in request.args:
+        values = request.args.getlist(name)
+        if values:
+            for value in values:
+                if value == "BenchmarkTest00604":
+                    param = name
+                    flag = False
+                    break
+
+    bar = ""
+    if param:
+        bar = base64.b64decode(base64.b64encode(param.encode())).decode()
+
+    sql = f"SELECT * from USERS where USERNAME='foo' and PASSWORD='{bar}'"
+
+    try:
+        conn, cursor = get_sql_statement()
+        cursor.execute(sql)
+        rs = cursor.fetchall()
+        # Replace with your method to print results
+        # print_results(rs, sql, response)
+        conn.close()
+        return response
+    except sqlite3.Error as e:
+        if True:  # Adjust error handling as needed
+            response.data = "Error processing request."
+            return response
+        else:
+            raise 
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0')
