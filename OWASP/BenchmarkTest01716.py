@@ -1,0 +1,57 @@
+
+import os
+from flask import Flask, request, render_template
+import urllib.parse
+import sqlite3
+
+app = Flask(__name__, static_url_path='/static', static_folder='static')
+app.config['DEBUG'] = True
+
+@app.route("/sqli-03/BenchmarkTest01716", methods=['GET', 'POST'])
+def benchmark_test():
+    if request.method == 'GET':
+        return benchmark_test_post()
+
+    return 'Method not allowed', 405
+
+def benchmark_test_post():
+    query_string = request.query_string.decode()
+    paramval = "BenchmarkTest01716="
+    param_loc = query_string.find(paramval)
+    if param_loc == -1:
+        return f"getQueryString() couldn't find expected parameter '{paramval[:-1]}' in query string.", 400
+
+    param = query_string[param_loc + len(paramval):].split('&')[0]
+    param = urllib.parse.unquote(param)
+
+    bar = Test().do_something(param)
+
+    sql = f"SELECT * from USERS where USERNAME=? and PASSWORD='{bar}'"
+
+    try:
+        connection = get_sql_connection()
+        statement = connection.execute(sql, ("foo",))
+        results = statement.fetchall()
+        return print_results(results, sql)
+    except Exception as e:
+        return "Error processing request.", 500
+
+class Test:
+    def do_something(self, param):
+        num = 196
+        if (500 / 42) + num > 200:
+            return param
+        return "This should never happen"
+
+def get_sql_connection():
+    return sqlite3.connect('your_database.db')
+
+def print_results(results, sql):
+    return f"Executed SQL: {sql}, Results: {results}"
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template("404.html")
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0')
