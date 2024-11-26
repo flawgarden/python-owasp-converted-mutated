@@ -6,10 +6,10 @@
 #CodeQL analysis results: [89]
 #Semgrep analysis results: [489, 668]
 #Original file name: OWASP/BenchmarkTest00515.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/conditional/switch.tmt with name switch_operator_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/conditional/switch.tmt with name switch_operator_negative
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *

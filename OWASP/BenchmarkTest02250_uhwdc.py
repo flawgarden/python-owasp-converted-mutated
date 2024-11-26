@@ -8,10 +8,10 @@
 #Semgrep analysis results: [489, 78, 79, 668]
 #Bandit analysis results: [78, 605]
 #Original file name: OWASP/BenchmarkTest02250.py
-#Original file CWE's: [78]  
+#Original file CWE's: [78]
 #Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/collections/generators.tmt with name generator_simple_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/collections/generators.tmt with name generator_simple_negative
+#Used extensions:
 #Program:
 from GenericClass import *
 from SuperClass import *

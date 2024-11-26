@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 78, 668]
 #Bandit analysis results: [78, 605]
 #Original file name: OWASP/BenchmarkTest01194.py
-#Original file CWE's: [78]  
+#Original file CWE's: [78]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/concurrency/concurrency.tmt with name thread_set_positive 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/concurrency/concurrency.tmt with name thread_set_positive
+#Used extensions:
 #Program:
 from threading import Thread
 from Record import *
@@ -54,7 +54,7 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = app.response_class(
         response='',
         status=200,
@@ -66,7 +66,7 @@ def benchmark_test():
 
     if headers:
         param = headers  # just grab first element
-    
+
     param = param  # URL Decode the header value
 
     bar = Test().do_something(request, param)

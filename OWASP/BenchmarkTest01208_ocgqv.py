@@ -10,9 +10,9 @@
 #Semgrep analysis results: [489, 89, 668]
 #Bandit analysis results: [605]
 #Original file name: OWASP/BenchmarkTest01208.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/list.tmt with name list_to_array_and_get_positive 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/list.tmt with name list_to_array_and_get_positive
 #Used extensions: MACRO_Create_List -> ~[MACRO_ListName]~ = [] | MACRO_Add_VAR_ToList -> ~[MACRO_ListName]~.append(~[VAR_~[TYPE@1]~@1]~) | MACRO_ListName -> list787231 | MACRO_ListName -> list787231 | MACRO_ListName -> list787231
 #Program:
 from Record import *

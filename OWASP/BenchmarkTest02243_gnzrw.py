@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 668]
 #Bandit analysis results: [78, 605]
 #Original file name: OWASP/BenchmarkTest02243.py
-#Original file CWE's: [78]  
+#Original file CWE's: [78]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/lambdas/mutation.tmt with name unary_lambda_mutation_positive 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/lambdas/mutation.tmt with name unary_lambda_mutation_positive
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *
@@ -86,9 +86,9 @@ def benchmark_test():
 def do_something(param):
     bar = "safe!"
     map_19941 = {}
-    map_19941["keyA-19941"] = "a-Value" 
-    map_19941["keyB-19941"] = param 
-    map_19941["keyC"] = "another-Value" 
+    map_19941["keyA-19941"] = "a-Value"
+    map_19941["keyB-19941"] = param
+    map_19941["keyC"] = "another-Value"
     bar = map_19941["keyB-19941"]
 
     return bar

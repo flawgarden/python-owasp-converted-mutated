@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 668]
 #Bandit analysis results: [605]
 #Original file name: OWASP/BenchmarkTest02324.py
-#Original file CWE's: [79]  
+#Original file CWE's: [79]
 #Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/record/record.tmt with name nested_record_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/record/record.tmt with name nested_record_negative
+#Used extensions:
 #Program:
 from GenericClass import *
 from SuperClass import *
@@ -70,7 +70,7 @@ def benchmark_test():
         bar = nested.b.t
 
         response = app.response_class(
-            response=f"Formatted like: {bar} and b.", 
+            response=f"Formatted like: {bar} and b.",
             status=200,
             mimetype='text/html'
         )

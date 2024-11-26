@@ -10,9 +10,9 @@
 #Semgrep analysis results: [489, 668]
 #Bandit analysis results: [605]
 #Original file name: OWASP/BenchmarkTest00472.py
-#Original file CWE's: [79]  
+#Original file CWE's: [79]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/queue.tmt with name simple_peek_negative 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/queue.tmt with name simple_peek_negative
 #Used extensions: MACRO_Create_Queue -> ~[MACRO_QueueName]~ = Queue() | MACRO_Add_Fixed_VAR_ToQueue -> ~[MACRO_QueueName]~.put_nowait(~[VAR_~[TYPE@1]~@1]~) | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231
 #Program:
 from queue import SimpleQueue, Queue, PriorityQueue

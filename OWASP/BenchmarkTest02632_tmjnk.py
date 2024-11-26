@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 89, 668]
 #Bandit analysis results: [89, 605]
 #Original file name: OWASP/BenchmarkTest02632.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/magic/magic.tmt with name magic_method_len_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/magic/magic.tmt with name magic_method_len_negative
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *
@@ -67,16 +67,16 @@ def benchmark_test_post():
     query_string = request.query_string.decode()
     paramval = "BenchmarkTest02632="
     param_loc = query_string.find(paramval)
-    
+
     if param_loc == -1:
         return "getQueryString() couldn't find expected parameter 'BenchmarkTest02632' in query string."
 
-    param = query_string[param_loc + len(paramval):] 
+    param = query_string[param_loc + len(paramval):]
     ampersand_loc = query_string.find("&", param_loc)
-    
+
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval): ampersand_loc]
-    
+
     param = urllib.parse.unquote(param)
 
     bar = do_something(param)

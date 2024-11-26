@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 915, 704, 668]
 #Bandit analysis results: []
 #Original file name: OWASP/BenchmarkTest02177.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/conditional/switch.tmt with name switch_operator_positive 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/conditional/switch.tmt with name switch_operator_positive
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *
@@ -76,7 +76,7 @@ def benchmark_test():
 
         sql = "SELECT * from USERS where USERNAME='foo' and PASSWORD='" + bar + "'"
         results = query_database(sql)
-        
+
         if results is not None:
             output = "Your results are: "
             for row in results:

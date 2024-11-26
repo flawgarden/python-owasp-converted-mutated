@@ -10,10 +10,10 @@
 #Semgrep analysis results: [79, 668]
 #Bandit analysis results: [605]
 #Original file name: OWASP/BenchmarkTest02113.py
-#Original file CWE's: [22]  
+#Original file CWE's: [22]
 #Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/monkey/patching.tmt with name monkey_patch_module_function_positive 
-#Used extensions: 
+#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/monkey/patching.tmt with name monkey_patch_module_function_positive
+#Used extensions:
 #Program:
 import string
 from string import capwords
@@ -119,4 +119,3 @@ def mock_capwords(s, sep=None):
 
 def new_arg(arg):
     return arg
-

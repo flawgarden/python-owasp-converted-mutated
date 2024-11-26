@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 79, 668]
 #Bandit analysis results: [20, 605]
 #Original file name: OWASP/BenchmarkTest00207.py
-#Original file CWE's: [643]  
+#Original file CWE's: [643]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/magic/magic.tmt with name magic_method_len_positive 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/magic/magic.tmt with name magic_method_len_positive
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *
@@ -63,7 +63,7 @@ def benchmark_test_post():
     if len(mc) == 0:
         param = "mcoms"
     param = param.encode('utf-8').decode('unicode_escape')
-    
+
     bar = ''
     if param:
         bar = base64.b64decode(base64.b64encode(param.encode())).decode()

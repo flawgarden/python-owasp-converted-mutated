@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 89, 668]
 #Bandit analysis results: [89, 605]
 #Original file name: OWASP/BenchmarkTest00771.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/record/record.tmt with name nested_record_positive 
-#Used extensions: 
+#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/record/record.tmt with name nested_record_positive
+#Used extensions:
 #Program:
 from GenericClass import *
 from SuperClass import *
@@ -62,8 +62,8 @@ def benchmark_test_post():
 
     bar = "safe!"
     map49960 = {}
-    map49960["keyA-49960"] = "a-Value" 
-    map49960["keyB-49960"] = param 
+    map49960["keyA-49960"] = "a-Value"
+    map49960["keyB-49960"] = param
     map49960["keyC"] = "another-Value"
     bar = map49960["keyB-49960"]
 

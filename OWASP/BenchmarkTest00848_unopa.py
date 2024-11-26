@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 89, 668]
 #Bandit analysis results: [89, 605]
 #Original file name: OWASP/BenchmarkTest00848.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/lambdas/mutation.tmt with name unary_lambda_mutation_positive 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/lambdas/mutation.tmt with name unary_lambda_mutation_positive
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *

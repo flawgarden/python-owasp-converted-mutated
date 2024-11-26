@@ -10,9 +10,9 @@
 #Semgrep analysis results: [489, 89, 668]
 #Bandit analysis results: [89, 605]
 #Original file name: OWASP/BenchmarkTest00850.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/queue.tmt with name queue_is_empty_1_negative 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/queue.tmt with name queue_is_empty_1_negative
 #Used extensions: MACRO_Create_Queue -> ~[MACRO_QueueName]~ = Queue() | MACRO_Add_Fixed_VAR_ToQueue -> ~[MACRO_QueueName]~.put_nowait(~[VAR_~[TYPE@1]~@1]~) | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231
 #Program:
 from queue import SimpleQueue, Queue, PriorityQueue
@@ -58,20 +58,20 @@ def get_sql_statement():
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     query_string = request.query_string.decode('utf-8')
     paramval = "BenchmarkTest00850="
     param_loc = query_string.find(paramval)
-    
+
     if param_loc == -1:
         return "getQueryString() couldn't find expected parameter 'BenchmarkTest00850' in query string."
 
     param = query_string[param_loc + len(paramval):]
     ampersand_loc = query_string.find("&", param_loc)
-    
+
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
-    
+
     param = urllib.parse.unquote(param)
 
     bar = ""

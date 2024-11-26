@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 915, 704, 89, 668]
 #Bandit analysis results: []
 #Original file name: OWASP/BenchmarkTest02269.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/pm.tmt with name pattern_matching_simple_2_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/pm.tmt with name pattern_matching_simple_2_negative
+#Used extensions:
 #Program:
 from typing import Any
 from Record import *
@@ -84,7 +84,7 @@ def benchmark_test_post():
             print_results(statement, sql, response)
     except sqlite3.Error as e:
         response.write("Error processing request.")
-    
+
     return response
 
 def do_something(param):

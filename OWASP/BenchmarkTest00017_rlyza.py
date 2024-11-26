@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 668]
 #Bandit analysis results: [78, 605]
 #Original file name: OWASP/BenchmarkTest00017.py
-#Original file CWE's: [78]  
+#Original file CWE's: [78]
 #Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/duck/typing.tmt with name duck_typing_quack_method_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/duck/typing.tmt with name duck_typing_quack_method_negative
+#Used extensions:
 #Program:
 from GenericClass import *
 from SuperClass import *
@@ -59,7 +59,7 @@ def benchmark_test_00017():
 def benchmark_test_00017_post():
     response = app.response_class(content_type='text/html;charset=UTF-8')
     param = ""
-    
+
     headers = request.headers.getlist("BenchmarkTest00017")
     if headers:
         param = headers[0]  # just grab first element

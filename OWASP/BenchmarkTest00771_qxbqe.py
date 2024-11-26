@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 668]
 #Bandit analysis results: [89, 605]
 #Original file name: OWASP/BenchmarkTest00771.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/pm.tmt with name pattern_matching_simple_1_positive 
-#Used extensions: 
+#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/pm.tmt with name pattern_matching_simple_1_positive
+#Used extensions:
 #Program:
 from typing import Any
 from GenericClass import *
@@ -63,8 +63,8 @@ def benchmark_test_post():
 
     bar = "safe!"
     map49960 = {}
-    map49960["keyA-49960"] = "a-Value" 
-    map49960["keyB-49960"] = param 
+    map49960["keyA-49960"] = "a-Value"
+    map49960["keyB-49960"] = param
     map49960["keyC"] = "another-Value"
     bar = map49960["keyB-49960"]
 

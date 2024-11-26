@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 89, 668]
 #Bandit analysis results: [89, 605]
 #Original file name: OWASP/BenchmarkTest01552.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/field/staticField.tmt with name class_with_static_string_field_positive 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/field/staticField.tmt with name class_with_static_string_field_positive
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *
@@ -58,7 +58,7 @@ def benchmark_test():
         return benchmark_test()
 
     response = app.response_class(response='', content_type='text/html;charset=UTF-8')
-    
+
     param = request.args.get('BenchmarkTest01552', '')
     bar = Test().do_something(param)
     StaticFieldHolder.default_value= bar
@@ -74,7 +74,7 @@ def benchmark_test():
         print_results(statement, sql, response)
     except sqlite3.Error as e:
         response.data = "Error processing request." if True else str(e)
-        
+
     return response
 
 class Test:

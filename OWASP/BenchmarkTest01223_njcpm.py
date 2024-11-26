@@ -10,9 +10,9 @@
 #Semgrep analysis results: [668]
 #Bandit analysis results: [20, 605]
 #Original file name: OWASP/BenchmarkTest01223.py
-#Original file CWE's: [643]  
+#Original file CWE's: [643]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/exceptions/tryCatchFinally.tmt with name try_cath_negative 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/exceptions/tryCatchFinally.tmt with name try_cath_negative
 #Used extensions: EXPR_str -> ~[EXPR_str]~.lower() | EXPR_str -> ~[EXPR_str]~ + ~[EXPR_str]~
 #Program:
 from Record import *

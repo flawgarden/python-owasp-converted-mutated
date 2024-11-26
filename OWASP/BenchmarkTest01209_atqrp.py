@@ -10,9 +10,9 @@
 #Semgrep analysis results: [489, 915, 89, 668]
 #Bandit analysis results: [89, 605]
 #Original file name: OWASP/BenchmarkTest01209.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/field/constructors.tmt with name class_with_array_initialization_negative 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/field/constructors.tmt with name class_with_array_initialization_negative
 #Used extensions: MACRO_Empty_String_Array -> ["", "", ""]
 #Program:
 from Record import *
@@ -105,7 +105,7 @@ def get_sql_connection():
 def print_results(statement, sql, response):
     rows = statement.fetchall()
     response.data = str(rows).encode('utf-8')
-    
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template("404.html")

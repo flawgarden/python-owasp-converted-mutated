@@ -10,9 +10,9 @@
 #Semgrep analysis results: [489, 915, 704, 89, 668]
 #Bandit analysis results: []
 #Original file name: OWASP/BenchmarkTest01222.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/conditional/switch.tmt with name switch_operator_any_positive 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/conditional/switch.tmt with name switch_operator_any_positive
 #Used extensions: MACRO_Any_str -> ~[VAR_str]~
 #Program:
 from Record import *

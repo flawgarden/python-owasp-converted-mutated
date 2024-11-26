@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 78, 668]
 #Bandit analysis results: [78, 605]
 #Original file name: OWASP/BenchmarkTest02070.py
-#Original file CWE's: [78]  
+#Original file CWE's: [78]
 #Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/virtuality/class.tmt with name derived_binary_op1_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/virtuality/class.tmt with name derived_binary_op1_negative
+#Used extensions:
 #Program:
 from GenericClass import *
 from SuperClass import *
@@ -72,7 +72,7 @@ def benchmark_test_post():
 
     cmd = get_insecure_os_command_string()
     args_env = [bar]
-    
+
     try:
         p = os.popen(f"{cmd} {' '.join(args_env)}")
         output = p.read()

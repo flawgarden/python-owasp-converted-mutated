@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 79, 668]
 #Bandit analysis results: [605]
 #Original file name: OWASP/BenchmarkTest01417.py
-#Original file CWE's: [79]  
+#Original file CWE's: [79]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/virtuality/interface.tmt with name impl_binary_op_interface_class2_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/virtuality/interface.tmt with name impl_binary_op_interface_class2_negative
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *
@@ -58,7 +58,7 @@ def benchmark_test():
     param = ""
     flag = True
     names = request.args.keys()
-    
+
     for name in names:
         values = request.args.getlist(name)
         if values is not None:

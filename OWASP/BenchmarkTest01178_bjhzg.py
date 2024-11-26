@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 668]
 #Bandit analysis results: [605]
 #Original file name: OWASP/BenchmarkTest01178.py
-#Original file CWE's: [79]  
+#Original file CWE's: [79]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/assignment.tmt with name lazy_eval_positive 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/assignment.tmt with name lazy_eval_positive
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *

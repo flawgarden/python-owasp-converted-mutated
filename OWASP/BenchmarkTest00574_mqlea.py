@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 668]
 #Bandit analysis results: [78, 605]
 #Original file name: OWASP/BenchmarkTest00574.py
-#Original file CWE's: [78]  
+#Original file CWE's: [78]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/generators.tmt with name generator_infinite_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/generators.tmt with name generator_infinite_negative
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *
@@ -59,7 +59,7 @@ def benchmark_test_post():
     param = ""
     flag = True
     names = request.args.keys()
-    
+
     for name in names:
         values = request.args.getlist(name)
         if values:
@@ -76,10 +76,10 @@ def benchmark_test_post():
 
     num = 106
     bar = param if (7 * 42) - num <= 200 else "This should never happen"
-    
+
     cmd = os.getenv('INSECURE_OS_COMMAND_STRING')
     args_env = [bar]
-    
+
     try:
         process = os.popen(f"{cmd} {' '.join(args_env)}")
         output = process.read()

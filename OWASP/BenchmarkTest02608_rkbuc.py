@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 668]
 #Bandit analysis results: [605]
 #Original file name: OWASP/BenchmarkTest02608.py
-#Original file CWE's: [79]  
+#Original file CWE's: [79]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/magic/magic.tmt with name magic_method_init_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/magic/magic.tmt with name magic_method_init_negative
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *
@@ -61,19 +61,19 @@ def benchmark_test_post():
     query_string = request.query_string.decode()
     paramval = "BenchmarkTest02608="
     param_loc = query_string.find(paramval)
-    
+
     if param_loc == -1:
         return "getQueryString() couldn't find expected parameter 'BenchmarkTest02608' in query string."
-    
+
     param = query_string[param_loc + len(paramval):]
     ampersand_loc = query_string.find("&", param_loc)
-    
+
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
-    
+
     param = urllib.parse.unquote(param)
     bar = do_something(param)
-    
+
     response = app.response_class(response=f"Parameter value: {bar}", content_type=response_text)
     response.headers["X-XSS-Protection"] = "0"
     return response

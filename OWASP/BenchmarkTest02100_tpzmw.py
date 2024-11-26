@@ -10,9 +10,9 @@
 #Semgrep analysis results: [489, 79, 668]
 #Bandit analysis results: [20, 605]
 #Original file name: OWASP/BenchmarkTest02100.py
-#Original file CWE's: [643]  
+#Original file CWE's: [643]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/set.tmt with name set_size_negative 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/set.tmt with name set_size_negative
 #Used extensions: MACRO_Create_Set -> ~[MACRO_SetName]~ = set() | MACRO_Add_EXPR_ToSet -> ~[MACRO_SetName]~.add(~[EXPR_~[TYPE@1]~]~) | MACRO_Add_Fixed_VAR_ToSet -> ~[MACRO_SetName]~.add(~[VAR_~[TYPE@1]~@1]~) | MACRO_SetName -> set787231 | MACRO_SetName -> set787231 | MACRO_SetName -> set787231 | EXPR_str -> ~[EXPR_str]~.upper() | MACRO_SetName -> set787231
 #Program:
 from Record import *

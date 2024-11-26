@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 915, 704, 89, 668]
 #Bandit analysis results: [89, 605]
 #Original file name: OWASP/BenchmarkTest01090.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/monkey/patching.tmt with name monkey_patch_class_method_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/monkey/patching.tmt with name monkey_patch_class_method_negative
+#Used extensions:
 #Program:
 import string
 from string import capwords
@@ -56,7 +56,7 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     param = request.headers.get("BenchmarkTest01090", "")
     param = urllib.parse.unquote(param)
     MonkeyClass.getArg = newGetArg
@@ -82,7 +82,7 @@ def print_results(sql, results):
     print("Results: ", results)
 
 class Test:
-    
+
     def do_something(self, request, param):
         bar = "safe!"
         map_holder = {}
@@ -121,4 +121,3 @@ def mock_capwords(s, sep=None):
 
 def new_arg(arg):
     return arg
-

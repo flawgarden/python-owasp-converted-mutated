@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 614, 78, 668]
 #Bandit analysis results: [78, 605]
 #Original file name: OWASP/BenchmarkTest00983.py
-#Original file CWE's: [78]  
+#Original file CWE's: [78]
 #Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/interpolation.tmt with name f_string_interpolation_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/interpolation.tmt with name f_string_interpolation_negative
+#Used extensions:
 #Program:
 from GenericClass import *
 from SuperClass import *

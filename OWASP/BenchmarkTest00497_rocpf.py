@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 668]
 #Bandit analysis results: [78, 605]
 #Original file name: OWASP/BenchmarkTest00497.py
-#Original file CWE's: [78]  
+#Original file CWE's: [78]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/comprehension.tmt with name simple_list_comprehension_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/comprehension.tmt with name simple_list_comprehension_negative
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *
@@ -59,7 +59,7 @@ def benchmark_test_post():
     response = app.response_class(content_type='text/html;charset=UTF-8')
 
     param = request.args.get('BenchmarkTest00497', '')
-    
+
     bar = ""
     guess = "ABC"
     switch_target = guess[2]

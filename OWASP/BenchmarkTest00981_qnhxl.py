@@ -10,9 +10,9 @@
 #Semgrep analysis results: [489, 614, 668]
 #Bandit analysis results: [78, 605]
 #Original file name: OWASP/BenchmarkTest00981.py
-#Original file CWE's: [78]  
+#Original file CWE's: [78]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/list.tmt with name list_add_get_at_zero_index_empty_negative 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/list.tmt with name list_add_get_at_zero_index_empty_negative
 #Used extensions: MACRO_Create_List -> ~[MACRO_ListName]~ = [] | MACRO_Add_VAR_ToList -> ~[MACRO_ListName]~.append(~[VAR_~[TYPE@1]~@1]~) | MACRO_ListName -> list787231 | MACRO_ListName -> list787231 | MACRO_ListName -> list787231 | MACRO_ListName -> list787231
 #Program:
 from Record import *
@@ -64,14 +64,14 @@ def benchmark_test():
         user_cookie.set_cookie("BenchmarkTest00981", ".", max_age=60 * 3, secure=True, path=request.path, domain=request.host)
         response.set_cookie("BenchmarkTest00981", ".", max_age=60 * 3, secure=True, path=request.path, domain=request.host)
         return response
-    
+
     if request.method == 'POST':
         the_cookies = request.cookies
         param = "noCookieValueSupplied"
-        
+
         if 'BenchmarkTest00981' in the_cookies:
             param = urllib.parse.unquote(the_cookies['BenchmarkTest00981'])
-        
+
         bar = Test().doSomething(param)
 
         cmd = ""

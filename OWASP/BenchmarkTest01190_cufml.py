@@ -10,9 +10,9 @@
 #Semgrep analysis results: [489, 668]
 #Bandit analysis results: [78, 605]
 #Original file name: OWASP/BenchmarkTest01190.py
-#Original file CWE's: [78]  
+#Original file CWE's: [78]
 #Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/collections/set.tmt with name set_add_simple_positive 
+#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/collections/set.tmt with name set_add_simple_positive
 #Used extensions: MACRO_Create_Set -> ~[MACRO_SetName]~ = set() | MACRO_Add_Fixed_VAR_ToSet -> ~[MACRO_SetName]~.add(~[VAR_~[TYPE@1]~@1]~) | MACRO_SetName -> set787231 | MACRO_SetName -> set787231 | MACRO_SetName -> set787231
 #Program:
 from GenericClass import *
@@ -83,7 +83,7 @@ def benchmark_test_post(request):
     except Exception as e:
         print("Problem executing cmdi - TestCase")
         response.set_data(escape_for_html(str(e)))
-    
+
     return response
 
 class Test:

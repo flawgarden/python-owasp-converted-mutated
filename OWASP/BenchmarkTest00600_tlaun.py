@@ -10,9 +10,9 @@
 #Semgrep analysis results: [489, 915, 704, 89, 668]
 #Bandit analysis results: [89, 605]
 #Original file name: OWASP/BenchmarkTest00600.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/map.tmt with name map_remove_1_positive 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/map.tmt with name map_remove_1_positive
 #Used extensions: MACRO_Create_Map -> ~[MACRO_MapName]~ = dict() | MACRO_MapName -> map787234 | MACRO_MapName -> map787234 | MACRO_MapName -> map787234 | MACRO_MapName -> map787234
 #Program:
 from Record import *
@@ -90,7 +90,7 @@ def benchmark_test_post():
         cursor.execute(sql)
         connection.commit()
         connection.close()
-        
+
         return f"No results can be displayed for query: {sql}<br> because the execution method doesn't return results."
     except Exception as e:
         return "Error processing request."

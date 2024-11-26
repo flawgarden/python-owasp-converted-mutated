@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 668]
 #Bandit analysis results: [605]
 #Original file name: OWASP/BenchmarkTest01505.py
-#Original file CWE's: [79]  
+#Original file CWE's: [79]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/concurrency/concurrency.tmt with name thread_set_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/concurrency/concurrency.tmt with name thread_set_negative
+#Used extensions:
 #Program:
 from threading import Thread
 from Record import *

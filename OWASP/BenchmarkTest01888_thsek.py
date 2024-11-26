@@ -10,9 +10,9 @@
 #Semgrep analysis results: [489, 614, 915, 704, 89, 668]
 #Bandit analysis results: [89, 605]
 #Original file name: OWASP/BenchmarkTest01888.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/conditional/for.tmt with name for_operator_negative 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/conditional/for.tmt with name for_operator_negative
 #Used extensions: EXPR_int -> ~[EXPR_int]~ + ~[EXPR_int]~ | EXPR_int -> -1
 #Program:
 from Record import *

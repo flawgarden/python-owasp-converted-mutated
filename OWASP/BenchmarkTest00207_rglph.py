@@ -10,9 +10,9 @@
 #Semgrep analysis results: [489, 79, 668]
 #Bandit analysis results: [20, 605]
 #Original file name: OWASP/BenchmarkTest00207.py
-#Original file CWE's: [643]  
+#Original file CWE's: [643]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/queue.tmt with name simple_peek_negative 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/queue.tmt with name simple_peek_negative
 #Used extensions: MACRO_Create_Queue -> ~[MACRO_QueueName]~ = PriorityQueue() | MACRO_Add_Fixed_VAR_ToQueue -> ~[MACRO_QueueName]~.put(~[VAR_~[TYPE@1]~@1]~) | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231
 #Program:
 from queue import SimpleQueue, Queue, PriorityQueue
@@ -61,7 +61,7 @@ def benchmark_test():
 def benchmark_test_post():
     param = request.headers.get('BenchmarkTest00207', '')
     param = param.encode('utf-8').decode('unicode_escape')
-    
+
     bar = ''
     if param:
         bar = base64.b64decode(base64.b64encode(param.encode())).decode()

@@ -10,9 +10,9 @@
 #Semgrep analysis results: [489, 915, 704, 89, 668]
 #Bandit analysis results: [89, 605]
 #Original file name: OWASP/BenchmarkTest00515.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/varargs/varargs.tmt with name varargs_get_first_string_negative 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/varargs/varargs.tmt with name varargs_get_first_string_negative
 #Used extensions: EXPR_str -> ~[EXPR_str]~.upper() | EXPR_str -> ~[EXPR_str]~.replace('/', '.')
 #Program:
 from typing import TypeVar

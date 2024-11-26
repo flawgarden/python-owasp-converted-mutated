@@ -10,9 +10,9 @@
 #Semgrep analysis results: [489, 89, 668]
 #Bandit analysis results: [89, 605]
 #Original file name: OWASP/BenchmarkTest01552.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/set.tmt with name set_remove_simple_negative 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/set.tmt with name set_remove_simple_negative
 #Used extensions: MACRO_Create_Set -> ~[MACRO_SetName]~ = set() | MACRO_Add_Fixed_EXPR_ToSet -> ~[MACRO_SetName]~.add(~[EXPR_~[TYPE@1]~@1]~) | MACRO_Add_Fixed_VAR_ToSet -> ~[MACRO_SetName]~.add(~[VAR_~[TYPE@1]~@1]~) | MACRO_SetName -> set787231 | MACRO_SetName -> set787231 | MACRO_SetName -> set787231 | MACRO_SetName -> set787231 | MACRO_SetName -> set787231
 #Program:
 from Record import *
@@ -58,7 +58,7 @@ def benchmark_test():
         return benchmark_test()
 
     response = app.response_class(response='', content_type='text/html;charset=UTF-8')
-    
+
     param = request.args.get('BenchmarkTest01552', '')
     bar = Test().do_something(param)
     set787231 = set()
@@ -76,7 +76,7 @@ def benchmark_test():
         print_results(statement, sql, response)
     except sqlite3.Error as e:
         response.data = "Error processing request." if True else str(e)
-        
+
     return response
 
 class Test:

@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 89, 668]
 #Bandit analysis results: [89, 605]
 #Original file name: OWASP/BenchmarkTest01093.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/interpolation.tmt with name f_string_interpolation_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/interpolation.tmt with name f_string_interpolation_negative
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *
@@ -54,7 +54,7 @@ class DatabaseHelper:
     @staticmethod
     def get_sql_statement():
         conn = sqlite3.connect('example.db')
-        return conn.cursor(), conn 
+        return conn.cursor(), conn
 
     @staticmethod
     def print_results(statement, sql, response):

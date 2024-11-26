@@ -10,10 +10,10 @@
 #Semgrep analysis results: [79, 668]
 #Bandit analysis results: [20, 605]
 #Original file name: OWASP/BenchmarkTest01223.py
-#Original file CWE's: [643]  
+#Original file CWE's: [643]
 #Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/field/staticField.tmt with name class_with_static_string_field_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/field/staticField.tmt with name class_with_static_string_field_negative
+#Used extensions:
 #Program:
 from GenericClass import *
 from SuperClass import *

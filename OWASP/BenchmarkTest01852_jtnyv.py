@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 614, 668]
 #Bandit analysis results: [78, 605]
 #Original file name: OWASP/BenchmarkTest01852.py
-#Original file CWE's: [78]  
+#Original file CWE's: [78]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/comprehension.tmt with name list_comprehension_with_zip_positive 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/comprehension.tmt with name list_comprehension_with_zip_positive
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *

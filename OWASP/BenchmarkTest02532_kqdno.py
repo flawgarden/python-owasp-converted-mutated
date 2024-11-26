@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 915, 704, 89, 668]
 #Bandit analysis results: [89, 605]
 #Original file name: OWASP/BenchmarkTest02532.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/generators.tmt with name generator_yield_from_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/generators.tmt with name generator_yield_from_negative
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *
@@ -59,7 +59,7 @@ def benchmark_test():
 def benchmark_test_post():
     response = ""
     values = request.values.getlist("BenchmarkTest02532")
-    
+
     param = values[0] if values else ""
     bar = do_something(param)
 

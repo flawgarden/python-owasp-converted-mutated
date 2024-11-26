@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 89, 668]
 #Bandit analysis results: [89, 605]
 #Original file name: OWASP/BenchmarkTest01084.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/reflection/reflection.tmt with name simple_reflection_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/reflection/reflection.tmt with name simple_reflection_negative
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *
@@ -58,7 +58,7 @@ def benchmark_test_01084():
 
 def benchmark_test_01084_post():
     response = "text/html;charset=UTF-8"
-    
+
     param = request.headers.get("BenchmarkTest01084", "")
     try:
         rh = ReflectionHelper.__new__(ReflectionHelper)
@@ -78,7 +78,7 @@ def benchmark_test_01084_post():
         cursor = connection.cursor()
         cursor.execute(sql, ("foo",))
         results = cursor.fetchall()
-        
+
         return print_results(cursor, sql)
     except sqlite3.Error as e:
         return "Error processing request."

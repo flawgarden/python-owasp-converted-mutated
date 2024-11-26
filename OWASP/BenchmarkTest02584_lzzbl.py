@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 79, 668]
 #Bandit analysis results: [605]
 #Original file name: OWASP/BenchmarkTest02584.py
-#Original file CWE's: [79]  
+#Original file CWE's: [79]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/field/staticField.tmt with name class_with_static_string_field_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/field/staticField.tmt with name class_with_static_string_field_negative
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *
@@ -60,12 +60,12 @@ def benchmark_test_post():
     param_loc = query_string.find(paramval)
     if param_loc == -1:
         return "getQueryString() couldn't find expected parameter 'BenchmarkTest02584' in query string."
-    
+
     param = query_string[param_loc + len(paramval):]
     ampersand_loc = query_string.find("&", param_loc)
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
-    
+
     param = urllib.parse.unquote(param)
 
     bar = do_something(request, param)

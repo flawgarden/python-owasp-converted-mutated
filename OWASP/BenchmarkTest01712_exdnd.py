@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 89, 668]
 #Bandit analysis results: [605]
 #Original file name: OWASP/BenchmarkTest01712.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/decorator/decorator.tmt with name simple_class_decorator_positive 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/decorator/decorator.tmt with name simple_class_decorator_positive
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *
@@ -61,22 +61,22 @@ def benchmark_test_post(request):
     query_string = example_function_with_class_wr(query_string, "postfix")
     paramval = "BenchmarkTest01712="
     param_loc = query_string.find(paramval)
-    
+
     if param_loc == -1:
         return "getQueryString() couldn't find expected parameter 'BenchmarkTest01712' in query string."
 
     param = query_string[param_loc + len(paramval):]
     ampersand_loc = query_string.find("&", param_loc)
-    
+
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
-    
+
     param = urllib.parse.unquote(param)
 
     bar = Test().do_something(request, param)
 
     sql = f"{{call {bar}}}"
-    
+
     try:
         connection = sqlite3.connect('database.db')  # Replace with actual db connection
         cursor = connection.cursor()
@@ -91,8 +91,8 @@ class Test:
     def do_something(self, request, param):
         bar = "safe!"
         map_6261 = {
-            "keyA-6261": "a-Value", 
-            "keyB-6261": param, 
+            "keyA-6261": "a-Value",
+            "keyB-6261": param,
             "keyC": "another-Value"
         }
         bar = map_6261["keyB-6261"]

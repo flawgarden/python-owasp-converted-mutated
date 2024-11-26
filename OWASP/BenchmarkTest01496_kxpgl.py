@@ -10,10 +10,10 @@
 #Semgrep analysis results: [668]
 #Bandit analysis results: []
 #Original file name: OWASP/BenchmarkTest01496.py
-#Original file CWE's: [22]  
+#Original file CWE's: [22]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/pm.tmt with name pattern_matching_simple_1_positive 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/pm.tmt with name pattern_matching_simple_1_positive
+#Used extensions:
 #Program:
 from typing import Any
 from Record import *

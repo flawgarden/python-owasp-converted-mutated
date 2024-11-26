@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 668]
 #Bandit analysis results: [605]
 #Original file name: OWASP/BenchmarkTest01666.py
-#Original file CWE's: [79]  
+#Original file CWE's: [79]
 #Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/none.tmt with name conditional_expression_none_positive 
-#Used extensions: 
+#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/none.tmt with name conditional_expression_none_positive
+#Used extensions:
 #Program:
 from GenericClass import *
 from SuperClass import *
@@ -58,7 +58,7 @@ def benchmark_test_post():
     query_string = request.query_string.decode()
     paramval = "BenchmarkTest01666="
     param_loc = query_string.find(paramval)
-    
+
     if param_loc == -1:
         return Response(f"getQueryString() couldn't find expected parameter 'BenchmarkTest01666' in query string.", status=400)
 

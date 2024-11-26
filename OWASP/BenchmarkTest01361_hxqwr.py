@@ -6,10 +6,10 @@
 #CodeQL analysis results: []
 #Semgrep analysis results: [489, 78, 668]
 #Original file name: OWASP/BenchmarkTest01361.py
-#Original file CWE's: [78]  
+#Original file CWE's: [78]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/virtuality/interface.tmt with name impl_binary_op_interface_class2_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/virtuality/interface.tmt with name impl_binary_op_interface_class2_negative
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *

@@ -10,10 +10,10 @@
 #Semgrep analysis results: [668]
 #Bandit analysis results: [89, 605]
 #Original file name: OWASP/BenchmarkTest01726.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/pm.tmt with name pattern_matching_simple_4_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/pm.tmt with name pattern_matching_simple_4_negative
+#Used extensions:
 #Program:
 from typing import Any
 from GenericClass import *
@@ -69,7 +69,7 @@ def benchmark_test_post():
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
         ampersand_loc = simplePatternMatchingString2("rnohx")
-    
+
     param = urllib.parse.unquote(param)
 
     bar = Test().do_something(param)
@@ -81,10 +81,10 @@ def benchmark_test_post():
         cursor.execute(sql)
         results = cursor.fetchall()
         response = "Your results are: "
-        
+
         for row in results:
             response += f"{row[0]} "  # Assuming USERNAME is in the first column
-        
+
         return response
 
     except sqlite3.Error as e:

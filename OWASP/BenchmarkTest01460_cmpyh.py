@@ -10,9 +10,9 @@
 #Semgrep analysis results: [489, 89, 668]
 #Bandit analysis results: [605]
 #Original file name: OWASP/BenchmarkTest01460.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/collections/map.tmt with name map_remove_1_negative 
+#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/collections/map.tmt with name map_remove_1_negative
 #Used extensions: MACRO_Create_Map -> ~[MACRO_MapName]~ = dict() | MACRO_Add_EXPR_ToMap -> ~[MACRO_MapName]~[~[EXPR_~[TYPE@1]~@1]~] = ~[EXPR_~[TYPE@2]~@2]~ | MACRO_MapName -> map787234 | MACRO_MapName -> map787234 | MACRO_MapName -> map787234 | MACRO_MapName -> map787234 | MACRO_MapName -> map787234 | MACRO_MapName -> map787234
 #Program:
 from GenericClass import *
@@ -86,7 +86,7 @@ def benchmark_test_post():
         return "Error processing request.", 500
 
 class Test:
-    
+
     def do_something(self, request, param):
         map787234 = dict()
         map787234[0.6488031154973043] = "gzgca"
@@ -104,7 +104,7 @@ class Test:
             "keyC": "another-Value"
         }
         bar = map_.get("keyB-72098")
-        
+
         return bar
 
 if __name__ == "__main__":

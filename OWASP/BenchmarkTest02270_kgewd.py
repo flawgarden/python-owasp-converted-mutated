@@ -10,9 +10,9 @@
 #Semgrep analysis results: [489, 915, 704, 89, 668]
 #Bandit analysis results: [89, 605]
 #Original file name: OWASP/BenchmarkTest02270.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/conditional/while.tmt with name while_operator_positive 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/conditional/while.tmt with name while_operator_positive
 #Used extensions: EXPR_bool -> ~[EXPR_str@1]~ is not None and ~[EXPR_str@1]~[~[CONST_int]~] == ~[CONST_str]~
 #Program:
 from Record import *
@@ -68,7 +68,7 @@ def benchmark_test():
             connection.close()
         except sqlite3.Error as e:
             response_html = "Error processing request."
-        
+
         return response_html
     return render_template("index.html")
 

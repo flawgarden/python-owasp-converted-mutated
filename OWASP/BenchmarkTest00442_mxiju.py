@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 668]
 #Bandit analysis results: [20, 605]
 #Original file name: OWASP/BenchmarkTest00442.py
-#Original file CWE's: [643]  
+#Original file CWE's: [643]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/record/record.tmt with name nested_record_positive 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/record/record.tmt with name nested_record_positive
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *
@@ -57,9 +57,9 @@ def benchmark_test():
 
     response = ""
     param = request.form.get("BenchmarkTest00442", "")
-    
+
     bar = param if (7 * 42) - 106 <= 200 else "This should never happen"
-    
+
     try:
         tree = ET.parse('employees.xml')
         root = tree.getroot()
@@ -76,7 +76,7 @@ def benchmark_test():
     except ET.ParseError as e:
         response += "Error parsing XPath input: '" + escape(bar) + "'"
         raise Exception(e)
-    
+
     return render_template("response.html", response=response)
 
 @app.errorhandler(404)

@@ -10,9 +10,9 @@
 #Semgrep analysis results: [489, 668]
 #Bandit analysis results: [605]
 #Original file name: OWASP/BenchmarkTest02032.py
-#Original file CWE's: [22]  
+#Original file CWE's: [22]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/map.tmt with name map_simple_get_1_positive 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/map.tmt with name map_simple_get_1_positive
 #Used extensions: MACRO_Create_Map -> ~[MACRO_MapName]~ = dict() | MACRO_MapName -> map787234 | MACRO_MapName -> map787234 | MACRO_MapName -> map787234
 #Program:
 from Record import *
@@ -78,7 +78,7 @@ def benchmark_test():
                 )
         except Exception as e:
             print(f"Couldn't open FileInputStream on file: '{file_name}'")
-        
+
         return response
 
 def do_something(param):

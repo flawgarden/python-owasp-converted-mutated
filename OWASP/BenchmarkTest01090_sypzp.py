@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 915, 704, 89, 668]
 #Bandit analysis results: [89, 605]
 #Original file name: OWASP/BenchmarkTest01090.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/magic/magic.tmt with name magic_method_repr_positive 
-#Used extensions: 
+#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/magic/magic.tmt with name magic_method_repr_positive
+#Used extensions:
 #Program:
 from GenericClass import *
 from SuperClass import *
@@ -54,7 +54,7 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     param = request.headers.get("BenchmarkTest01090", "")
     param = urllib.parse.unquote(param)
 
@@ -77,7 +77,7 @@ def print_results(sql, results):
     print("Results: ", results)
 
 class Test:
-    
+
     def do_something(self, request, param):
         bar = "safe!"
         map_holder = {}

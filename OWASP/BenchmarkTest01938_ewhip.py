@@ -10,9 +10,9 @@
 #Semgrep analysis results: [489, 78, 668]
 #Bandit analysis results: [78, 605]
 #Original file name: OWASP/BenchmarkTest01938.py
-#Original file CWE's: [78]  
+#Original file CWE's: [78]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/conditional/if.tmt with name if_else_operator_neutral 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/conditional/if.tmt with name if_else_operator_neutral
 #Used extensions: EXPR_bool -> isinstance(~[VAR_SuperClass]~, SubClass)
 #Program:
 from Record import *

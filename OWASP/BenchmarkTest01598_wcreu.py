@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 668]
 #Bandit analysis results: []
 #Original file name: OWASP/BenchmarkTest01598.py
-#Original file CWE's: [79]  
+#Original file CWE's: [79]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/pm.tmt with name pattern_matching_simple_1_positive 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/pm.tmt with name pattern_matching_simple_1_positive
+#Used extensions:
 #Program:
 from typing import Any
 from Record import *
@@ -73,11 +73,11 @@ class Test:
         a75770 = param
         b75770 = str(a75770) + " SafeStuff"
         b75770 = b75770[:-len("Chars")] + "Chars"
-        
+
         map75770 = {"key75770": b75770}
         c75770 = map75770["key75770"]
         d75770 = c75770[:-1]
-        
+
         e75770 = d75770.encode('utf-8').decode('utf-8')  # Simulating Base64 encode/decode
         f75770 = e75770.split(" ")[0]
 
@@ -87,7 +87,7 @@ class Test:
         return bar
 
 class ThingFactory:
-    
+
     @staticmethod
     def create_thing():
         return ThingInterface()

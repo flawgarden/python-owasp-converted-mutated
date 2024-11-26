@@ -10,10 +10,10 @@
 #Semgrep analysis results: [668]
 #Bandit analysis results: [89, 605]
 #Original file name: OWASP/BenchmarkTest01726.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/conditional/switch.tmt with name switch_operator_positive 
-#Used extensions: 
+#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/conditional/switch.tmt with name switch_operator_positive
+#Used extensions:
 #Program:
 from GenericClass import *
 from SuperClass import *
@@ -75,7 +75,7 @@ def benchmark_test_post():
     ampersand_loc = query_string.find("&", param_loc)
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
-    
+
     param = urllib.parse.unquote(param)
 
     bar = Test().do_something(param)
@@ -87,10 +87,10 @@ def benchmark_test_post():
         cursor.execute(sql)
         results = cursor.fetchall()
         response = "Your results are: "
-        
+
         for row in results:
             response += f"{row[0]} "  # Assuming USERNAME is in the first column
-        
+
         return response
 
     except sqlite3.Error as e:

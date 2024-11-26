@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 78, 668]
 #Bandit analysis results: [78, 605]
 #Original file name: OWASP/BenchmarkTest01942.py
-#Original file CWE's: [78]  
+#Original file CWE's: [78]
 #Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/field/staticField.tmt with name class_with_static_string_field_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/field/staticField.tmt with name class_with_static_string_field_negative
+#Used extensions:
 #Program:
 from GenericClass import *
 from SuperClass import *
@@ -66,7 +66,7 @@ def benchmark_test():
             cmd = 'echo '  # Mimicking the Java command
 
         args_env = {"Foo": "bar"}
-        
+
         try:
             process = os.popen(cmd + bar)
             result = process.read()

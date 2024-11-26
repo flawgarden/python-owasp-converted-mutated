@@ -8,10 +8,10 @@
 #Semgrep analysis results: [489, 668]
 #Bandit analysis results: [78, 605]
 #Original file name: OWASP/BenchmarkTest00500.py
-#Original file CWE's: [78]  
+#Original file CWE's: [78]
 #Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/virtuality/interface.tmt with name base_binary_op_interface_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/virtuality/interface.tmt with name base_binary_op_interface_negative
+#Used extensions:
 #Program:
 from GenericClass import *
 from SuperClass import *
@@ -76,7 +76,7 @@ def benchmark_test():
         cmd = "echo "  # Adjust command as needed for your environment
 
     args_env = {"Foo": "bar"}
-    
+
     try:
         p = os.popen(cmd + bar)  # Execute the command
         output = p.read()  # Get the output from the command

@@ -10,9 +10,9 @@
 #Semgrep analysis results: [489, 79, 668]
 #Bandit analysis results: [605]
 #Original file name: OWASP/BenchmarkTest01057.py
-#Original file CWE's: [79]  
+#Original file CWE's: [79]
 #Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/field/constructors.tmt with name class_with_array_initialization_negative 
+#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/field/constructors.tmt with name class_with_array_initialization_negative
 #Used extensions: MACRO_Empty_String_Array -> ["", "", ""]
 #Program:
 from GenericClass import *

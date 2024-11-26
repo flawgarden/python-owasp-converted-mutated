@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 79, 668]
 #Bandit analysis results: [605]
 #Original file name: OWASP/BenchmarkTest00290.py
-#Original file CWE's: [79]  
+#Original file CWE's: [79]
 #Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/import/import.tmt with name import_string_module_from_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/import/import.tmt with name import_string_module_from_negative
+#Used extensions:
 #Program:
 from GenericClass import *
 from SuperClass import *
@@ -57,7 +57,7 @@ def benchmark_test():
 def benchmark_test_post():
     param = ""
     referer = request.headers.get("Referer")
-    
+
     if referer:
         param = referer
     s123 = SimpleImportFrom()
@@ -68,7 +68,7 @@ def benchmark_test_post():
     sbxyz73567 = param + "_SafeStuff"
     response = make_response(sbxyz73567)
     response.headers['X-XSS-Protection'] = '0'
-    
+
     return response
 
 @app.errorhandler(404)

@@ -10,9 +10,9 @@
 #Semgrep analysis results: [489, 78, 668]
 #Bandit analysis results: [78, 605]
 #Original file name: OWASP/BenchmarkTest01192.py
-#Original file CWE's: [78]  
+#Original file CWE's: [78]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/conditional/while.tmt with name while_operator_negative 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/conditional/while.tmt with name while_operator_negative
 #Used extensions: EXPR_bool -> isinstance(~[VAR_Any]~, SideInterface)
 #Program:
 from Record import *

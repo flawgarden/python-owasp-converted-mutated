@@ -10,10 +10,10 @@
 #Semgrep analysis results: [89, 668]
 #Bandit analysis results: [605]
 #Original file name: OWASP/BenchmarkTest02449.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/field/regularField.tmt with name class_with_string_field_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/field/regularField.tmt with name class_with_string_field_negative
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *
@@ -73,7 +73,7 @@ def benchmark_test_post():
         response = print_results(results, sql)
     except sqlite3.Error as e:
         response += "Error processing request."
-    
+
     return response
 
 def do_something(param):

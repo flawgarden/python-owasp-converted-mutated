@@ -10,10 +10,10 @@
 #Semgrep analysis results: [915, 704, 89, 668]
 #Bandit analysis results: [89, 605]
 #Original file name: OWASP/BenchmarkTest00681.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/magic/magic.tmt with name magic_method_str_positive 
-#Used extensions: 
+#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/magic/magic.tmt with name magic_method_str_positive
+#Used extensions:
 #Program:
 from GenericClass import *
 from SuperClass import *
@@ -74,7 +74,7 @@ def benchmark_test_post():
     except sqlite3.Error as e:
         response.data = "Error processing request."
         return response
-    
+
     return response
 
 def print_results(rows, sql, response):

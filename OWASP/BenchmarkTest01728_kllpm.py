@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 89, 668]
 #Bandit analysis results: [89, 605]
 #Original file name: OWASP/BenchmarkTest01728.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/set.tmt with name set_disjoint_positive 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/set.tmt with name set_disjoint_positive
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *
@@ -66,7 +66,7 @@ def benchmark_test_post():
 
     param = query_string[param_loc + len(paramval):]
     ampersand_loc = query_string.find("&", param_loc)
-    
+
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
 
@@ -96,7 +96,7 @@ def benchmark_test_post():
         return "Error processing request."
 
 class Test:
-    
+
     def do_something(self, param):
         num = 106
         bar = "This should never happen" if (7 * 42) - num > 200 else param

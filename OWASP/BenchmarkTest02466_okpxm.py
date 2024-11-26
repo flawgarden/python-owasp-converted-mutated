@@ -10,9 +10,9 @@
 #Semgrep analysis results: [489, 668]
 #Bandit analysis results: [605]
 #Original file name: OWASP/BenchmarkTest02466.py
-#Original file CWE's: [22]  
+#Original file CWE's: [22]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/conditional/for.tmt with name for_operator_change_index_positive 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/conditional/for.tmt with name for_operator_change_index_positive
 #Used extensions: EXPR_int -> 1000
 #Program:
 from Record import *
@@ -78,7 +78,7 @@ def benchmark_test():
             "Problem getting FileInputStream: "
             + escape_html(str(e))
         )
-    
+
     response_content += "</body></html>"
     return response_content
 

@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 915, 704, 89, 668]
 #Bandit analysis results: [89, 605]
 #Original file name: OWASP/BenchmarkTest00192.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/record/record.tmt with name nested_record_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/record/record.tmt with name nested_record_negative
+#Used extensions:
 #Program:
 from GenericClass import *
 from SuperClass import *
@@ -55,7 +55,7 @@ def benchmark_test():
         return benchmark_test()
 
     response = app.response_class()
-    
+
     param = request.headers.get("BenchmarkTest00192", "")
     param = urllib.parse.unquote(param)
     first = SimpleRecord(param)

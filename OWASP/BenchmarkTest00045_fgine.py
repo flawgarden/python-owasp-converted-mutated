@@ -10,9 +10,9 @@
 #Semgrep analysis results: [489, 668]
 #Bandit analysis results: [605]
 #Original file name: OWASP/BenchmarkTest00045.py
-#Original file CWE's: [22]  
+#Original file CWE's: [22]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/queue.tmt with name simple_peek_negative 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/queue.tmt with name simple_peek_negative
 #Used extensions: MACRO_Create_Queue -> ~[MACRO_QueueName]~ = PriorityQueue() | MACRO_Add_Fixed_VAR_ToQueue -> ~[MACRO_QueueName]~.put(~[VAR_~[TYPE@1]~@1]~) | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231
 #Program:
 from queue import SimpleQueue, Queue, PriorityQueue
@@ -58,7 +58,7 @@ def benchmark_test():
 
 def benchmark_test_post():
     response = app.response_class(content_type="text/html;charset=UTF-8")
-    
+
     values = request.args.getlist("BenchmarkTest00045")
     param = values[0] if values else ""
 
@@ -72,7 +72,7 @@ def benchmark_test_post():
         with open(file_name, 'w') as fos:
             fos.write("Now ready to write to file: " + file_name)
             response.set_data("Now ready to write to file: " + file_name)
-    
+
     except Exception as e:
         print("Couldn't open FileOutputStream on file: '" + file_name + "'")
 

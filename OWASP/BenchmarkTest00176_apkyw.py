@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 78, 668]
 #Bandit analysis results: [78, 605]
 #Original file name: OWASP/BenchmarkTest00176.py
-#Original file CWE's: [78]  
+#Original file CWE's: [78]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/field/regularField.tmt with name class_with_string_field_positive 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/field/regularField.tmt with name class_with_string_field_positive
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *
@@ -65,12 +65,12 @@ def benchmark_test_post():
     bar = sh.value
     cmd = ""
     os_name = os.name
-    
+
     if os_name == 'nt':
         cmd = "echo "
 
     args_env = {"Foo": "bar"}
-    
+
     try:
         process = os.popen(cmd + bar)
         output = process.read()

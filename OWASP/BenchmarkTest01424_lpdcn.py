@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 668]
 #Bandit analysis results: [605]
 #Original file name: OWASP/BenchmarkTest01424.py
-#Original file CWE's: [79]  
+#Original file CWE's: [79]
 #Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/field/staticField.tmt with name class_with_static_string_field_positive 
-#Used extensions: 
+#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/field/staticField.tmt with name class_with_static_string_field_positive
+#Used extensions:
 #Program:
 from GenericClass import *
 from SuperClass import *
@@ -58,7 +58,7 @@ def benchmark_test_post():
     param = ""
     flag = True
     names = request.values.keys()
-    
+
     for name in names:
         values = request.values.getlist(name)
         if values is not None:

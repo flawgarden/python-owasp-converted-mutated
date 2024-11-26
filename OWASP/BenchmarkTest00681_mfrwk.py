@@ -10,9 +10,9 @@
 #Semgrep analysis results: [915, 704, 89, 668]
 #Bandit analysis results: [89, 605]
 #Original file name: OWASP/BenchmarkTest00681.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/set.tmt with name set_union_negative 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/set.tmt with name set_union_negative
 #Used extensions: EXPR_Any -> ImplementingSubClass()
 #Program:
 from Record import *
@@ -80,7 +80,7 @@ def benchmark_test_post():
     except sqlite3.Error as e:
         response.data = "Error processing request."
         return response
-    
+
     return response
 
 def print_results(rows, sql, response):

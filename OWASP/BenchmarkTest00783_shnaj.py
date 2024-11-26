@@ -10,10 +10,10 @@
 #Semgrep analysis results: [668]
 #Bandit analysis results: [605]
 #Original file name: OWASP/BenchmarkTest00783.py
-#Original file CWE's: [22]  
+#Original file CWE's: [22]
 #Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/varargs/varargs.tmt with name varargs_get_first_string_from_array_positive 
-#Used extensions: 
+#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/varargs/varargs.tmt with name varargs_get_first_string_from_array_positive
+#Used extensions:
 #Program:
 from typing import TypeVar
 from GenericClass import *
@@ -60,10 +60,10 @@ def benchmark_test_00783_post():
     query_string = request.query_string.decode('utf-8')
     paramval = "BenchmarkTest00783="
     param_loc = query_string.find(paramval)
-    
+
     if param_loc == -1:
         return "getQueryString() couldn't find expected parameter 'BenchmarkTest00783' in query string."
-    
+
     param = query_string[param_loc + len(paramval):]
     ampersand_loc = query_string.find("&", param_loc)
     if ampersand_loc != -1:
@@ -81,7 +81,7 @@ def benchmark_test_00783_post():
     bar = getFirstStringFromArray(bar, paramval)
 
     file_name = os.path.join("testfiles", bar)
-    
+
     try:
         with open(file_name, 'rb') as fis:
             b = fis.read(1000)

@@ -10,9 +10,9 @@
 #Semgrep analysis results: [489, 915, 704, 89, 668]
 #Bandit analysis results: [89, 605]
 #Original file name: OWASP/BenchmarkTest00038.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/map.tmt with name map_put_if_absent_negative 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/map.tmt with name map_put_if_absent_negative
 #Used extensions: MACRO_Create_Map -> ~[MACRO_MapName]~ = dict() | MACRO_MapName -> map787234 | MACRO_MapName -> map787234 | MACRO_MapName -> map787234 | MACRO_MapName -> map787234
 #Program:
 from Record import *
@@ -58,7 +58,7 @@ def benchmark_test_00038_post():
     param = ""
     flag = True
     names = request.args.keys()
-    
+
     for name in names:
         values = request.args.getlist(name)
         if values:
@@ -71,7 +71,7 @@ def benchmark_test_00038_post():
             break
 
     sql = "SELECT * FROM USERS WHERE USERNAME='foo' AND PASSWORD='" + param + "'"
-    
+
     try:
         map787234 = dict()
         map787234[names] = "zngvv"
@@ -82,7 +82,7 @@ def benchmark_test_00038_post():
         cursor.execute(sql)
         results = cursor.fetchall()
         conn.close()
-        
+
         response = "Your results are:<br>"
         for row in results:
             response += escape_html(row[0]) + "<br>"

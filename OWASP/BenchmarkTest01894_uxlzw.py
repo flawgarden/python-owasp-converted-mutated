@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 614, 611, 668]
 #Bandit analysis results: [20, 605]
 #Original file name: OWASP/BenchmarkTest01894.py
-#Original file CWE's: [643]  
+#Original file CWE's: [643]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/varargs/varargs.tmt with name varargs_with_generics_positive 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/varargs/varargs.tmt with name varargs_with_generics_positive
+#Used extensions:
 #Program:
 from typing import TypeVar
 from Record import *

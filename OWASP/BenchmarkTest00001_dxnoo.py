@@ -10,10 +10,10 @@
 #Semgrep analysis results: [614, 668]
 #Bandit analysis results: [605]
 #Original file name: OWASP/BenchmarkTest00001.py
-#Original file CWE's: [22]  
+#Original file CWE's: [22]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/record/record.tmt with name simple_record_positive 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/record/record.tmt with name simple_record_positive
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *
@@ -52,8 +52,8 @@ app = Flask(__name__, static_url_path='/static', static_folder='static')
 def benchmark_test():
     if request.method == 'GET':
         response = make_response(render_template("pathtraver-00/BenchmarkTest00001.html"))
-        user_cookie = ('BenchmarkTest00001', 'FileName', {'max_age': 60 * 3, 'secure': True, 
-                                                           'path': request.path, 
+        user_cookie = ('BenchmarkTest00001', 'FileName', {'max_age': 60 * 3, 'secure': True,
+                                                           'path': request.path,
                                                            'domain': request.host})
         response.set_cookie(*user_cookie)
         return response

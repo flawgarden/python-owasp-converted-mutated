@@ -10,9 +10,9 @@
 #Semgrep analysis results: [489, 668]
 #Bandit analysis results: [20, 605]
 #Original file name: OWASP/BenchmarkTest01734.py
-#Original file CWE's: [643]  
+#Original file CWE's: [643]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/queue.tmt with name simple_poll_negative 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/queue.tmt with name simple_poll_negative
 #Used extensions: MACRO_Create_Queue -> ~[MACRO_QueueName]~ = SimpleQueue() | MACRO_Add_EXPR_ToQueue -> ~[MACRO_QueueName]~.put(~[EXPR_~[TYPE@1]~]~) | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | EXPR_str -> ""
 #Program:
 from queue import SimpleQueue, Queue, PriorityQueue
@@ -69,7 +69,7 @@ def benchmark_test_post():
     if param_loc == -1:
         return "getQueryString() couldn't find expected parameter 'BenchmarkTest01734' in query string."
 
-    param = query_string[param_loc + len(paramval):] 
+    param = query_string[param_loc + len(paramval):]
     ampersand_loc = query_string.find("&", param_loc)
 
     if ampersand_loc != -1:
@@ -90,7 +90,7 @@ def benchmark_test_post():
 
         for value in node_list:
             output += f"{value.text}<br/>"
-        
+
         return output
 
     except ET.ParseError as e:

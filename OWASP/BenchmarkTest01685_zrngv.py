@@ -10,10 +10,10 @@
 #Semgrep analysis results: [668]
 #Bandit analysis results: [78, 605]
 #Original file name: OWASP/BenchmarkTest01685.py
-#Original file CWE's: [78]  
+#Original file CWE's: [78]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/import/import.tmt with name import_string_module_alias_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/import/import.tmt with name import_string_module_alias_negative
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *
@@ -58,16 +58,16 @@ def benchmark_test_post():
     query_string = request.query_string.decode()
     paramval = "BenchmarkTest01685="
     param_loc = query_string.find(paramval)
-    
+
     if param_loc == -1:
         return f"getQueryString() couldn't find expected parameter 'BenchmarkTest01685' in query string.", 400
 
     param = query_string[param_loc + len(paramval):]
     ampersand_loc = query_string.find("&", param_loc)
-    
+
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
-    
+
     bar = Test().do_something(request, param)
 
     cmd = ""

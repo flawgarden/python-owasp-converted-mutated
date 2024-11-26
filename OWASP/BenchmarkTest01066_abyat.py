@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 78, 668]
 #Bandit analysis results: [78, 605]
 #Original file name: OWASP/BenchmarkTest01066.py
-#Original file CWE's: [78]  
+#Original file CWE's: [78]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/record/record.tmt with name nested_record_positive 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/record/record.tmt with name nested_record_positive
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *
@@ -59,7 +59,7 @@ def benchmark_test():
 def benchmark_test_post():
     response_content_type = "text/html;charset=UTF-8"
     param = request.headers.get("BenchmarkTest01066", "")
-    
+
     param = base64.b64decode(base64.b64encode(param.encode())).decode()
 
     bar = Test().do_something(param)

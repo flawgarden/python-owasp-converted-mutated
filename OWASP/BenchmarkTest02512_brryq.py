@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 668]
 #Bandit analysis results: [78, 605]
 #Original file name: OWASP/BenchmarkTest02512.py
-#Original file CWE's: [78]  
+#Original file CWE's: [78]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/reflection/reflection.tmt with name simple_reflection_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/reflection/reflection.tmt with name simple_reflection_negative
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *
@@ -97,7 +97,7 @@ def print_os_command_results(process):
 
 def escape_html(string):
     return string.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-    
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template("404.html")

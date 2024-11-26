@@ -10,9 +10,9 @@
 #Semgrep analysis results: [489, 614, 915, 704, 89, 668]
 #Bandit analysis results: [89, 605]
 #Original file name: OWASP/BenchmarkTest01887.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/collections/map.tmt with name map_simple_get_1_positive 
+#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/collections/map.tmt with name map_simple_get_1_positive
 #Used extensions: MACRO_Create_Map -> ~[MACRO_MapName]~ = dict() | MACRO_MapName -> map787234 | MACRO_MapName -> map787234 | MACRO_MapName -> map787234
 #Program:
 from GenericClass import *
@@ -62,11 +62,11 @@ def benchmark_test():
         user_cookie.set_cookie("BenchmarkTest01887", "bar", max_age=60 * 3, secure=True, path=request.path, domain=request.host)
         response.set_cookie(user_cookie.data)
         return response
-    
+
     if request.method == 'POST':
         param = "noCookieValueSupplied"
         the_cookies = request.cookies
-        
+
         if the_cookies:
             param = the_cookies.get("BenchmarkTest01887", param)
             param = unquote(param)

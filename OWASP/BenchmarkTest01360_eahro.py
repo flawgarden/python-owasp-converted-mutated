@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 78, 668]
 #Bandit analysis results: [78, 605]
 #Original file name: OWASP/BenchmarkTest01360.py
-#Original file CWE's: [78]  
+#Original file CWE's: [78]
 #Original file kind: fail
 #Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/virtuality/class.tmt with name derived_binary_op_negative
-#Used extensions: 
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *
@@ -75,7 +75,7 @@ def benchmark_test():
     except Exception as e:
         print("Problem executing cmdi - TestCase")
         response.set_data(str(e))
-    
+
     return response
 
 class Test:

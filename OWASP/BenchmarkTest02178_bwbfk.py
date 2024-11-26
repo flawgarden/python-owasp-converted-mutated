@@ -10,9 +10,9 @@
 #Semgrep analysis results: [489, 915, 704, 668]
 #Bandit analysis results: [89, 605]
 #Original file name: OWASP/BenchmarkTest02178.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/collections/map.tmt with name map_merge_2_negative 
+#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/collections/map.tmt with name map_merge_2_negative
 #Used extensions: MACRO_Create_Map -> ~[MACRO_MapName]~ = dict() | MACRO_Add_EXPR_ToMap -> ~[MACRO_MapName]~[~[EXPR_~[TYPE@1]~@1]~] = ~[EXPR_~[TYPE@2]~@2]~ | MACRO_MapName -> map787234 | MACRO_MapName -> map787234 | MACRO_MapName -> map787234 | MACRO_MapName -> map787234 | MACRO_MapName -> map787234 | MACRO_MapName -> map787234
 #Program:
 from GenericClass import *
@@ -77,7 +77,7 @@ def benchmark_test_post():
     response = ""
     param = request.args.get("BenchmarkTest02178", "")
     bar = do_something(param)
-    
+
     sql = f"SELECT * from USERS where USERNAME='foo' and PASSWORD='{bar}'"
     try:
         list_results = query_for_list(sql)

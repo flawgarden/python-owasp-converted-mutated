@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 668]
 #Bandit analysis results: [78, 605]
 #Original file name: OWASP/BenchmarkTest00499.py
-#Original file CWE's: [78]  
+#Original file CWE's: [78]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/lambdas/mutation.tmt with name nested_unary_lambda_mutation_positive 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/lambdas/mutation.tmt with name nested_unary_lambda_mutation_positive
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *
@@ -52,7 +52,7 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-        
+
     response = Response(content_type="text/html;charset=UTF-8")
     param = request.args.get("BenchmarkTest00499", "")
 
@@ -75,7 +75,7 @@ def benchmark_test():
     bar = a12341.value
 
     args_env = {"Foo": "bar"}
-    
+
     try:
         process = os.popen(cmd + bar)
         result = process.read()

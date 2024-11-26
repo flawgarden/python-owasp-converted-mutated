@@ -10,9 +10,9 @@
 #Semgrep analysis results: [489, 668]
 #Bandit analysis results: [78, 605]
 #Original file name: OWASP/BenchmarkTest01942.py
-#Original file CWE's: [78]  
+#Original file CWE's: [78]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/varargs/varargs.tmt with name varargs_with_generics_negative 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/varargs/varargs.tmt with name varargs_with_generics_negative
 #Used extensions: EXPR_str -> ~[EXPR_str]~.strip()
 #Program:
 from typing import TypeVar
@@ -68,7 +68,7 @@ def benchmark_test():
             cmd = 'echo '  # Mimicking the Java command
 
         args_env = {"Foo": "bar"}
-        
+
         try:
             process = os.popen(cmd + bar)
             result = process.read()

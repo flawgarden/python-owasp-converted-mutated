@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 668]
 #Bandit analysis results: [78, 605]
 #Original file name: OWASP/BenchmarkTest00295.py
-#Original file CWE's: [78]  
+#Original file CWE's: [78]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/comprehension.tmt with name list_comprehension_with_condition_positive 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/comprehension.tmt with name list_comprehension_with_condition_positive
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *
@@ -76,7 +76,7 @@ def benchmark_test_post():
     else:
         a1 = "sh"
         a2 = "-c"
-    
+
     args = [a1, a2, "echo " + bar]
 
     try:

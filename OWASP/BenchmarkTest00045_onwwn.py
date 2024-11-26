@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 668]
 #Bandit analysis results: [605]
 #Original file name: OWASP/BenchmarkTest00045.py
-#Original file CWE's: [22]  
+#Original file CWE's: [22]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/interpolation.tmt with name format_method_with_indexes_positive 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/interpolation.tmt with name format_method_with_indexes_positive
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *
@@ -57,7 +57,7 @@ def benchmark_test():
 
 def benchmark_test_post():
     response = app.response_class(content_type="text/html;charset=UTF-8")
-    
+
     values = request.args.getlist("BenchmarkTest00045")
     tmpStr = values
     interpolatedStr = "This is element {0}".format(tmpStr)
@@ -70,7 +70,7 @@ def benchmark_test_post():
         with open(file_name, 'w') as fos:
             fos.write("Now ready to write to file: " + file_name)
             response.set_data("Now ready to write to file: " + file_name)
-    
+
     except Exception as e:
         print("Couldn't open FileOutputStream on file: '" + file_name + "'")
 

@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 611, 668]
 #Bandit analysis results: [20, 605]
 #Original file name: OWASP/BenchmarkTest01561.py
-#Original file CWE's: [643]  
+#Original file CWE's: [643]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/record/record.tmt with name nested_record_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/record/record.tmt with name nested_record_negative
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *

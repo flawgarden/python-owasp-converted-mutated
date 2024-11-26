@@ -10,10 +10,10 @@
 #Semgrep analysis results: [668]
 #Bandit analysis results: [605]
 #Original file name: OWASP/BenchmarkTest02591.py
-#Original file CWE's: [79]  
+#Original file CWE's: [79]
 #Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/virtuality/interface.tmt with name impl_binary_op_interface_class2_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/virtuality/interface.tmt with name impl_binary_op_interface_class2_negative
+#Used extensions:
 #Program:
 from GenericClass import *
 from SuperClass import *
@@ -75,7 +75,7 @@ def benchmark_test():
     response = f'Content-Type: {response_data}\n'
     response += 'X-XSS-Protection: 0\n'
     response += f'Formatted like: {bar} and b.'
-    
+
     return response
 
 def do_something(param):

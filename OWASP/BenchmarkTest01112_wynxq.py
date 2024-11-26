@@ -10,10 +10,10 @@
 #Semgrep analysis results: [668]
 #Bandit analysis results: [605]
 #Original file name: OWASP/BenchmarkTest01112.py
-#Original file CWE's: [22]  
+#Original file CWE's: [22]
 #Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/record/record.tmt with name nested_record_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/record/record.tmt with name nested_record_negative
+#Used extensions:
 #Program:
 from GenericClass import *
 from SuperClass import *
@@ -51,10 +51,10 @@ app = Flask(__name__, static_url_path='/static', static_folder='static')
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = Response()
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
-    
+
     param = ""
     for name in request.headers:
         if name not in common_headers:
@@ -72,7 +72,7 @@ def benchmark_test():
                              html_escape(b.decode('utf-8', errors='ignore')))
     except Exception as e:
         print(f"Couldn't open file: '{file_name}'")
-    
+
     return response
 
 class Test:

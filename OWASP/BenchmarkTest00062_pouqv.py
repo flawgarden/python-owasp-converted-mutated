@@ -10,10 +10,10 @@
 #Semgrep analysis results: [614, 668]
 #Bandit analysis results: [605]
 #Original file name: OWASP/BenchmarkTest00062.py
-#Original file CWE's: [22]  
+#Original file CWE's: [22]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/none.tmt with name conditional_expression_none_positive 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/none.tmt with name conditional_expression_none_positive
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *

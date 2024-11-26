@@ -10,9 +10,9 @@
 #Semgrep analysis results: [489, 915, 704, 89, 668]
 #Bandit analysis results: [89, 605]
 #Original file name: OWASP/BenchmarkTest01971.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/conditional/if.tmt with name if_else_operator_neutral 
+#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/conditional/if.tmt with name if_else_operator_neutral
 #Used extensions: EXPR_bool -> isinstance(~[EXPR_Any]~, SuperInterface) | EXPR_Any -> ImplementingSuperSideClass()
 #Program:
 from GenericClass import *
@@ -56,7 +56,7 @@ def benchmark_test():
 
     response = app.response_class()
     param = request.headers.get("BenchmarkTest01971", "")
-    
+
     # URL Decode the header value
     tmpUnique42 = param
     if isinstance(ImplementingSuperSideClass(), SuperInterface):
@@ -79,7 +79,7 @@ def benchmark_test():
     except sqlite3.Error as e:
         response.set_data("Error processing request.")
         return response
-    
+
 def do_something(param):
     bar = ""
     guess = "ABC"

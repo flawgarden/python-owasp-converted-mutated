@@ -6,10 +6,10 @@
 #CodeQL analysis results: []
 #Semgrep analysis results: [489, 78, 668]
 #Original file name: OWASP/BenchmarkTest02342.py
-#Original file CWE's: [78]  
+#Original file CWE's: [78]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/generators.tmt with name generator_yield_from_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/generators.tmt with name generator_yield_from_negative
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *
@@ -51,7 +51,7 @@ def benchmark_test():
         return benchmark_test()
     response = app.response_class()
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
-    
+
     param = ""
     flag = True
     names = request.args.keys()

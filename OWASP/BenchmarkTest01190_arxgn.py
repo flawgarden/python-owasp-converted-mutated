@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 668]
 #Bandit analysis results: [78, 605]
 #Original file name: OWASP/BenchmarkTest01190.py
-#Original file CWE's: [78]  
+#Original file CWE's: [78]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/concurrency/concurrency.tmt with name thread_set_nostart_positive 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/concurrency/concurrency.tmt with name thread_set_nostart_positive
+#Used extensions:
 #Program:
 from threading import Thread
 from Record import *
@@ -84,7 +84,7 @@ def benchmark_test_post(request):
     except Exception as e:
         print("Problem executing cmdi - TestCase")
         response.set_data(escape_for_html(str(e)))
-    
+
     return response
 
 class Test:

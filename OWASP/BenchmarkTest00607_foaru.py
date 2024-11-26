@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 611, 668]
 #Bandit analysis results: [20, 605]
 #Original file name: OWASP/BenchmarkTest00607.py
-#Original file CWE's: [643]  
+#Original file CWE's: [643]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/duck/typing.tmt with name duck_typing_quack_method_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/duck/typing.tmt with name duck_typing_quack_method_negative
+#Used extensions:
 #Program:
 from Record import *
 from Exceptions import *

@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 79, 668]
 #Bandit analysis results: [20, 605]
 #Original file name: OWASP/BenchmarkTest00207.py
-#Original file CWE's: [643]  
+#Original file CWE's: [643]
 #Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/none.tmt with name simple_none_positive 
-#Used extensions: 
+#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/none.tmt with name simple_none_positive
+#Used extensions:
 #Program:
 from GenericClass import *
 from SuperClass import *
@@ -63,7 +63,7 @@ def benchmark_test_post():
     if value is not None:
         param = "rerdn"
     param = param.encode('utf-8').decode('unicode_escape')
-    
+
     bar = ''
     if param:
         bar = base64.b64decode(base64.b64encode(param.encode())).decode()

@@ -10,9 +10,9 @@
 #Semgrep analysis results: [489, 78, 668]
 #Bandit analysis results: []
 #Original file name: OWASP/BenchmarkTest01288.py
-#Original file CWE's: [78]  
+#Original file CWE's: [78]
 #Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/conditional/switch.tmt with name switch_operator_any_positive 
+#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/conditional/switch.tmt with name switch_operator_any_positive
 #Used extensions: MACRO_Any_str -> ~[VAR_str]~
 #Program:
 from Record import *
@@ -52,7 +52,7 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test_post()
-    
+
     return benchmark_test_post()
 
 def benchmark_test_post():

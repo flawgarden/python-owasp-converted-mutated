@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 614, 915, 704, 89, 668]
 #Bandit analysis results: [89, 605]
 #Original file name: OWASP/BenchmarkTest01002.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/virtuality/class.tmt with name derived_binary_op1_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/virtuality/class.tmt with name derived_binary_op1_negative
+#Used extensions:
 #Program:
 from GenericClass import *
 from SuperClass import *

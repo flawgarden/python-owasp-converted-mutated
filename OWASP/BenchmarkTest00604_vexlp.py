@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 89, 668]
 #Bandit analysis results: [89, 605]
 #Original file name: OWASP/BenchmarkTest00604.py
-#Original file CWE's: [89]  
+#Original file CWE's: [89]
 #Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/magic/magic.tmt with name magic_method_init_negative 
-#Used extensions: 
+#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/magic/magic.tmt with name magic_method_init_negative
+#Used extensions:
 #Program:
 from GenericClass import *
 from SuperClass import *
@@ -91,7 +91,7 @@ def benchmark_test():
             response.data = "Error processing request."
             return response
         else:
-            raise 
+            raise
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')

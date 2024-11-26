@@ -10,10 +10,10 @@
 #Semgrep analysis results: [489, 668]
 #Bandit analysis results: [605]
 #Original file name: OWASP/BenchmarkTest01424.py
-#Original file CWE's: [79]  
+#Original file CWE's: [79]
 #Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/none.tmt with name none_in_function_with_two_args_positive 
-#Used extensions: 
+#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/none.tmt with name none_in_function_with_two_args_positive
+#Used extensions:
 #Program:
 from GenericClass import *
 from SuperClass import *
@@ -58,7 +58,7 @@ def benchmark_test_post():
     param = ""
     flag = True
     names = request.values.keys()
-    
+
     for name in names:
         param = get_value_two_args(flag, "1")
         values = request.values.getlist(name)
