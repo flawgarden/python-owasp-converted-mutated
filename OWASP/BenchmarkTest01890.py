@@ -14,7 +14,7 @@ def get_sql_statement():
 @app.route("/sqli-04/BenchmarkTest01890", methods=['GET', 'POST'])
 def benchmark_test():
     response = make_response(render_template("sqli-04/BenchmarkTest01890.html"))
-    
+
     if request.method == 'GET':
         user_cookie = response.set_cookie("BenchmarkTest01890", "bar", max_age=60 * 3, secure=True, path=request.path, domain=request.host)
         return response

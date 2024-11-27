@@ -36,14 +36,14 @@ def benchmark_test_post():
         input_param = bar
         if isinstance(input_param, str):
             input_bytes = input_param.encode()
-        
+
         md.update(input_bytes)
 
         result = md.digest()
         file_target = os.path.join("path/to/testfiles", "passwordFile.txt")
         with open(file_target, "a") as fw:
             fw.write("hash_value=" + base64.b64encode(result).decode('utf-8') + "\n")
-        
+
         return "Sensitive value '{}' hashed and stored<br/>".format(
             escape_html(input_bytes.decode('utf-8'))
         )

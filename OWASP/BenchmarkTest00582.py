@@ -16,7 +16,7 @@ def benchmark_test():
     param = ""
     flag = True
     names = request.args.keys()
-    
+
     for name in names:
         values = request.args.getlist(name)
         if values:
@@ -57,7 +57,7 @@ def benchmark_test():
         else:
             response.set_cookie(cookie_name, remember_me_key, secure=True, httponly=True, path=request.path)
             response.data = f"{user} has been remembered with cookie: {cookie_name} whose value is: {remember_me_key}<br/>"
-        
+
     except Exception as e:
         print("Problem executing SecureRandom.nextDouble() - TestCase")
         raise

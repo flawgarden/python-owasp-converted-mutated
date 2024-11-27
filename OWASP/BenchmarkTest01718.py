@@ -15,20 +15,20 @@ def benchmark_test():
         query_string = request.query_string.decode()
         paramval = "BenchmarkTest01718="
         param_loc = query_string.find(paramval)
-        
+
         if param_loc == -1:
             return "getQueryString() couldn't find expected parameter 'BenchmarkTest01718' in query string."
-        
+
         param = query_string[param_loc + len(paramval):]
         ampersand_loc = query_string.find("&", param_loc)
         if ampersand_loc != -1:
             param = query_string[param_loc + len(paramval):ampersand_loc]
-        
+
         param = urllib.parse.unquote(param)
-        
+
         bar = Test().do_something(request, param)
         sql = "SELECT * from USERS where USERNAME=? and PASSWORD='" + bar + "'"
-        
+
         try:
             connection = get_sql_connection()
             statement = connection.cursor()
@@ -39,7 +39,7 @@ def benchmark_test():
             connection.close()
         except sqlite3.Error as e:
             return "Error processing request."
-    
+
     return render_template("index.html")
 
 class Test:

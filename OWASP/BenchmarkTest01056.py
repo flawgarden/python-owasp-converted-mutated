@@ -25,7 +25,7 @@ def benchmark_test_post():
     if bar:
         length = len(bar)
         response.data = bar[:length]
-    
+
     return response
 
 class Test:

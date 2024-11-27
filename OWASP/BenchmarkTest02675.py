@@ -25,7 +25,7 @@ def benchmark_test():
             file_target = os.path.join(app.config['UPLOAD_FOLDER'], 'passwordFile.txt')
             with open(file_target, 'a') as fw:
                 fw.write("hash_value=" + str(result.hex()) + "\n")
-            
+
             response += "Sensitive value '{}' hashed and stored<br/>".format(input_data.decode())
 
         except Exception as e:

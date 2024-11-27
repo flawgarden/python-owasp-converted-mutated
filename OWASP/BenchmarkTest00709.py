@@ -37,7 +37,7 @@ def benchmark_test_00709_post():
         print("Problem executing hash - TestCase")
         return str(e), 500
 
-    response.set_data(response.get_data(as_text=True) + 
+    response.set_data(response.get_data(as_text=True) +
                       "Hash Test executed")
     return response
 

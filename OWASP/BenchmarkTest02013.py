@@ -9,17 +9,17 @@ app.secret_key = os.urandom(24)
 @app.route("/weakrand-04/BenchmarkTest02013", methods=['GET', 'POST'])
 def benchmark_test_02013():
     if request.method == 'GET':
-        return benchmark_test_02013_post() 
+        return benchmark_test_02013_post()
     else:
-        return benchmark_test_02013_post() 
+        return benchmark_test_02013_post()
 
 def benchmark_test_02013_post():
     response = make_response()
-    
+
     param = ""
     for name in request.headers:
         if name in common_headers:
-            continue 
+            continue
         param = name
         break
 
@@ -34,7 +34,7 @@ def benchmark_test_02013_post():
         user += test_case_number
 
         cookie_name = "rememberMe" + test_case_number
-        
+
         found_user = False
         if 'cookies' in session:
             for cookie in session['cookies']:

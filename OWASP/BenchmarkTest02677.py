@@ -16,7 +16,7 @@ def benchmark_test():
 def benchmark_test_post():
     param = request.args.get('BenchmarkTest02677', default='', type=str)
     bar = do_something(param)
-    
+
     try:
         algorithm = 'SHA512'
         md = hashlib.new(algorithm)
@@ -28,9 +28,9 @@ def benchmark_test_post():
 
         with open(file_target, 'a') as fw:
             fw.write("hash_value=" + base64.b64encode(result).decode('utf-8') + "\n")
-        
+
         return f"Sensitive value '{html_escape(input_data.decode())}' hashed and stored<br/>"
-    
+
     except Exception as e:
         print("Problem executing hash - TestCase")
         return str(e)

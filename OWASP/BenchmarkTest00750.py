@@ -45,7 +45,7 @@ def benchmark_test():
         else:
             response.set_cookie(cookie_name, rememberMeKey, secure=True, httponly=True, path=request.path)
             response.data = f"{user} has been remembered with cookie: {cookie_name} whose value is: {rememberMeKey}<br/>"
-        
+
     except Exception as e:
         print("Problem executing SecureRandom.random() - TestCase")
         raise e

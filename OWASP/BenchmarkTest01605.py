@@ -30,7 +30,7 @@ def benchmark_test():
 
     str_input = param or "No cookie value supplied"
     cookie = f'SomeCookie={html.escape(str_input)}; Secure; HttpOnly; Path={request.path}'
-    
+
     response = make_response(f"Created cookie: 'SomeCookie': with value: '{html.escape(str_input)}' and secure flag set to: true")
     response.headers.add('Set-Cookie', cookie)
     return response

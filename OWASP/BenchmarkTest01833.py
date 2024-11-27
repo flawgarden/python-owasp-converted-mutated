@@ -23,12 +23,12 @@ def benchmark_test():
 
         file_target = os.path.join('testfiles', bar)
         response_text = "Access to file: '" + escape_html(file_target) + "' created."
-        
+
         if os.path.exists(file_target):
             response_text += " And file already exists."
         else:
             response_text += " But file doesn't exist yet."
-        
+
         return response_text
 
 def do_something(request, param):
@@ -38,7 +38,7 @@ def do_something(request, param):
     map9325['keyB-9325'] = param
     map9325['keyC'] = "another-Value"
     bar = map9325['keyB-9325']
-    
+
     return bar
 
 def escape_html(text):

@@ -28,14 +28,14 @@ def benchmark_test_post():
     try:
         file_uri = f"file:{start_uri_slashes}{os.path.join('testfiles', bar).replace(' ', '_')}"
         file_target = os.path.abspath(file_uri)
-        
+
         response_message = f"Access to file: '{file_target}' created."
-        
+
         if os.path.exists(file_target):
             response_message += " And file already exists."
         else:
             response_message += " But file doesn't exist yet."
-            
+
         return response_message
     except Exception as e:
         return str(e)
@@ -47,7 +47,7 @@ class Test:
         return bar
 
 def create_thing():
-    # The implementation of this function should return an object similar to 
+    # The implementation of this function should return an object similar to
     # org.owasp.benchmark.helpers.ThingFactory.createThing()
     return ThingInterface()
 

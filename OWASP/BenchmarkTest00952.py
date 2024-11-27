@@ -12,7 +12,7 @@ def benchmark_test():
         user_cookie = ('BenchmarkTest00952', 'FileName', {'max_age': 60 * 3, 'secure': True, 'path': request.path, 'domain': request.host})
         response.set_cookie(*user_cookie)
         return render_template("pathtraver-01/BenchmarkTest00952.html")
-    
+
     if request.method == 'POST':
         response = app.response_class(content_type='text/html;charset=UTF-8')
         the_cookies = request.cookies

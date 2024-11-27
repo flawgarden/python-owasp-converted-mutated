@@ -13,7 +13,7 @@ def get_sql_connection():
 def benchmark_test():
     if request.method == 'POST' or request.method == 'GET':
         param = request.args.get('BenchmarkTest00672', "")
-        
+
         bar = ""
         num = 86
         if (7 * 42) - num > 200:
@@ -29,10 +29,10 @@ def benchmark_test():
             statement.execute(sql)
             results = statement.fetchall()
             return render_template("results.html", results=results, sql=sql)
-        
+
         except sqlite3.Error as e:
             return "Error processing request."
-    
+
     return render_template("index.html")
 
 @app.errorhandler(404)

@@ -15,7 +15,7 @@ def benchmark_test_00038_post():
     param = ""
     flag = True
     names = request.args.keys()
-    
+
     for name in names:
         values = request.args.getlist(name)
         if values:
@@ -28,14 +28,14 @@ def benchmark_test_00038_post():
             break
 
     sql = "SELECT * FROM USERS WHERE USERNAME='foo' AND PASSWORD='" + param + "'"
-    
+
     try:
         conn = sqlite3.connect('your_database.db')  # Change to your database
         cursor = conn.cursor()
         cursor.execute(sql)
         results = cursor.fetchall()
         conn.close()
-        
+
         response = "Your results are:<br>"
         for row in results:
             response += escape_html(row[0]) + "<br>"

@@ -15,7 +15,7 @@ def benchmark_test():
     query_string = request.query_string.decode('utf-8')
     paramval = "BenchmarkTest02641="
     param_loc = query_string.find(paramval)
-    
+
     if param_loc == -1:
         response.data = "getQueryString() couldn't find expected parameter 'BenchmarkTest02641' in query string."
         return response
@@ -24,7 +24,7 @@ def benchmark_test():
     ampersand_loc = query_string.find("&", param_loc)
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
-    
+
     param = urllib.parse.unquote(param)
     bar = do_something(param)
 

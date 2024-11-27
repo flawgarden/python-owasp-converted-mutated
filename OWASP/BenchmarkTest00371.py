@@ -16,7 +16,7 @@ def benchmark_test():
 
 def benchmark_test_post():
     param = request.form.get("BenchmarkTest00371", "")
-    
+
     bar = ""
     num = 196
     if (500 / 42) + num > 200:
@@ -34,7 +34,7 @@ def benchmark_test_post():
         file_target = os.path.join('test_files', 'passwordFile.txt')
         with open(file_target, 'a') as fw:
             fw.write("hash_value=" + base64.b64encode(result).decode() + "\n")
-        
+
         return "Sensitive value '" + escape_html(input_data.decode()) + "' hashed and stored<br/>"
 
     except Exception as e:

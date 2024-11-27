@@ -15,7 +15,7 @@ def benchmark_test_post(request):
     response_content = ""
     param = request.args.get("BenchmarkTest01252", "")
     bar = Test().do_something(request, param)
-    
+
     response_content += '<h1>Response</h1>'
     response_content += bar
 

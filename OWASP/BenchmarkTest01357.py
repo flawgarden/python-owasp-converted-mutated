@@ -11,7 +11,7 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = make_response()
     map = request.form.to_dict()
     param = ""
@@ -22,7 +22,7 @@ def benchmark_test():
             param = values[0]
 
     bar = Test().do_something(param)
-    
+
     r = random.randint(0, 2147483647)
     remember_me_key = str(r)
 

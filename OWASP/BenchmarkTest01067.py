@@ -16,7 +16,7 @@ def benchmark_test_post():
     response = Response(content_type="text/html;charset=UTF-8")
 
     param = request.headers.get("BenchmarkTest01067", "")
-    
+
     # URL Decode the header value
     param = urllib.parse.unquote(param)
 

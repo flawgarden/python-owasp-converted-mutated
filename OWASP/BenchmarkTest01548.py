@@ -13,9 +13,9 @@ def benchmark_test():
 def benchmark_test_post():
     response_text = "text/html;charset=UTF-8"
     param = request.args.get("BenchmarkTest01548", "")
-    
+
     bar = Test().do_something(param)
-    
+
     # Simulate setting session attribute
     with app.app_context():
         from flask import session

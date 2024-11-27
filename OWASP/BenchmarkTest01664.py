@@ -22,9 +22,9 @@ def benchmark_test_post():
     ampersand_loc = query_string.find("&", param_loc)
     if ampersand_loc != -1:
         param = query_string[param_loc + len(param_val):ampersand_loc]
-    
+
     param = urllib.parse.unquote(param)
-    
+
     bar = Test().do_something(param)
 
     response = Response(bar)

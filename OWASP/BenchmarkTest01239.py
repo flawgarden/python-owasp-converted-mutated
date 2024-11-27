@@ -14,7 +14,7 @@ def benchmark_test():
 def benchmark_test_post():
     response = {}
     param = request.args.get("BenchmarkTest01239", "")
-    
+
     bar = Test().do_something(param)
     file_name = os.path.join('testfiles/', bar)
 
@@ -23,7 +23,7 @@ def benchmark_test_post():
             response['message'] = "Now ready to write to file: " + file_name
     except Exception as e:
         print("Couldn't open FileOutputStream on file: '" + file_name + "'")
-    
+
     return render_template("index.html", response=response)
 
 class Test:
@@ -34,7 +34,7 @@ class Test:
             values_list = ["safe", param, "moresafe"]
             values_list.pop(0)  # remove the 1st safe value
             bar = values_list[1]  # get the last 'safe' value
-        
+
         return bar
 
 @app.errorhandler(404)

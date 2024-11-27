@@ -10,9 +10,9 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = make_response()
-    
+
     param = request.args.get("BenchmarkTest01797", "")
     bar = Test().do_something(param)
 
@@ -41,7 +41,7 @@ def benchmark_test():
             remember_me.set_cookie(cookie_name, remember_me_key, secure=True, httponly=True, path=request.path)
             request.cookies[cookie_name] = remember_me_key
             response.data = f"{user} has been remembered with cookie: {cookie_name} whose value is: {remember_me_key}<br/>"
-        
+
     except Exception as e:
         print("Problem executing SecureRandom.random() - TestCase")
         raise e

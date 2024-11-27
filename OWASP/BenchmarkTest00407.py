@@ -10,12 +10,12 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = Response()
     response.content_type = "text/html;charset=UTF-8"
 
     param = request.form.get("BenchmarkTest00407", "")
-    
+
     bar = ""
     if param:
         values_list = ["safe", param, "moresafe"]

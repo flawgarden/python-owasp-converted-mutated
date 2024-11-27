@@ -12,7 +12,7 @@ def benchmark_test():
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
 
     param = request.args.get('BenchmarkTest00382', '')
-    
+
     bar = ""
     if param:
         values_list = ["safe", param, "moresafe"]

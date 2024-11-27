@@ -9,7 +9,7 @@ def benchmark_test_02694():
     response = make_response()
     param = request.args.get("BenchmarkTest02694", "")
     bar = do_something(param)
-    
+
     response.headers["X-XSS-Protection"] = "0"
     response.data = bar
     return response

@@ -26,7 +26,7 @@ def benchmark_test_post():
 
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
-    
+
     param = param.replace('%20', ' ')  # Basic URL decoding
 
     bar = ""
@@ -39,7 +39,7 @@ def benchmark_test_post():
     response.headers['X-XSS-Protection'] = '0'
     obj = ("a", "b")
     response.data = f"{bar} {obj[0]} {obj[1]}"
-    
+
     return response
 
 if __name__ == "__main__":

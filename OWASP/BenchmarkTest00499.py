@@ -9,7 +9,7 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-        
+
     response = Response(content_type="text/html;charset=UTF-8")
     param = request.args.get("BenchmarkTest00499", "")
 
@@ -21,7 +21,7 @@ def benchmark_test():
         cmd = "cmd /c echo "
 
     args_env = {"Foo": "bar"}
-    
+
     try:
         process = os.popen(cmd + bar)
         result = process.read()

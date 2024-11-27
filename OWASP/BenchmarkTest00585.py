@@ -26,10 +26,10 @@ def benchmark_test():
             break
 
     sbxyz49441 = param + "_SafeStuff"
-    
+
     rand_number = random.randint(0, 99)
     remember_me_key = str(rand_number)
-    
+
     user = "SafeInga"
     full_class_name = benchmark_test.__module__
     test_case_number = full_class_name.split('.')[-1].replace("BenchmarkTest", "")
@@ -54,7 +54,7 @@ def benchmark_test():
         request.environ['werkzeug.session'].set(cookie_name, remember_me_key)
 
     response.set_data(response.get_data(as_text=True) + "Weak Randomness Test random.randint executed")
-    
+
     return response
 
 @app.errorhandler(404)

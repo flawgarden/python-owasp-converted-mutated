@@ -58,7 +58,7 @@ class Test:
             values_list = ["safe", param, "moresafe"]
             values_list.pop(0)  # remove the 1st safe value
             bar = values_list[0]  # get the param value
-        
+
         return bar
 
 

@@ -28,13 +28,13 @@ def benchmark_test():
                 found_user = True
 
     response = make_response()
-    
+
     if found_user:
         response.data = f"Welcome back: {user}<br/>"
     else:
         response.set_cookie(cookie_name, remember_me_key, secure=True, httponly=True, path=request.path)
         response.data = f"{user} has been remembered with cookie: {cookie_name} whose value is: {remember_me_key}<br/>"
-    
+
     response.data += "Weak Randomness Test random.getrandbits(64) executed"
     return response
 

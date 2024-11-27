@@ -35,7 +35,7 @@ def benchmark_test_post():
     if bar:
         length = len(bar)
         response.set_data(bar[:length])
-    
+
     return response
 
 def do_something(param):

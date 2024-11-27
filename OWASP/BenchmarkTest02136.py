@@ -20,7 +20,7 @@ def benchmark_test_post():
     if bar is not None:
         response.data = bar.encode('utf-8')
         response.content_length = len(response.data)
-    
+
     return response
 
 def do_something(param):

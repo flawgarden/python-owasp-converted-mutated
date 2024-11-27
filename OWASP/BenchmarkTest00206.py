@@ -31,16 +31,16 @@ class ThingFactory:
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = request.response
     param = request.headers.get("BenchmarkTest00206", "")
-    
+
     param = urllib.parse.unquote(param)
 
     a13396 = param
     b13396 = a13396 + " SafeStuff"
     b13396 = b13396[:-5] + "Chars"
-    
+
     map13396 = {}
     map13396["key13396"] = b13396
     c13396 = map13396["key13396"]

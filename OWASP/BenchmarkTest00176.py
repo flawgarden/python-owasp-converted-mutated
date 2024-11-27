@@ -19,12 +19,12 @@ def benchmark_test_post():
     bar = param
     cmd = ""
     os_name = os.name
-    
+
     if os_name == 'nt':
         cmd = "echo "
 
     args_env = {"Foo": "bar"}
-    
+
     try:
         process = os.popen(cmd + bar)
         output = process.read()

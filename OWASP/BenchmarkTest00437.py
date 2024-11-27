@@ -10,7 +10,7 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'POST':
         param = request.form.get('BenchmarkTest00437', '')
-        
+
         bar = ""
         num = 86
         if (7 * 42) - num > 200:

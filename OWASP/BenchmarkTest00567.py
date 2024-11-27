@@ -10,7 +10,7 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = "text/html;charset=UTF-8"
     param = ""
     flag = True
@@ -25,7 +25,7 @@ def benchmark_test():
                     break
         if not flag:
             break
-    
+
     bar = ""
     if param:
         bar = base64.b64decode(base64.b64encode(param.encode())).decode()

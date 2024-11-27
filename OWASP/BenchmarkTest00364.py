@@ -14,7 +14,7 @@ def benchmark_test():
 
 def benchmark_test_post():
     param = request.args.get("BenchmarkTest00364", "")
-    
+
     bar = "alsosafe"
     if param:
         values_list = ["safe", param, "moresafe"]
@@ -31,7 +31,7 @@ def benchmark_test_post():
 
     except Exception as e:
         print(f"Couldn't open FileOutputStream on file: '{file_name}'")
-    
+
     finally:
         if fos:
             try:

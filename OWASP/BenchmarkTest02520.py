@@ -49,7 +49,7 @@ def benchmark_test():
     except Exception as e:
         print("Problem executing SecureRandom.random() - TestCase")
         raise e
-    
+
     response.set_data(response.get_data(as_text=True) + "Weak Randomness Test executed")
     return response
 

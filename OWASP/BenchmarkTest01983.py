@@ -17,7 +17,7 @@ def benchmark_test():
     for header in request.headers:
         if header in ['User-Agent', 'Accept', 'Accept-Language', 'Content-Type']:  # Common headers, update as needed
             continue  # If standard header, move on to next one
-        
+
         param = header  # Grabs the name of the first non-standard header as the parameter
         break
 
@@ -25,7 +25,7 @@ def benchmark_test():
 
     file_target = os.path.join(TESTFILES_DIR, bar)
     response.body = f"Access to file: '{file_target}' created."
-    
+
     if os.path.exists(file_target):
         response.body += " And file already exists."
     else:

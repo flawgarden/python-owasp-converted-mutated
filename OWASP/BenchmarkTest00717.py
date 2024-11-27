@@ -16,16 +16,16 @@ def benchmark_test():
     values = request.values.getlist("BenchmarkTest00717")
     param = values[0] if values else ""
 
-    a59129 = param 
-    b59129 = a59129 + " SafeStuff" 
-    b59129 = b59129[:-5] + "Chars" 
-    map59129 = {'key59129': b59129} 
-    c59129 = map59129['key59129'] 
-    d59129 = c59129[:-1] 
-    e59129 = base64.b64decode(base64.b64encode(d59129.encode())).decode() 
-    f59129 = e59129.split(" ")[0] 
+    a59129 = param
+    b59129 = a59129 + " SafeStuff"
+    b59129 = b59129[:-5] + "Chars"
+    map59129 = {'key59129': b59129}
+    c59129 = map59129['key59129']
+    d59129 = c59129[:-1]
+    e59129 = base64.b64decode(base64.b64encode(d59129.encode())).decode()
+    f59129 = e59129.split(" ")[0]
     thing = create_thing()
-    g59129 = "barbarians_at_the_gate" 
+    g59129 = "barbarians_at_the_gate"
     bar = thing.do_something(g59129)
 
     response.headers['X-XSS-Protection'] = '0'

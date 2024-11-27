@@ -21,12 +21,12 @@ def benchmark_test():
 
     file_target = os.path.join('path/to/test/files/directory', bar)
     response = f"Access to file: '{file_target}' created."
-    
+
     if os.path.exists(file_target):
         response += " And file already exists."
     else:
         response += " But file doesn't exist yet."
-    
+
     return response
 
 if __name__ == "__main__":

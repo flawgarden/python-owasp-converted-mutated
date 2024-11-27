@@ -25,7 +25,7 @@ def benchmark_test():
 
     file_target = os.path.join('testfiles', bar)
     response.data = f"Access to file: '{escape(file_target)}' created."
-    
+
     if os.path.exists(file_target):
         response.data += " And file already exists."
     else:

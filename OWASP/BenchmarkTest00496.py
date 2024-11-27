@@ -33,7 +33,7 @@ def benchmark_test_post():
     except Exception as e:
         print("Problem executing cmdi - TestCase")
         response += str(e)
-    
+
     response += "</body></html>"
     return response
 

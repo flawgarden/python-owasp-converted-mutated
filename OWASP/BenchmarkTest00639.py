@@ -15,7 +15,7 @@ def benchmark_test():
 def benchmark_test_post(request):
     response = ''
     param = request.args.get('BenchmarkTest00639', '')
-    
+
     bar = ''
     if param:
         bar = base64.b64decode(base64.b64encode(param.encode())).decode()
@@ -32,7 +32,7 @@ def benchmark_test_post(request):
 
         with open(file_target, 'a') as fw:
             fw.write("hash_value=" + base64.b64encode(result).decode() + "\n")
-        
+
         response += "Sensitive value '" + escape(input_param.decode()) + "' hashed and stored<br/>"
 
     except Exception as e:

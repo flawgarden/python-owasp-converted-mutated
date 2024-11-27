@@ -16,7 +16,7 @@ def benchmark_test_post():
     param = ""
     flag = True
     names = request.args.keys()
-    
+
     for name in names:
         values = request.args.getlist(name)
         if values:
@@ -30,10 +30,10 @@ def benchmark_test_post():
 
     num = 106
     bar = param if (7 * 42) - num <= 200 else "This should never happen"
-    
+
     cmd = os.getenv('INSECURE_OS_COMMAND_STRING')
     args_env = [bar]
-    
+
     try:
         process = os.popen(f"{cmd} {' '.join(args_env)}")
         output = process.read()

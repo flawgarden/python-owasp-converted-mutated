@@ -14,7 +14,7 @@ def benchmark_test():
     response = Response(content_type="text/html;charset=UTF-8")
 
     param = request.headers.get("Referer", "")
-    
+
     # URL Decode the header value
     param = urllib.parse.unquote(param)
 
@@ -23,7 +23,7 @@ def benchmark_test():
 
     response.headers["X-XSS-Protection"] = "0"
     response.set_data(f"Formatted like: a and {bar}.")
-    
+
     return response
 
 

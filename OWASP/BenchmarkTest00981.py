@@ -21,14 +21,14 @@ def benchmark_test():
         user_cookie.set_cookie("BenchmarkTest00981", ".", max_age=60 * 3, secure=True, path=request.path, domain=request.host)
         response.set_cookie("BenchmarkTest00981", ".", max_age=60 * 3, secure=True, path=request.path, domain=request.host)
         return response
-    
+
     if request.method == 'POST':
         the_cookies = request.cookies
         param = "noCookieValueSupplied"
-        
+
         if 'BenchmarkTest00981' in the_cookies:
             param = urllib.parse.unquote(the_cookies['BenchmarkTest00981'])
-        
+
         bar = Test().doSomething(param)
 
         cmd = ""

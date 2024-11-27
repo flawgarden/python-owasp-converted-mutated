@@ -17,7 +17,7 @@ def benchmark_test_post():
     response = make_response()
     param = ""
     for name in request.headers:
-        if name in common_headers(): 
+        if name in common_headers():
             continue
 
         param = name
@@ -27,7 +27,7 @@ def benchmark_test_post():
 
     try:
         stuff = random.Random().gauss(0, 1)
-        remember_me_key = str(stuff).split('.')[1]  
+        remember_me_key = str(stuff).split('.')[1]
 
         user = "SafeGayle"
         test_case_number = "01139"

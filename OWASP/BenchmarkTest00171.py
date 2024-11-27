@@ -10,10 +10,10 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = app.response_class()
     param = request.headers.get('BenchmarkTest00171', '')
-    
+
     param = urllib.parse.unquote(param)
 
     bar = "safe!"
@@ -52,7 +52,7 @@ def benchmark_test():
         print("Problem executing cmdi - TestCase")
         response.data = str(e).encode('utf-8')
         response.mimetype = 'text/html;charset=UTF-8'
-    
+
     return response
 
 @app.errorhandler(404)

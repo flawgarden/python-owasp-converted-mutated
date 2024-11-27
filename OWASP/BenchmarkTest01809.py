@@ -38,7 +38,7 @@ class Test:
         d64594 = c64594[:-1]
         e64594 = b64decode(b64encode(d64594.encode())).decode()
         f64594 = e64594.split(" ")[0]
-        
+
         thing = create_thing()  # Assuming this creates a thing-like object
         g64594 = "barbarians_at_the_gate"
         bar = thing.do_something(g64594)

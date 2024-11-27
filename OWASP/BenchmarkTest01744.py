@@ -22,7 +22,7 @@ def benchmark_test():
         response += " And file already exists."
     else:
         response += " But file doesn't exist yet."
-    
+
     return response
 
 class Test:

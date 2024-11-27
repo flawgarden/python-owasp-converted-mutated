@@ -25,7 +25,7 @@ class Test:
         a58724 = param
         b58724 = str(a58724) + " SafeStuff"
         b58724 = b58724[:-5] + "Chars"
-        
+
         map58724 = {'key58724': b58724}
         c58724 = map58724['key58724']
         d58724 = c58724[:-1]

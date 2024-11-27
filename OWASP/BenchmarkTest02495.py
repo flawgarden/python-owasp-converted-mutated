@@ -23,7 +23,7 @@ def benchmark_test_post():
     response.headers['X-XSS-Protection'] = '0'
     length = len(bar) if bar else 1
     response.data = bar[:length]
-    
+
     return response
 
 def do_something(request, param):

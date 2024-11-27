@@ -9,7 +9,7 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test_post()
-    
+
     return benchmark_test_post()
 
 def benchmark_test_post():

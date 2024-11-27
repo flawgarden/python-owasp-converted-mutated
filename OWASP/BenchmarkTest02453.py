@@ -16,7 +16,7 @@ def benchmark_test_post():
     response = ""
     param = request.args.get("BenchmarkTest02453", "")
     bar = do_something(param)
-    
+
     sql = "SELECT TOP 1 userid from USERS where USERNAME='foo' and PASSWORD='{}'".format(bar)
     try:
         results = query_for_map(sql)
@@ -40,7 +40,7 @@ def do_something(param):
 
 def query_for_map(sql):
     # Your database query implementation goes here
-    pass 
+    pass
 
 def encode_for_html(value):
     return value.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')

@@ -11,7 +11,7 @@ def benchmark_test():
     elif request.method == 'POST':
         response = Response()
         response.headers['Content-Type'] = 'text/html;charset=UTF-8'
-        
+
         param = request.form.get('BenchmarkTest00395', "")
         bar = ""
         if param:

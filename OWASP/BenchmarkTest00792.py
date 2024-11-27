@@ -33,7 +33,7 @@ def do_post(request):
     map_53005["keyA-53005"] = "a_Value"
     map_53005["keyB-53005"] = param
     map_53005["keyC"] = "another_Value"
-    
+
     bar = map_53005["keyB-53005"]
     bar = map_53005["keyA-53005"]
 

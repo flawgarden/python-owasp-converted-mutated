@@ -25,11 +25,11 @@ def benchmark_test():
 
         result = md.digest()
         file_target = os.path.join('testfiles', 'passwordFile.txt')
-        
+
         with open(file_target, 'a') as fw:
             fw.write("hash_value=" + base64.b64encode(result).decode('utf-8') + "\n")
-        
-        response_body = ("Sensitive value '" + escape_html(input_param.decode('utf-8')) + 
+
+        response_body = ("Sensitive value '" + escape_html(input_param.decode('utf-8')) +
                          "' hashed and stored<br/>")
 
     except Exception as e:
@@ -40,7 +40,7 @@ def benchmark_test():
     return response_body
 
 class Test:
-    
+
     def do_something(self, request, param):
         bar = None
         guess = "ABC"

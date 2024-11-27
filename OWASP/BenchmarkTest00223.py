@@ -38,9 +38,9 @@ def benchmark_test_post():
         file_target = os.path.join("path_to_your_testfiles_directory", "passwordFile.txt")
         with open(file_target, "a") as fw:  # the true will append the new data
             fw.write(f"hash_value={base64.b64encode(result).decode('utf-8')}\n")
-        
+
         return f"Sensitive value '{input_data.decode('utf-8')}' hashed and stored<br/>"
-    
+
     except Exception as e:
         print("Problem executing hash - TestCase java.security.MessageDigest.getInstance(java.lang.String,java.security.Provider)")
         raise RuntimeError(e)

@@ -13,7 +13,7 @@ def benchmark_test_02325():
 
 def benchmark_test_post():
     response = Response(content_type="text/html;charset=UTF-8")
-    
+
     param = ""
     flag = True
     names = request.args.keys()

@@ -10,8 +10,8 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         response = make_response(render_template("sqli-04/BenchmarkTest01877.html"))
-        user_cookie = ('BenchmarkTest01877', 'verifyUserPassword%28%27foo%27%2C%27bar%27%29', 
-                       {'max_age': 60 * 3, 'secure': True, 'path': request.path, 
+        user_cookie = ('BenchmarkTest01877', 'verifyUserPassword%28%27foo%27%2C%27bar%27%29',
+                       {'max_age': 60 * 3, 'secure': True, 'path': request.path,
                         'domain': request.host})
         response.set_cookie(*user_cookie)
         return response
@@ -47,7 +47,7 @@ def do_something(param):
         bar = param
     else:
         bar = "bob's your uncle"
-    
+
     return bar
 
 def get_sql_connection():

@@ -51,7 +51,7 @@ def benchmark_test():
         raise e
     finally:
         response.data += "Randomness Test executed"
-    
+
     return response
 
 

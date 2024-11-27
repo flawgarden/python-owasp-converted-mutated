@@ -12,7 +12,7 @@ def benchmark_test():
         return benchmark_test()
 
     response = make_response()
-    
+
     param = ""
     flag = True
     names = request.args.keys()
@@ -50,7 +50,7 @@ def benchmark_test():
             response.data = f"{user} has been remembered with cookie: {cookie_name} whose value is: {remember_me_key}<br/>"
     except Exception as e:
         response.data = "Problem executing SecureRandom.nextBytes() - TestCase"
-    
+
     response.data += "Randomness Test executed"
     return response
 

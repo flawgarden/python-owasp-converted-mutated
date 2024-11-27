@@ -23,7 +23,7 @@ def benchmark_test():
 
     input_data = b""
     str_value = "?"
-    
+
     if isinstance(param, str):
         str_value = param
     elif isinstance(param, bytes):

@@ -47,7 +47,7 @@ def print_os_command_results(process):
 
 def escape_html(string):
     return string.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-    
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template("404.html")

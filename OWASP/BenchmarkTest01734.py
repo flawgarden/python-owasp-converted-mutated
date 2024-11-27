@@ -22,7 +22,7 @@ def benchmark_test_post():
     if param_loc == -1:
         return "getQueryString() couldn't find expected parameter 'BenchmarkTest01734' in query string."
 
-    param = query_string[param_loc + len(paramval):] 
+    param = query_string[param_loc + len(paramval):]
     ampersand_loc = query_string.find("&", param_loc)
 
     if ampersand_loc != -1:
@@ -43,7 +43,7 @@ def benchmark_test_post():
 
         for value in node_list:
             output += f"{value.text}<br/>"
-        
+
         return output
 
     except ET.ParseError as e:

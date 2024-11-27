@@ -20,7 +20,7 @@ def benchmark_test():
                         break
             if not flag:
                 break
-        
+
         bar = do_something(param)
 
         response = app.response_class(

@@ -18,7 +18,7 @@ def benchmark_test_post():
     param_loc = query_string.find(paramval)
     if param_loc == -1:
         return "getQueryString() couldn't find expected parameter 'BenchmarkTest02633' in query string."
-    
+
     param = query_string[param_loc + len(paramval):]
     ampersand_loc = query_string.find("&", param_loc)
     if ampersand_loc != -1:
@@ -46,7 +46,7 @@ def do_something(param):
     d12213 = c12213[:-1]
     e12213 = d12213.encode().decode('utf-8')  # B64 encode and decode it
     f12213 = e12213.split(" ")[0]
-    
+
     thing = create_thing()
     g12213 = "barbarians_at_the_gate"
     bar = thing.do_something(g12213)

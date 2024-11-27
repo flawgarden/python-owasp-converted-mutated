@@ -32,7 +32,7 @@ def benchmark_test_post():
     sql = "INSERT INTO users (username, password) VALUES ('foo', ?)"
 
     try:
-        conn = sqlite3.connect('database.db') 
+        conn = sqlite3.connect('database.db')
         cursor = conn.cursor()
         cursor.execute(sql, (bar,))
         conn.commit()

@@ -10,7 +10,7 @@ app.config['DEBUG'] = True
 def benchmark_test00762():
     if request.method == 'GET':
         return benchmark_test00762_post()
-    
+
     return render_template("index.html")
 
 def benchmark_test00762_post():

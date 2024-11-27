@@ -13,7 +13,7 @@ def benchmark_test():
         user_cookie.set_cookie("BenchmarkTest00097", "color", max_age=60 * 3, secure=True, path=request.path, domain=request.host.split(':')[0])
         response.set_cookie("BenchmarkTest00097", "color", max_age=60 * 3, secure=True)
         return response
-    
+
     else:
         the_cookies = request.cookies
         param = "noCookieValueSupplied"

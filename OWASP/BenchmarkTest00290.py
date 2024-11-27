@@ -14,7 +14,7 @@ def benchmark_test():
 def benchmark_test_post():
     param = ""
     referer = request.headers.get("Referer")
-    
+
     if referer:
         param = referer
 
@@ -23,7 +23,7 @@ def benchmark_test_post():
     sbxyz73567 = param + "_SafeStuff"
     response = make_response(sbxyz73567)
     response.headers['X-XSS-Protection'] = '0'
-    
+
     return response
 
 @app.errorhandler(404)

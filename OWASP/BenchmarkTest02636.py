@@ -37,7 +37,7 @@ def benchmark_test():
         cursor.execute(sql, ("foo",))
         results = cursor.fetchall()
         connection.close()
-        
+
         return render_template("results.html", results=results)
     except sqlite3.Error as e:
         return "Error processing request.", 500

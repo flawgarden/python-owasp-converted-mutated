@@ -44,9 +44,9 @@ def benchmark_test_00528_post():
             start_uri_slashes + os.path.abspath('TESTFILES_DIR').replace('\\', os.path.sep).replace(' ', '_') + bar
         )
         file_target = urllib.parse.urlparse(file_uri).path
-        
+
         response_text = f"Access to file: '{file_target}' created."
-        
+
         if os.path.exists(file_target):
             response_text += " And file already exists."
         else:

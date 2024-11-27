@@ -19,10 +19,10 @@ def benchmark_test():
 
 def benchmark_test_post():
     response = "text/html;charset=UTF-8"
-    
+
     param = request.headers.get("BenchmarkTest00008", "")
     param = urllib.parse.unquote(param)
-    
+
     sql = "{call " + param + "}"
 
     try:

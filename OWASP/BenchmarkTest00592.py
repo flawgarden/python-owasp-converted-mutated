@@ -29,7 +29,7 @@ def benchmark_test_post():
     a36502 = param
     b36502 = a36502 + " SafeStuff"
     b36502 = b36502[:-len("Chars")] + "Chars"
-    
+
     map36502 = {"key36502": b36502}
     c36502 = map36502["key36502"]
     d36502 = c36502[:-1]

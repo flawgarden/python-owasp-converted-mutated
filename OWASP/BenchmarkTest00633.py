@@ -45,10 +45,10 @@ def benchmark_test_post():
     try:
         hash_value = hashlib.sha384(bar.encode()).digest()
         file_target = os.path.join('testfiles', 'passwordFile.txt')
-        
+
         with open(file_target, 'a') as fw:
             fw.write(f"hash_value={base64.b64encode(hash_value).decode()}\n")
-            
+
         return f"Sensitive value '{base64.b64encode(param.encode()).decode()}' hashed and stored<br/>"
 
     except Exception as e:

@@ -13,7 +13,7 @@ def benchmark_test():
     response.headers['Content-Type'] = "text/html;charset=UTF-8"
 
     param = request.form.get("BenchmarkTest01256", "")
-    
+
     bar = Test().do_something(request, param)
 
     response.headers['X-XSS-Protection'] = "0"

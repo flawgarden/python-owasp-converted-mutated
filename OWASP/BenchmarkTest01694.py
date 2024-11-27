@@ -17,7 +17,7 @@ def benchmark_test():
     query_string = request.query_string.decode()
     paramval = "BenchmarkTest01694="
     param_loc = query_string.find(paramval)
-  
+
     if param_loc == -1:
         return "getQueryString() couldn't find expected parameter 'BenchmarkTest01694' in query string."
 

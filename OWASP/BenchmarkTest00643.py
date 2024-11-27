@@ -13,14 +13,14 @@ def benchmark_test():
 def benchmark_test_post():
     param = request.args.get("BenchmarkTest00643", "")
     bar = param + "_SafeStuff"
-    
+
     response = app.response_class(
         response=bar,
         status=200,
         mimetype='text/html'
     )
     response.headers['X-XSS-Protection'] = '0'
-    
+
     return response
 
 if __name__ == "__main__":

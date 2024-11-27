@@ -14,11 +14,11 @@ def benchmark_test():
 
 def benchmark_test_post():
     response = {"Content-Type": "text/html;charset=UTF-8"}
-    
+
     param = request.values.get("BenchmarkTest01795")
-    
+
     bar = Test().do_something(request, param)
-    
+
     cmd = get_insecure_os_command_string()
     args = [cmd]
     args_env = [bar]
@@ -32,7 +32,7 @@ def benchmark_test_post():
         return escape_html(str(e))
 
 class Test:
-    
+
     def do_something(self, request, param):
         bar = ""
         if param is not None:
@@ -44,7 +44,7 @@ class Test:
             values_list.pop(0)  # remove the 1st safe value
 
             bar = values_list[0]  # get the param value
-        
+
         return bar
 
 def get_insecure_os_command_string():

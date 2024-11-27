@@ -25,7 +25,7 @@ def benchmark_test():
 
     str_value = param if isinstance(param, str) else "No cookie value supplied"
     cookie = f'SomeCookie={str_value}; Path={request.path}; Secure; HttpOnly'
-    
+
     response.set_cookie("SomeCookie", str_value, secure=True, httponly=True, path=request.path)
 
     response.data = f"Created cookie: 'SomeCookie': with value: '{escape(str_value)}' and secure flag set to: true"
@@ -38,9 +38,9 @@ def do_something(request, param):
 
 
 def common_headers():
-    return set(['Accept', 'Accept-Charset', 'Accept-Encoding', 'Accept-Language', 
-                'Authorization', 'Cache-Control', 'Connection', 'Cookie', 
-                'Content-Length', 'Content-Type', 'DNT', 'Host', 'If-Modified-Since', 
+    return set(['Accept', 'Accept-Charset', 'Accept-Encoding', 'Accept-Language',
+                'Authorization', 'Cache-Control', 'Connection', 'Cookie',
+                'Content-Length', 'Content-Type', 'DNT', 'Host', 'If-Modified-Since',
                 'If-None-Match', 'Origin', 'Referer', 'User-Agent', 'Upgrade-Insecure-Requests'])
 
 

@@ -20,7 +20,7 @@ def benchmark_test_post():
     if param_loc == -1:
         return f"getQueryString() couldn't find expected parameter '{paramval.strip('=')}' in query string."
 
-    param = query_string[param_loc + len(paramval):] 
+    param = query_string[param_loc + len(paramval):]
     ampersand_loc = query_string.find("&", param_loc)
 
     if ampersand_loc != -1:
@@ -37,10 +37,10 @@ def benchmark_test_post():
         file_name = os.path.join("testfiles", bar)  # Ensure "testfiles" directory exists
         fos = open(file_name, 'wb')
         return f"Now ready to write to file: {file_name}"
-    
+
     except Exception as e:
         print(f"Couldn't open FileOutputStream on file: '{file_name}'")
-    
+
     finally:
         if fos is not None:
             try:

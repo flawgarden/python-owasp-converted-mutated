@@ -9,19 +9,19 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = make_response()
     response.headers['Content-Type'] = "text/html;charset=UTF-8"
-    
+
     param = request.values.get('BenchmarkTest01351', '')
-    
+
     bar = Test().do_something(param)
-    
+
     response.headers['X-XSS-Protection'] = "0"
-    
+
     if bar:
         response.set_data(bar)
-    
+
     return response
 
 class Test:

@@ -11,7 +11,7 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     param = request.args.get('BenchmarkTest01367', default='', type=str)
 
     bar = Test().do_something(request, param)
@@ -19,7 +19,7 @@ def benchmark_test():
     try:
         random_bytes = bytearray(random.getrandbits(8) for _ in range(40))
         remember_me_key = base64.b64encode(random_bytes).decode('utf-8')
-        
+
         user = "SafeByron"
         test_case_number = "01367"
         user += test_case_number
@@ -35,8 +35,8 @@ def benchmark_test():
         if found_user:
             return "Welcome back: " + user + "<br/>"
         else:
-            response = make_response(user + " has been remembered with cookie: " 
-                                     + cookie_name + " whose value is: " 
+            response = make_response(user + " has been remembered with cookie: "
+                                     + cookie_name + " whose value is: "
                                      + remember_me_key + "<br/>")
             response.set_cookie(cookie_name, remember_me_key, secure=True, httponly=True, path=request.path)
             request.environ['werkzeug.session'] = remember_me_key
@@ -44,7 +44,7 @@ def benchmark_test():
     except Exception as e:
         print("Problem executing random number generation - TestCase")
         raise
-    
+
     finally:
         print("Randomness Test executed")
 

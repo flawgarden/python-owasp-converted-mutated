@@ -27,7 +27,7 @@ def benchmark_test_post():
 
     response.headers['X-XSS-Protection'] = '0'
     response.data = f"Formatted like: {bar} and b."
-    
+
     return response
 
 @app.errorhandler(404)

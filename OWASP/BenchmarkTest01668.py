@@ -14,7 +14,7 @@ def benchmark_test_post():
     query_string = request.query_string.decode('utf-8')
     paramval = "BenchmarkTest01668="
     param_loc = query_string.find(paramval)
-    
+
     if param_loc == -1:
         return f"getQueryString() couldn't find expected parameter '{paramval[:-1]}' in query string."
 
@@ -23,7 +23,7 @@ def benchmark_test_post():
 
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
-    
+
     param = param.replace('+', ' ')  # URL decode process
     bar = Test().do_something(param)
 

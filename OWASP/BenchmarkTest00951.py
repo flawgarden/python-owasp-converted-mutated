@@ -24,7 +24,7 @@ def benchmark_test():
                 if cookie_name == "BenchmarkTest00951":
                     param = urllib.parse.unquote(cookie_value)
                     break
-        
+
         bar = Test().do_something(request, param)
 
         start_uri_slashes = "/" if os.name == "nt" else "//"

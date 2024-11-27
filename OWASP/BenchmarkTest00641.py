@@ -16,13 +16,13 @@ def benchmark_test():
 def benchmark_test_post():
     bar = ""
     param = request.args.get("BenchmarkTest00641", "")
-    
+
     num = 196
     if (500 / 42) + num > 200:
         bar = param
     else:
         bar = "This should never happen"
-        
+
     try:
         algorithm = "SHA256"  # default algorithm
         # Load properties would typically involve reading from a file.

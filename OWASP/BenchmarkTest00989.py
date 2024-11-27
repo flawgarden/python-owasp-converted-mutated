@@ -14,7 +14,7 @@ def benchmark_test():
         user_cookie.set_cookie('BenchmarkTest00989', 'whatever', max_age=60 * 3, secure=True, path=request.path, domain=request.host)
         response.set_cookie('BenchmarkTest00989', value='whatever', max_age=60 * 3, secure=True)
         return response
-        
+
     if request.method == 'POST':
         the_cookies = request.cookies
         param = "noCookieValueSupplied"
@@ -63,7 +63,7 @@ class Test:
         d36538 = c36538[:-1]
         e36538 = d36538.encode('utf-8').decode('utf-8')
         f36538 = e36538.split(" ")[0]
-        
+
         thing = ThingFactory.create_thing()
         bar = thing.do_something(f36538)
 

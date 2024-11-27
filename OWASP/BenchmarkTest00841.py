@@ -18,7 +18,7 @@ def benchmark_test_00841_post():
     query_string = request.query_string.decode()
     paramval = "BenchmarkTest00841="
     param_loc = query_string.find(paramval)
-    
+
     if param_loc == -1:
         return "getQueryString() couldn't find expected parameter 'BenchmarkTest00841' in query string."
 
@@ -27,7 +27,7 @@ def benchmark_test_00841_post():
 
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
-    
+
     param = urllib.parse.unquote(param)
 
     bar = ""
@@ -48,7 +48,7 @@ def benchmark_test_00841_post():
 
         # Placeholder for the actual database call
         # DatabaseHelper.JDBCtemplate.batchUpdate(sql)
-        
+
         return f"No results can be displayed for query: {sql}<br> because the Spring batchUpdate method doesn't return results."
     except Exception as e:
         return "Error processing request."

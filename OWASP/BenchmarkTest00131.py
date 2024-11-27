@@ -35,7 +35,7 @@ def benchmark_test_post():
         output += " And file already exists."
     else:
         output += " But file doesn't exist yet."
-    
+
     return output
 
 @app.errorhandler(404)

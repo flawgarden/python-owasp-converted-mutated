@@ -12,11 +12,11 @@ def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
     response = make_response()
-    
+
     param = ""
     if request.headers.get("BenchmarkTest01931"):
         param = request.headers.get("BenchmarkTest01931")
-    
+
     param = param.replace("%20", " ")  # URL decode
 
     bar = do_something(param)
@@ -59,11 +59,11 @@ def do_something(param):
     d40465 = c40465[:-1]
     e40465 = base64.b64decode(base64.b64encode(d40465.encode())).decode()  # B64 encode and decode
     f40465 = e40465.split(" ")[0]
-    
+
     # Simulate reflection - adapt as necessary for your own implementation
     # Here you would call your actual method instead
-    bar = f"Reflected value: {f40465}"  
-    
+    bar = f"Reflected value: {f40465}"
+
     return bar
 
 

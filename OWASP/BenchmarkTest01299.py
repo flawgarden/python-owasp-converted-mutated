@@ -29,7 +29,7 @@ class Test:
         return Thing()
 
 class Thing:
-    
+
     def do_something(self, param):
         # This is a placeholder for the actual implementation
         return param  # Replace as necessary for actual logic

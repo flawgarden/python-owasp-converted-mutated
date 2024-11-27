@@ -18,7 +18,7 @@ def benchmark_test():
         param = "noCookieValueSupplied"
         if "BenchmarkTest01875" in the_cookies:
             param = the_cookies["BenchmarkTest01875"]
-        
+
         bar = do_something(request, param)
         request.session[bar] = "10340"
 

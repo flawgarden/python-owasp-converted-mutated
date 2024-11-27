@@ -27,13 +27,13 @@ def benchmark_test_post():
     else:
         arg_list.append("sh")
         arg_list.append("-c")
-    
+
     arg_list.append("echo " + bar)
 
     process = os.popen(' '.join(arg_list))
     results = process.read()
     process.close()
-    
+
     return results
 
 def do_something(param):

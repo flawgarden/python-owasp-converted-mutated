@@ -23,7 +23,7 @@ def do_something(param):
     bar = param
     if param and len(param) > 1:
         bar = param[:-1] + 'Z'
-    
+
     return bar
 
 if __name__ == '__main__':

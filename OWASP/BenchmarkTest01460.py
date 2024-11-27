@@ -43,7 +43,7 @@ def benchmark_test_post():
         return "Error processing request.", 500
 
 class Test:
-    
+
     def do_something(self, request, param):
         bar = "safe!"
         map_ = {
@@ -52,7 +52,7 @@ class Test:
             "keyC": "another-Value"
         }
         bar = map_.get("keyB-72098")
-        
+
         return bar
 
 if __name__ == "__main__":

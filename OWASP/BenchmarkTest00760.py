@@ -32,12 +32,12 @@ def benchmark_test():
         results = cursor.fetchall()
         for result in results:
             response.write(str(result))
-        
+
         connection.close()
 
     except Exception as e:
         response.write("Error processing request.")
-    
+
     return response
 
 if __name__ == "__main__":

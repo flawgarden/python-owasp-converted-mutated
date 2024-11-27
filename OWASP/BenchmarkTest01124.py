@@ -17,29 +17,29 @@ def benchmark_test():
     for name in request.headers:
         if name in common_headers():
             continue
-        
+
         param = name
         break
 
     bar = Test().do_something(request, param)
-    
+
     try:
         algorithm = "SHA512"  # Default algorithm
         md = hashlib.new(algorithm)
         input_data = b'?'
-        
+
         if isinstance(bar, str):
             input_data = bar.encode()
         elif isinstance(bar, bytes):
             input_data = bar
-        
+
         md.update(input_data)
         result = md.digest()
-        
+
         file_target = os.path.join("testfiles", "passwordFile.txt")
         with open(file_target, 'a') as fw:
             fw.write("hash_value=" + encode_for_base64(result) + "\n")
-        
+
         response.data = f"Sensitive value '{encode_for_html(input_data.decode())}' hashed and stored<br/>"
     except Exception as e:
         print("Problem executing hash - TestCase")

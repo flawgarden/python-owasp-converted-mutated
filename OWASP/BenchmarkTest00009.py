@@ -16,11 +16,11 @@ def benchmark_test():
 def benchmark_test_post():
     response = ""
     param = ""
-    
+
     for name in request.headers:
         if name in ['User-Agent', 'Accept', 'Accept-Language', 'Accept-Encoding', 'Connection']:
             continue
-        
+
         param = name
         break
 
@@ -29,18 +29,18 @@ def benchmark_test_post():
     input_data = b'?'
     if isinstance(param, str):
         input_data = param.encode()
-    
+
     md.update(input_data)
 
     result = md.digest()
-    
+
     file_target = os.path.join('testfiles', 'passwordFile.txt')
     with open(file_target, 'a') as fw:
         fw.write(f"hash_value={base64.b64encode(result).decode()}\n")
-    
+
     response += f"Sensitive value '{param}' hashed and stored<br/>"
     response += "Hash Test executed"
-    
+
     return response
 
 @app.errorhandler(404)

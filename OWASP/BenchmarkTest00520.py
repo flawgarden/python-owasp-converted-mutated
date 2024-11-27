@@ -32,7 +32,7 @@ def benchmark_test():
         result = xmlDocument.find(expression)
 
         response.data = f"Your query results are: {ET.tostring(result).decode() if result is not None else 'No results found!'}<br/>"
-    
+
     except Exception as e:
         response.data = f"Error parsing XPath input: '{bar}'"
         raise e

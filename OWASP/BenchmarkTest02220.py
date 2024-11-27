@@ -29,18 +29,18 @@ def benchmark_test_post():
         algorithm = 'SHA5'  # Placeholder for the hash algorithm logic
         if algorithm == 'SHA5':
             algorithm = 'sha256'
-        
+
         md = hashlib.new(algorithm)
         input_data = bar.encode() if isinstance(bar, str) else bar
-        
+
         md.update(input_data)
 
         result = md.digest()
         file_target = os.path.join("uploads", "passwordFile.txt")
-        
+
         with open(file_target, 'ab') as fw:
             fw.write(b"hash_value=" + base64.b64encode(result) + b"\n")
-        
+
         response.set_data(f"Sensitive value '{html_escape(input_data.decode())}' hashed and stored<br/>")
 
     except Exception as e:

@@ -14,7 +14,7 @@ def benchmark_test():
 def process_request(request):
     response = app.response_class()
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
-    
+
     param = request.args.get("BenchmarkTest00644", "")
     if not param:
         param = ""

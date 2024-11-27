@@ -29,7 +29,7 @@ def benchmark_test_post():
     response.headers['X-XSS-Protection'] = '0'
     if bar is not None:
         response.set_data(bar)
-    
+
     return response
 
 def do_something(param):

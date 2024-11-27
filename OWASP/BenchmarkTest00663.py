@@ -10,7 +10,7 @@ app.config['DEBUG'] = True
 def benchmark_test_00663():
     if request.method == 'GET':
         return benchmark_test_00663()
-    
+
     param = request.form.get("BenchmarkTest00663", "")
     bar = "safe!"
     map67527 = {

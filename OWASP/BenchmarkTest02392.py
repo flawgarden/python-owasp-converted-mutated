@@ -11,7 +11,7 @@ app.config['DEBUG'] = True
 def benchmark_test_02392():
     if request.method == 'GET':
         return benchmark_test_02392_post(request)
-    
+
     return benchmark_test_02392_post(request)
 
 def benchmark_test_02392_post(request):
@@ -25,19 +25,19 @@ def benchmark_test_02392_post(request):
     input_data = b'?'
     if isinstance(bar, str):
         input_data = bar.encode()
-    
+
     try:
         md = hashlib.new(algorithm)
         md.update(input_data)
 
         result = md.digest()
         file_target = os.path.join('testfiles', 'passwordFile.txt')
-        
+
         with open(file_target, 'a') as fw:
             fw.write("hash_value=" + base64.b64encode(result).decode('utf-8') + "\n")
 
         response += "Sensitive value '" + escape_html(input_data.decode('utf-8')) + "' hashed and stored<br/>"
-    
+
     except Exception as e:
         print("Problem executing hash - TestCase")
         return str(e)

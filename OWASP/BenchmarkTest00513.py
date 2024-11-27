@@ -12,7 +12,7 @@ def benchmark_test():
         response.headers['Content-Type'] = 'text/html;charset=UTF-8'
 
         param = request.form.get("BenchmarkTest00513", "")
-        
+
         bar = "safe!"
         map63945 = {
             "keyA-63945": "a_Value",
@@ -34,7 +34,7 @@ def benchmark_test():
         except sqlite3.Error as e:
             response.data = "Error processing request."
             return response
-        
+
     return render_template("index.html")
 
 if __name__ == "__main__":

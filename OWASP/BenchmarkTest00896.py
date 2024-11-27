@@ -9,9 +9,9 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     param = request.form.get('BenchmarkTest00896')
-    
+
     if (7 * 42) - 86 > 200:
         bar = "This_should_always_happen"
     else:
@@ -25,12 +25,12 @@ def benchmark_test():
     else:
         arg_list.append("sh")
         arg_list.append("-c")
-    
+
     arg_list.append(f"echo {bar}")
 
     process = os.popen(' '.join(arg_list))
     results = process.read()
-    
+
     return render_template("index.html", results=results)
 
 @app.errorhandler(404)

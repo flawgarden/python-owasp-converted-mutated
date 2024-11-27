@@ -25,7 +25,7 @@ def benchmark_test_post():
         input_data = b'?'  # Default input
         if isinstance(bar, str):
             input_data = bar.encode()
-        
+
         md.update(input_data)
 
         result = md.digest()
@@ -35,7 +35,7 @@ def benchmark_test_post():
             fw.write(b"hash_value=" + base64.b64encode(result) + b"\n")
 
         response_message = f"Sensitive value '{html_escape(input_data.decode())}' hashed and stored<br/>"
-        
+
     except Exception as e:
         print("Problem executing hash - TestCase")
         raise

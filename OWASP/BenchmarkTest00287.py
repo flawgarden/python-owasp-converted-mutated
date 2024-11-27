@@ -13,7 +13,7 @@ def benchmark_test_00287():
 
 def benchmark_test_00287_post():
     response = Response(content_type="text/html;charset=UTF-8")
-    
+
     param = ""
     referer = request.headers.get('Referer')
 

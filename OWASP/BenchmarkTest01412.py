@@ -35,7 +35,7 @@ def benchmark_test():
             fw.write("hash_value=" + result.hex() + "\n")
 
         return render_template("index.html", message="Sensitive value '" + str(input_param.decode('utf-8')) + "' hashed and stored<br/>")
-        
+
     except Exception as e:
         print("Problem executing hash - TestCase")
         raise

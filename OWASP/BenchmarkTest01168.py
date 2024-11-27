@@ -31,7 +31,7 @@ def benchmark_test_post():
 
         result = md.digest()
         file_target = os.path.join('uploads/', 'passwordFile.txt')
-        
+
         with open(file_target, 'ab') as fw:
             fw.write(b"hash_value=" + result + b"\n")
 

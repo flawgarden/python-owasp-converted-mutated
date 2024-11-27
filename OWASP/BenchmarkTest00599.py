@@ -21,7 +21,7 @@ def benchmark_test():
                     if value == "BenchmarkTest00599":
                         param = name
                         flag = False
-            
+
             a99467 = param
             b99467 = a99467 + " SafeStuff"
             b99467 = b99467[:-5] + "Chars"

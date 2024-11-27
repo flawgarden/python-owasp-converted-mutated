@@ -9,14 +9,14 @@ app = Flask(__name__, static_url_path='/static', static_folder='static')
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     param = request.headers.get("BenchmarkTest01036", "")
     param = urllib.parse.unquote(param)
 
     bar = Test().do_something(request, param)
-    
+
     file_name = os.path.join("testfiles", bar)
-    
+
     try:
         return send_file(file_name, as_attachment=False)
     except Exception as e:
@@ -32,7 +32,7 @@ class Test:
         }
         bar = map_8487.get("keyB-8487")
         bar = map_8487.get("keyA-8487")
-        
+
         return bar
 
 if __name__ == "__main__":

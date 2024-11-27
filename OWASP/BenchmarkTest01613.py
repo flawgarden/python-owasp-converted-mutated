@@ -42,7 +42,7 @@ def benchmark_test():
             remember_me_cookie.set_cookie(cookie_name, remember_me_key, secure=True, httponly=True, path=request.path)
             request.session[cookie_name] = remember_me_key
             response.data = f"{user} has been remembered with cookie: {cookie_name} whose value is: {remember_me_key}<br/>"
-        
+
     except Exception as e:
         print("Problem executing SecureRandom.nextInt() - TestCase")
         raise e

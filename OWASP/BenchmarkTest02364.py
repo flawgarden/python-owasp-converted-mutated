@@ -15,7 +15,7 @@ def benchmark_test_post():
     param = ""
     flag = True
     names = request.args.keys()
-    
+
     for name in names:
         if flag:
             values = request.args.getlist(name)

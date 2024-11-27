@@ -27,17 +27,17 @@ def benchmark_test_post(request):
         input_data = b'?'
         if isinstance(bar, str):
             input_data = bar.encode()
-        
+
         md.update(input_data)
 
         result = md.digest()
         file_target = os.path.join("TESTFILES_DIR", "passwordFile.txt")
-        
+
         with open(file_target, "a") as fw:
             fw.write(f"hash_value={base64.b64encode(result).decode()}\\n")
-        
+
         response += f"Sensitive value '{html_escape(input_data.decode())}' hashed and stored<br/>"
-    
+
     except Exception as e:
         print("Problem executing hash - TestCase")
         return str(e)
@@ -62,7 +62,7 @@ class Test:
         bar = param
         if param is not None and len(param) > 1:
             bar = param[:-1]
-        
+
         return bar
 
 if __name__ == "__main__":

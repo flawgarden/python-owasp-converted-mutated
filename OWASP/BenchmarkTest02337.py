@@ -10,7 +10,7 @@ app.secret_key = 'your_secret_key_here'
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = app.response_class(
         response='',
         status=200,
@@ -26,7 +26,7 @@ def benchmark_test():
                 if value == "BenchmarkTest02337":
                     param = name
                     flag = False
-                    
+
     bar = do_something(param)
 
     l = random.getrandbits(64)
@@ -46,7 +46,7 @@ def benchmark_test():
             if cookie_name == cookie:
                 if cookies[cookie] == session.get(cookie_name):
                     found_user = True
-                    
+
     if found_user:
         response.data += f"Welcome back: {user}<br/>"
 

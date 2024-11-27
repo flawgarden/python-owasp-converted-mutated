@@ -10,14 +10,14 @@ def benchmark_test():
         return benchmark_test()
     response = Response()
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
-    
+
     param = request.args.get("BenchmarkTest01514", "")
-    
+
     bar = Test().do_something(request, param)
 
     response.headers['X-XSS-Protection'] = '0'
     response.set_data(bar)
-    
+
     return response
 
 class Test:

@@ -19,7 +19,7 @@ def benchmark_test_post():
     obj = ["a", bar]
     response.data = f"<!DOCTYPE html>\n<html>\n<body>\n<p>Formatted like: {obj[0]} and {obj[1]}.\n</p>\n</body>\n</html>"
     response.content_type = "text/html;charset=UTF-8"
-    
+
     return response
 
 def do_something(param):

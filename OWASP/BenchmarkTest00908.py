@@ -15,7 +15,7 @@ def benchmark_test():
 
     bar = None
     guess = "ABC"
-    switch_target = guess[1] 
+    switch_target = guess[1]
 
     if switch_target == 'A':
         bar = param

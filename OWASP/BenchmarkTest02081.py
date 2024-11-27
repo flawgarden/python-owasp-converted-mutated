@@ -15,17 +15,17 @@ def benchmark_test():
 
 def benchmark_test_post():
     response = make_response()
-    
+
     param = ""
     headers = request.headers.get('BenchmarkTest02081')
-    
+
     if headers:
         param = headers
 
     param = base64.urlsafe_b64decode(param).decode('utf-8')
 
     bar = do_something(request, param)
-    
+
     try:
         randNumber = os.urandom(4)  # Generate a random 4-byte number
         remember_me_key = int.from_bytes(randNumber, byteorder='big') % 99
@@ -36,7 +36,7 @@ def benchmark_test_post():
         user += test_case_number
 
         cookie_name = "rememberMe" + test_case_number
-        
+
         found_user = False
         cookies = request.cookies
         if cookies:
@@ -58,7 +58,7 @@ def benchmark_test_post():
     except Exception as e:
         print("Problem executing SecureRandom nextInt - TestCase")
         raise e
-    
+
     response.data += "Weak Randomness Test executed".encode('utf-8')
     return response
 
@@ -69,12 +69,12 @@ def do_something(request, param):
 
     encoded = base64.b64encode(c44156.encode())
     decoded = base64.b64decode(encoded).decode()
-    
+
     f44156 = decoded.split(" ")[0]
-   
+
     # Simulating the reflection here, as we don't have the ThingInterface
     bar = f"Processed: {f44156}"
-    
+
     return bar
 
 if __name__ == "__main__":

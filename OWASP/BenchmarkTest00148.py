@@ -12,7 +12,7 @@ def benchmark_test():
 
     response = Response()
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
-    
+
     param = ""
     if request.headers.get("Referer"):
         param = request.headers.get("Referer")
@@ -28,7 +28,7 @@ def benchmark_test():
 
     response.headers['X-XSS-Protection'] = "0"
     response.data = f"Formatted like: {'a'} and {bar}."
-    
+
     return response
 
 if __name__ == "__main__":

@@ -11,7 +11,7 @@ class DatabaseHelper:
     @staticmethod
     def get_sql_statement():
         conn = sqlite3.connect('example.db')
-        return conn.cursor(), conn 
+        return conn.cursor(), conn
 
     @staticmethod
     def print_results(statement, sql, response):

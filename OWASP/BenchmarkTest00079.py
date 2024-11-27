@@ -20,7 +20,7 @@ def benchmark_test():
 
         if "BenchmarkTest00079" in cookies:
             param = cookies["BenchmarkTest00079"]
-        
+
         bar = "safe!"
         map18384 = {
             "keyA-18384": "a-Value",

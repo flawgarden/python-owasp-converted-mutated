@@ -40,7 +40,7 @@ def benchmark_test():
             response_text = "Your query results are: <br/>"
             for value in node_list:
                 response_text += f"{value.text}<br/>"
-                
+
             return response_text
         except ET.ParseError as e:
             return f"Error parsing XPath input: '{bar}'", 500

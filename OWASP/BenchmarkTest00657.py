@@ -16,8 +16,8 @@ def benchmark_test_post():
     param = request.args.get("BenchmarkTest00657", "")
     bar = "safe!"
     map27260 = {
-        "keyA-27260": "a_Value", 
-        "keyB-27260": param, 
+        "keyA-27260": "a_Value",
+        "keyB-27260": param,
         "keyC": "another_Value"
     }
     bar = map27260["keyB-27260"]

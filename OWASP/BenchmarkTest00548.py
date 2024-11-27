@@ -15,7 +15,7 @@ def benchmark_test_post():
     param = ""
     flag = True
     names = request.args.keys()
-    
+
     for name in names:
         values = request.args.getlist(name)
         if values is not None:
@@ -35,7 +35,7 @@ def benchmark_test_post():
     d52901 = c52901[:-1]
     e52901 = base64.b64decode(base64.b64encode(d52901.encode())).decode()
     f52901 = e52901.split(" ")[0]
-    
+
     # Assuming a placeholder for ThingInterface implementation
     thing = create_thing()
     g52901 = "barbarians_at_the_gate"

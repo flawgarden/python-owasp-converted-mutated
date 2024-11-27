@@ -13,13 +13,13 @@ def benchmark_test():
 
 def benchmark_test_post():
     response = Response(content_type="text/html;charset=UTF-8")
-    
+
     param = request.args.get('BenchmarkTest02130', "")
     bar = do_something(param)
 
     response.headers['X-XSS-Protection'] = "0"
     response.data = io.BytesIO(f"Formatted like: a and {bar}.".encode('utf-8')).getvalue()
-    
+
     return response
 
 def do_something(param):

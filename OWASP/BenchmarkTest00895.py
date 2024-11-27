@@ -16,7 +16,7 @@ def benchmark_test():
         values_list = ["safe", param, "moresafe"]
         values_list.remove("safe")
 
-        bar = values_list[0] 
+        bar = values_list[0]
 
     arg_list = []
 
@@ -27,7 +27,7 @@ def benchmark_test():
     else:
         arg_list.append("sh")
         arg_list.append("-c")
-    
+
     arg_list.append(f"echo {bar}")
 
     try:

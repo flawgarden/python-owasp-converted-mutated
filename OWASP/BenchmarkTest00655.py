@@ -29,7 +29,7 @@ def benchmark_test00655_post():
         str_value = "No cookie value supplied"
 
     response.set_cookie('SomeCookie', str_value, secure=True, httponly=True, path=request.path)
-    
+
     response_data = f"Created cookie: 'SomeCookie': with value: '{str_value}' and secure flag set to: true"
     response.data = response_data
     return response

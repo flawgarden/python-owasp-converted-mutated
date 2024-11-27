@@ -16,7 +16,7 @@ def benchmark_test():
     for name in request.headers:
         if name in ["User-Agent", "Accept", "Accept-Encoding", "Accept-Language", "Connection"]:  # Add common headers here
             continue
-        
+
         param = name
         break
 
@@ -26,7 +26,7 @@ def benchmark_test():
         "keyB-35995": param,
         "keyC": "another_Value"
     }
-    
+
     bar = map35995["keyB-35995"]
     bar = map35995["keyA-35995"]
 

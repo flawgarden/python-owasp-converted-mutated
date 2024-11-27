@@ -26,7 +26,7 @@ def benchmark_test_post():
         print_results(statement, sql)
     except sqlite3.Error as e:
         print("Error processing request.")
-    
+
     return render_template("index.html")
 
 class Test:

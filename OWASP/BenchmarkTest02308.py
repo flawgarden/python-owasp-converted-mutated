@@ -25,7 +25,7 @@ def benchmark_test_post():
                     param = name
                     flag = False
                     break
-    
+
     bar = do_something(param)
 
     try:

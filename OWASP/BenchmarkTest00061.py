@@ -26,7 +26,7 @@ def benchmark_test():
 
         file_target = os.path.join(bar, "Test.txt")
         output = f"Access to file: '{file_target}' created."
-        
+
         if os.path.exists(file_target):
             output += " And file already exists."
         else:

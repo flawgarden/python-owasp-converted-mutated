@@ -45,7 +45,7 @@ def benchmark_test_post():
     bar = do_something(param)
 
     sql = "INSERT INTO users (username, password) VALUES ('foo', ?)"
-    
+
     cursor, conn = get_sql_statement()
     try:
         cursor.execute(sql, (bar,))

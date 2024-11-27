@@ -27,7 +27,7 @@ def benchmark_test_post():
 
         if isinstance(bar, str):
             input_data = bar.encode()
-        
+
         sha256.update(input_data)
 
         result = sha256.digest()
@@ -40,7 +40,7 @@ def benchmark_test_post():
 
     except Exception as e:
         print("Problem executing hash - TestCase")
-        raise 
+        raise
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')

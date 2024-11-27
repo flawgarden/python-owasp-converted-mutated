@@ -18,7 +18,7 @@ def benchmark_test_post():
     param = ""
     flag = True
     names = request.args.keys()
-    
+
     for name in names:
         values = request.args.getlist(name)
         if values is not None:
@@ -33,7 +33,7 @@ def benchmark_test_post():
     response.headers['X-XSS-Protection'] = "0"
     obj = [bar, "b"]
     response.set_data("Formatted like: %s and %s." % (obj[0], obj[1]))
-    
+
     return response
 
 class Test:

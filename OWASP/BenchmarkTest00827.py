@@ -23,19 +23,19 @@ def benchmark_test_00827_post():
         response.data = f"getQueryString() couldn't find expected parameter '{paramval[:-1]}' in query string."
         return response
 
-    param = query_string[param_loc + len(paramval):]  
+    param = query_string[param_loc + len(paramval):]
     ampersand_loc = query_string.find("&", param_loc)
 
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
-    
+
     param = urllib.parse.unquote(param)
 
     bar = "alsosafe"
     if param:
         values_list = ["safe", param, "moresafe"]
-        values_list.remove("safe")  
-        bar = values_list[1]  
+        values_list.remove("safe")
+        bar = values_list[1]
 
     cmd = "your_insecure_command_here"  # replace with actual command retrieval method
     args_env = [bar]

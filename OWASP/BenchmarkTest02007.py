@@ -62,9 +62,9 @@ def do_something(request, param):
         bar = "This should never happen"
     return bar
 
-common_headers = ['Accept', 'Accept-Charset', 'Accept-Encoding', 'Accept-Language', 'Authorization', 
-                  'Cache-Control', 'Connection', 'Content-Length', 'Content-Type', 'Date', 
-                  'Expect', 'Host', 'If-Modified-Since', 'If-None-Match', 'Range', 
+common_headers = ['Accept', 'Accept-Charset', 'Accept-Encoding', 'Accept-Language', 'Authorization',
+                  'Cache-Control', 'Connection', 'Content-Length', 'Content-Type', 'Date',
+                  'Expect', 'Host', 'If-Modified-Since', 'If-None-Match', 'Range',
                   'Referer', 'User-Agent']
 
 if __name__ == "__main__":

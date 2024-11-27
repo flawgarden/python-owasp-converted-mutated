@@ -26,7 +26,7 @@ def benchmark_test_post():
         + encode_for_html(bar)
         + "' saved in session."
     )
-    
+
     response.set_data(response_data)
     return response
 

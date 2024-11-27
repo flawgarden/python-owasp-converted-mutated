@@ -12,7 +12,7 @@ def benchmark_test():
         return benchmark_test()
     response = app.response_class()
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
-    
+
     param = ""
     flag = True
     names = request.args.keys()

@@ -29,7 +29,7 @@ def benchmark_test_post():
 
     except Exception as e:
         print(f"Couldn't open FileOutputStream on file: '{file_name}'")
-    
+
     return "Error occurred"
 
 def do_something(param):

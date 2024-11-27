@@ -33,6 +33,6 @@ def benchmark_test():
                 return "The beginning of file: '{}' is:\n\n{}".format(urllib.parse.quote(file_name), urllib.parse.quote(b.decode()))
         except Exception as e:
             return "Couldn't open InputStream on file: '{}'".format(file_name)
-    
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0')

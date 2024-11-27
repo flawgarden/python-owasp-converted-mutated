@@ -27,10 +27,10 @@ def benchmark_test():
         file_name = os.path.join(TESTFILES_DIR, bar)
         fos = open(file_name, 'w')
         response += "Now ready to write to file: " + file_name
-        
+
     except Exception as e:
         response += "Couldn't open FileOutputStream on file: '" + str(file_name) + "'"
-        
+
     finally:
         if fos:
             try:

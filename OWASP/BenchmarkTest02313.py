@@ -42,15 +42,15 @@ def do_something(param):
     b31085 = StringBuilder(a31085)
     b31085.append(" SafeStuff")
     b31085 = b31085[:-5] + "Chars"
-    
+
     map31085 = {}
     map31085["key31085"] = b31085
     c31085 = map31085["key31085"]
     d31085 = c31085[:-1]
-    
+
     e31085 = base64.b64decode(base64.b64encode(d31085.encode())).decode()
     f31085 = e31085.split(" ")[0]
-    
+
     thing = create_thing()
     g31085 = "barbarians_at_the_gate"
     bar = thing.do_something(g31085)

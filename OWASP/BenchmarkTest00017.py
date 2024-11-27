@@ -16,7 +16,7 @@ def benchmark_test_00017():
 def benchmark_test_00017_post():
     response = app.response_class(content_type='text/html;charset=UTF-8')
     param = ""
-    
+
     headers = request.headers.getlist("BenchmarkTest00017")
     if headers:
         param = headers[0]  # just grab first element

@@ -35,7 +35,7 @@ def benchmark_test_01414_post():
         input_param = bar
         if isinstance(input_param, str):
             input_data = input_param.encode()
-        
+
         md = hashlib.new(algorithm)
         md.update(input_data)
 
@@ -45,7 +45,7 @@ def benchmark_test_01414_post():
             fw.write("hash_value=" + result.hex() + "\n")
 
         return f"Sensitive value '{input_data.decode()}' hashed and stored<br/>"
-    
+
     except Exception as e:
         print("Problem executing hash - TestCase")
         raise e

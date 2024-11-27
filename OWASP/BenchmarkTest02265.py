@@ -13,7 +13,7 @@ def benchmark_test():
 
     response = "text/html;charset=UTF-8"
     param = ""
-    
+
     map = request.args.to_dict()
     if map:
         values = map.get("BenchmarkTest02265")

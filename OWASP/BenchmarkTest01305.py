@@ -14,7 +14,7 @@ def benchmark_test():
 def benchmark_test_post():
     response = app.response_class(content_type='text/html;charset=UTF-8')
 
-    param = request.args.get('BenchmarkTest01305', '') 
+    param = request.args.get('BenchmarkTest01305', '')
 
     bar = Test().do_something(param)
 

@@ -20,7 +20,7 @@ def benchmark_test_post():
     if param_loc == -1:
         return f"getQueryString() couldn't find expected parameter 'BenchmarkTest01663' in query string."
 
-    param = query_string[param_loc + len(paramval):] 
+    param = query_string[param_loc + len(paramval):]
     ampersand_loc = query_string.find("&", param_loc)
 
     if ampersand_loc != -1:
@@ -35,7 +35,7 @@ def benchmark_test_post():
     obj = ["a", "b"]
     response.data = bar % tuple(obj)
     response.content_type = 'text/html;charset=UTF-8'
-    
+
     return response
 
 class Test:

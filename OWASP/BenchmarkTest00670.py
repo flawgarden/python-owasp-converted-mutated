@@ -9,8 +9,8 @@ def benchmark_test():
         return benchmark_test()
 
     response = app.response_class()
-    
-    param = request.form.get("BenchmarkTest00670", "") 
+
+    param = request.form.get("BenchmarkTest00670", "")
 
     bar = param
     if param and len(param) > 1:

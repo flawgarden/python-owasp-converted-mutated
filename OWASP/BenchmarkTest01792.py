@@ -13,7 +13,7 @@ def benchmark_test():
 
 def benchmark_test_post():
     response = Response(content_type="text/html;charset=UTF-8")
-    
+
     param = request.args.get("BenchmarkTest01792", "")
 
     bar = Test().do_something(param)
@@ -36,7 +36,7 @@ def benchmark_test_post():
         args = [a1, a2, cmd + bar]
 
     args_env = {"foo": "bar"}
-    
+
     try:
         p = os.popen(' '.join(args))
         output = p.read()
@@ -44,7 +44,7 @@ def benchmark_test_post():
     except Exception as e:
         print("Problem executing cmdi - TestCase")
         response.set_data(html_escape(str(e)))
-    
+
     return response
 
 class Test:

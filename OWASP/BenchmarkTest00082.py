@@ -23,7 +23,7 @@ def benchmark_test():
                 if cookie_name == "BenchmarkTest00082":
                     param = cookie_value
                     break
-        
+
         bar = f"{param}_SafeStuff"
         rand_number = random.randint(0, 98)
         remember_me_key = str(rand_number)

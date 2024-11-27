@@ -9,7 +9,7 @@ app = Flask(__name__, static_url_path='/static', static_folder='static')
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test_post()
-    
+
     return benchmark_test_post()
 
 def benchmark_test_post():
@@ -36,7 +36,7 @@ def benchmark_test_post():
         input_data = b'?'  # Default input byte
         if isinstance(bar, str):
             input_data = bar.encode()
-        
+
         md.update(input_data)
 
         result = md.digest()

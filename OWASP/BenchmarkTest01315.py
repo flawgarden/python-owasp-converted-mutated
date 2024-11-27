@@ -14,11 +14,11 @@ def benchmark_test():
 
 def benchmark_test_post():
     param = request.args.get('BenchmarkTest01315', '')
-    
+
     bar = Test().do_something(param)
 
     sql = "INSERT INTO users (username, password) VALUES ('foo', ?)"
-    
+
     try:
         conn = sqlite3.connect('database.db')
         cursor = conn.cursor()

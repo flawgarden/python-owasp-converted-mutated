@@ -46,7 +46,7 @@ def benchmark_test():
         raise e
     finally:
         response.set_data(response.get_data(as_text=True) + "Randomness Test executed")
-    
+
     return response
 
 def do_something(param):

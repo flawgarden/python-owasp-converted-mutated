@@ -24,7 +24,7 @@ def benchmark_test_post():
 
     param = query_string[paramLoc + len(paramval):]
     ampersandLoc = query_string.find("&", paramLoc)
-    
+
     if ampersandLoc != -1:
         param = query_string[paramLoc + len(paramval):ampersandLoc]
 

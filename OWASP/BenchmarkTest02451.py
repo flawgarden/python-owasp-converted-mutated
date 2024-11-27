@@ -7,7 +7,7 @@ app.config['DEBUG'] = True
 
 class DatabaseHelper:
     hideSQLErrors = True
-    
+
     @staticmethod
     def execute(sql):
         # Mocked database execution for demonstration purposes

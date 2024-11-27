@@ -21,15 +21,15 @@ def benchmark_test_post():
     try:
         md = hashlib.md5()
         input_data = b'?'
-        
+
         if isinstance(bar, str):
             input_data = bar.encode()
-        
+
         md.update(input_data)
 
         result = md.digest()
         file_target = os.path.join("path/to/testfiles", "passwordFile.txt")
-        
+
         with open(file_target, 'a') as fw:
             fw.write("hash_value=" + str(result.hex()) + "\n")
 

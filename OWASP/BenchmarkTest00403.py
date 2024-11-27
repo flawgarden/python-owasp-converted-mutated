@@ -15,7 +15,7 @@ def benchmark_test():
 def benchmark_test_post():
     response = make_response()
     param = request.args.get('BenchmarkTest00403', '')
-    
+
     bar = "This_should_always_happen" if (7 * 18) + 106 > 200 else param
 
     cookie_value = bar if bar else "No cookie value supplied"

@@ -19,7 +19,7 @@ def benchmark_test_post():
     cmd = ""
     a1 = ""
     a2 = ""
-    
+
     os_name = os.name
 
     if os_name == 'nt':
@@ -41,7 +41,7 @@ def benchmark_test_post():
     except Exception as e:
         print("Problem executing cmdi - TestCase")
         response += str(e)
-        
+
     return render_template("result.html", output=response)
 
 def do_something(param):
@@ -53,7 +53,7 @@ def do_something(param):
     d17988 = c17988[:-1]
     e17988 = d17988.encode('utf-8').decode('utf-8')  # dummy encoding/decoding
     f17988 = e17988.split(" ")[0]
-    
+
     # Mocking ThingInterface and ThingFactory
     bar = "safe_output"
 

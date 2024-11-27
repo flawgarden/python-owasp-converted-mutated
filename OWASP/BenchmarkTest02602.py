@@ -69,7 +69,7 @@ def do_something(param):
     d3617 = c3617[:-1]
     e3617 = base64.b64decode(base64.b64encode(d3617.encode())).decode()
     f3617 = e3617.split(" ")[0]
-    
+
     # Simulation of reflection-based operation
     bar = f"Processed value: {f3617}"  # Placeholder for actual reflection logic
     return bar

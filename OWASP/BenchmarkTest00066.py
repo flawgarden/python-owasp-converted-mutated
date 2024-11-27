@@ -11,7 +11,7 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         response = make_response(render_template("weakrand-00/BenchmarkTest00066.html"))
-        user_cookie = ('BenchmarkTest00066', 'anything', 60 * 3, request.path, 
+        user_cookie = ('BenchmarkTest00066', 'anything', 60 * 3, request.path,
                        request.host)
         response.set_cookie(user_cookie[0], user_cookie[1], max_age=user_cookie[2],
                             path=user_cookie[3], domain=user_cookie[4], secure=True)
@@ -42,7 +42,7 @@ def benchmark_test():
             return f"Welcome back: {user}<br/>"
         else:
             response = make_response()
-            remember_me = (cookie_name, remember_me_key, request.path, 
+            remember_me = (cookie_name, remember_me_key, request.path,
                             request.host)
             response.set_cookie(remember_me[0], remember_me[1], path=remember_me[2],
                                 domain=remember_me[3], secure=True, httponly=True)

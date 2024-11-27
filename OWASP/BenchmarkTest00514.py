@@ -14,14 +14,14 @@ def get_sql_statement():
 def benchmark_test():
     if request.method == 'POST':
         response = app.response_class(content_type='text/html;charset=UTF-8')
-        
+
         param = request.form.get('BenchmarkTest00514', '')
 
         bar = ''
         num = 106
 
         bar = "This_should_always_happen" if (7 * 18) + num > 200 else param
-        
+
         sql = f"SELECT * from USERS where USERNAME='foo' and PASSWORD='{bar}'"
 
         try:
@@ -36,9 +36,9 @@ def benchmark_test():
         except sqlite3.Error as e:
             response.response.append("Error processing request.")
             return response
-        
+
         return response
-    
+
     return render_template("index.html")
 
 if __name__ == "__main__":

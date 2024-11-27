@@ -28,15 +28,15 @@ def benchmark_test_post():
 
         if isinstance(input_param, str):
             input_data = input_param.encode()
-        
+
         md.update(input_data)
 
         result = md.digest()
         file_target = os.path.join('uploads/', 'passwordFile.txt')
-        
+
         with open(file_target, 'ab') as fw:
             fw.write(b"hash_value=" + hash_to_base64(result) + b"\n")
-        
+
         response += f"Sensitive value '{escape_html(input_data.decode())}' hashed and stored<br/>"
 
     except Exception as e:

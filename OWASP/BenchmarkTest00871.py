@@ -17,24 +17,24 @@ def benchmark_test_00871():
 def benchmark_test_00871_post():
     param = request.args.get("BenchmarkTest00871", "")
     bar = "safe!"
-    
+
     map42157 = {
         "keyA-42157": "a-Value",
         "keyB-42157": param,
         "keyC": "another-Value"
     }
-    
+
     bar = map42157["keyB-42157"]
 
     try:
         input_data = bar.encode() if isinstance(bar, str) else b'?'
-        
+
         sha1 = hashlib.new('sha1')  # Using SHA1 hashing algorithm
         sha1.update(input_data)
 
         result = sha1.digest()
         file_target = os.path.join("path/to/your/directory", "passwordFile.txt")
-        
+
         with open(file_target, 'a') as fw:
             fw.write(f"hash_value={base64.b64encode(result).decode()}\n")
 

@@ -17,7 +17,7 @@ def benchmark_test():
 def benchmark_test_post():
     param = request.headers.get('BenchmarkTest00207', '')
     param = param.encode('utf-8').decode('unicode_escape')
-    
+
     bar = ''
     if param:
         bar = base64.b64decode(base64.b64encode(param.encode())).decode()

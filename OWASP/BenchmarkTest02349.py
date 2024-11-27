@@ -14,7 +14,7 @@ def benchmark_test():
 
 def benchmark_test_post(request):
     response = make_response()
-    
+
     param = ""
     flag = True
     names = request.args.keys()
@@ -59,7 +59,7 @@ def do_something(request, param):
     a55770 = param
     b55770 = a55770 + " SafeStuff"
     b55770 = b55770[:-5] + "Chars"
-    
+
     map55770 = {}
     map55770["key55770"] = b55770
 
@@ -67,7 +67,7 @@ def do_something(request, param):
     d55770 = c55770[:-1]
     e55770 = d55770.encode('utf-8').decode('utf-8')
     f55770 = e55770.split(" ")[0]
-    
+
     thing = create_thing()
     bar = thing.do_something(f55770)
 
@@ -77,7 +77,7 @@ def create_thing():
     class Thing:
         def do_something(self, input_str):
             return input_str + " processed"
-    
+
     return Thing()
 
 if __name__ == "__main__":

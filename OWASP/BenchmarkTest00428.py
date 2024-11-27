@@ -14,7 +14,7 @@ def get_db_connection():
 def benchmark_test():
     if request.method == 'POST':
         param = request.form.get("BenchmarkTest00428", "")
-        
+
         bar = ""
         if param:
             valuesList = []

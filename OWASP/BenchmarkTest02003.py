@@ -23,7 +23,7 @@ def benchmark_test_post():
         if name not in common_headers:
             param = name
             break
-            
+
     bar = do_something(param)
 
     remember_me_key = str(random.randint(0, 2**31 - 1))
@@ -58,7 +58,7 @@ def do_something(param):
     d69278 = c69278[:-1]
     e69278 = base64.b64decode(base64.b64encode(d69278.encode())).decode()
     f69278 = e69278.split(" ")[0]
-    
+
     # Placeholder for ThingInterface logic
     g69278 = "barbarians_at_the_gate"
     bar = g69278  # Example static return (replace with actual logic if necessary)

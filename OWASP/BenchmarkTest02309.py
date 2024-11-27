@@ -16,7 +16,7 @@ def benchmark_test_post():
     param = ""
     flag = True
     names = request.args.keys()
-    
+
     for name in names:
         values = request.args.getlist(name)
         if values and flag:
@@ -37,7 +37,7 @@ def benchmark_test_post():
         file_target = os.path.join('path/to/testfiles', 'passwordFile.txt')
         with open(file_target, 'a') as fw:
             fw.write("hash_value=" + str(result.hex()) + "\n")
-        
+
         return "Sensitive value '{}' hashed and stored<br/>".format(input_param.decode())
 
     except Exception as e:

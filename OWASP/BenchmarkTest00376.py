@@ -15,9 +15,9 @@ def benchmark_test_post(request):
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
 
     param = request.args.get('BenchmarkTest00376', '')
-    
+
     bar = param
-    
+
     num = 106
     bar = "This should never happen" if (7 * 42) - num > 200 else param
 

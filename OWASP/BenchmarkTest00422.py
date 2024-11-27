@@ -19,7 +19,7 @@ def benchmark_test_post():
     response.headers['Content-Type'] = "text/html;charset=UTF-8"
 
     param = request.args.get("BenchmarkTest00422", "")
-    
+
     bar = param
     num = 106
     if (7 * 42) - num > 200:

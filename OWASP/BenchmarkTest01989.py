@@ -29,7 +29,7 @@ def benchmark_test():
 
         with open(file_name, 'w') as fos:
             response.data = f"Now ready to write to file: {html_escape(file_name)}"
-    
+
     except Exception as e:
         print(f"Couldn't open FileOutputStream on file: '{file_name}'")
 

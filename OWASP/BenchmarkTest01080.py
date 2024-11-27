@@ -13,7 +13,7 @@ def benchmark_test():
 
 def benchmark_test_post():
     param = request.headers.get("BenchmarkTest01080", "")
-    
+
     param = urllib.parse.unquote(param)
 
     test = Test()
@@ -32,7 +32,7 @@ class Test:
             values_list = ["safe", param, "moresafe"]
             values_list.pop(0)  # Remove the 1st safe value
             bar = values_list[1]  # Get the last 'safe' value
-        
+
         return bar
 
 def encode_for_html(value):

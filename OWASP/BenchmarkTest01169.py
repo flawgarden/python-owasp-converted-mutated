@@ -15,7 +15,7 @@ def benchmark_test():
 
 def benchmark_test_post():
     response_content = "text/html;charset=UTF-8"
-    
+
     param = ""
     headers = request.headers.get("BenchmarkTest01169")
 
@@ -32,18 +32,18 @@ def benchmark_test_post():
         md = hashlib.new(algorithm)  # Create a new hash object
         input_data = b'?'
         input_param = bar
-        
+
         if isinstance(input_param, str):
             input_data = input_param.encode()
-        
+
         md.update(input_data)
 
         result = md.digest()
         file_target = os.path.join("path_to_your_testfiles_dir", "passwordFile.txt")
-        
+
         with open(file_target, "a") as fw:
             fw.write("hash_value=" + result.hex() + "\n")  # Storing as hex for simplicity
-            
+
         return f"Sensitive value '{input_data.decode()}' hashed and stored<br/>", response_content
 
     except Exception as e:

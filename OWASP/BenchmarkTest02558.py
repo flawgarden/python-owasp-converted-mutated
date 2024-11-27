@@ -24,19 +24,19 @@ def benchmark_test_post(request):
     ampersand_loc = query_string.find("&", param_loc)
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
-    
+
     param = urllib.parse.unquote(param)
 
     bar = do_something(request, param)
 
     file_target = os.path.join(bar, "Test.txt")
     response_text = f"Access to file: '{file_target}' created."
-    
+
     if os.path.exists(file_target):
         response_text += " And file already exists."
     else:
         response_text += " But file doesn't exist yet."
-    
+
     return response_text
 
 def do_something(request, param):

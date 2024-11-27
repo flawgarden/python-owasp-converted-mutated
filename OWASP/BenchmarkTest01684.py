@@ -34,7 +34,7 @@ def benchmark_test_post(request):
     str_param = param if isinstance(param, str) else ""
     if str_param == "":
         str_param = "No cookie value supplied"
-    
+
     cookie = ("SomeCookie", str_param)
     response.set_cookie(cookie[0], cookie[1], secure=True, httponly=True, path=request.path)
 

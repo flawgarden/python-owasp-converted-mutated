@@ -18,7 +18,7 @@ def benchmark_test_02072():
 
 def benchmark_test_02072_post():
     response_str = ""
-    
+
     param = request.headers.get("BenchmarkTest02072", "")
     param = param.replace("+", " ")  # URL Decode the header value
 
@@ -31,7 +31,7 @@ def benchmark_test_02072_post():
         user = "SafeByron"
         test_case_number = "02072"
         user += test_case_number
-        
+
         cookie_name = "rememberMe" + test_case_number
 
         found_user = False
@@ -41,7 +41,7 @@ def benchmark_test_02072_post():
                 cookie_value = cookies[cookie_name]
                 if cookie_value == request.cookies.get(cookie_name):
                     found_user = True
-        
+
         if found_user:
             response_str += "Welcome back: " + user + "<br/>"
         else:
@@ -57,7 +57,7 @@ def benchmark_test_02072_post():
         raise e
     finally:
         response_str += "Randomness Test executed"
-    
+
     return response_str
 
 

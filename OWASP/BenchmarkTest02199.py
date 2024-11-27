@@ -15,11 +15,11 @@ def benchmark_test():
 def benchmark_test_post():
     response = app.response_class()
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
-    
+
     param = ""
     if request.args:
         param = request.args.get("BenchmarkTest02199", "")
-    
+
     bar = do_something(request, param)
 
     file_target = os.path.abspath(bar)
@@ -30,7 +30,7 @@ def benchmark_test_post():
         response.set_data(response.get_data(as_text=True) + " And file already exists.<br>")
     else:
         response.set_data(response.get_data(as_text=True) + " But file doesn't exist yet.<br>")
-    
+
     return response
 
 def do_something(request, param):

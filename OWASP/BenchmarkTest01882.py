@@ -29,7 +29,7 @@ def benchmark_test():
             param = urllib.parse.unquote(cookies['BenchmarkTest01882'])
 
         bar = do_something(param)
-        
+
         sql = f"SELECT * from USERS where USERNAME='foo' and PASSWORD='{bar}'"
         try:
             results = query_db(sql)

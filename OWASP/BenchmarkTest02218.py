@@ -18,21 +18,21 @@ def benchmark_test_post():
     param = request.args.get('BenchmarkTest02218', '')
 
     bar = do_something(param)
-    
+
     try:
         md = hashlib.sha256()
         input_param = bar.encode() if isinstance(bar, str) else bar
-        
+
         md.update(input_param)
 
         result = md.digest()
         file_target = os.path.join('testfiles', 'passwordFile.txt')
-        
+
         with open(file_target, 'a') as fw:  # the 'a' will append the new data
             fw.write("hash_value=" + encode_for_base64(result) + "\n")
 
         return "Sensitive value '" + encode_for_html(input_param.decode()) + "' hashed and stored<br/>"
-        
+
     except Exception as e:
         print("Problem executing hash - TestCase")
         raise e

@@ -8,7 +8,7 @@ app = Flask(__name__, static_url_path='/static', static_folder='static')
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = app.response_class(
         response='',
         status=200,
@@ -31,12 +31,12 @@ def benchmark_test():
 
     file_target = os.path.join('path/to/testfiles_dir', bar)
     response_data = f"Access to file: '{file_target}' created.<br>"
-    
+
     if os.path.exists(file_target):
         response_data += " And file already exists."
     else:
         response_data += " But file doesn't exist yet."
-    
+
     response.set_data(response_data)
     return response
 

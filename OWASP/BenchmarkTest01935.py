@@ -22,7 +22,7 @@ def benchmark_test_post():
     bar = do_something(param)
 
     response = make_response(render_template("index.html"))
-    
+
     cookie = f'SomeCookie={bar}; Path={request.path}; Secure; HttpOnly'
     response.set_cookie('SomeCookie', bar, secure=True, httponly=True, path=request.path)
 
@@ -33,13 +33,13 @@ def do_something(param):
     a17785 = param
     b17785 = f"{a17785} SafeStuff"
     b17785 = b17785[:-5] + "Chars"
-    
+
     map17785 = {'key17785': b17785}
     c17785 = map17785['key17785']
     d17785 = c17785[:-1]
     e17785 = b64decode(b64encode(d17785.encode('utf-8'))).decode('utf-8')
     f17785 = e17785.split(" ")[0]
-    
+
     thing = create_thing()
     bar = thing.do_something(f17785)
 

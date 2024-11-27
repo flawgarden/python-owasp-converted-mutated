@@ -31,7 +31,7 @@ def benchmark_test():
             return render_template("results.html", results=results)
         except sqlite3.Error as e:
             return "Error processing request."
- 
+
 class Test:
     def do_something(self, request, param):
         switch_target = 'C'

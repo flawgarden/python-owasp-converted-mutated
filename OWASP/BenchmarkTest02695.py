@@ -17,9 +17,9 @@ def do_get(request):
 def do_post(request):
     response = "text/html;charset=UTF-8"
     param = request.args.get("BenchmarkTest02695")
-    
+
     bar = do_something(request, param)
-    
+
     headers = {'X-XSS-Protection': '0'}
     return bar, headers
 

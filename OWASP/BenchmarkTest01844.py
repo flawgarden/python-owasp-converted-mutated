@@ -29,7 +29,7 @@ def benchmark_test():
                 fw.write("hash_value=" + base64.b64encode(md).decode() + "\n")
 
             return f"Sensitive value '{escape_html(str(input_bytes))}' hashed and stored<br/>"
-            
+
         except Exception as e:
             print("Problem executing hash - TestCase failed")
             return str(e)

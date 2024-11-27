@@ -11,7 +11,7 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     param = request.headers.get("BenchmarkTest01090", "")
     param = urllib.parse.unquote(param)
 
@@ -34,7 +34,7 @@ def print_results(sql, results):
     print("Results: ", results)
 
 class Test:
-    
+
     def do_something(self, request, param):
         bar = "safe!"
         map_holder = {}

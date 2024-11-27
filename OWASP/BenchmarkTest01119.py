@@ -28,7 +28,7 @@ def benchmark_test_01119_post():
 
     value = os.urandom(8)  # Simulating weak randomness
     remember_me_key = str(int.from_bytes(value, 'big')).zfill(16)
-    
+
     user = "Doug"
     full_class_name = benchmark_test_01119.__qualname__
     test_case_number = full_class_name[full_class_name.rfind('.') + 1 + len("BenchmarkTest"):]

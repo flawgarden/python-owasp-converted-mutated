@@ -9,7 +9,7 @@ app.config['DEBUG'] = True
 @app.route("/weakrand-00/BenchmarkTest00086", methods=['GET', 'POST'])
 def benchmark_test():
     response = make_response(render_template("weakrand-00/BenchmarkTest00086.html"))
-    
+
     if request.method == 'GET':
         user_cookie = make_response()
         user_cookie.set_cookie("BenchmarkTest00086", "whatever", max_age=60 * 3, secure=True, path=request.path, domain=request.host)

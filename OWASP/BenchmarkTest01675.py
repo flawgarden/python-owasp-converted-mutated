@@ -16,15 +16,15 @@ def benchmark_test():
     query_string = request.query_string.decode()
     paramval = "BenchmarkTest01675="
     param_loc = query_string.find(paramval)
-    
+
     if param_loc == -1:
         return "getQueryString() couldn't find expected parameter 'BenchmarkTest01675' in query string."
-    
+
     param = query_string[param_loc + len(paramval):]
     ampersand_loc = query_string.find("&", param_loc)
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
-    
+
     param = param  # No need to decode in this case; this is a simple example
     bar = Test().do_something(request, param)
 
@@ -49,7 +49,7 @@ def benchmark_test():
         response.set_cookie(cookie_name, remember_me_key, secure=True, httponly=True, domain=request.host, path=request.path)
         request.environ['werkzeug.session'][cookie_name] = remember_me_key
         response.set_data(f"{user} has been remembered with cookie: {cookie_name} whose value is: {remember_me_key}<br/>")
-    
+
     response.set_data(response.get_data(as_text=True) + "Weak Randomness Test executed")
     return response
 

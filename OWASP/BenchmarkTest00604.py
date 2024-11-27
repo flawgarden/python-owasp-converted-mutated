@@ -46,7 +46,7 @@ def benchmark_test():
             response.data = "Error processing request."
             return response
         else:
-            raise 
+            raise
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')

@@ -10,7 +10,7 @@ def benchmark_test():
     if request.method == 'POST':
         param = request.args.get("BenchmarkTest00648", "")
         bar = quote(param, safe="")
-        
+
         response = make_response(bar)
         response.headers['X-XSS-Protection'] = '0'
         return response

@@ -15,7 +15,7 @@ def benchmark_test():
 
 def benchmark_test_post():
     response = app.response_class(content_type='text/html;charset=UTF-8')
-    
+
     param = request.args.get("BenchmarkTest02164", "")
     bar = do_something(param)
 
@@ -47,7 +47,7 @@ def benchmark_test_post():
             response.data = f"{user} has been remembered with cookie: {cookie_name} whose value is: {remember_me_key}<br/>"
     except Exception as e:
         raise Exception("Problem executing SecureRandom.nextLong() - TestCase") from e
-    
+
     response.data += "Weak Randomness Test executed"
     return response
 

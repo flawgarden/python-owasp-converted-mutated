@@ -38,7 +38,7 @@ def benchmark_test():
                 cookie_value = request.cookies['rememberMe' + test_case_number]
                 if cookie_value == request.cookies.get(cookie_name):
                     found_user = True
-            
+
             if found_user:
                 return f"Welcome back: {user}<br/>"
             else:

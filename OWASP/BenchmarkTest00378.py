@@ -20,7 +20,7 @@ def benchmark_test_post():
     response.headers["X-XSS-Protection"] = "0"
     obj = ["a", "b"]
     response.data = bar.format(*obj)
-    
+
     return response
 
 if __name__ == "__main__":

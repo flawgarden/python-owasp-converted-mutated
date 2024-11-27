@@ -31,7 +31,7 @@ def benchmark_test_post():
     except Exception as e:
         print("Couldn't open FileInputStream on file: '{}'".format(file_name))
         response_text += "Problem getting FileInputStream: {}".format(escape(str(e)))
-    
+
     return response_text
 
 class Test:

@@ -14,7 +14,7 @@ def benchmark_test_00889():
 def benchmark_test_00889_post():
     response_content_type = "text/html;charset=UTF-8"
     param = request.args.get("BenchmarkTest00889", "")
-    
+
     bar = ""
 
     num = 196
@@ -25,7 +25,7 @@ def benchmark_test_00889_post():
 
     response = app.response_class(response=bar, status=200, content_type=response_content_type)
     response.headers["X-XSS-Protection"] = "0"
-    
+
     return response
 
 if __name__ == "__main__":

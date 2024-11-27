@@ -17,7 +17,7 @@ def benchmark_test_02316_post():
     param = ""
     flag = True
     names = request.args.to_dict().keys()
-    
+
     for name in names:
         values = request.args.getlist(name)
         if values:
@@ -36,7 +36,7 @@ def benchmark_test_02316_post():
     obj = ["a", "b"]
     response.set_data(bar % tuple(obj))
     response.content_type = "text/html;charset=UTF-8"
-    
+
     return response
 
 

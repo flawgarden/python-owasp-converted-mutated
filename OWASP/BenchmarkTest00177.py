@@ -13,7 +13,7 @@ def benchmark_test():
 
     response_content = "text/html;charset=UTF-8"
     param = ""
-    
+
     if request.headers.get("BenchmarkTest00177") is not None:
         param = request.headers.get("BenchmarkTest00177")
 

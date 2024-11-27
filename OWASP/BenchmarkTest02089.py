@@ -36,7 +36,7 @@ def benchmark_test_post():
         return render_template("results.html", results=results)
     except sqlite3.Error as e:
         return "Error processing request."
-    
+
 def do_something(param):
     bar = ""
 

@@ -24,12 +24,12 @@ def benchmark_test():
             file_target = os.path.normpath(file_uri)
 
             output = f"Access to file: '{file_target}' created."
-            
+
             if os.path.exists(file_target):
                 output += " And file already exists."
             else:
                 output += " But file doesn't exist yet."
-                
+
             return output
         except Exception as e:
             raise Exception(e)

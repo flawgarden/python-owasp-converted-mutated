@@ -49,7 +49,7 @@ class Test:
 
         map97099 = {'key97099': b97099}
         c97099 = map97099['key97099']
-        d97099 = c97099[:-1]  
+        d97099 = c97099[:-1]
         e97099 = base64.b64decode(base64.b64encode(d97099.encode())).decode()
 
         f97099 = e97099.split(" ")[0]

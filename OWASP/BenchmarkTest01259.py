@@ -8,7 +8,7 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = Response()
     response.headers["Content-Type"] = "text/html;charset=UTF-8"
 

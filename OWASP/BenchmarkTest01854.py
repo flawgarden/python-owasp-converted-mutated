@@ -18,9 +18,9 @@ def benchmark_test():
         cookies = request.cookies
         if 'BenchmarkTest01854' in cookies:
             param = cookies['BenchmarkTest01854']
-        
+
         bar = do_something(request, param)
-        
+
         rand = random.random()
         remember_me_key = str(rand)[2:]  # Trim off the 0. at the front
 
@@ -34,7 +34,7 @@ def benchmark_test():
         if cookie_name in cookies:
             if cookies[cookie_name] == request.cookies.get(cookie_name):
                 found_user = True
-        
+
         if found_user:
             return f"Welcome back: {user}<br/>"
         else:
@@ -44,7 +44,7 @@ def benchmark_test():
             resp.set_cookie(cookie_name, remember_me_key, secure=True, httponly=True, path=request.path, domain=request.host)
             request.environ['werkzeug.session'].set(cookie_name, remember_me_key)
             return resp
-        
+
     return "Weak Randomness Test executed"
 
 def do_something(request, param):

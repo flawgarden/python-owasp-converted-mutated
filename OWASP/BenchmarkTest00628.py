@@ -28,7 +28,7 @@ class ThingFactory:
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = ""
     scr = SeparateClassRequest(request)
     param = scr.getTheParameter("BenchmarkTest00628")
@@ -38,13 +38,13 @@ def benchmark_test():
     a24315 = param
     b24315 = a24315 + " SafeStuff"
     b24315 = b24315[:-5] + "Chars"
-    
+
     map24315 = {"key24315": b24315}
     c24315 = map24315["key24315"]
     d24315 = c24315[:-1]
     e24315 = base64.b64decode(base64.b64encode(d24315.encode())).decode()
     f24315 = e24315.split(" ")[0]
-    
+
     thing = ThingFactory.createThing()
     g24315 = "barbarians_at_the_gate"
     bar = thing.doSomething(g24315)

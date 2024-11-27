@@ -12,7 +12,7 @@ def benchmark_test():
 
     response = make_response()
     param = request.values.get("BenchmarkTest00491", "")
-    
+
     bar = param
     if param and len(param) > 1:
         bar = param[:-1] + "Z"

@@ -14,7 +14,7 @@ def benchmark_test_post():
     response = app.response_class()
     param = request.args.get('BenchmarkTest02723')
     bar = do_something(param)
-    
+
     # Simulating session storage (using Flask's session)
     from flask import session
     session[bar] = "10340"

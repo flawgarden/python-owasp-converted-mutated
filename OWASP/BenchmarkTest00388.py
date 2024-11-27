@@ -14,7 +14,7 @@ def benchmark_test_post():
     param = request.args.get('BenchmarkTest00388', '')
     sbxyz30382 = str(param)
     bar = sbxyz30382 + "_SafeStuff"
-    
+
     response = app.response_class(
         response=bar,
         status=200,

@@ -21,7 +21,7 @@ def benchmark_test():
     cmd = ""
     if os.name == "nt":
         cmd = "echo " # Use equivalent command in Windows
-        
+
     args_env = {"Foo": "bar"}
     try:
         process = os.popen(cmd + bar)  # Note: Using os.popen for demonstration

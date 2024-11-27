@@ -14,7 +14,7 @@ def benchmark_test():
 
 def benchmark_test_post():
     response = make_response()
-    
+
     param = ""
     if 'BenchmarkTest02065' in request.headers:
         param = request.headers['BenchmarkTest02065']
@@ -27,9 +27,9 @@ def benchmark_test_post():
         param = "No cookie value supplied"
 
     response.set_cookie('SomeCookie', param, secure=True, httponly=True, path=request.path)
-    
+
     response.data = f"Created cookie: 'SomeCookie': with value: '{escape_html(param)}' and secure flag set to: true"
-    
+
     return response
 
 def do_something(param):

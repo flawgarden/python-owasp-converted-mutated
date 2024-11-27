@@ -34,7 +34,7 @@ def benchmark_test_post():
         response.set_data(
             "Problem getting FileInputStream: " + escape(str(e))
         )
-    
+
     return response
 
 class Test:

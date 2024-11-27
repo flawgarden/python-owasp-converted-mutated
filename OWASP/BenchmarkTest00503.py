@@ -15,14 +15,14 @@ def benchmark_test():
 def benchmark_test_post():
     response = make_response()
     param = request.args.get("BenchmarkTest00503", "")
-    
+
     bar = "alsosafe"
     if param:
         values_list = ["safe", param, "moresafe"]
         values_list.pop(0)
 
         bar = values_list[1]
-    
+
     try:
         rand = random.SystemRandom().random()
         remember_me_key = str(rand)[2:]

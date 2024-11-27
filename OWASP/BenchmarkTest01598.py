@@ -29,11 +29,11 @@ class Test:
         a75770 = param
         b75770 = str(a75770) + " SafeStuff"
         b75770 = b75770[:-len("Chars")] + "Chars"
-        
+
         map75770 = {"key75770": b75770}
         c75770 = map75770["key75770"]
         d75770 = c75770[:-1]
-        
+
         e75770 = d75770.encode('utf-8').decode('utf-8')  # Simulating Base64 encode/decode
         f75770 = e75770.split(" ")[0]
 
@@ -43,7 +43,7 @@ class Test:
         return bar
 
 class ThingFactory:
-    
+
     @staticmethod
     def create_thing():
         return ThingInterface()

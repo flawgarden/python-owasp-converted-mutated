@@ -24,10 +24,10 @@ def benchmark_test_post(request):
 
     param = query_string[param_loc + len(paramval):]
     ampersand_loc = query_string.find("&", param_loc)
-    
+
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
-    
+
     param = urllib.parse.unquote(param)
 
     bar = param
@@ -46,9 +46,9 @@ def benchmark_test_post(request):
 
         with open(file_target, 'a') as fw:
             fw.write("hash_value=" + result.hex() + "\n")
-        
+
         response += "Sensitive value '{}' hashed and stored<br/>".format(input_data.decode())
-    
+
     except Exception as e:
         print("Problem executing hash - TestCase")
         return str(e)

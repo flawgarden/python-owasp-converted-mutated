@@ -20,7 +20,7 @@ def benchmark_test():
     b9823 = a9823 + " SafeStuff"  # append some safe content
 
     # Replace some of the end content
-    b9823 = b9823[:-len("Chars")] + "Chars"  
+    b9823 = b9823[:-len("Chars")] + "Chars"
 
     map9823 = {}
     map9823["key9823"] = b9823  # put in a collection

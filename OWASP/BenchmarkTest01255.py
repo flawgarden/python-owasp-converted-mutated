@@ -21,7 +21,7 @@ def benchmark_test_post():
 
     response.headers['X-XSS-Protection'] = '0'
     response.set_data(bar)
-    
+
     return response
 
 class Test:

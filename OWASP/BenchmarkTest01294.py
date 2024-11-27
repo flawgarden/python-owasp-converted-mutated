@@ -54,7 +54,7 @@ def benchmark_test_post():
             remember_me = (cookie_name, remember_me_key)
             response.set_cookie(remember_me[0], remember_me[1], secure=True, httponly=True, path=request.full_path)
             response.data = f"{user} has been remembered with cookie: {remember_me[0]} whose value is: {remember_me[1]}<br/>"
-        
+
     except Exception as e:
         print("Problem executing random number generation - TestCase")
         raise e

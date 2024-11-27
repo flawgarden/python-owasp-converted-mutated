@@ -13,10 +13,10 @@ def benchmark_test():
 
 def benchmark_test_post():
     response_text = "Item: 'userid' with value: '"
-    
+
     param = request.args.get("BenchmarkTest02447", "")
     bar = do_something(param)
-    
+
     # Simulating session storage
     request.environ['werkzeug.session'].setdefault('userid', bar)
 

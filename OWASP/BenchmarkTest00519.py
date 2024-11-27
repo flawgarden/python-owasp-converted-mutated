@@ -28,7 +28,7 @@ def benchmark_test_post(request):
         "keyB-30190": param,
         "keyC": "another_Value"
     }
-    
+
     bar = map30190["keyB-30190"]
     bar = map30190["keyA-30190"]
 

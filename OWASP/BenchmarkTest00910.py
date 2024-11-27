@@ -26,7 +26,7 @@ def benchmark_test_post():
         cmd = "echo"
 
     argsEnv = {"Foo": "bar"}
-    
+
     try:
         p = os.popen(cmd + " " + bar)
         output = p.read()

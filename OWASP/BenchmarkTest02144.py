@@ -1,6 +1,6 @@
 
 from flask import Flask, request, make_response, render_template
-import html 
+import html
 
 app = Flask(__name__, static_url_path='/static', static_folder='static')
 app.config['DEBUG'] = True
@@ -9,7 +9,7 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = make_response()
     param = request.form.get("BenchmarkTest02144", "")
 
@@ -17,9 +17,9 @@ def benchmark_test():
 
     if bar == "":
         bar = "No cookie value supplied"
-        
+
     response.set_cookie("SomeCookie", bar, secure=True, httponly=True, path=request.path)
-    
+
     response_data = f"Created cookie: 'SomeCookie': with value: '{html.escape(bar)}' and secure flag set to: true"
     response.data = response_data
     return response

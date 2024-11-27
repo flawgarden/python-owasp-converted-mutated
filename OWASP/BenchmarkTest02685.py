@@ -19,7 +19,7 @@ def handle_post(request):
     param = request.args.get("BenchmarkTest02685", None)
 
     bar = do_something(param)
-    
+
     response.headers["X-XSS-Protection"] = "0"
     response.set_data(f"Formatted like: a and {bar}.")
     return response

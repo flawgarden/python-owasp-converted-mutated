@@ -32,7 +32,7 @@ def benchmark_test_post():
         response += ("Couldn't open FileInputStream on file: '" + file_name + "'<br>"
                      + "Problem getting FileInputStream: "
                      + escape_html(str(e)))
-    
+
     return response
 
 def do_something(param):

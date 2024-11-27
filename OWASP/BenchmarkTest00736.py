@@ -24,7 +24,7 @@ def benchmark_test():
     response.set_cookie('SomeCookie', str_input, secure=False, httponly=True, path=request.path)
     response.data = f"Created cookie: 'SomeCookie': with value: '{str_input}' and secure flag set to: false"
     response.content_type = "text/html;charset=UTF-8"
-    
+
     return response
 
 

@@ -17,7 +17,7 @@ def benchmark_test_post():
     response = app.response_class(content_type='text/html;charset=UTF-8')
 
     param = request.args.get('BenchmarkTest01301', '')
-    
+
     bar = Test().do_something(param)
 
     sql = f"{{call {bar}}}"
@@ -38,7 +38,7 @@ class Test:
         a11416 = param
         b11416 = a11416 + " SafeStuff"
         b11416 = b11416[:-len("Chars")] + "Chars"
-        
+
         map11416 = {}
         map11416["key11416"] = b11416
         c11416 = map11416["key11416"]
@@ -60,7 +60,7 @@ def create_thing():
     class Thing:
         def do_something(self, g11416):
             return g11416
-        
+
     return Thing()
 
 if __name__ == "__main__":

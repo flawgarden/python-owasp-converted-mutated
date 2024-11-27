@@ -20,7 +20,7 @@ def get_sql_statement():
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = app.response_class()
     scr = SeparateClassRequest(request)
     param = scr.getTheValue("BenchmarkTest00939")

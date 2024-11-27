@@ -12,7 +12,7 @@ def benchmark_test():
 
 def handle_request(request):
     response = app.response_class(content_type='text/html;charset=UTF-8')
-    
+
     param = ""
     if request.args:
         param = request.args.get('BenchmarkTest01337', '')

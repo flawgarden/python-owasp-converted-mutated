@@ -37,13 +37,13 @@ def benchmark_test():
     str_ = "?" if isinstance(input_param, str) else ""
     if isinstance(input_param, str):
         str_ = input_param
-    
+
     if str_ == "":
         str_ = "No cookie value supplied"
 
     cookie = make_response()
     cookie.set_cookie("SomeCookie", str_, secure=True, httponly=True, path=request.path)
-    
+
     response_body = f"Created cookie: 'SomeCookie': with value: '{str_}' and secure flag set to: true"
     return response_body, 200, {'Set-Cookie': cookie.headers['Set-Cookie']}
 

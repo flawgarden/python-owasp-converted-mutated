@@ -27,7 +27,7 @@ def benchmark_test_post():
     import hashlib
     sha384 = hashlib.sha384()
     input_param = bar.encode('utf-8') if isinstance(bar, str) else bar
-    
+
     sha384.update(input_param)
 
     result = sha384.digest()

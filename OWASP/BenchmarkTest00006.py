@@ -28,7 +28,7 @@ def benchmark_test_post():
     else:
         arg_list.append("sh")
         arg_list.append("-c")
-    
+
     arg_list.append("echo " + param)
 
     pb = os.popen(' '.join(arg_list))

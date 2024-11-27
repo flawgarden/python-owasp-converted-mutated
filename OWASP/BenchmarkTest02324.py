@@ -23,7 +23,7 @@ def benchmark_test():
         bar = do_something(param)
 
         response = app.response_class(
-            response=f"Formatted like: {bar} and b.", 
+            response=f"Formatted like: {bar} and b.",
             status=200,
             mimetype='text/html'
         )

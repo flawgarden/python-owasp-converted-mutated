@@ -14,7 +14,7 @@ def benchmark_test():
         param = ""
         flag = True
         names = request.args.keys() if request.method == 'GET' else request.form.keys()
-        
+
         for name in names:
             values = request.form.getlist(name)
             if values:
@@ -23,7 +23,7 @@ def benchmark_test():
                         param = name
                         flag = False
                         break
-        
+
         bar = do_something(param)
 
         response.headers['X-XSS-Protection'] = '0'
@@ -31,7 +31,7 @@ def benchmark_test():
         if bar is not None:
             length = len(bar)
             response.data = bar
-        
+
         return response
 
 def do_something(param):

@@ -13,7 +13,7 @@ def benchmark_test():
         return benchmark_test()
 
     response = make_response()
-    
+
     map = request.values
     param = ""
     if map:
@@ -54,7 +54,7 @@ def benchmark_test():
     except Exception as e:
         print("Problem executing SecureRandom.randint() - TestCase")
         raise e
-    
+
     response.set_data(response.get_data(as_text=True) + "Weak Randomness Test random.SystemRandom().randint() executed")
     return response
 

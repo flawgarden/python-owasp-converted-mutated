@@ -35,7 +35,7 @@ def benchmark_test():
                 if key == cookie_name:
                     if value == request.cookies.get(cookie_name):
                         found_user = True
-        
+
         if found_user:
             response.data = f"Welcome back: {user}<br/>".encode()
         else:

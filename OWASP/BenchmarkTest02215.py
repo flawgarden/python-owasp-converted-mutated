@@ -31,7 +31,7 @@ def benchmark_test():
 
         with open(file_path, 'a') as fw:
             fw.write("hash_value=" + encode_for_base64(result) + "\n")
-        
+
         response += "Sensitive value '" + encode_for_html(input_param.decode()) + "' hashed and stored<br/>"
 
     except Exception as e:

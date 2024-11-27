@@ -34,7 +34,7 @@ def benchmark_test():
         d39502 = c39502[:-1]
         e39502 = b64decode(b64encode(d39502.encode())).decode()
         f39502 = e39502.split(" ")[0]
-        
+
         # Simulating the ThingInterface and ThingFactory
         class ThingInterface:
             def doSomething(self, input_string):

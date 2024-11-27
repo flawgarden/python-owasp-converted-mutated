@@ -31,7 +31,7 @@ def benchmark_test_post():
         bar = values_list[1]  # get the last 'safe' value
 
     sql = f"SELECT * FROM USERS WHERE USERNAME='foo' AND PASSWORD='{bar}'"
-    
+
     try:
         con = sqlite3.connect('database.db')  # Adjust the path to your database
         cur = con.cursor()

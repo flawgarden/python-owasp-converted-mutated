@@ -17,7 +17,7 @@ def benchmark_test():
     for name in request.headers:
         if name in ['User-Agent', 'Accept', 'Accept-Language', 'Content-Type']:  # Example common headers
             continue
-        
+
         param = name
         break
 

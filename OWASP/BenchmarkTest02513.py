@@ -13,7 +13,7 @@ def benchmark_test():
 
 def benchmark_test_post():
     response = app.response_class(content_type="text/html;charset=UTF-8")
-    
+
     values = request.args.getlist("BenchmarkTest02513")
     param = values[0] if values else ""
 

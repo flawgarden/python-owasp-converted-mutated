@@ -13,9 +13,9 @@ def benchmark_test():
 
     param = ""
     for name in request.headers:
-        if name in ['User-Agent', 'Accept', 'Accept-Language', 'Accept-Encoding', 'Connection', 'Upgrade-Insecure-Requests']: 
+        if name in ['User-Agent', 'Accept', 'Accept-Language', 'Accept-Encoding', 'Connection', 'Upgrade-Insecure-Requests']:
             continue  # If standard header, move on to next one
-        
+
         param = name  # Grabs the name of the first non-standard header as the parameter
         break
 

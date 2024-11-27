@@ -15,7 +15,7 @@ def benchmark_test():
     query_string = request.query_string.decode()
     paramval = "BenchmarkTest02639="
     param_loc = query_string.find(paramval)
-    
+
     if param_loc == -1:
         return "getQueryString() couldn't find expected parameter 'BenchmarkTest02639' in query string.", 400
 
@@ -23,7 +23,7 @@ def benchmark_test():
     ampersand_loc = query_string.find("&", param_loc)
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
-    
+
     param = urllib.parse.unquote(param)
 
     bar = do_something(param)
@@ -31,7 +31,7 @@ def benchmark_test():
     try:
         sql = f"SELECT * FROM USERS WHERE USERNAME='foo' AND PASSWORD='{bar}'"
         # Assuming a function DatabaseHelper.JDBCtemplate.execute(sql) exists
-        # DatabaseHelper.JDBCtemplate.execute(sql) 
+        # DatabaseHelper.JDBCtemplate.execute(sql)
         return f"No results can be displayed for query: {sql}<br> because the execute method doesn't return results."
 
     except Exception as e:

@@ -17,7 +17,7 @@ class Test:
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     param = request.headers.get("BenchmarkTest01065", "")
     param = urllib.parse.unquote(param)
 

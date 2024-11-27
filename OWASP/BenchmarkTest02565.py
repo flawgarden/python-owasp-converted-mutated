@@ -17,21 +17,21 @@ def benchmark_test_post():
     query_string = request.query_string.decode('utf-8')
     paramval = "BenchmarkTest02565="
     param_loc = query_string.find(paramval)
-    
+
     if param_loc == -1:
         return "getQueryString() couldn't find expected parameter 'BenchmarkTest02565' in query string."
-    
-    param = query_string[param_loc + len(paramval):] 
+
+    param = query_string[param_loc + len(paramval):]
     ampersand_loc = query_string.find("&", param_loc)
-    
+
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
 
     param = base64.b64decode(param).decode('utf-8')
     bar = do_something(request, param)
-    
+
     file_name = os.path.join("path/to/testfiles", bar)
-    
+
     try:
         with open(file_name, 'wb') as fos:
             return "Now ready to write to file: " + file_name
@@ -43,7 +43,7 @@ def do_something(request, param):
     bar = ""
     if param:
         bar = base64.b64encode(base64.b64decode(param.encode('utf-8'))).decode('utf-8')
-    
+
     return bar
 
 @app.errorhandler(404)

@@ -13,17 +13,17 @@ def benchmark_test():
 
     response = Response()
     param = ""
-    
+
     for name in request.headers:
         if name in ['Content-Type', 'Accept', 'User-Agent']:  # Common headers
             continue
         param = name
         break
-    
+
     bar = do_something(request, param)
 
     file_name = os.path.join('testfiles', bar)
-    
+
     try:
         with open(file_name, 'rb') as is_file:
             b = is_file.read(1000)
@@ -33,7 +33,7 @@ def benchmark_test():
     except Exception as e:
         print("Couldn't open InputStream on file: '" + file_name + "'")
         response.set_data("Problem getting InputStream: " + escape_html(str(e)))
-    
+
     return response
 
 def do_something(request, param):

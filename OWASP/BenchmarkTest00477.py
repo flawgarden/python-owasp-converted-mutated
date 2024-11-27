@@ -8,18 +8,18 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = app.response_class(
         response='',
         status=200,
         mimetype='text/html'
     )
-    
+
     param = request.args.get('BenchmarkTest00477', '')
-    
+
     sbxyz54686 = str(param)
     bar = sbxyz54686 + "_SafeStuff"
-    
+
     response.headers['X-XSS-Protection'] = '0'
     response.set_data(bar)
     return response

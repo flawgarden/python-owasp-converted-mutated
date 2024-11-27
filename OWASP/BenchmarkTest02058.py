@@ -31,14 +31,14 @@ def benchmark_test_post():
     else:
         arg_list.append("sh")
         arg_list.append("-c")
-    
+
     arg_list.append("echo " + bar)
 
     process = os.popen(" ".join(arg_list))
-    
+
     response = process.read()
     process.close()
-    
+
     return response
 
 def do_something(param):
@@ -47,7 +47,7 @@ def do_something(param):
         values_list = ["safe", param, "moresafe"]
         values_list.pop(0)  # remove the 1st safe value
         bar = values_list[1]  # get the last 'safe' value
-        
+
     return bar
 
 if __name__ == "__main__":

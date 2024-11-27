@@ -18,17 +18,17 @@ def benchmark_test_post():
     query_string = request.query_string.decode('utf-8')
     paramval = "BenchmarkTest00813="
     param_loc = query_string.find(paramval)
-    
+
     if param_loc == -1:
         response.data = f"getQueryString() couldn't find expected parameter '{paramval}' in query string."
         return response
 
     param = query_string[param_loc + len(paramval):]  # Assume "BenchmarkTest00813" param is last
     ampersand_loc = query_string.find("&", param_loc)
-    
+
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
-    
+
     param = urllib.parse.unquote(param)
 
     num = 106

@@ -13,7 +13,7 @@ def benchmark_test():
 
     response_content = "text/html;charset=UTF-8"
     param = request.values.get("BenchmarkTest01762")
-    
+
     bar = Test().do_something(param)
 
     try:
@@ -21,14 +21,14 @@ def benchmark_test():
         input_data = b'?'
         if isinstance(bar, str):
             input_data = bar.encode()
-            
+
         md.update(input_data)
 
         result = md.digest()
         file_target = os.path.join('testfiles', 'passwordFile.txt')
         with open(file_target, 'a') as fw:
             fw.write("hash_value=" + result.hex() + "\n")
-        
+
         return render_template("index.html", message="Sensitive value '" + bar + "' hashed and stored<br/>")
 
     except Exception as e:

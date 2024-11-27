@@ -39,16 +39,16 @@ def benchmark_test_post():
 
 class Test:
     def do_something(self, request, param):
-        a75056 = param 
+        a75056 = param
         b75056 = a75056 + " SafeStuff"
         b75056 = b75056[:-len("Chars")] + "Chars"
         map75056 = {'key75056': b75056}
         c75056 = map75056["key75056"]
         d75056 = c75056[:-1]
-        
+
         e75056 = base64.b64decode(base64.b64encode(d75056.encode())).decode()
         f75056 = e75056.split(" ")[0]
-        
+
         thing = create_thing()
         g75056 = "barbarians_at_the_gate"
         bar = thing.do_something(g75056)
@@ -59,7 +59,7 @@ def create_thing():
     class ThingInterface:
         def do_something(self, data):
             return "/some/path/" + data
-            
+
     return ThingInterface()
 
 @app.errorhandler(404)

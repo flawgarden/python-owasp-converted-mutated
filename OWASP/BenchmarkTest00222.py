@@ -9,7 +9,7 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = request
     param = ""
     for name in request.headers:

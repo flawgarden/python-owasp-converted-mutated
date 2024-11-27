@@ -30,12 +30,12 @@ def benchmark_test_post():
 
         if isinstance(input_param, str):
             input_data = input_param.encode()
-            
+
         md.update(input_data)
-        
+
         result = md.digest()
         file_target = os.path.join('path_to_directory', 'passwordFile.txt')
-        
+
         with open(file_target, 'a') as fw:
             fw.write("hash_value=" + result.hex() + "\n")
 

@@ -9,7 +9,7 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     param = ""
     flag = True
     names = request.args.keys()
@@ -21,17 +21,17 @@ def benchmark_test():
                     if value == "BenchmarkTest02301":
                         param = name
                         flag = False
-    
+
     bar = do_something(param)
-    
+
     file_target = bar
     response_message = "Access to file: '" + file_target + "' created."
-    
+
     if os.path.exists(file_target):
         response_message += " And file already exists."
     else:
         response_message += " But file doesn't exist yet."
-    
+
     return render_template("index.html", message=response_message)
 
 def do_something(param):
@@ -41,7 +41,7 @@ def do_something(param):
         values_list.pop(0)
 
         bar = values_list[1]
-    
+
     return bar
 
 @app.errorhandler(404)

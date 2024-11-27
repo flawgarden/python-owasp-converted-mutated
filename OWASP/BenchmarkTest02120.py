@@ -15,29 +15,29 @@ def benchmark_test():
 
 def benchmark_test_post():
     response_content = "text/html;charset=UTF-8"
-    
+
     param = request.args.get("BenchmarkTest02120")
     if param is None:
         param = ""
 
     bar = do_something(param)
-    
+
     try:
         import hashlib
         md = hashlib.sha256()
-        
+
         input_data = b'?'
         input_param = bar
         if isinstance(input_param, str):
             input_data = input_param.encode()
-        
+
         md.update(input_data)
 
         result = md.digest()
         file_target = os.path.join("testfiles", "passwordFile.txt")
         with open(file_target, "a") as fw:
             fw.write("hash_value=" + base64.b64encode(result).decode() + "\n")
-        
+
         return f"Sensitive value '{escape_html(input_data.decode())}' hashed and stored<br/>"
 
     except Exception as e:

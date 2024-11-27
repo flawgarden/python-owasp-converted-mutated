@@ -50,13 +50,13 @@ def benchmark_test():
             remember_me.set_cookie(cookie_name, remember_me_key, secure=True, httponly=True, path=request.path)
             request.environ['beaker.session'][cookie_name] = remember_me_key
             response.data = f"{user} has been remembered with cookie: {remember_me.name} whose value is: {remember_me.value}<br/>"
-        
+
     except Exception as e:
         print("Problem executing SecureRandom.nextBytes() - TestCase")
         raise e
     finally:
         response.data += "Randomness Test os.urandom() executed"
-    
+
     return response
 
 if __name__ == "__main__":

@@ -33,7 +33,7 @@ def benchmark_test_post():
             fw.write("hash_value=" + result.hex() + "\n")
 
         return render_template("index.html", message=f"Sensitive value '{escape_input(input_data.decode())}' hashed and stored<br/>")
-    
+
     except Exception as e:
         return render_template("index.html", message="An error occurred during hashing.")
 

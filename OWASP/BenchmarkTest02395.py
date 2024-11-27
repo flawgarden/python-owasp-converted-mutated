@@ -15,7 +15,7 @@ def benchmark_test():
 def benchmark_test_post():
     response = make_response()
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
-    
+
     param = request.args.get('BenchmarkTest02395', '')
 
     bar = do_something(param)

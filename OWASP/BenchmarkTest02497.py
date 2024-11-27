@@ -14,7 +14,7 @@ def benchmark_test():
         return benchmark_test()
 
     response = make_response()
-    
+
     values = request.args.getlist("BenchmarkTest02497")
     param = values[0] if values else ""
 
@@ -43,7 +43,7 @@ def benchmark_test():
         response.data = f"Welcome back: {user}<br/>"
     else:
         remember_me = make_response(f"{user} has been remembered with cookie: {cookie_name} whose value is: {remember_me_key}<br/>")
-        remember_me.set_cookie(cookie_name, remember_me_key, secure=True, httponly=True, domain=urlparse(request.url).netloc, path=request.path) 
+        remember_me.set_cookie(cookie_name, remember_me_key, secure=True, httponly=True, domain=urlparse(request.url).netloc, path=request.path)
         response = remember_me
         request.cookies[cookie_name] = remember_me_key  # simulate session-based cookie storage
 

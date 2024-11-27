@@ -16,7 +16,7 @@ def benchmark_test_post(request):
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
 
     query_string = request.query_string.decode()
-    paramval = "BenchmarkTest00803=" 
+    paramval = "BenchmarkTest00803="
     param_loc = query_string.find(paramval)
 
     if param_loc == -1:
@@ -25,7 +25,7 @@ def benchmark_test_post(request):
         )
         return response
 
-    param = query_string[param_loc + len(paramval):] 
+    param = query_string[param_loc + len(paramval):]
     ampersand_loc = query_string.find("&", param_loc)
 
     if ampersand_loc != -1:

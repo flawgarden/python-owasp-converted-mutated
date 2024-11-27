@@ -18,7 +18,7 @@ def benchmark_test():
 
     response = make_response()
     param = request.form.get('BenchmarkTest01282', "")
-    
+
     bar = Test().do_something(param)
 
     cookie = make_response()
@@ -26,7 +26,7 @@ def benchmark_test():
 
     response.headers.add("Set-Cookie", cookie.headers["Set-Cookie"])
     response.data = f"Created cookie: 'SomeCookie': with value: '{bar}' and secure flag set to: false"
-    
+
     return response
 
 if __name__ == "__main__":

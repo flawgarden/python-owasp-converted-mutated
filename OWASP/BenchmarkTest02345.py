@@ -13,11 +13,11 @@ def benchmark_test():
         return benchmark_test()
 
     response = make_response()
-    
+
     param = ""
     flag = True
     names = request.args.keys()
-    
+
     for name in names:
         values = request.args.getlist(name)
         if values:

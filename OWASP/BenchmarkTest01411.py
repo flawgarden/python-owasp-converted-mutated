@@ -41,7 +41,7 @@ def benchmark_test_01411_post():
             fw.write("hash_value=" + result.hex() + "\n")
 
         return f"Sensitive value '{input_param.decode()}' hashed and stored<br/>"
-    
+
     except Exception as e:
         print("Problem executing hash - TestCase hashlib.sha1()")
         raise e

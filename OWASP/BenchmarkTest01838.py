@@ -26,7 +26,7 @@ def benchmark_test():
 
         bar = do_something(request, param)
         file_name = os.path.join("path_to_test_files", bar)
-        
+
         try:
             with open(file_name, 'rb') as fis:
                 b = fis.read(1000)

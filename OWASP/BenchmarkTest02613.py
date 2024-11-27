@@ -32,7 +32,7 @@ def benchmark_test_post(request):
 
     cmd = Utils.get_insecure_os_command_string()
     args_env = [bar]
-    
+
     try:
         p = os.popen(cmd + ' ' + ' '.join(args_env))
         result = p.read()

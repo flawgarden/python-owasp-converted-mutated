@@ -17,7 +17,7 @@ def benchmark_test_post():
     for name in request.headers:
         if name in common_headers:
             continue  # If standard header, move on to next one
-        
+
         param = name  # Grabs the name of the first non-standard header as the parameter
         break
 
@@ -25,7 +25,7 @@ def benchmark_test_post():
 
     file_target = os.path.join(bar, "Test.txt")
     response_message = f"Access to file: '{file_target}' created."
-    
+
     if os.path.exists(file_target):
         response_message += " And file already exists."
     else:

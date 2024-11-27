@@ -16,7 +16,7 @@ def benchmark_test():
 
 def benchmark_test_post():
     response = "text/html;charset=UTF-8"
-    
+
     param = ""
     headers = request.headers.get("BenchmarkTest02041")
 
@@ -30,7 +30,7 @@ def benchmark_test_post():
     try:
         md = hashlib.new("sha384")
 
-        input_data = b'?'  
+        input_data = b'?'
         input_param = bar.encode() if isinstance(bar, str) else bar
 
         if isinstance(input_param, bytes):

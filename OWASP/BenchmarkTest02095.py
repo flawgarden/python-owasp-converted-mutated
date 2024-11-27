@@ -36,7 +36,7 @@ def benchmark_test():
         except sqlite3.Error as e:
             response.data = "Error processing request."
             return response
-        
+
         return response  # Return your desired output here
 
     return render_template("index.html")  # Or whatever template you want to show

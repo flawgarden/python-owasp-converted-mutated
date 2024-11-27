@@ -9,7 +9,7 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     param = ""
     flag = True
     for name in request.args:
@@ -28,7 +28,7 @@ def benchmark_test():
         # DatabaseHelper.JDBCtemplate.execute(sql) -- Placeholder for actual database execution
         print("No results can be displayed for query: " + sql)  # Simulate database interaction
         return "No results can be displayed for query: " + sql + "<br> because the execute method doesn't return results."
-    
+
     except Exception as e:
         return "Error processing request."
 

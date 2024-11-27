@@ -24,7 +24,7 @@ def benchmark_test_post():
     bar = do_something(param)
 
     sql = "SELECT * FROM USERS WHERE USERNAME='foo' AND PASSWORD='{}'".format(bar)
-    
+
     try:
         connection = get_db_connection()
         result = connection.execute(text(sql)).fetchall()

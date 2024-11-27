@@ -16,7 +16,7 @@ def benchmark_test():
         session['userid'] = bar
 
         return f"Item: 'userid' with value: '{html.escape(bar)}' saved in session."
-    
+
     return render_template("index.html")
 
 class Test:
@@ -31,7 +31,7 @@ class Test:
 class ThingInterface:
     def do_something(self, param):
         # Placeholder for actual functionality
-        return param 
+        return param
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')

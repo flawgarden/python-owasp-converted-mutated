@@ -14,10 +14,10 @@ def get_sql_statement():
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = app.response_class()
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
-    
+
     param = ""
     headers = request.headers.getlist("BenchmarkTest00018")
 
@@ -31,7 +31,7 @@ def benchmark_test():
     try:
         statement = get_sql_statement()
         count = statement.execute(sql)
-        statement.connection.commit() 
+        statement.connection.commit()
         output_update_complete(sql, response)
     except sqlite3.Error as e:
         response.data = "Error processing request."

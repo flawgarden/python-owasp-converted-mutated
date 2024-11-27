@@ -14,7 +14,7 @@ def benchmark_test():
         response = make_response(render_template("weakrand-02/BenchmarkTest00960.html"))
         user_cookie = ('BenchmarkTest00960', 'anything', 60 * 3, request.path,
                        urllib.parse.urlparse(request.url).netloc)
-        response.set_cookie(user_cookie[0], user_cookie[1], max_age=user_cookie[2], path=user_cookie[3], 
+        response.set_cookie(user_cookie[0], user_cookie[1], max_age=user_cookie[2], path=user_cookie[3],
                             domain=user_cookie[4], secure=True)
         return response
 
@@ -47,7 +47,7 @@ def benchmark_test():
             return f"Welcome back: {user}<br/>"
         else:
             remember_me = make_response()
-            remember_me.set_cookie(cookie_name, remember_me_key, path=request.path, 
+            remember_me.set_cookie(cookie_name, remember_me_key, path=request.path,
                                     domain=urllib.parse.urlparse(request.url).netloc, secure=True, httponly=True)
             request.environ['werkzeug.session'][cookie_name] = remember_me_key
             return f"{user} has been remembered with cookie: {cookie_name} whose value is: {remember_me_key}<br/>"

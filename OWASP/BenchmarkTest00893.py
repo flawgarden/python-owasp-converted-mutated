@@ -15,11 +15,11 @@ def benchmark_test():
 def benchmark_test_post():
     response = app.response_class()
     response.headers["Content-Type"] = "text/html;charset=UTF-8"
-    
+
     param = request.args.get("BenchmarkTest00893", "")
-    
+
     bar = ""
-    
+
     num = 86
     if (7 * 42) - num > 200:
         bar = "This_should_always_happen"
@@ -31,7 +31,7 @@ def benchmark_test_post():
     if bar:
         length = len(bar)
         response.set_data(bar[:length])
-    
+
     return response
 
 @app.errorhandler(404)

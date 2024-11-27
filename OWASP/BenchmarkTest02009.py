@@ -43,7 +43,7 @@ def benchmark_test_02009_post():
             if cookie_name in cookies:
                 if cookies[cookie_name] == request.environ.get('session').get(cookie_name):
                     found_user = True
-        
+
         if found_user:
             response.data = f"Welcome back: {user}<br/>"
         else:

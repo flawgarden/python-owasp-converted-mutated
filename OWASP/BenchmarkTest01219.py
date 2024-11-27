@@ -38,7 +38,7 @@ def benchmark_test_post():
     except sqlite3.DatabaseError as e:
         response.set_data("Error processing request.")
         return response
-    
+
     return response
 
 class Test:

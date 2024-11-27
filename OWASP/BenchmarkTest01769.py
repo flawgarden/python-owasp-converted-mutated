@@ -14,7 +14,7 @@ def benchmark_test():
 def benchmark_test_post():
     response = Response()
     response.headers['X-XSS-Protection'] = '0'
-    
+
     param = request.args.get("BenchmarkTest01769")
 
     bar = Test().do_something(param)

@@ -15,7 +15,7 @@ def benchmark_test():
 def benchmark_test_post(request):
     response = {}
     param = request.args.get("BenchmarkTest00409", "")
-    
+
     bar = ""
     guess = "ABC"
     switch_target = guess[2]

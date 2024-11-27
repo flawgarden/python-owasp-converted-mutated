@@ -11,7 +11,7 @@ def benchmark_test():
 
     response = Response()
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
-    
+
     param = request.args.get("BenchmarkTest02407", "")
     bar = do_something(request, param)
 
@@ -25,7 +25,7 @@ def do_something(request, param):
         sbxyz58438 = list(param)
         sbxyz58438[-1] = "Z"
         bar = ''.join(sbxyz58438)
-    
+
     return bar
 
 if __name__ == "__main__":

@@ -34,7 +34,7 @@ class Test:
     def do_something(self, param):
         bar = ''
         guess = "ABC"
-        switch_target = guess[1] 
+        switch_target = guess[1]
 
         if switch_target == 'A':
             bar = param

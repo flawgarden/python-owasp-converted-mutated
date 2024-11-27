@@ -13,7 +13,7 @@ def benchmark_test():
 def process_request():
     param = request.args.get('BenchmarkTest01338', '')
     bar = Test().do_something(param)
-    
+
     response = app.response_class(
         response=bar,
         status=200,

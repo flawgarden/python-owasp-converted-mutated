@@ -13,7 +13,7 @@ def benchmark_test():
 
 def benchmark_test_post():
     response = app.response_class(content_type="text/html;charset=UTF-8")
-    
+
     values = request.values.getlist("BenchmarkTest00730")
     param = values[0] if values else ""
 
@@ -25,7 +25,7 @@ def benchmark_test_post():
     }
     bar = map29173.get("keyB-29173")
     bar = map29173.get("keyA-29173")
-    
+
     response.headers["X-XSS-Protection"] = "0"
     response.set_data(bar)
     return response

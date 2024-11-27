@@ -13,7 +13,7 @@ def benchmark_test():
 def benchmark_test_post():
     response = app.response_class()
     param = request.headers.get("BenchmarkTest01958", "")
-    
+
     param = param  # URL decoding is handled by Flask automatically
 
     bar = do_something(request, param)

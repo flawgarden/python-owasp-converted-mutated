@@ -17,7 +17,7 @@ def benchmark_test_post():
     query_string = request.query_string.decode('utf-8')
     paramval = "BenchmarkTest02575="
     param_loc = query_string.find(paramval)
-    
+
     if param_loc == -1:
         return "getQueryString() couldn't find expected parameter 'BenchmarkTest02575' in query string."
 
@@ -25,7 +25,7 @@ def benchmark_test_post():
     ampersand_loc = query_string.find("&", param_loc)
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
-    
+
     param = param.replace('%20', ' ')
 
     bar = do_something(param)
@@ -42,7 +42,7 @@ def benchmark_test_post():
             fw.write(b"hash_value=" + encode_for_base64(result) + b"\n")
 
         return f"Sensitive value '{encode_for_html(input_data.decode())}' hashed and stored<br/>"
-    
+
     except Exception as e:
         print("Problem executing hash - TestCase", str(e))
         return str(e)

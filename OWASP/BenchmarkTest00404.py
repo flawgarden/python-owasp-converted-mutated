@@ -25,10 +25,10 @@ def benchmark_test_post():
 
     input_param = param
     str_value = param if isinstance(input_param, str) else ""
-    
+
     if str_value == "":
         str_value = "No cookie value supplied"
-        
+
     cookie = f'SomeCookie={str_value}; Secure; HttpOnly; Path=/securecookie-00/BenchmarkTest00404'
     response.headers.add('Set-Cookie', cookie)
 

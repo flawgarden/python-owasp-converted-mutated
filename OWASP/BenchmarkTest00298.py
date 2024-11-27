@@ -11,7 +11,7 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = make_response()
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
 
@@ -20,7 +20,7 @@ def benchmark_test():
 
     if headers:
         param = headers[0]
-    
+
     param = urllib.parse.unquote(param)
 
     bar = (7 * 42) - 106 > 200 and "This should never happen" or param
@@ -37,7 +37,7 @@ def benchmark_test():
 
     foundUser = False
     cookies = request.cookies
-    
+
     if cookies:
         for cookie in cookies:
             if cookie == cookieName and request.cookies[cookie] == request.session.get(cookieName):

@@ -18,7 +18,7 @@ def benchmark_test_post():
     query_string = request.query_string.decode()
     paramval = "BenchmarkTest01703="
     param_loc = query_string.find(paramval)
-    
+
     if param_loc == -1:
         return "getQueryString() couldn't find expected parameter 'BenchmarkTest01703' in query string."
 
@@ -26,7 +26,7 @@ def benchmark_test_post():
     ampersand_loc = query_string.find("&", param_loc)
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
-    
+
     param = base64.b64decode(base64.b64encode(param.encode())).decode()
 
     try:
@@ -39,7 +39,7 @@ def benchmark_test_post():
 
         user += test_case_number
         cookie_name = "rememberMe" + test_case_number
-        
+
         found_user = False
         cookies = request.cookies
         if cookies:

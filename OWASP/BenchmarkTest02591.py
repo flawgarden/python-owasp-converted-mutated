@@ -30,7 +30,7 @@ def benchmark_test():
     response = f'Content-Type: {response_data}\n'
     response += 'X-XSS-Protection: 0\n'
     response += f'Formatted like: {bar} and b.'
-    
+
     return response
 
 def do_something(param):

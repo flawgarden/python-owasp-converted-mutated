@@ -40,6 +40,6 @@ def benchmark_test():
         except Exception as e:
             print("Problem executing cmdi - TestCase")
             return render_template("error.html", message=str(e))
-        
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0')

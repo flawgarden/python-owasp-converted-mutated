@@ -23,7 +23,7 @@ def benchmark_test():
                 response.data = f"Now ready to write to file: {file_name}"
         except Exception as e:
             print(f"Couldn't open FileOutputStream on file: '{file_name}'")
-    
+
         return response
 
 def do_something(request, param):

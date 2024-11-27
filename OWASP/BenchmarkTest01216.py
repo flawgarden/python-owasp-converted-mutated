@@ -14,7 +14,7 @@ def benchmark_test():
 
 def benchmark_test_post():
     response = app.response_class(content_type='text/html;charset=UTF-8')
-    
+
     param = ""
     headers = request.headers.get("BenchmarkTest01216")
 
@@ -35,7 +35,7 @@ def benchmark_test_post():
         print_results(sql, results, response)
     except sqlite3.Error as e:
         response.data = "Error processing request."
-        
+
     return response
 
 class Test:

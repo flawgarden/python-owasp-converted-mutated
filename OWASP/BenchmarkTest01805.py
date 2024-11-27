@@ -50,7 +50,7 @@ def benchmark_test_post():
     response = request.environ.get('wsgi.errors')
     param = SeparateClassRequest(request).get_the_value("BenchmarkTest01805")
     bar = Test().do_something(request, param)
-    
+
     sql = "SELECT * from USERS where USERNAME=? and PASSWORD='" + bar + "'"
 
     try:

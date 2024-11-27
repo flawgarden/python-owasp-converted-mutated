@@ -48,7 +48,7 @@ def benchmark_test_post():
         response.data = f"{user} has been remembered with cookie: {cookie_name} whose value is: {remember_me_key}<br/>"
 
     response.data += "Weak Randomness Test random.gauss() executed"
-    
+
     return response
 
 

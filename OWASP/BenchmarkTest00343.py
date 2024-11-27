@@ -21,7 +21,7 @@ def benchmark_test():
 def benchmark_test_post():
     param = ""
     headers = request.headers.get("BenchmarkTest00343")
-    
+
     if headers:
         param = headers
 

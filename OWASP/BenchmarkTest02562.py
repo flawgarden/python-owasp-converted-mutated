@@ -16,7 +16,7 @@ def benchmark_test_post():
     query_string = request.query_string.decode("utf-8")
     paramval = "BenchmarkTest02562="
     param_loc = query_string.find(paramval)
-    
+
     response_html = ""
 
     if param_loc == -1:

@@ -14,28 +14,28 @@ def benchmark_test():
 
 def benchmark_test_post():
     response = app.response_class(content_type='text/html;charset=UTF-8')
-    
+
     param = request.args.get('BenchmarkTest00512', '')
 
     bar = param
-    
+
     sql = f"SELECT * from USERS where USERNAME='foo' and PASSWORD='{bar}'"
-    
+
     try:
         connection = sqlite3.connect('example.db')
         cursor = connection.cursor()
-        
+
         cursor.execute(sql)
         results = cursor.fetchall()
 
         for row in results:
             response.data += f"{row}<br>"
-        
+
         connection.close()
 
     except Exception as e:
         response.data = "Error processing request."
-    
+
     return response
 
 if __name__ == "__main__":

@@ -12,7 +12,7 @@ def benchmark_test():
         user_cookie = make_response()
         user_cookie.set_cookie("BenchmarkTest00995", "color", max_age=60 * 3, secure=True, path=request.path, domain=request.host)
         return resp
-    
+
     if request.method == 'POST':
         param = "noCookieValueSupplied"
         the_cookies = request.cookies

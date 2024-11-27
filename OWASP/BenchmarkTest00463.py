@@ -18,7 +18,7 @@ def do_post(request):
     param = request.args.get("BenchmarkTest00463", "")
 
     bar = escape_html(param)
-    
+
     try:
         md = hashlib.new('sha384')
         input_data = bar.encode('utf-8')
@@ -34,7 +34,7 @@ def do_post(request):
     except Exception as e:
         print("Problem executing hash.")
         return str(e)
-    
+
     response += "Hash Test executed"
     return response
 

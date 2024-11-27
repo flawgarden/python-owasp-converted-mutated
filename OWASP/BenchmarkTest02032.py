@@ -35,7 +35,7 @@ def benchmark_test():
                 )
         except Exception as e:
             print(f"Couldn't open FileInputStream on file: '{file_name}'")
-        
+
         return response
 
 def do_something(param):

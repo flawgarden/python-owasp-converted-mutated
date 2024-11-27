@@ -16,7 +16,7 @@ def benchmark_test():
     response = make_response()
     param = ""
     flag = True
-    
+
     for name in request.args:
         values = request.args.getlist(name)
         if values:

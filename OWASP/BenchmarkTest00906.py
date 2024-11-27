@@ -11,7 +11,7 @@ def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
     response = render_template("index.html")
-    
+
     param = request.args.get('BenchmarkTest00906')
     bar = ""
     if param is not None:
@@ -40,7 +40,7 @@ def benchmark_test():
     except Exception as e:
         print("Problem executing cmdi - TestCase")
         response += "<pre>" + str(e) + "</pre>"
-    
+
     return response
 
 @app.errorhandler(404)

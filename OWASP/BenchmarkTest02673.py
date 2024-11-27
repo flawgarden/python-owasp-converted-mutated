@@ -27,14 +27,14 @@ def benchmark_test():
         input_data = b'?'
         if isinstance(bar, str):
             input_data = bar.encode()
-        
+
         md.update(input_data)
 
         result = md.digest()
         file_target = os.path.join("path/to/test/files", "passwordFile.txt")
         with open(file_target, 'a') as fw:
             fw.write("hash_value=" + base64.b64encode(result).decode() + "\n")
-        
+
         response += ("Sensitive value '" + escape_html(str(input_data)) + "' hashed and stored<br/>")
 
     except Exception as e:

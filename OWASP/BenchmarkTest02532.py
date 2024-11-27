@@ -16,7 +16,7 @@ def benchmark_test():
 def benchmark_test_post():
     response = ""
     values = request.values.getlist("BenchmarkTest02532")
-    
+
     param = values[0] if values else ""
     bar = do_something(param)
 

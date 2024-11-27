@@ -31,7 +31,7 @@ def benchmark_test_post():
 
     response.headers['X-XSS-Protection'] = '0'
     response.set_data(f"Parameter value: {bar}")
-    
+
     return response
 
 if __name__ == "__main__":

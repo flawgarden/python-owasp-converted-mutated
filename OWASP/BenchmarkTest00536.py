@@ -30,9 +30,9 @@ def benchmark_test_post():
 
     bar = "safe!"
     map28714 = {}
-    map28714["keyA-28714"] = "a-Value" 
-    map28714["keyB-28714"] = param 
-    map28714["keyC"] = "another-Value" 
+    map28714["keyA-28714"] = "a-Value"
+    map28714["keyB-28714"] = param
+    map28714["keyC"] = "another-Value"
     bar = map28714["keyB-28714"]
 
     try:
@@ -47,7 +47,7 @@ def benchmark_test_post():
         file_target = os.path.join("path_to_your_directory", "passwordFile.txt")
         with open(file_target, "a") as fw:
             fw.write("hash_value=" + result.hex() + "\n")
-        
+
         return f"Sensitive value '{input.decode()}' hashed and stored<br/>"
 
     except Exception as e:

@@ -15,7 +15,7 @@ def benchmark_test():
     for name in request.headers:
         if name in ['User-Agent', 'Accept', 'Accept-Encoding', 'Accept-Language']:  # commonHeaders example
             continue
-        
+
         param = name  # Grabs the name of the first non-standard header as the parameter
         break
 

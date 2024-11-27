@@ -26,7 +26,7 @@ def benchmark_test_post(request):
 
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
-        
+
     param = urllib.parse.unquote(param)
 
     bar = None

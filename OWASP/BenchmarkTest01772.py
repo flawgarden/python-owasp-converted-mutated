@@ -31,12 +31,12 @@ def do_post(request):
     response = make_response()
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
     response.headers['X-XSS-Protection'] = '0'
-    
+
     scr = SeparateClassRequest(request)
     param = scr.getTheValue("BenchmarkTest01772")
-    
+
     bar = Test().doSomething(request, param)
-    
+
     response.set_data(bar)
     return response
 

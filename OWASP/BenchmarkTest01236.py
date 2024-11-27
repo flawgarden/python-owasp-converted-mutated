@@ -12,16 +12,16 @@ def benchmark_test():
 
     response = "<html><body>"
     param = request.form.get("BenchmarkTest01236", "")
-    
+
     bar = Test().do_something(request, param)
 
     start_uri_slashes = "//" if os.name != 'nt' else "/"
-    
+
     try:
         file_uri = f"file:{start_uri_slashes}{urllib.parse.quote(os.path.normpath('testfiles_dir').replace(' ', '_'))}{bar}"
         file_target = os.path.normpath(file_uri)
         response += f"Access to file: '{html_escape(file_target)}' created.<br>"
-        
+
         if os.path.exists(file_target):
             response += " And file already exists.<br>"
         else:

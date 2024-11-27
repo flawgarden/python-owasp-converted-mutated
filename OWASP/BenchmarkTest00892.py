@@ -13,7 +13,7 @@ def benchmark_test():
 def benchmark_test_post():
     response = make_response()
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
-    
+
     param = request.args.get('BenchmarkTest00892', '')
     bar = param
 
@@ -22,7 +22,7 @@ def benchmark_test_post():
     if bar:
         length = len(bar)
         response.data = bar.encode('utf-8')[:length]
-    
+
     return response
 
 if __name__ == "__main__":

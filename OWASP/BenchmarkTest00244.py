@@ -12,7 +12,7 @@ def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
     response = make_response()
-    
+
     param = ''
     headers = request.headers
     for name in headers:

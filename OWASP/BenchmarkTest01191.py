@@ -17,7 +17,7 @@ class Test:
         return Thing()
 
 class Thing:
-    
+
     def do_something(self, param):
         # Placeholder for actual implementation of do_something
         return param

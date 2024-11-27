@@ -17,7 +17,7 @@ def benchmark_test_post():
 
     cookie = make_response("Created cookie: 'SomeCookie': with value: '" + bar + "' and secure flag set to: false")
     cookie.set_cookie("SomeCookie", bar, secure=False, httponly=True, path=request.path)
-    
+
     return cookie
 
 def do_something(param):

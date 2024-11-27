@@ -14,11 +14,11 @@ def benchmark_test():
         user_cookie = ('BenchmarkTest00076', 'someSecret', 180)  # Store cookie for 3 minutes
         resp.set_cookie(user_cookie[0], user_cookie[1], max_age=user_cookie[2], secure=True, path=request.path, domain=request.host)
         return resp
-    
+
     if request.method == 'POST':
         param = "noCookieValueSupplied"
         the_cookies = request.cookies
-        
+
         if 'BenchmarkTest00076' in the_cookies:
             param = urllib.parse.unquote(the_cookies['BenchmarkTest00076'])
 

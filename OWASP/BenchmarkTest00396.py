@@ -23,7 +23,7 @@ def benchmark_test():
         pb = os.popen(" ".join(args))
         output = pb.read()
         pb.close()
-        
+
         return output
 
     return render_template("index.html")

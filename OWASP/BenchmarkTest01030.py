@@ -14,7 +14,7 @@ def benchmark_test():
 
 def benchmark_test_post():
     response = "text/html;charset=UTF-8"
-    
+
     param = ""
     if request.headers.get("BenchmarkTest01030") is not None:
         param = request.headers.get("BenchmarkTest01030")

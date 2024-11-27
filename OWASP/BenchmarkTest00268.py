@@ -39,7 +39,7 @@ def benchmark_test_post():
             input_data = bar.encode()
         else:
             input_data = bytes(bar)
-        
+
         md.update(input_data)
 
         # Getting result of hashing
@@ -47,7 +47,7 @@ def benchmark_test_post():
         file_target = os.path.join("your_path_here", "passwordFile.txt")
         with open(file_target, "ab") as fw:
             fw.write(b"hash_value=" + result + b"\n")
-        
+
         response_content += f"Sensitive value '{html_encode(input_data.decode())}' hashed and stored<br/>"
 
     except Exception as e:

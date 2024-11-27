@@ -18,7 +18,7 @@ def benchmark_test():
     a87833 = param
     b87833 = a87833 + " SafeStuff"
     b87833 = b87833[:-5] + "Chars"
-    
+
     map87833 = {"key87833": b87833}
     c87833 = map87833["key87833"]
     d87833 = c87833[:-1]

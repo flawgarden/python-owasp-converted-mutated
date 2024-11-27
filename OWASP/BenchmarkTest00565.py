@@ -16,7 +16,7 @@ def benchmark_test_post():
     param = ""
     flag = True
     names = request.args.keys()
-    
+
     for name in names:
         values = request.args.getlist(name)
         if values is not None:
@@ -32,9 +32,9 @@ def benchmark_test_post():
 
     str_value = param if param else "No cookie value supplied"
     response = make_response("Created cookie: 'SomeCookie': with value: '" + bar + "' and secure flag set to: false")
-    
+
     response.set_cookie("SomeCookie", str_value, secure=False, httponly=True, path=request.path)
-    
+
     return response
 
 @app.errorhandler(404)

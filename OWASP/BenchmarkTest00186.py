@@ -13,7 +13,7 @@ def benchmark_test():
         return benchmark_test()
 
     response = make_response()
-    
+
     param = request.headers.get("BenchmarkTest00186", "")
     param = base64.urlsafe_b64decode(param.encode()).decode('utf-8')
 
@@ -25,10 +25,10 @@ def benchmark_test():
     d18509 = c18509[:-1]
     e18509 = base64.b64decode(base64.b64encode(d18509.encode())).decode()
     f18509 = e18509.split(" ")[0]
-    
+
     thing = None  # This line needs to create a ThingInterface instance
     g18509 = "barbarians_at_the_gate"
-    bar = thing.doSomething(g18509) if thing else None 
+    bar = thing.doSomething(g18509) if thing else None
 
     try:
         randNumber = random.randint(0, 98)
@@ -60,7 +60,7 @@ def benchmark_test():
         raise
 
     response.data += "Weak Randomness Test executed"
-    
+
     return response
 
 if __name__ == "__main__":

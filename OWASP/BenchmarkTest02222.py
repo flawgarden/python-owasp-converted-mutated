@@ -16,7 +16,7 @@ def benchmark_test_post(request):
 
     response = app.make_response(render_template("response.html", bar=bar))
     response.headers['X-XSS-Protection'] = '0'
-    
+
     return response
 
 def do_something(request, param):

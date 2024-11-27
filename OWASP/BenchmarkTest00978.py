@@ -9,12 +9,12 @@ app.config['DEBUG'] = True
 class Test:
 
     def do_something(self, param):
-        a60830 = param  
+        a60830 = param
         b60830 = str(a60830) + " SafeStuff"
         b60830 = b60830[:-5] + "Chars"
         map60830 = {'key60830': b60830}
         c60830 = map60830['key60830']
-        d60830 = c60830[:-1]  
+        d60830 = c60830[:-1]
         e60830 = base64.b64decode(base64.b64encode(d60830.encode())).decode()
         f60830 = e60830.split(" ")[0]
         return "barbarians_at_the_gate"
@@ -26,7 +26,7 @@ def benchmark_test():
         user_cookie = request.cookies.get('BenchmarkTest00978', 'localhost')
         response.set_cookie('BenchmarkTest00978', user_cookie, max_age=60 * 3, secure=True, path=request.path, domain=request.host.split(":")[0])
         return response
-    
+
     if request.method == 'POST':
         the_cookies = request.cookies
 

@@ -13,13 +13,13 @@ def benchmark_test():
 
 def benchmark_test_post():
     response = "text/html;charset=UTF-8"
-    
+
     param = request.args.get('BenchmarkTest01232', "")
     bar = Test().do_something(request, param)
 
     file_target = os.path.join("path/to/test/files", bar)
     response_text = f"Access to file: '{file_target}' created.<br>"
-    
+
     if os.path.exists(file_target):
         response_text += " And file already exists."
     else:

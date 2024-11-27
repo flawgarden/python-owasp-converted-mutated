@@ -19,7 +19,7 @@ def benchmark_test_post():
     a69063 = param  # assign
     b69063 = a69063 + " SafeStuff"  # stick in string builder
     b69063 = b69063[:-5] + "Chars"  # replace some of the end content
-    map69063 = {} 
+    map69063 = {}
     map69063["key69063"] = b69063  # put in a collection
     c69063 = map69063["key69063"]  # get it back out
     d69063 = c69063[:-1]  # extract most of it

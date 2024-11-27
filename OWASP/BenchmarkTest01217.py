@@ -27,7 +27,7 @@ def benchmark_test_post(request):
     bar = Test().do_something(request, param)
 
     sql = "SELECT * from USERS where USERNAME='foo' and PASSWORD='" + bar + "'"
-    
+
     try:
         conn = sqlite3.connect('your_database.db')  # Adjust to your database
         cursor = conn.cursor()
@@ -40,17 +40,17 @@ def benchmark_test_post(request):
 class Test:
 
     def do_something(self, request, param):
-        a89502 = param  
+        a89502 = param
         b89502 = str(a89502) + " SafeStuff"
-        b89502 = b89502[:-len("Chars")] + "Chars"  
+        b89502 = b89502[:-len("Chars")] + "Chars"
         map89502 = {}
-        map89502["key89502"] = b89502  
-        c89502 = map89502["key89502"]  
-        d89502 = c89502[:-1]  
-        e89502 = d89502.encode('utf-8').decode('unicode_escape')  
+        map89502["key89502"] = b89502
+        c89502 = map89502["key89502"]
+        d89502 = c89502[:-1]
+        e89502 = d89502.encode('utf-8').decode('unicode_escape')
 
-        f89502 = e89502.split(" ")[0]  
-        g89502 = "barbarians_at_the_gate"  
+        f89502 = e89502.split(" ")[0]
+        g89502 = "barbarians_at_the_gate"
         bar = g89502  # static so this whole flow is 'safe'
 
         return bar

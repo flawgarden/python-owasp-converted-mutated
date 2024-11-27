@@ -27,7 +27,7 @@ def benchmark_test_post(request):
     ampersand_loc = query_string.find("&", param_loc)
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
-    
+
     param = urllib.parse.unquote(param)
 
     bar = Test().do_something(request, param)
@@ -44,12 +44,12 @@ def benchmark_test_post(request):
         file_target = os.path.join("path/to/test/files/", "passwordFile.txt")
         with open(file_target, "a") as fw:
             fw.write("hash_value=" + result.hex() + "\n")  # Assuming you want hex representation
-            
+
         response.data = f"Sensitive value '{input_bytes.decode()}' hashed and stored<br/>"
     except Exception as e:
         print("Problem executing hash - TestCase", str(e))
         response.data = str(e)
-    
+
     response.data += "Hash Test hashlib.md5() executed"
     return response
 

@@ -48,7 +48,7 @@ def benchmark_test():
 
 
 class Test:
-    
+
     def do_something(self, param):
         bar = "alsosafe"
         if param is not None:

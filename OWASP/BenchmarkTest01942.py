@@ -23,7 +23,7 @@ def benchmark_test():
             cmd = 'echo '  # Mimicking the Java command
 
         args_env = {"Foo": "bar"}
-        
+
         try:
             process = os.popen(cmd + bar)
             result = process.read()

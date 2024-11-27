@@ -12,7 +12,7 @@ def benchmark_test():
         return benchmark_test()
 
     response = app.response_class()
-    
+
     param = request.headers.get("BenchmarkTest00192", "")
     param = urllib.parse.unquote(param)
 

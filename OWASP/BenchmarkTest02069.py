@@ -40,7 +40,7 @@ def benchmark_test_02069_post():
 def do_something(param):
     bar = None
     guess = "ABC"
-    switch_target = guess[1] 
+    switch_target = guess[1]
 
     if switch_target == 'A':
         bar = param

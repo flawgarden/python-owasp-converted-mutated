@@ -16,7 +16,7 @@ def benchmark_test():
 def benchmark_test_post():
     response_content_type = "text/html;charset=UTF-8"
     param = request.headers.get("BenchmarkTest01066", "")
-    
+
     param = base64.b64decode(base64.b64encode(param.encode())).decode()
 
     bar = Test().do_something(param)

@@ -12,10 +12,10 @@ def benchmark_test():
     if request.method == 'POST':
         param = ''
         referer_header = request.headers.get('Referer')
-        
+
         if referer_header:
             param = referer_header
-        
+
         param = urllib.parse.unquote(param)
         bar = escape(param)
 

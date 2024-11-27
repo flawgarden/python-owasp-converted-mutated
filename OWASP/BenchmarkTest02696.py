@@ -29,7 +29,7 @@ def do_something(request, param):
         bar = param
     else:
         bar = "bob's your uncle"
-    
+
     return bar
 
 if __name__ == '__main__':

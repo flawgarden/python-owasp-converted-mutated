@@ -26,14 +26,14 @@ class Test:
         b34194 = str(a34194)
         b34194 += " SafeStuff"
         b34194 = b34194[:-len("Chars")] + "Chars"
-        
+
         map34194 = {"key34194": b34194}
         c34194 = map34194["key34194"]
         d34194 = c34194[:-1]
-        
+
         e34194 = base64.b64decode(base64.b64encode(d34194.encode())).decode()
         f34194 = e34194.split(" ")[0]
-        
+
         # Replace ThingInterface with an appropriate class or method call
         bar = something_with(f34194)
         return bar

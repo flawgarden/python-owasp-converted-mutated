@@ -58,7 +58,7 @@ def benchmark_test():
         raise e
     finally:
         response.data += "Randomness Test os.urandom executed"
-    
+
     return response
 
 if __name__ == "__main__":

@@ -17,14 +17,14 @@ def benchmark_test():
 
     response = make_response()
     param = request.args.get("BenchmarkTest01789", "")
-    
+
     bar = Test().do_something(param)
 
     if not param:
         response.set_data("No cookie value supplied")
     else:
         cookie = make_response(f"Created cookie: 'SomeCookie': with value: '{bar}' and secure flag set to: false")
-        
+
         cookie.set_cookie("SomeCookie", bar, secure=False, httponly=True, path=request.path)
         response = cookie
 

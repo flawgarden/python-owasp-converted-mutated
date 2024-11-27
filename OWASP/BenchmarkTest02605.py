@@ -20,7 +20,7 @@ def benchmark_test():
     if param_loc == -1:
         return f"getQueryString() couldn't find expected parameter 'BenchmarkTest02605' in query string.", 400
 
-    param = query_string[param_loc + len(paramval):]  
+    param = query_string[param_loc + len(paramval):]
     ampersand_loc = query_string.find("&", param_loc)
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]

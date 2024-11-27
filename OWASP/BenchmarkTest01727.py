@@ -16,7 +16,7 @@ def benchmark_test_post():
     query_string = request.query_string.decode()
     paramval = "BenchmarkTest01727="
     param_loc = query_string.find(paramval)
-    
+
     if param_loc == -1:
         return "getQueryString() couldn't find expected parameter 'BenchmarkTest01727' in query string."
 
@@ -36,7 +36,7 @@ def benchmark_test_post():
         # For example: DatabaseHelper.JDBCtemplate.batchUpdate(sql)
 
         return f"No results can be displayed for query: {sql} <br> because the batchUpdate method doesn't return results."
-    
+
     except Exception as e:
         return "Error processing request."
 

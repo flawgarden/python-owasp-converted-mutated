@@ -18,7 +18,7 @@ def benchmark_test_post():
 
     file_target = bar
     response += "Access to file: '" + html_encode(file_target) + "' created.<br>"
-    
+
     if os.path.exists(file_target):
         response += " And file already exists.<br>"
     else:

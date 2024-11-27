@@ -23,7 +23,7 @@ def benchmark_test():
 
 def benchmark_test_post():
     response = app.response_class(content_type='text/html;charset=UTF-8')
-    
+
     scr = SeparateClassRequest(request)
     param = scr.getTheParameter("BenchmarkTest00675")
     if param is None:

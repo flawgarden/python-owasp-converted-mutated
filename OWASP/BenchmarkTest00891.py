@@ -8,12 +8,12 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = Response()
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
-    
+
     param = request.args.get("BenchmarkTest00891", "")
-    
+
     bar = ""
     guess = "ABC"
     switchTarget = guess[1]  # condition 'B', which is safe
@@ -26,7 +26,7 @@ def benchmark_test():
         bar = param
     else:
         bar = "bob's your uncle"
-    
+
     response.headers['X-XSS-Protection'] = '0'
     length = 1
     if bar:

@@ -19,7 +19,7 @@ def benchmark_test_post():
     obj = ["a", "b"]
     response.data = bar % tuple(obj)
     response.mimetype = 'text/html;charset=UTF-8'
-    
+
     return response
 
 class Test:

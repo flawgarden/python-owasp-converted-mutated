@@ -21,7 +21,7 @@ def benchmark_test_post():
 
     file_target = os.path.abspath(bar)
     response_text = f"Access to file: '{html_escape(file_target)}' created."
-    
+
     if os.path.exists(file_target):
         response_text += " And file already exists."
     else:

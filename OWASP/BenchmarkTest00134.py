@@ -26,7 +26,7 @@ def benchmark_test():
             # Create the file first (You might want to actually create a file if needed)
             with open(file_name, 'a'):
                 pass
-            
+
             return f"Now ready to write to file: {file_name}"
         except Exception as e:
             print(f"Couldn't open FileOutputStream on file: '{file_name}'")

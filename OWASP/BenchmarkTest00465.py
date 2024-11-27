@@ -33,7 +33,7 @@ def do_post():
 
         return (f"Sensitive value '{input_data.decode()}' hashed and stored<br/>"
                 f"Hash Test hashlib.md5() executed")
-    
+
     except Exception as e:
         print("Problem executing hash - TestCase")
         return str(e)

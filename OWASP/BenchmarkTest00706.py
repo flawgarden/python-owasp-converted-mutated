@@ -15,7 +15,7 @@ def benchmark_test():
 
 def benchmark_test_post():
     response = "text/html;charset=UTF-8"
-    
+
     values = request.values.getlist("BenchmarkTest00706")
     param = values[0] if values else ""
 
@@ -33,9 +33,9 @@ def benchmark_test_post():
 
         with open(file_target, 'a') as fw:
             fw.write("hash_value=" + base64.b64encode(result).decode('utf-8') + "\n")
-        
+
         response += "<br/>Sensitive value '" + input_param.decode('utf-8') + "' hashed and stored<br/>"
-    
+
     except Exception as e:
         print("Problem executing hash - TestCase")
         raise

@@ -33,11 +33,11 @@ def benchmark_test():
 def do_something(param):
     bar = "safe!"
     map96698 = {}
-    map96698["keyA-96698"] = "a_Value" 
-    map96698["keyB-96698"] = param  
-    map96698["keyC"] = "another_Value" 
-    bar = map96698["keyB-96698"]  
-    bar = map96698["keyA-96698"]  
+    map96698["keyA-96698"] = "a_Value"
+    map96698["keyB-96698"] = param
+    map96698["keyC"] = "another_Value"
+    bar = map96698["keyB-96698"]
+    bar = map96698["keyA-96698"]
 
     return bar
 

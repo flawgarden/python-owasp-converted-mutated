@@ -18,7 +18,7 @@ def benchmark_test():
             'path': request.path,
             'domain': request.host.split(':')[0]
         }
-        response.set_cookie(user_cookie['name'], user_cookie['value'], max_age=user_cookie['max_age'], 
+        response.set_cookie(user_cookie['name'], user_cookie['value'], max_age=user_cookie['max_age'],
                             secure=user_cookie['secure'], path=user_cookie['path'], domain=user_cookie['domain'])
         return response
 
@@ -42,6 +42,6 @@ def benchmark_test():
             fw.write("hash_value=" + result.hex() + "\n")
 
         return f"Sensitive value '{input_param.decode()}' hashed and stored<br/>"
-    
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0')

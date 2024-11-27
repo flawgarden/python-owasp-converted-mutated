@@ -29,7 +29,7 @@ def benchmark_test():
             param = the_cookies["BenchmarkTest00977"]
 
         bar = Test().do_something(param)
-        
+
         cookie_value = param if param else "No cookie value supplied"
         response = make_response(f"Created cookie: 'SomeCookie': with value: '{cookie_value}' and secure flag set to: false")
 

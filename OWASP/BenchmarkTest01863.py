@@ -13,7 +13,7 @@ def benchmark_test():
         user_cookie = ('BenchmarkTest01863', 'whatever', 60 * 3, True, request.path, request.host.split(':')[0])
         response.set_cookie(user_cookie[0], user_cookie[1], max_age=user_cookie[2], secure=user_cookie[3], path=user_cookie[4], domain=user_cookie[5])
         return response
-    
+
     elif request.method == 'POST':
         param = "noCookieValueSupplied"
         cookies = request.cookies
@@ -26,7 +26,7 @@ def benchmark_test():
         str_param = param if isinstance(param, str) else ""
         if str_param == "":
             str_param = "No cookie value supplied"
-        
+
         response = make_response(f"Created cookie: 'SomeCookie': with value: '{bar}' and secure flag set to: true")
         response.set_cookie('SomeCookie', str_param, secure=True, httponly=True, path=request.path)
         return response

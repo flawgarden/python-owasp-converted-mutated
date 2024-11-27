@@ -15,14 +15,14 @@ def get_sql_statement():
 @app.route("/sqli-06/BenchmarkTest02652", methods=['GET', 'POST'])
 def benchmark_test():
     if request.method == 'GET':
-        return benchmark_test_post()    
+        return benchmark_test_post()
     return benchmark_test_post()
 
 def benchmark_test_post():
     query_string = request.query_string.decode('utf-8')
     paramval = "BenchmarkTest02652="
     param_loc = query_string.find(paramval)
-    
+
     if param_loc == -1:
         return "getQueryString() couldn't find expected parameter 'BenchmarkTest02652' in query string."
 

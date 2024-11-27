@@ -17,7 +17,7 @@ def benchmark_test():
 def benchmark_test_post():
     response = make_response()
     param = ""
-    
+
     headers = request.headers.get("BenchmarkTest00320")
     if headers:
         param = headers
@@ -59,7 +59,7 @@ def benchmark_test_post():
     except Exception as e:
         print("Problem executing SecureRandom.nextLong() - TestCase")
         return str(e), 500
-    
+
     response.set_data(response.get_data(as_text=True) + "Weak Randomness Test executed")
     return response
 

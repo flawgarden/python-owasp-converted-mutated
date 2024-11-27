@@ -24,7 +24,7 @@ def benchmark_test():
     try:
         random_bytes = random.getrandbits(8 * 40).to_bytes(40, 'big')
         remember_me_key = base64.b64encode(random_bytes).decode('utf-8')
-        
+
         user = "SafeByron"
         test_case_number = "01366"
         user += test_case_number

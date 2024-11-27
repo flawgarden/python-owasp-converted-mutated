@@ -28,7 +28,7 @@ def benchmark_test():
             file_target = os.path.join('testfiles', 'passwordFile.txt')
             with open(file_target, 'a') as fw:
                 fw.write("hash_value=" + base64.b64encode(result).decode() + "\n")
-                
+
             response.data = (
                 "Sensitive value '"
                 + base64.b64encode(input_data).decode()

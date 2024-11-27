@@ -27,7 +27,7 @@ def benchmark_test_post():
         # Simulate database execution (replace with actual DB code)
         # org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.execute(sql)
         return f"No results can be displayed for query: {sql}<br> because the Spring execute method doesn't return results."
-    
+
     except Exception as e:
         return "Error processing request."
 

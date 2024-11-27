@@ -27,7 +27,7 @@ def benchmark_test_post():
     str_param = bar if bar != "" else "No cookie value supplied"
     response = make_response(f"Created cookie: 'SomeCookie': with value: '{str_param}' and secure flag set to: true")
     response.set_cookie("SomeCookie", str_param, secure=True, httponly=True, path=request.path)
-    
+
     return response
 
 def do_something(param):

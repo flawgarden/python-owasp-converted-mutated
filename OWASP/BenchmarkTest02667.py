@@ -23,7 +23,7 @@ def benchmark_test():
 def benchmark_test_post():
     response = app.response_class()
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
-    
+
     scr = SeparateClassRequest(request)
     param = scr.getTheValue("BenchmarkTest02667")
 
@@ -38,7 +38,7 @@ def benchmark_test_post():
             response.data += escape(b.decode('utf-8', errors='ignore'))
     except Exception as e:
         print(f"Couldn't open FileInputStream on file: '{file_name}'")
-    
+
     return response
 
 def do_something(param):

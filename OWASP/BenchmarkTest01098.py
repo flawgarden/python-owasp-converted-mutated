@@ -22,7 +22,7 @@ def benchmark_test_post():
     bar = Test().do_something(param)
 
     sql = "INSERT INTO users (username, password) VALUES ('foo','" + bar + "')"
-    
+
     try:
         conn = sqlite3.connect('database.db')
         cursor = conn.cursor()
@@ -32,12 +32,12 @@ def benchmark_test_post():
     except sqlite3.Error as e:
         response.set_data("Error processing request.")
         return response
-        
+
     return response
 
 def output_update_complete(sql, response):
     response.set_data(f"Update complete: {sql}")
-    
+
 class Test:
     def do_something(self, param):
         bar = "alsosafe"

@@ -9,7 +9,7 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     param = ""
     flag = True
     for name in request.args:
@@ -36,7 +36,7 @@ class Test:
         }
         bar = map95590["keyB-95590"]
         bar = map95590["keyA-95590"]
-        
+
         return bar
 
 if __name__ == "__main__":

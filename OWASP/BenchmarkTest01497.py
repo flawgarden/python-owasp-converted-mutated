@@ -20,7 +20,7 @@ def benchmark_test():
     if request.method == 'POST':
         response = "text/html;charset=UTF-8"
         param = request.args.get("BenchmarkTest01497", "")
-        
+
         bar = Test().do_something(param)
 
         file_name = None

@@ -11,7 +11,7 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-        
+
     response = make_response()
     values = request.form.getlist("BenchmarkTest00746")
     param = values[0] if values else ""
@@ -36,7 +36,7 @@ def benchmark_test():
         user = "SafeByron"
         test_case_number = "00746"
         user += test_case_number
-        
+
         cookie_name = "rememberMe" + test_case_number
 
         found_user = False
@@ -50,7 +50,7 @@ def benchmark_test():
         else:
             response.set_cookie(cookie_name, remember_me_key, secure=True, httponly=True, path=request.path)
             response.set_data(f"{user} has been remembered with cookie: {cookie_name} whose value is: {remember_me_key}<br/>")
-        
+
     except Exception as e:
         print("Problem executing secure random bytes generation - TestCase")
         raise

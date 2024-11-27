@@ -13,7 +13,7 @@ def benchmark_test():
 
     response = app.response_class()
     param = request.headers.get("BenchmarkTest01971", "")
-    
+
     # URL Decode the header value
     param = urllib.parse.unquote(param)
 
@@ -31,7 +31,7 @@ def benchmark_test():
     except sqlite3.Error as e:
         response.set_data("Error processing request.")
         return response
-    
+
 def do_something(param):
     bar = ""
     guess = "ABC"

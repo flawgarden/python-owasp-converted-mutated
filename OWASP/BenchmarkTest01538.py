@@ -58,7 +58,7 @@ def benchmark_test():
         finally:
             response.data += "Randomness Test executed"
             return response
-    
+
     return render_template("index.html")
 
 if __name__ == "__main__":

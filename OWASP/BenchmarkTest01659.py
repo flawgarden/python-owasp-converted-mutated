@@ -20,14 +20,14 @@ def do_post(request):
     param_loc = query_string.find(paramval)
     if param_loc == -1:
         return "getQueryString() couldn't find expected parameter 'BenchmarkTest01659' in query string."
-    
+
     param = query_string[param_loc + len(paramval):]
     ampersand_loc = query_string.find("&", param_loc)
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
-    
+
     param = urllib.parse.unquote(param)
-    
+
     bar = Test().do_something(request, param)
 
     return bar

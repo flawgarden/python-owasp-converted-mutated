@@ -38,7 +38,7 @@ def benchmark_test():
         input_data = bytes('?', 'utf-8')
         if isinstance(bar, str):
             input_data = bar.encode()
-        
+
         md = hashlib.md5()
         md.update(input_data)
 

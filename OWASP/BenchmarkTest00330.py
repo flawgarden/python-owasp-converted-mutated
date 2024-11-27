@@ -34,7 +34,7 @@ def benchmark_test():
         f55109 = e55109.split(" ")[0]
 
         bar = "barbarians_at_the_gate"  # This is static so this whole flow is 'safe'
-        
+
         sql = f"{{call {bar}}}"
 
         try:

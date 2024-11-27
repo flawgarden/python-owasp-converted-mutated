@@ -9,7 +9,7 @@ app = Flask(__name__, static_url_path='/static', static_folder='static')
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     param = request.form.get("BenchmarkTest01796")
     bar = Test().do_something(param)
 

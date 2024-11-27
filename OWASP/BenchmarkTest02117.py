@@ -38,8 +38,8 @@ def benchmark_test():
             response.data = f"Welcome back: {user}<br/>"
         else:
             remember_me = make_response()
-            remember_me.set_cookie(cookie_name, remember_me_key, secure=True, httponly=True, 
-                                    domain=request.host_url.split('//')[1].split('/')[0], 
+            remember_me.set_cookie(cookie_name, remember_me_key, secure=True, httponly=True,
+                                    domain=request.host_url.split('//')[1].split('/')[0],
                                     path=request.path)
             request.cookies[cookie_name] = remember_me_key
             response.data = f"{user} has been remembered with cookie: {cookie_name} whose value is: {remember_me_key}<br/>"

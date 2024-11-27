@@ -14,7 +14,7 @@ def benchmark_test_00306():
 def benchmark_test_00306_post():
     response = Response(content_type="text/html;charset=UTF-8")
     param = ""
-    
+
     if "BenchmarkTest00306" in request.headers:
         param = request.headers["BenchmarkTest00306"]
 

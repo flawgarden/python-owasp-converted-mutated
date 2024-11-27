@@ -40,6 +40,6 @@ def benchmark_test_post():
     except Exception as e:
         print(f"Couldn't open FileInputStream on file: '{file_name}'")
         return f"Problem getting FileInputStream: {str(e)}"
-        
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0')

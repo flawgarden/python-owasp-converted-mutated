@@ -29,7 +29,7 @@ def benchmark_test_post():
         md = hashlib.new(algorithm)
         input_data = (b'?')
         input_param = bar
-        
+
         if isinstance(input_param, str):
             input_data = input_param.encode()
         elif isinstance(input_param, io.BytesIO):
@@ -37,7 +37,7 @@ def benchmark_test_post():
             if not str_input:
                 return "This input source requires a POST, not a GET. Incompatible UI for the InputStream source."
             input_data = str_input
-            
+
         md.update(input_data)
 
         result = md.digest()

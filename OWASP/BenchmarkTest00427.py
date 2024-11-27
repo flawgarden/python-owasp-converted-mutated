@@ -13,23 +13,23 @@ def benchmark_test00427():
 
 def benchmark_test00427_post():
     param = request.args.get("BenchmarkTest00427", "")
-    
+
     a70670 = param
     b70670 = a70670 + " SafeStuff"
     b70670 = b70670[:-5] + "Chars"
-    
+
     map70670 = {}
     map70670["key70670"] = b70670
     c70670 = map70670["key70670"]
     d70670 = c70670[:-1]
     e70670 = base64.b64decode(base64.b64encode(d70670.encode())).decode()
     f70670 = e70670.split(" ")[0]
-    
+
     thing = create_thing()
     bar = thing.do_something(f70670)
-    
+
     session['userid'] = bar
-    
+
     return f"Item: 'userid' with value: '{encode_for_html(bar)}' saved in session."
 
 def create_thing():
@@ -37,7 +37,7 @@ def create_thing():
     class Thing:
         def do_something(self, value):
             return "Processed " + value
-    
+
     return Thing()
 
 def encode_for_html(value):

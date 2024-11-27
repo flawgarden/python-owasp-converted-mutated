@@ -31,7 +31,7 @@ def benchmark_test_post():
 def do_something(param):
     bar = ""
     guess = "ABC"
-    switch_target = guess[1]  
+    switch_target = guess[1]
 
     if switch_target == 'A':
         bar = param

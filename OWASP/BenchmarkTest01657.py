@@ -29,7 +29,7 @@ def benchmark_test_post():
     response = "<!DOCTYPE html>\n<html>\n<body>\n<p>"
     response += "Formatted like: {} and {}.\n".format("a", bar)
     response += "</p>\n</body>\n</html>"
-    
+
     return response
 
 class Test:

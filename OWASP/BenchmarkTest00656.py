@@ -24,7 +24,7 @@ def benchmark_test():
 
         num = 106
         bar = "This should never happen" if (7 * 42) - num > 200 else param
-        
+
         response.headers["X-XSS-Protection"] = "0"
         response.set_data("Parameter value: " + bar)
         return response

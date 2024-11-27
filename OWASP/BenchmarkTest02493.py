@@ -11,7 +11,7 @@ def benchmark_test():
 
 def do_post(request):
     response = app.response_class(content_type='text/html;charset=UTF-8')
-    
+
     values = request.values.getlist("BenchmarkTest02493")
     param = values[0] if values else ""
 
@@ -22,7 +22,7 @@ def do_post(request):
     if bar:
         length = len(bar)
         response.data = bar.encode('utf-8')[:length]
-    
+
     return response
 
 def do_something(request, param):

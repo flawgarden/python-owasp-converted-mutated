@@ -26,7 +26,7 @@ def benchmark_test():
         file_target = os.path.join('testfiles', 'passwordFile.txt')
         with open(file_target, 'a') as fw:
             fw.write("hash_value=" + base64.b64encode(result).decode('utf-8') + "\n")
-        
+
         response += f"Sensitive value '{input_data.decode()}' hashed and stored<br/>"
     except Exception as e:
         print("Problem executing hash - TestCase hashlib.sha1()")

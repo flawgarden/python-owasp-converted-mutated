@@ -14,7 +14,7 @@ def benchmark_test():
     param = ""
     flag = True
     names = request.args.keys()
-    
+
     for name in names:
         values = request.values.getlist(name)
         if values is not None:
@@ -23,7 +23,7 @@ def benchmark_test():
                     param = name
                     flag = False
                     break
-    
+
     bar = do_something(request, param)
 
     try:

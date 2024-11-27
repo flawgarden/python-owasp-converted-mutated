@@ -15,16 +15,16 @@ def benchmark_test_post():
     query_string = request.query_string.decode()
     paramval = "BenchmarkTest01685="
     param_loc = query_string.find(paramval)
-    
+
     if param_loc == -1:
         return f"getQueryString() couldn't find expected parameter 'BenchmarkTest01685' in query string.", 400
 
     param = query_string[param_loc + len(paramval):]
     ampersand_loc = query_string.find("&", param_loc)
-    
+
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
-    
+
     bar = Test().do_something(request, param)
 
     cmd = ""

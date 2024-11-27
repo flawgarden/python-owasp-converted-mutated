@@ -18,14 +18,14 @@ def benchmark_test():
     if request.method == 'POST':
         cookies = request.cookies
         param = "noCookieValueSupplied"
-        
+
         if "BenchmarkTest00958" in cookies:
             param = urllib.parse.unquote(cookies["BenchmarkTest00958"])
 
         bar = Test().do_something(request, param)
 
         file_name = os.path.join("path/to/test/files/", bar)
-        
+
         try:
             with open(file_name, 'rb') as f:
                 b = f.read(1000)

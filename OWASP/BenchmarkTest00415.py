@@ -14,7 +14,7 @@ def benchmark_test():
 
 def benchmark_test_post(request):
     param = request.args.get("BenchmarkTest00415", "")
-    
+
     bar = ""
     if param:
         values_list = ["safe", param, "moresafe"]
@@ -47,7 +47,7 @@ def benchmark_test_post(request):
             response.set_cookie(cookie_name, remember_me_key, secure=True, httponly=True, path=request.path)
             request.environ['werkzeug.request'].set_wsgi_headers({'Set-Cookie': response.headers['Set-Cookie']})
             response.data = f"{user} has been remembered with cookie: {cookie_name} whose value is: {remember_me_key}<br/>"
-        
+
         response.data += "Weak Randomness Test executed"
         return response
 

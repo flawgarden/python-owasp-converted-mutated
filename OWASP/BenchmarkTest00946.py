@@ -26,7 +26,7 @@ def benchmark_test():
             algorithm = "DES"  # Placeholder for the algorithm, adjust based on your needs
             # Placeholder: implement your encryption logic here.
             # Example: `cipher = DES.new(key, DES.MODE_ECB)`
-            
+
             input_data = bytes(b'?')
             if isinstance(bar, bytes):
                 input_data = bar

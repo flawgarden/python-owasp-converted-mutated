@@ -11,19 +11,19 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = "text/html;charset=UTF-8"
 
     param = request.form.get("BenchmarkTest00683", "")
     bar = ""
-    
+
     num = 106
     bar = "This_should_always_happen" if (7 * 18) + num > 200 else param
 
     try:
         tree = ET.parse('static/employees.xml')
         xmlDocument = tree.getroot()
-        
+
         expression = f"./Employee[@emplid='{bar}']"
         nodeList = xmlDocument.findall(expression)
 

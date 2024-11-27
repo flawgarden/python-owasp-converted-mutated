@@ -9,11 +9,11 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = make_response()
-    
+
     param = request.args.get('BenchmarkTest00904')
-    
+
     bar = ""
     if param is not None:
         bar = base64.b64decode(base64.b64encode(param.encode())).decode()
@@ -29,7 +29,7 @@ def benchmark_test():
 
     response.data = f"Created cookie: 'SomeCookie': with value: '{str_val}' and secure flag set to: true"
     response.content_type = "text/html;charset=UTF-8"
-    
+
     return response
 
 @app.errorhandler(404)

@@ -28,7 +28,7 @@ def benchmark_test_post():
     response = ""
     param = request.args.get("BenchmarkTest02178", "")
     bar = do_something(param)
-    
+
     sql = f"SELECT * from USERS where USERNAME='foo' and PASSWORD='{bar}'"
     try:
         list_results = query_for_list(sql)

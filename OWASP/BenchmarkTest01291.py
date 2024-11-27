@@ -41,7 +41,7 @@ def benchmark_test():
         else:
             response.set_cookie(cookie_name, remember_me_key, secure=True, httponly=True, path=request.path)
             response.data = (f"{user} has been remembered with cookie: {cookie_name} whose value is: {remember_me_key}<br/>").encode('utf-8')
-    
+
     except Exception as e:
         print("Problem executing SecureRandom.nextBytes() - TestCase")
         response.data = str(e).encode('utf-8')

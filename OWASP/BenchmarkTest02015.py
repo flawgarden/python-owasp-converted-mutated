@@ -34,9 +34,9 @@ def encode_for_html(s):
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 def common_headers():
-    return set(["Accept", "Accept-Charset", "Accept-Encoding", "Accept-Language", "Authorization", 
-                "Cache-Control", "Connection", "Content-Length", "Content-Type", "Cookie", 
-                "Host", "If-Modified-Since", "If-None-Match", "Pragma", "User-Agent", 
+    return set(["Accept", "Accept-Charset", "Accept-Encoding", "Accept-Language", "Authorization",
+                "Cache-Control", "Connection", "Content-Length", "Content-Type", "Cookie",
+                "Host", "If-Modified-Since", "If-None-Match", "Pragma", "User-Agent",
                 "Upgrade-Insecure-Requests"])
 
 if __name__ == "__main__":

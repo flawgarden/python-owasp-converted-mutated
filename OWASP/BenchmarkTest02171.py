@@ -15,7 +15,7 @@ def benchmark_test():
 
 def benchmark_test_post():
     response = app.response_class(content_type='text/html;charset=UTF-8')
-    
+
     param = request.args.get('BenchmarkTest02171', default='', type=str)
 
     bar = do_something(param)
@@ -30,7 +30,7 @@ def benchmark_test_post():
     except sqlite3.Error as e:
         response.data = "Error processing request."
         return response
-    
+
     return response
 
 def do_something(param):
@@ -44,6 +44,6 @@ def print_results(results, sql, response):
     # Implement your result printing logic here
     for row in results:
         response.data += str(row) + "<br />"
-    
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0')

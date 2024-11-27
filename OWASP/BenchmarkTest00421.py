@@ -10,7 +10,7 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = make_response()
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
 
@@ -46,7 +46,7 @@ def benchmark_test():
     except Exception as e:
         print("Problem executing SecureRandom.nextInt(int) - TestCase")
         raise
-    
+
     response.data += "Weak Randomness Test random.SystemRandom().randint(int) executed"
     return response
 

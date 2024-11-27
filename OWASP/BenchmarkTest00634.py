@@ -27,14 +27,14 @@ def do_post(request):
     try:
         md = hashlib.new("sha1")
         input_param = bar.encode() if isinstance(bar, str) else bar
-        input_data = input_param if isinstance(input_param, bytes) else b'?'  
+        input_data = input_param if isinstance(input_param, bytes) else b'?'
         md.update(input_data)
 
         result = md.digest()
         file_target = os.path.join("path/to/testfiles", "passwordFile.txt")
         with open(file_target, 'a') as fw:
             fw.write("hash_value=" + result.hex() + "\n")
-        
+
         response += f"Sensitive value '{input_param.decode()}' hashed and stored<br/>"
 
     except Exception as e:

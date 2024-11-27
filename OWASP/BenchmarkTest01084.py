@@ -15,7 +15,7 @@ def benchmark_test_01084():
 
 def benchmark_test_01084_post():
     response = "text/html;charset=UTF-8"
-    
+
     param = request.headers.get("BenchmarkTest01084", "")
     param = urllib.parse.unquote(param)
 
@@ -28,7 +28,7 @@ def benchmark_test_01084_post():
         cursor = connection.cursor()
         cursor.execute(sql, ("foo",))
         results = cursor.fetchall()
-        
+
         return print_results(cursor, sql)
     except sqlite3.Error as e:
         return "Error processing request."

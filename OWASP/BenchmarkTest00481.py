@@ -14,7 +14,7 @@ def benchmark_test_00481():
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
 
     param = request.form.get("BenchmarkTest00481", "")
-    
+
     bar = ""
 
     num = 86
@@ -36,7 +36,7 @@ def benchmark_test_00481():
     argList.append("echo " + bar)
 
     pb = os.popen(' '.join(argList))
-    
+
     try:
         output = pb.read()
         return output

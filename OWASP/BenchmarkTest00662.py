@@ -38,7 +38,7 @@ def benchmark_test_post():
     try:
         rand = random.SystemRandom().random()
         remember_me_key = str(rand)[2:]  # Trim off the 0. at the front.
-        
+
         user = "SafeDonna"
         full_class_name = benchmark_test.__module__ + '.' + benchmark_test.__name__
         test_case_number = full_class_name.split('.')[-1].replace('BenchmarkTest', '')
@@ -61,7 +61,7 @@ def benchmark_test_post():
             response.set_cookie(cookie_name, remember_me_key, secure=True, httponly=True, path=request.path)
             response.data = (f"{user} has been remembered with cookie: {cookie_name} "
                              f"whose value is: {remember_me_key}<br/>").encode()
-        
+
     except Exception as e:
         print("Problem executing SecureRandom.nextDouble() - TestCase")
         response.status_code = 500

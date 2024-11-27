@@ -11,7 +11,7 @@ app.secret_key = os.urandom(24)
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = make_response()
     param = request.headers.get("BenchmarkTest00182", "")
     param = param.encode('utf-8').decode('utf-8')
@@ -24,7 +24,7 @@ def benchmark_test():
     d48649 = c48649[:-1]
     e48649 = base64.b64decode(base64.b64encode(d48649.encode())).decode()
     f48649 = e48649.split(" ")[0]
-    
+
     # Dummy implementation for ThingInterface and ThingFactory
     class ThingInterface:
         @staticmethod

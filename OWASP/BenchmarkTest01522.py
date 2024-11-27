@@ -13,7 +13,7 @@ def benchmark_test():
     response = make_response()
 
     param = request.args.get("BenchmarkTest01522", "")
-    
+
     bar = Test().do_something(param)
 
     cookie = f'SomeCookie={bar}; Secure; HttpOnly; Path={request.path}'

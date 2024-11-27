@@ -14,7 +14,7 @@ def benchmark_test():
 def benchmark_test_post():
     response = Response()
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
-    
+
     param = ""
     if request.headers.get("Referer") is not None:
         param = request.headers.get("Referer")

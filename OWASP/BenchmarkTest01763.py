@@ -23,19 +23,19 @@ def benchmark_test():
         input_data = b'?'
         if isinstance(bar, str):
             input_data = bar.encode()
-        
+
         md.update(input_data)
 
         result = md.digest()
         file_target = os.path.join(os.path.dirname(__file__), "passwordFile.txt")
         with open(file_target, 'a') as fw:
             fw.write("hash_value=" + result.hex() + "\n")
-        
+
         response.set_data(f"Sensitive value '{input_data.decode()}' hashed and stored<br/>")
 
     except Exception as e:
         print("Problem executing hash - TestCase", e)
-        raise 
+        raise
 
     response.set_data(response.get_data(as_text=True) + "Hash Test executed")
     return response

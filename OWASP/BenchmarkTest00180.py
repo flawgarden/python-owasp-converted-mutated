@@ -23,7 +23,7 @@ def benchmark_test_post():
     param = urllib.parse.unquote(param)
 
     bar = ""
-    
+
     num = 196
     if (500 / 42) + num > 200:
         bar = param
@@ -54,7 +54,7 @@ def benchmark_test_post():
         else:
             response.set_cookie(cookie_name, remember_me_key, secure=True, httponly=True, path=request.path)
             response.data = (f"{user} has been remembered with cookie: {cookie_name} whose value is: {remember_me_key}<br/>")
-        
+
     except Exception as e:
         print("Problem executing SecureRandom.nextDouble() - TestCase")
         raise e

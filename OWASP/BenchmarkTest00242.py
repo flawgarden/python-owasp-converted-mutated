@@ -22,7 +22,7 @@ def benchmark_test_post():
 
         param = name
         break
-    
+
     bar = ""
     if param:
         values_list = ["safe", param, "moresafe"]

@@ -66,7 +66,7 @@ def do_something(param):
         bar = "This_should_always_happen"
     else:
         bar = param
-    
+
     return bar
 
 if __name__ == "__main__":

@@ -10,13 +10,13 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = make_response()
     param = ""
     for name in request.headers:
         if name in ["User-Agent", "Accept", "Accept-Encoding", "Accept-Language", "Connection"]:  # common headers
             continue
-        
+
         param = name
         break
 

@@ -11,7 +11,7 @@ def benchmark_test():
         return benchmark_test()
 
     param = request.args.get("BenchmarkTest01352", "")
-    
+
     bar = Test().do_something(param)
 
     response = make_response(bar)

@@ -45,7 +45,7 @@ def do_something(param):
         bar = param
     else:
         bar = "This should never happen"
-    
+
     return bar
 
 if __name__ == "__main__":

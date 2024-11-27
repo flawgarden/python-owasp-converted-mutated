@@ -14,15 +14,15 @@ def benchmark_test_00040():
 def benchmark_test_00040_post():
     response = "Access to file: '"
     param = request.args.get('BenchmarkTest00040', '')
-    
+
     file_target = os.path.abspath(param)
     response += f"{file_target}' created."
-    
+
     if os.path.exists(file_target):
         response += " And file already exists."
     else:
         response += " But file doesn't exist yet."
-    
+
     return response
 
 @app.errorhandler(404)

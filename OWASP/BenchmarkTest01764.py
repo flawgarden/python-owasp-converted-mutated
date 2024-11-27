@@ -10,7 +10,7 @@ app = Flask(__name__, static_url_path='/static', static_folder='static')
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = ""
     param = request.values.get("BenchmarkTest01764")
 
@@ -34,9 +34,9 @@ def benchmark_test():
         file_target = os.path.join("path_to_your_directory", "passwordFile.txt")
         with open(file_target, 'a') as fw:  # 'a' will append the new data
             fw.write("hash_value=" + result.hex() + "\n")
-        
+
         response += "Sensitive value '" + secure_filename(input_data.decode('utf-8')) + "' hashed and stored<br/>"
-    
+
     except Exception as e:
         print("Problem executing hash - TestCase")
         raise e

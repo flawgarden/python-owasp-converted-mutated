@@ -59,7 +59,7 @@ def benchmark_test():
     return response
 
 class Test:
-    
+
     def do_something(self, request, param):
         bar = self.escape_html(param)
         return bar

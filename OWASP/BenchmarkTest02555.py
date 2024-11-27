@@ -18,26 +18,26 @@ def benchmark_test_post():
     query_string = request.query_string.decode('utf-8')
     paramval = "BenchmarkTest02555="
     param_loc = query_string.find(paramval)
-    
+
     if param_loc == -1:
         return "getQueryString() couldn't find expected parameter 'BenchmarkTest02555' in query string."
-    
+
     param = query_string[param_loc + len(paramval):]  # Assume "BenchmarkTest02555" param is last
     ampersand_loc = query_string.find("&", param_loc)
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
-    
+
     param = base64.b64decode(param).decode('utf-8')
 
     bar = do_something(request, param)
     file_target = os.path.abspath(bar)
-    
+
     response = f"Access to file: '{file_target}' created.<br>"
     if os.path.exists(file_target):
         response += " And file already exists."
     else:
         response += " But file doesn't exist yet."
-    
+
     return response
 
 
@@ -45,7 +45,7 @@ def do_something(request, param):
     bar = ""
     if param is not None:
         bar = base64.b64encode(param.encode()).decode('utf-8')
-    
+
     return bar
 
 

@@ -13,7 +13,7 @@ def benchmark_test():
 
 def benchmark_test_post():
     response = "text/html;charset=UTF-8"
-    
+
     param = request.args.get("BenchmarkTest02168", "")
     bar = do_something(param)
 
@@ -31,7 +31,7 @@ def do_something(param):
     return bar
 
 def encode_for_html(value):
-    return value.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;").replace("'", "&#x27;") 
+    return value.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;").replace("'", "&#x27;")
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')

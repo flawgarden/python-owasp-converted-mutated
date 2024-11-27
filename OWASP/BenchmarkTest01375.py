@@ -9,7 +9,7 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     param = request.values.get('BenchmarkTest01375', '')
 
     bar = Test().do_something(request, param)

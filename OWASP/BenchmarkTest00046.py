@@ -14,7 +14,7 @@ def benchmark_test():
 
     response_values = []
     response_values.append("Content-Type: text/html;charset=UTF-8")
-    
+
     if 'BenchmarkTest00046' in request.form:
         param = request.form['BenchmarkTest00046']
     else:
@@ -26,21 +26,21 @@ def benchmark_test():
 
         if isinstance(param, str):
             input_data = param.encode()
-        
+
         md.update(input_data)
 
         result = md.digest()
-        
+
         file_target = os.path.join('uploads/', 'passwordFile.txt')
         with open(file_target, 'a') as fw:
             fw.write("hash_value=" + base64.b64encode(result).decode('utf-8') + "\n")
-        
+
         response_values.append("Sensitive value '" + escape(input_data.decode()) + "' hashed and stored<br/>")
-        
+
     except Exception as e:
         print("Problem executing hash - TestCase")
         return str(e)
-    
+
     response_values.append("Hash Test hashlib.md5 executed")
     return ''.join(response_values)
 

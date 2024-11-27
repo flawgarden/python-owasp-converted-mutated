@@ -20,7 +20,7 @@ def benchmark_test():
     param = param.encode('utf-8').decode('utf-8')  # URL decode the header value
 
     bar = Test().do_something(param)
-    
+
     file_name = None
     fos = None
 

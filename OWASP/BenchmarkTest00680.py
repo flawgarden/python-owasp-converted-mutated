@@ -37,7 +37,7 @@ def handle_request(request):
         "keyB-33558": param,
         "keyC": "another_Value"
     }
-    
+
     bar = map33558.get("keyB-33558")
     bar = map33558.get("keyA-33558")
 

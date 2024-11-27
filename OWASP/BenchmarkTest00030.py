@@ -8,10 +8,10 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = Response()
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
-    
+
     param = ''
     values = request.values.getlist('BenchmarkTest00030')
     if values:
@@ -20,7 +20,7 @@ def benchmark_test():
     response.headers['X-XSS-Protection'] = '0'
     obj = ["a", "b"]
     response.data = response.get_data(as_text=True) % tuple(obj)
-    
+
     return response
 
 if __name__ == "__main__":

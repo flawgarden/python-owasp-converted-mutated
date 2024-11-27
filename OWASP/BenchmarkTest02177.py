@@ -25,7 +25,7 @@ def benchmark_test():
 
         sql = "SELECT * from USERS where USERNAME='foo' and PASSWORD='" + bar + "'"
         results = query_database(sql)
-        
+
         if results is not None:
             output = "Your results are: "
             for row in results:

@@ -23,7 +23,7 @@ def benchmark_test():
     return response
 
 class Test:
-    
+
     def do_something(self, request, param):
         num = 86
         if (7 * 42) - num > 200:

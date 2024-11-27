@@ -23,7 +23,7 @@ def benchmark_test_post():
     ampersand_loc = query_string.find("&", param_loc)
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
-    
+
     param = os.environ.get('QUERY_STRING', param)  # Simulating URL decoding
 
     bar = "This_should_always_happen" if (7 * 18) + 106 > 200 else param

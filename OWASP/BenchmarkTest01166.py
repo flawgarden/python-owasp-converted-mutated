@@ -14,7 +14,7 @@ def benchmark_test():
         return benchmark_test()
 
     response = ""
-    
+
     param = ""
     headers = request.headers.get('BenchmarkTest01166')
 
@@ -32,10 +32,10 @@ def benchmark_test():
 
         result = md.digest()
         file_target = os.path.join('testfiles', 'passwordFile.txt')
-        
+
         with open(file_target, 'a') as fw:
             fw.write("hash_value=" + base64.b64encode(result).decode('utf-8') + "\n")
-        
+
         response += "Sensitive value '{}' hashed and stored<br/>".format(escape_html(str(input_param)))
 
     except Exception as e:

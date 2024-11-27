@@ -19,7 +19,7 @@ def benchmark_test():
                 continue
             param = name
             break
-        
+
         bar = do_something(param)
 
         bytes_value = bytearray(random.getrandbits(8) for _ in range(10))

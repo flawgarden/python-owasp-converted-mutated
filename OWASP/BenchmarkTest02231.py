@@ -13,13 +13,13 @@ def benchmark_test():
 
 def benchmark_test_post(request):
     response = "text/html;charset=UTF-8"
-    
+
     param = ""
     if request.args:
         param = request.args.get("BenchmarkTest02231", "")
-    
+
     bar = do_something(param)
-    
+
     response_headers = {"X-XSS-Protection": "0"}
     obj = [bar, "b"]
     return f"Formatted like: {obj[0]} and {obj[1]}.", response_headers
@@ -32,10 +32,10 @@ def do_something(param):
     map60610 = {"key60610": b60610}
     c60610 = map60610["key60610"]
     d60610 = c60610[:-1]
-    
+
     e60610 = base64.b64decode(base64.b64encode(d60610.encode())).decode()
     f60610 = e60610.split(" ")[0]
-    
+
     g60610 = "barbarians_at_the_gate"
     bar = g60610  # Placeholder for the actual reflection logic
 

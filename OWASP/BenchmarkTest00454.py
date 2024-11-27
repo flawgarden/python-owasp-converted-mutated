@@ -22,7 +22,7 @@ def benchmark_test_post():
 
     file_name = None
     content = ''
-    
+
     try:
         file_name = os.path.join('path_to_test_files_directory', bar)
         with open(file_name, 'rb') as fis:

@@ -22,7 +22,7 @@ def benchmark_test_01359_post():
 
     cookie = make_response(f"Created cookie: 'SomeCookie': with value: '{html.escape(bar)}' and secure flag set to: true")
     cookie.set_cookie('SomeCookie', bar, secure=True, httponly=True, path=request.path)
-    
+
     return cookie
 
 class Test:

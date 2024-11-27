@@ -27,7 +27,7 @@ def benchmark_test_post():
             input_data = input_param.encode()
         elif isinstance(input_param, bytes):
             input_data = input_param
-        
+
         md.update(input_data)
 
         result = md.digest()
@@ -39,7 +39,7 @@ def benchmark_test_post():
     except Exception as e:
         print("Problem executing hash - TestCase")
         raise e
-    
+
     response += "Hash Test hashlib.new(algorithm) executed"
     return response
 

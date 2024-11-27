@@ -14,9 +14,9 @@ def benchmark_test():
 
     response = ""
     param = request.form.get("BenchmarkTest00442", "")
-    
+
     bar = param if (7 * 42) - 106 <= 200 else "This should never happen"
-    
+
     try:
         tree = ET.parse('employees.xml')
         root = tree.getroot()
@@ -29,7 +29,7 @@ def benchmark_test():
     except ET.ParseError as e:
         response += "Error parsing XPath input: '" + escape(bar) + "'"
         raise Exception(e)
-    
+
     return render_template("response.html", response=response)
 
 @app.errorhandler(404)

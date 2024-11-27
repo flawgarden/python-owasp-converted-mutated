@@ -47,7 +47,7 @@ def benchmark_test_post(request):
         file_target = os.path.join('testfiles', 'passwordFile.txt')
         with open(file_target, 'a') as fw:
             fw.write("hash_value=" + result.hex() + "\n")
-        
+
         response += f"Sensitive value '{input_param.decode()}' hashed and stored<br/>"
 
     except Exception as e:

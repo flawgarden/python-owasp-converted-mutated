@@ -18,19 +18,19 @@ def benchmark_test():
     if param_loc == -1:
         return "getQueryString() couldn't find expected parameter 'BenchmarkTest01644' in query string."
 
-    param = query_string[param_loc + len(paramval):] 
+    param = query_string[param_loc + len(paramval):]
     ampersand_loc = query_string.find("&", param_loc)
 
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
-    
+
     param = unquote(param)
 
     bar = Test().do_something(request, param)
 
     file_name = None
     try:
-        file_name = os.path.join('testfiles', bar)  
+        file_name = os.path.join('testfiles', bar)
         with open(file_name, 'rb') as fis:
             b = fis.read(1000)
             return (

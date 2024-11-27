@@ -24,10 +24,10 @@ def benchmark_test_post():
         hasher = hashlib.new(algorithm)
         input_data = bytearray(b'?')
         input_param = bar
-        
+
         if isinstance(input_param, str):
             input_data = input_param.encode()
-        
+
         hasher.update(input_data)
 
         result = hasher.digest()
@@ -37,7 +37,7 @@ def benchmark_test_post():
             fw.write("hash_value=" + result.hex() + "\n")
 
         return f"Sensitive value '{input_data.decode()}' hashed and stored<br/>"
-    
+
     except Exception as e:
         print("Problem executing hash - TestCase")
         return str(e), 500

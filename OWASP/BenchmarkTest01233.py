@@ -10,7 +10,7 @@ TESTFILES_DIR = "testfiles"
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = app.response_class()
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
 
@@ -19,12 +19,12 @@ def benchmark_test():
 
     file_target = os.path.join(TESTFILES_DIR, bar)
     response.data = f"Access to file: '{file_target}' created."
-    
+
     if os.path.exists(file_target):
         response.data += " And file already exists."
     else:
         response.data += " But file doesn't exist yet."
-    
+
     return response
 
 class Test:

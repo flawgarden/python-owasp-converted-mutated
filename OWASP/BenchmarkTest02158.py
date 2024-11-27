@@ -26,7 +26,7 @@ def benchmark_test_post(request):
 
         user = "SafeDonna"
         full_class_name = benchmark_test.__module__ + '.' + benchmark_test.__name__
-        test_case_number = full_class_name.split('.')[-1][len("BenchmarkTest"):] 
+        test_case_number = full_class_name.split('.')[-1][len("BenchmarkTest"):]
         user += test_case_number
 
         cookie_name = "rememberMe" + test_case_number

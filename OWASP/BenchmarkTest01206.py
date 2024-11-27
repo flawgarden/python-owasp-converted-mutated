@@ -32,7 +32,7 @@ def benchmark_test_post():
         + Utils.encode_for_html(bar)
         + "' saved in session."
     )
-    
+
     return response
 
 class Test:

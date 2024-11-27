@@ -8,9 +8,9 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = make_response()
-    
+
     values = request.values.getlist("BenchmarkTest01604")
     param = values[0] if values else ""
 
@@ -19,13 +19,13 @@ def benchmark_test():
     str_val = param if isinstance(param, str) else ""
     if not str_val:
         str_val = "No cookie value supplied"
-    
+
     cookie = ('SomeCookie', str_val, {'secure': True, 'httponly': True, 'path': request.path})
     response.set_cookie(*cookie)
 
     response.data = f"Created cookie: 'SomeCookie': with value: '{str_val}' and secure flag set to: true"
     response.content_type = "text/html;charset=UTF-8"
-    
+
     return response
 
 class Test:

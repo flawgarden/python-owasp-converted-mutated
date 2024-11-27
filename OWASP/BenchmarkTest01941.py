@@ -15,7 +15,7 @@ def benchmark_test01941():
 
 def benchmark_test01941_post():
     response_content_type = "text/html;charset=UTF-8"
-    
+
     param = request.headers.get("BenchmarkTest01941", "")
     param = urllib.parse.unquote(param)
 
@@ -24,7 +24,7 @@ def benchmark_test01941_post():
     cmd = get_insecure_os_command_string()
 
     args_env = [bar]
-    
+
     try:
         process = os.popen(f"{cmd} {' '.join(args_env)}")
         output = process.read()
@@ -37,12 +37,12 @@ def do_something(param):
     a20426 = param
     b20426 = a20426 + " SafeStuff"
     b20426 = b20426[:-5] + "Chars"
-    
+
     map20426 = {}
     map20426["key20426"] = b20426
     c20426 = map20426["key20426"]
     d20426 = c20426[:-1]
-    
+
     e20426 = base64.b64decode(base64.b64encode(d20426.encode())).decode()
     f20426 = e20426.split(" ")[0]
 

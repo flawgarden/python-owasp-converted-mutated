@@ -18,7 +18,7 @@ def benchmark_test_00088():
         the_cookies = request.cookies
         if 'BenchmarkTest00088' in the_cookies:
             param = urllib.parse.unquote(the_cookies['BenchmarkTest00088'])
-        
+
         bar = param  # Placeholder for encoding logic
 
         str_param = param if isinstance(param, str) else ''

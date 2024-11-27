@@ -33,7 +33,7 @@ def benchmark_test():
         cmd = "echo "  # Adjust command as needed for your environment
 
     args_env = {"Foo": "bar"}
-    
+
     try:
         p = os.popen(cmd + bar)  # Execute the command
         output = p.read()  # Get the output from the command

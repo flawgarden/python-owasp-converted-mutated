@@ -27,7 +27,7 @@ def benchmark_test():
         response.data += " And file already exists."
     else:
         response.data += " But file doesn't exist yet."
-    
+
     return response
 
 class Test:
@@ -38,9 +38,9 @@ class Test:
         map11433 = {}
         map11433["key11433"] = b11433
         c11433 = map11433["key11433"]
-        d11433 = c11433[:-1]  
-        e11433 = d11433.encode('utf-8').decode('utf-8') 
-        f11433 = e11433.split(" ")[0]  
+        d11433 = c11433[:-1]
+        e11433 = d11433.encode('utf-8').decode('utf-8')
+        f11433 = e11433.split(" ")[0]
         thing = self.create_thing()
         g11433 = "barbarians_at_the_gate"
         bar = thing.do_something(g11433)

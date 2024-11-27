@@ -20,7 +20,7 @@ def benchmark_test():
 
         if 'BenchmarkTest00943' in the_cookies:
             param = the_cookies['BenchmarkTest00943']
-        
+
         bar = Test().do_something(request, param)
 
         try:
@@ -28,13 +28,13 @@ def benchmark_test():
             input_data = b'?'  # Example input
             if isinstance(bar, str):
                 input_data = bar.encode()
-            
+
             result = cipher.do_final(input_data)
 
             file_target = os.path.join('path/to/your/testfiles_dir', 'passwordFile.txt')
             with open(file_target, 'a') as fw:
                 fw.write("secret_value=" + base64.b64encode(result).decode('utf-8') + "\n")
-            
+
             return f"Sensitive value: '{html_encode(input_data.decode())}' encrypted and stored<br/>"
 
         except Exception as e:

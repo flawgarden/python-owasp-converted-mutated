@@ -31,7 +31,7 @@ def benchmark_test():
     response.headers['X-XSS-Protection'] = '0'
     obj = ("a", bar)
     response.set_data("Formatted like: %s and %s." % obj)
-    
+
     return response
 
 def do_something(param):

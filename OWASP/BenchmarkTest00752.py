@@ -11,16 +11,16 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = make_response()
-    
+
     values = request.form.getlist("BenchmarkTest00752")
     param = values[0] if values else ""
-    
+
     bar = ""
     guess = "ABC"
     switch_target = guess[1]  # condition 'B', which is safe
-    
+
     if switch_target == 'A':
         bar = param
     elif switch_target == 'B':

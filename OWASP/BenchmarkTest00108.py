@@ -39,7 +39,7 @@ def benchmark_test_post():
         bar = "bobs_your_uncle"
 
     sql = "SELECT * FROM USERS WHERE USERNAME='foo' AND PASSWORD='" + bar + "'"
-    
+
     try:
         conn, cursor = get_sql_statement()
         cursor.execute(sql)

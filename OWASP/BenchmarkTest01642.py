@@ -25,7 +25,7 @@ def benchmark_test_post():
     ampersand_loc = query_string.find("&", param_loc)
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
-    
+
     param = urllib.parse.unquote(param)
 
     bar = Test().do_something(param)
@@ -36,7 +36,7 @@ def benchmark_test_post():
         response += " And file already exists."
     else:
         response += " But file doesn't exist yet."
-    
+
     return response
 
 class Test:

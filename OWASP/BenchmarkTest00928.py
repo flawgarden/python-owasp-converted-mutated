@@ -17,7 +17,7 @@ class SeparateClassRequest:
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-        
+
     response = ""
     scr = SeparateClassRequest(request)
     param = scr.getTheValue("BenchmarkTest00928")

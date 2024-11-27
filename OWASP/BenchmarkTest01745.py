@@ -14,7 +14,7 @@ def benchmark_test():
         file_target = os.path.join(bar, "Test.txt")
         response_text = f"Access to file: '{html_escape(file_target)}' created."
         file_exists_text = " And file already exists." if os.path.exists(file_target) else " But file doesn't exist yet."
-        
+
         return render_template("index.html", response=response_text + file_exists_text)
     return render_template("index.html")
 

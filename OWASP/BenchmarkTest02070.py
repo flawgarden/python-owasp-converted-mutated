@@ -27,7 +27,7 @@ def benchmark_test_post():
 
     cmd = get_insecure_os_command_string()
     args_env = [bar]
-    
+
     try:
         p = os.popen(f"{cmd} {' '.join(args_env)}")
         output = p.read()

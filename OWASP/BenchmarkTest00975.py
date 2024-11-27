@@ -14,7 +14,7 @@ def benchmark_test():
         user_cookie.set_cookie("BenchmarkTest00975", "whatever", max_age=60 * 3, secure=True, path=request.full_path)
         resp.set_cookie("BenchmarkTest00975", "whatever", max_age=60 * 3, secure=True, path=request.full_path)
         return resp
-    
+
     if request.method == 'POST':
         param = "noCookieValueSupplied"
         cookies = request.cookies

@@ -37,7 +37,7 @@ def benchmark_test_post(request):
     except Exception as e:
         print("Problem executing cmdi - TestCase")
         response.set_data(escape_for_html(str(e)))
-    
+
     return response
 
 class Test:

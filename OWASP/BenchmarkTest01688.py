@@ -18,7 +18,7 @@ def benchmark_test_post():
     query_string = request.query_string.decode()
     paramval = "BenchmarkTest01688="
     param_loc = query_string.find(paramval)
-    
+
     if param_loc == -1:
         return "getQueryString() couldn't find expected parameter 'BenchmarkTest01688' in query string."
 
@@ -26,7 +26,7 @@ def benchmark_test_post():
     ampersand_loc = query_string.find("&", param_loc)
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
-    
+
     param = urllib.parse.unquote(param)
 
     bar = Test().do_something(param)
@@ -35,7 +35,7 @@ def benchmark_test_post():
     os_name = os.name
     if os_name == 'nt':
         cmd = "echo"
-    
+
     args_env = {"Foo": "bar"}
 
     try:

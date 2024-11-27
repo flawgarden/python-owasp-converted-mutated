@@ -30,7 +30,7 @@ def benchmark_test_00362():
                     fos.close()
                 except Exception:
                     pass
-                
+
     return render_template("index.html")
 
 @app.errorhandler(404)

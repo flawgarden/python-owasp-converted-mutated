@@ -39,7 +39,7 @@ def benchmark_test_post():
         connection.commit()
     except Exception as e:
         response = "Error processing request."
-    
+
     return response
 
 def do_something(param):

@@ -58,7 +58,7 @@ def get_sql_connection():
 def print_results(statement, sql, response):
     rows = statement.fetchall()
     response.data = str(rows).encode('utf-8')
-    
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template("404.html")

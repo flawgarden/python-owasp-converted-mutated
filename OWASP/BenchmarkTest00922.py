@@ -35,7 +35,7 @@ def benchmark_test_post():
             bar
         )
     )
-    
+
     return response
 
 if __name__ == "__main__":

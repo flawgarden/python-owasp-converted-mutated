@@ -43,7 +43,7 @@ def benchmark_test_post():
     except Exception as e:
         print("Problem executing cmdi - TestCase")
         response.set_data(urllib.parse.quote(str(e)))
-    
+
     return response
 
 if __name__ == "__main__":

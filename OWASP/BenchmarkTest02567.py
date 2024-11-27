@@ -14,10 +14,10 @@ def benchmark_test():
     query_string = request.query_string.decode()
     paramval = "BenchmarkTest02567" + "="
     param_loc = -1
-    
+
     if query_string:
         param_loc = query_string.find(paramval)
-        
+
     if param_loc == -1:
         return "getQueryString() couldn't find expected parameter 'BenchmarkTest02567' in query string."
 
@@ -26,7 +26,7 @@ def benchmark_test():
 
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
-    
+
     param = param.replace("%20", " ")  # Simple URL decode
 
     bar = do_something(request, param)

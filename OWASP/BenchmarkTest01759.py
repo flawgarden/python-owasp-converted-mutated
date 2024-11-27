@@ -33,7 +33,7 @@ def benchmark_test_post():
         file_target = os.path.join('testfiles', 'passwordFile.txt')
         with open(file_target, 'a') as fw:
             fw.write("hash_value=" + result.hex() + "\n")
-        
+
         response_output = "Sensitive value '" + escape_html(input_data.decode()) + "' hashed and stored<br/>"
     except Exception as e:
         print("Problem executing hash - TestCase")

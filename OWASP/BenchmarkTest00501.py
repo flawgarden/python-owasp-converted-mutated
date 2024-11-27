@@ -16,7 +16,7 @@ def benchmark_test():
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
 
     param = request.values.get("BenchmarkTest00501", "")
-    
+
     bar = ""
     if param:
         values_list = ["safe", param, "moresafe"]
@@ -50,7 +50,7 @@ def benchmark_test():
             response.data = f"{user} has been remembered with cookie: {cookie_name} whose value is: {remember_me_key}<br/>"
     except Exception as e:
         print(f"Problem executing SecureRandom.nextBytes() - TestCase: {e}")
-    
+
     response.data += "Randomness Test executed"
     return response
 

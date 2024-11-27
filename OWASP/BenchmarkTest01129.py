@@ -15,7 +15,7 @@ def benchmark_test():
 def benchmark_test_post():
     param = ""
     for name in request.headers:
-        if name not in ['Accept', 'Accept-Charset', 'Accept-Encoding', 'Accept-Language', 'Connection', 
+        if name not in ['Accept', 'Accept-Charset', 'Accept-Encoding', 'Accept-Language', 'Connection',
                         'Cookie', 'Host', 'User-Agent', 'Referer', 'Origin']:
             param = name
             break
@@ -43,7 +43,7 @@ def benchmark_test_post():
                     break
 
     response = make_response()
-    
+
     if found_user:
         response.set_data("Welcome back: " + user + "<br/>")
     else:

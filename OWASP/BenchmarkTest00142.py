@@ -19,7 +19,7 @@ def benchmark_test_post():
     param = urllib.parse.unquote(param)
 
     bar = ""
-    
+
     num = 86
     if (7 * 42) - num > 200:
         bar = "This_should_always_happen"
@@ -32,7 +32,7 @@ def benchmark_test_post():
         input_param = bar
         if isinstance(input_param, str):
             input_data = input_param.encode()
-        
+
         md.update(input_data)
 
         result = md.digest()

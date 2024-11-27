@@ -39,7 +39,7 @@ def benchmark_test_post():
         bar = values_list[1]
 
     sql = f"SELECT * from USERS where USERNAME='foo' and PASSWORD='{bar}'"
-    
+
     results = query_database(sql)
     response = "Your results are: <br>"
 

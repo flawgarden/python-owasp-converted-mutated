@@ -34,7 +34,7 @@ def benchmark_test():
         response.data += b" And file already exists."
     else:
         response.data += b" But file doesn't exist yet."
-    
+
     return response
 
 if __name__ == "__main__":

@@ -43,10 +43,10 @@ def benchmark_test_post():
         else:
             response.set_cookie(cookie_name, remember_me_key, secure=True, httponly=True, path=request.path)
             response.data = f"{user} has been remembered with cookie: {cookie_name} whose value is: {remember_me_key}<br/>"
-        
+
         response.data += "Weak Randomness Test random.SystemRandom().random() executed"
         return response
-    
+
     except Exception as e:
         print("Problem executing random.SystemRandom() - TestCase")
         return "An error occurred.", 500

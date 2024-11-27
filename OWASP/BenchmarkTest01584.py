@@ -11,7 +11,7 @@ def benchmark_test():
     else:
         response = Response()
         response.headers['Content-Type'] = 'text/html;charset=UTF-8'
-        
+
         values = request.values.getlist("BenchmarkTest01584")
         param = values[0] if values else ""
 

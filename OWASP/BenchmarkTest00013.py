@@ -9,14 +9,14 @@ app.config['DEBUG'] = True
 def benchmark_test():
     response = Response()
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
-    
+
     param = ""
     if 'Referer' in request.headers:
         param = request.headers['Referer']  # grab first element
 
     param = urllib.parse.unquote(param)  # URL Decode the header value
     response.headers['X-XSS-Protection'] = '0'
-    
+
     obj = ["a", "b"]
     response.set_data(response.get_data_format(param, obj))
     return response

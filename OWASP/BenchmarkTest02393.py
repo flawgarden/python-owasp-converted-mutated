@@ -31,7 +31,7 @@ def benchmark_test_post():
         fw.write("hash_value=" + base64.b64encode(result).decode() + "\n")
 
     response += f"Sensitive value '{html_escape(input_param.decode())}' hashed and stored<br/>"
-    
+
     response += "Hash Test executed"
     return response
 
@@ -44,7 +44,7 @@ def do_something(param):
     d24492 = c24492[:-1]  # extract most of it
     e24492 = base64.b64decode(base64.b64encode(d24492.encode())).decode()  # base64 encode and decode
     f24492 = e24492.split(" ")[0]
-    
+
     # Simulating the reflection call
     g24492 = "barbarians_at_the_gate"  # static content
     bar = g24492  # This would typically involve more complex logic

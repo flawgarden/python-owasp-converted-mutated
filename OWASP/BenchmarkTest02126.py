@@ -31,7 +31,7 @@ def do_something(param):
     d64181 = c64181[:-1]
     e64181 = base64.b64decode(base64.b64encode(d64181.encode())).decode()
     f64181 = e64181.split(" ")[0]
-    
+
     thing = create_thing()
     bar = thing.do_something(f64181)
 

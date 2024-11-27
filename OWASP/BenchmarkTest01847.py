@@ -13,7 +13,7 @@ def benchmark_test():
         user_cookie = ('BenchmarkTest01847', 'someSecret', 60 * 3)  # Store cookie for 3 minutes
         response.set_cookie(user_cookie[0], user_cookie[1], max_age=user_cookie[2], secure=True, path=request.path, domain=request.host.split(':')[0])
         return response
-    
+
     if request.method == 'POST':
         param = "noCookieValueSupplied"
         the_cookies = request.cookies

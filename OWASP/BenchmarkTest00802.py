@@ -13,7 +13,7 @@ def benchmark_test():
     query_string = request.query_string.decode()
     paramval = "BenchmarkTest00802="
     param_loc = query_string.find(paramval)
-    
+
     if param_loc == -1:
         response.data = f"getQueryString() couldn't find expected parameter '{paramval[:-1]}' in query string."
         return response
@@ -27,7 +27,7 @@ def benchmark_test():
     param = base64.b64decode(param).decode('utf-8') if param else ""
 
     bar = base64.b64encode(param.encode()).decode() if param else ""
-    
+
     response.headers['X-XSS-Protection'] = "0"
     response.data = bar
     return response

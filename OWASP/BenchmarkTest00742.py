@@ -13,7 +13,7 @@ def benchmark_test():
 
 def benchmark_test_post():
     response = app.response_class(content_type='text/html;charset=UTF-8')
-    
+
     values = request.args.getlist("BenchmarkTest00742")
     param = values[0] if values else ""
 
@@ -41,7 +41,7 @@ def benchmark_test_post():
         print("Problem executing cmdi - TestCase")
         response.set_data(str(e))
         return response
-    
+
     return response
 
 @app.errorhandler(404)

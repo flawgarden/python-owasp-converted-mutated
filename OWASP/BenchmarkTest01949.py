@@ -15,7 +15,7 @@ def benchmark_test_01949():
 def benchmark_test_01949_post():
     response = make_response("")
     param = request.headers.get("BenchmarkTest01949", "")
-    
+
     param = param
 
     bar = do_something(request, param)

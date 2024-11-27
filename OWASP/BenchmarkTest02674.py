@@ -27,10 +27,10 @@ def benchmark_test_post():
 
         result = md.digest()
         file_target = os.path.join("path/to/your/testfiles", "passwordFile.txt")
-        
+
         with open(file_target, 'a') as fw:
             fw.write("hash_value=" + base64.b64encode(result).decode() + "\n")
-        
+
         return f"Sensitive value '{html_escape(input_data.decode())}' hashed and stored<br/>"
 
     except Exception as e:

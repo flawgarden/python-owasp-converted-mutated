@@ -15,7 +15,7 @@ def handle_request():
     response = ""
     param = ""
     map_values = request.args.to_dict()
-    
+
     if map_values:
         values = map_values.get("BenchmarkTest00031")
         if values:

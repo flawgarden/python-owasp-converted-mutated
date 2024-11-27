@@ -21,7 +21,7 @@ def benchmark_test_post():
     for name in headers:
         if name in common_headers():
             continue
-        
+
         param = name
         break
 

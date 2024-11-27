@@ -67,7 +67,7 @@ def do_something(param):
     c14991 = b14991[:-1]
     e14991 = base64.b64decode(base64.b64encode(c14991.encode())).decode()  # B64 encode and decode
     f14991 = e14991.split(" ")[0]
-    
+
     # Placeholder for calling external functionality
     # thing = ThingFactory.create_thing()
     # bar = thing.do_something(f14991)

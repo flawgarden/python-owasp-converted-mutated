@@ -19,8 +19,8 @@ def benchmark_test_post():
 
     bar = "safe!"
     map49960 = {}
-    map49960["keyA-49960"] = "a-Value" 
-    map49960["keyB-49960"] = param 
+    map49960["keyA-49960"] = "a-Value"
+    map49960["keyB-49960"] = param
     map49960["keyC"] = "another-Value"
     bar = map49960["keyB-49960"]
 

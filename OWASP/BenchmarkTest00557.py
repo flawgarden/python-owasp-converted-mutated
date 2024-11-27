@@ -35,7 +35,7 @@ def benchmark_test():
     if bar:
         length = len(bar)
         response.data = bar[:length]
-    
+
     return response
 
 if __name__ == "__main__":

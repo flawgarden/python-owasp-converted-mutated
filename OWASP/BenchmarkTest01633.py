@@ -55,7 +55,7 @@ class Test:
         return bar
 
 class ThingFactory:
-    
+
     @staticmethod
     def create_thing():
         return Thing()

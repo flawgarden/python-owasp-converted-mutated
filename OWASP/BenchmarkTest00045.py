@@ -14,7 +14,7 @@ def benchmark_test():
 
 def benchmark_test_post():
     response = app.response_class(content_type="text/html;charset=UTF-8")
-    
+
     values = request.args.getlist("BenchmarkTest00045")
     param = values[0] if values else ""
 
@@ -24,7 +24,7 @@ def benchmark_test_post():
         with open(file_name, 'w') as fos:
             fos.write("Now ready to write to file: " + file_name)
             response.set_data("Now ready to write to file: " + file_name)
-    
+
     except Exception as e:
         print("Couldn't open FileOutputStream on file: '" + file_name + "'")
 

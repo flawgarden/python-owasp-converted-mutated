@@ -13,7 +13,7 @@ def benchmark_test():
         return benchmark_test()
 
     response = make_response()
-    
+
     param = request.headers.get('BenchmarkTest00318', '')
     param = base64.b64decode(param.encode()).decode('utf-8', errors='ignore')
 

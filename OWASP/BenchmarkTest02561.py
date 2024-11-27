@@ -26,13 +26,13 @@ def benchmark_test_post(request):
     ampersand_loc = query_string.find("&", param_loc)
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
-    
+
     param = unquote(param)
 
     bar = do_something(param)
 
     file_name = os.path.join(TESTFILES_DIR, bar)
-    
+
     try:
         with open(file_name, 'rb') as fis:
             b = fis.read(1000)

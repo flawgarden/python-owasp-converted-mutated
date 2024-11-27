@@ -36,7 +36,7 @@ def benchmark_test():
         file_path = os.path.join(start_uri_slashes, 'path_to_testfiles_directory', bar.replace(' ', '_'))
         file_target = os.path.abspath(file_path)
         response_message = f"Access to file: '{file_target}' created."
-        
+
         if os.path.exists(file_target):
             response_message += " And file already exists."
         else:

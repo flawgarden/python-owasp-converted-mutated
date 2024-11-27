@@ -7,7 +7,7 @@ app.config['DEBUG'] = True
 @app.route("/xss-02/BenchmarkTest01426", methods=['GET', 'POST'])
 def benchmark_test():
     response = app.response_class(content_type='text/html;charset=UTF-8')
-    
+
     param = ""
     flag = True
     names = request.args if request.method == 'GET' else request.form

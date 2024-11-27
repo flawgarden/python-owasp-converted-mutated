@@ -25,7 +25,7 @@ def benchmark_test():
             connection.close()
         except sqlite3.Error as e:
             response_html = "Error processing request."
-        
+
         return response_html
     return render_template("index.html")
 

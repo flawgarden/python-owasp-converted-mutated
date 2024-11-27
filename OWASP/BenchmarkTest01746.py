@@ -13,7 +13,7 @@ def benchmark_test():
         return benchmark_test()
 
     response = "text/html;charset=UTF-8"
-    
+
     param = request.values.get("BenchmarkTest01746")
 
     bar = Test().do_something(request, param)

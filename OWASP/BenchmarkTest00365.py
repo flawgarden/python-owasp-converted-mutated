@@ -19,7 +19,7 @@ def benchmark_test():
             "keyB-10106": param,
             "keyC": "another_Value"
         }
-        
+
         bar = map10106["keyB-10106"]
         bar = map10106["keyA-10106"]
 
@@ -31,11 +31,11 @@ def benchmark_test():
                 b = is_.read(1000)
                 response.set_data(f"The beginning of file: '{bar}' is:\n\n")
                 response.set_data(response.get_data(as_text=True) + b.decode('utf-8', errors='ignore'))
-        
+
         except Exception as e:
             print(f"Couldn't open InputStream on file: '{fileName}'")
             response.set_data(response.get_data(as_text=True) + f"Problem getting InputStream: {str(e)}")
-        
+
         return response
 
 if __name__ == "__main__":

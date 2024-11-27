@@ -13,11 +13,11 @@ def benchmark_test():
 def benchmark_test_post():
     response = ""
     param = request.values.get("BenchmarkTest01500", "")
-    
+
     bar = Test().do_something(param)
-    
+
     file_name = os.path.join('testfiles', bar)
-    
+
     try:
         with open(file_name, 'rb') as file:
             b = file.read(1000)

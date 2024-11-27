@@ -35,7 +35,7 @@ def benchmark_test():
             "Problem getting FileInputStream: "
             + escape_html(str(e))
         )
-    
+
     response_content += "</body></html>"
     return response_content
 

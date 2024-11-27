@@ -13,7 +13,7 @@ def benchmark_test():
 
     response = make_response()
     param = request.values.get("BenchmarkTest00665", "")
-    
+
     bar = param if (7 * 42) - 106 <= 200 else "This should never happen"
 
     try:

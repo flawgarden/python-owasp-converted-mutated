@@ -17,7 +17,7 @@ def benchmark_test_post(request):
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
 
     param = request.args.get("BenchmarkTest01263", "")
-    
+
     bar = Test().do_something(request, param)
 
     response.headers['X-XSS-Protection'] = '0'

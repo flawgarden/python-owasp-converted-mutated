@@ -13,7 +13,7 @@ def benchmark_test():
 
 def benchmark_test_post():
     param = request.args.get('BenchmarkTest02232', '')
-    
+
     bar = do_something(param)
 
     response = app.response_class()

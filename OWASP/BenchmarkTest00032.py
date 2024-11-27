@@ -27,14 +27,14 @@ def benchmark_test():
 
         response.set_data(
             "No results can be displayed for query: "
-            + sql.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;") 
+            + sql.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
             + "<br>"
             + " because the Spring execute method doesn't return results."
         )
     except Exception as e:
         # Simulate handling of SQL errors
         response.set_data("Error processing request.")
-        
+
     return response
 
 if __name__ == "__main__":

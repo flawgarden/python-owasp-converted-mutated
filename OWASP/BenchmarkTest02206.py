@@ -20,7 +20,7 @@ def benchmark_test_post():
 
     file_name = os.path.join('testfiles', bar)
     content = ""
-    
+
     try:
         with open(file_name, 'r') as file:
             content = file.read(1000)

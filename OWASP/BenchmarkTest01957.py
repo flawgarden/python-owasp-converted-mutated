@@ -9,7 +9,7 @@ def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
     param = request.headers.get("BenchmarkTest01957", "")
-    
+
     param = param.encode('utf-8').decode('utf-8')
 
     bar = do_something(param)

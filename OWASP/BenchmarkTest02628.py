@@ -46,7 +46,7 @@ def do_something(param):
     map_23653["keyB-23653"] = param
     map_23653["keyC"] = "another-Value"
     bar = map_23653["keyB-23653"]
-    
+
     return bar
 
 if __name__ == "__main__":

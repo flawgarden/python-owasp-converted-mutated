@@ -9,7 +9,7 @@ app = Flask(__name__, static_url_path='/static', static_folder='static')
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     param = request.form.get('BenchmarkTest00629', '')
     bar = ""
 
@@ -20,7 +20,7 @@ def benchmark_test():
         bar = "This should never happen"
 
     file_name = os.path.join('testfiles', secure_filename(bar))
-    
+
     try:
         with open(file_name, 'r') as file:
             b = file.read(1000)

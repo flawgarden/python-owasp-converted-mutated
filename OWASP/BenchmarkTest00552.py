@@ -14,7 +14,7 @@ def benchmark_test():
 
     param = ""
     flag = True
-    
+
     names = request.args.keys() if request.method == 'GET' else request.form.keys()
     for name in names:
         values = request.args.getlist(name) if request.method == 'GET' else request.form.getlist(name)

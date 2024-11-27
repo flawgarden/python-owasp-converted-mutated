@@ -11,7 +11,7 @@ def benchmark_test():
         return benchmark_test()
 
     response = "text/html;charset=UTF-8"
-    
+
     param = ""
     flag = True
     names = request.args.to_dict()

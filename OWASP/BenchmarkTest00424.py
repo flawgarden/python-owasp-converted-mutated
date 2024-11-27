@@ -13,7 +13,7 @@ def benchmark_test():
         response = app.response_class(
             content_type='text/html;charset=UTF-8'
         )
-        
+
         param = request.form.get("BenchmarkTest00424", "")
         bar = ""
 
@@ -27,7 +27,7 @@ def benchmark_test():
             + bar.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
             + "' saved in session."
         )
-        
+
         return response
     return render_template("index.html")
 

@@ -42,7 +42,7 @@ def benchmark_test_post():
     process = os.popen(" ".join(args))
     result = process.read()
     process.close()
-    
+
     return result
 
 @app.errorhandler(404)

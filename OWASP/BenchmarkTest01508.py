@@ -13,11 +13,11 @@ def benchmark_test():
 def benchmark_test_post():
     response = Response()
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
-    
+
     param = request.args.get("BenchmarkTest01508", "")
-    
+
     bar = Test().do_something(request, param)
-    
+
     response.headers['X-XSS-Protection'] = '0'
     response.set_data(bar.encode('utf-8'))
     return response

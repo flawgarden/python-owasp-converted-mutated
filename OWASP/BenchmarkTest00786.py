@@ -22,7 +22,7 @@ def benchmark_test_post(request):
         response.data = f"getQueryString() couldn't find expected parameter '{paramval[:-1]}' in query string."
         return response
 
-    param = query_string[param_loc + len(paramval):] 
+    param = query_string[param_loc + len(paramval):]
     ampersand_loc = query_string.find("&", param_loc)
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]

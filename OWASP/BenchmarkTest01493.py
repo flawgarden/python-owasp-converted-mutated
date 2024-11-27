@@ -14,7 +14,7 @@ def benchmark_test():
 def benchmark_test_post():
     response = ""
     param = request.args.get("BenchmarkTest01493", "")
-    
+
     bar = Test().do_something(param)
 
     file_target = os.path.join(os.getenv('TESTFILES_DIR', 'testfiles'), bar)
@@ -23,7 +23,7 @@ def benchmark_test_post():
         response += "And file already exists.<br>"
     else:
         response += "But file doesn't exist yet.<br>"
-    
+
     return response
 
 class Test:
@@ -36,7 +36,7 @@ class Test:
         map71009["keyC"] = "another_Value"
         bar = map71009.get("keyB-71009")
         bar = map71009.get("keyA-71009")
-        
+
         return bar
 
 @app.errorhandler(404)

@@ -24,7 +24,7 @@ def benchmark_test():
             return render_template("results.html", results=results)  # assuming results.html exists
         except sqlite3.Error as e:
             return "Error processing request."
-    
+
     return render_template("benchmark_test.html")  # assuming benchmark_test.html exists
 
 def do_something(param):

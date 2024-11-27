@@ -28,7 +28,7 @@ def benchmark_test_post():
 
         result = md.digest()
         file_target = os.path.join('testfiles', 'passwordFile.txt')
-        
+
         with open(file_target, 'a') as fw:
             fw.write("hash_value=" + base64.b64encode(result).decode() + "\n")
 

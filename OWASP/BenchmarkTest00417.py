@@ -17,7 +17,7 @@ def benchmark_test00417():
 def benchmark_test00417_post():
     response = make_response("")
     param = request.args.get("BenchmarkTest00417", "")
-    
+
     bar = "This_should_always_happen" if (7 * 18) + 106 > 200 else param
 
     try:
@@ -48,7 +48,7 @@ def benchmark_test00417_post():
     except Exception as e:
         print("Problem executing SecureRandom.nextBytes() - TestCase")
         raise
-    
+
     response.data += "Randomness Test os.urandom executed".encode('utf-8')
     return response
 

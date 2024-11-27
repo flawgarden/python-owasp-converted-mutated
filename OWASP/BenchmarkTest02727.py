@@ -31,7 +31,7 @@ def benchmark_test():
         except sqlite3.Error as e:
             response.set_data("Error processing request.")
             return response
-        
+
 def do_something(param):
     bar = ""
     guess = "ABC"

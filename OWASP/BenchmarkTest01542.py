@@ -43,11 +43,11 @@ def benchmark_test():
             remember_me.set_cookie(cookie_name, remember_me_key, secure=True, httponly=True, path=request.path)
             request.session[cookie_name] = remember_me_key
             response.data = f"{user} has been remembered with cookie: {cookie_name} whose value is: {remember_me_key}<br/>"
-        
+
     except Exception as e:
         print("Problem executing random.SystemRandom() - TestCase")
         raise e
-    
+
     response.data += "Weak Randomness Test random.SystemRandom() executed"
     return response
 
@@ -55,8 +55,8 @@ class Test:
     def do_something(self, request, param):
         bar = "safe!"
         map98601 = {
-            "keyA-98601": "a-Value", 
-            "keyB-98601": param, 
+            "keyA-98601": "a-Value",
+            "keyB-98601": param,
             "keyC": "another-Value"
         }
         bar = map98601["keyB-98601"]

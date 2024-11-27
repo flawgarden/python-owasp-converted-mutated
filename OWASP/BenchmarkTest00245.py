@@ -15,7 +15,7 @@ def benchmark_test():
 def benchmark_test_post():
     response = make_response()
     param = ""
-    
+
     for name in request.headers:
         if name in ['User-Agent', 'Accept', 'Accept-Language', 'Content-Type']:
             continue
@@ -25,17 +25,17 @@ def benchmark_test_post():
     a73565 = param
     b73565 = str(a73565) + " SafeStuff"
     b73565 = b73565[:-5] + "Chars"
-    
+
     map73565 = {}
     map73565["key73565"] = b73565
     c73565 = map73565["key73565"]
     d73565 = c73565[:-1]
-    
+
     # Dummy encoding as Python's Base64 decoding/encoding is not the same as Java's
-    e73565 = d73565.encode('utf-8').decode('utf-8') 
+    e73565 = d73565.encode('utf-8').decode('utf-8')
 
     f73565 = e73565.split(" ")[0]
-    
+
     # Simulate the behavior of a ThingInterface
     g73565 = "barbarians_at_the_gate"
     bar = g73565  # Placeholder for actual reflection
@@ -43,7 +43,7 @@ def benchmark_test_post():
     try:
         rand = random.random()
         remember_me_key = str(rand)[2:]
-        
+
         user = "SafeDonatella"
         full_class_name = __name__
         test_case_number = full_class_name.split('.')[-1][len("BenchmarkTest"):]
@@ -53,7 +53,7 @@ def benchmark_test_post():
 
         found_user = False
         cookies = request.cookies
-        
+
         if cookie_name in cookies:
             if cookies[cookie_name] == request.cookies.get(cookie_name):
                 found_user = True
@@ -63,10 +63,10 @@ def benchmark_test_post():
         else:
             response.set_cookie(cookie_name, remember_me_key, secure=True, httponly=True, path=request.path)
             response.data += f"{user} has been remembered with cookie: {cookie_name} whose value is: {remember_me_key}<br/>"
-        
+
     except Exception as e:
         print("Problem executing SecureRandom.nextDouble() - TestCase")
-    
+
     response.data += "Weak Randomness Test random.random() executed"
     return response
 

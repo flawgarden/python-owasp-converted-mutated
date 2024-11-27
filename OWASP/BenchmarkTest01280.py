@@ -17,10 +17,10 @@ def benchmark_test_post():
     str_value = param if isinstance(param, str) else "No cookie value supplied"
     response = make_response()
     cookie = ('SomeCookie', str_value)
-    
+
     response.set_cookie(cookie[0], cookie[1], secure=False, httponly=True, path=request.path)
     response.data = f"Created cookie: 'SomeCookie': with value: '{str_value}' and secure flag set to: false"
-    
+
     return response
 
 class Test:

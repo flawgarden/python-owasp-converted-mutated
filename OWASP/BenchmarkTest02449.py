@@ -27,7 +27,7 @@ def benchmark_test_post():
         response = print_results(results, sql)
     except sqlite3.Error as e:
         response += "Error processing request."
-    
+
     return response
 
 def do_something(param):

@@ -13,7 +13,7 @@ def benchmark_test():
 
 def benchmark_test_post():
     param = request.args.get('BenchmarkTest00392', '')
-    
+
     bar = param
     if param and len(param) > 1:
         sbxyz38384 = list(param)

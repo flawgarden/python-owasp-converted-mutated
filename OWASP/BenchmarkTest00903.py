@@ -28,7 +28,7 @@ def benchmark_test():
 
     if param is None:
         param = "No cookie value supplied"
-    
+
     cookie = f"SomeCookie={param}; Path={request.path}; HttpOnly"
     response.headers.add('Set-Cookie', cookie)
 

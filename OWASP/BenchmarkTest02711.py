@@ -11,12 +11,12 @@ def benchmark_test():
         return benchmark_test()
 
     param = request.args.get("BenchmarkTest02711")
-    
+
     bar = do_something(param)
 
     if bar == "":
         bar = "No cookie value supplied"
-    
+
     response = make_response("Created cookie: 'SomeCookie': with value: '" + urllib.parse.quote(bar) + "' and secure flag set to: true")
     response.set_cookie("SomeCookie", bar, secure=True, httponly=True, path=request.path)
 

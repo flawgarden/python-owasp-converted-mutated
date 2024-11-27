@@ -14,7 +14,7 @@ def benchmark_test():
 
 def benchmark_test_post():
     response = "text/html;charset=UTF-8"
-    
+
     values = request.values.getlist("BenchmarkTest01576")
     param = values[0] if values else ""
 
@@ -29,11 +29,11 @@ def benchmark_test_post():
 
         result = md.digest()
         file_target = os.path.join('testfiles', 'passwordFile.txt')
-        
+
         with open(file_target, 'a') as fw:
             encoded_result = result.hex()  # Using hex for a simple representation
             fw.write(f"hash_value={encoded_result}\n")
-        
+
         response_message = f"Sensitive value '{html_escape(input.decode())}' hashed and stored<br/>"
     except Exception as e:
         print("Problem executing hash - TestCase")

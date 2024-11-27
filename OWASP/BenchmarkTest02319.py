@@ -29,7 +29,7 @@ def benchmark_test_post(request):
             break
 
     bar = do_something(request, param)
-    
+
     return bar, 200, response_headers
 
 def do_something(request, param):

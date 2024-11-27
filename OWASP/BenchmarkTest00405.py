@@ -11,7 +11,7 @@ def benchmark_test():
 
     response = make_response()
     param = request.form.get("BenchmarkTest00405", "")
-    
+
     bar = param
     if param and len(param) > 1:
         bar = param[:-1]
@@ -20,7 +20,7 @@ def benchmark_test():
     cookie = str_value
 
     response.set_cookie("SomeCookie", cookie, secure=True, httponly=True, path=request.path)
-    
+
     encoded_str = escape(str_value)
     response.data = f"Created cookie: 'SomeCookie': with value: '{encoded_str}' and secure flag set to: true"
     return response

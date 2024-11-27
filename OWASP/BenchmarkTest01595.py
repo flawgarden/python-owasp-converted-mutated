@@ -9,10 +9,10 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'POST':
         response = app.response_class(content_type="text/html;charset=UTF-8")
-        
+
         values = request.form.getlist("BenchmarkTest01595")
         param = values[0] if values else ""
-        
+
         bar = Test().do_something(param)
 
         response.headers["X-XSS-Protection"] = "0"

@@ -48,7 +48,7 @@ def benchmark_test_post():
                             path=request.path)
     request.session[cookie_name] = remember_me_key
     remember_me.data = f"{user} has been remembered with cookie: {cookie_name} whose value is: {remember_me_key}<br/>"
-    
+
     return remember_me
 
 

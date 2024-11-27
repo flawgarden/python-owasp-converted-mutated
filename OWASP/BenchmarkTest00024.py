@@ -15,7 +15,7 @@ def benchmark_test_00024():
         param = request.form.get('BenchmarkTest00024', '')
 
         sql = "SELECT * FROM USERS WHERE USERNAME=? AND PASSWORD='" + param + "'"
-        
+
         try:
             connection = get_sql_connection()
             cursor = connection.cursor()

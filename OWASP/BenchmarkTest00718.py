@@ -9,10 +9,10 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = make_response()
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
-    
+
     values = request.values.getlist("BenchmarkTest00718")
     param = values[0] if values else ""
     bar = escape_html(param)

@@ -9,12 +9,12 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = make_response()
     param = ""
-    
+
     referer = request.headers.get('Referer')
-    
+
     if referer:
         param = referer
 

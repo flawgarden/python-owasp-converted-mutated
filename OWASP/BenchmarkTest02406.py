@@ -13,7 +13,7 @@ def benchmark_test_02406():
 def benchmark_test_02406_post():
     response = Response()
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
-    
+
     param = request.args.get('BenchmarkTest02406', '')
     bar = do_something(param)
 

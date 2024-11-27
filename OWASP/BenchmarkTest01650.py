@@ -17,19 +17,19 @@ def benchmark_test_logic(request):
     query_string = request.query_string.decode('utf-8')
     paramval = "BenchmarkTest01650="
     param_loc = query_string.find(paramval)
-    
+
     if param_loc == -1:
         return f"getQueryString() couldn't find expected parameter '{paramval}' in query string."
-    
-    param = query_string[param_loc + len(paramval):]  
+
+    param = query_string[param_loc + len(paramval):]
     ampersand_loc = query_string.find("&", param_loc)
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
-    
+
     param = param  # No need for URL decoding in Flask as it handles that by default
 
     bar = Test().do_something(request, param)
-    
+
     try:
         md = hashlib.sha1()
         input_param = bar.encode('utf-8')
@@ -42,10 +42,10 @@ def benchmark_test_logic(request):
             fw.write(f"hash_value={result.hex()}\n")
 
         return f"Sensitive value '{input_param.decode()}' hashed and stored<br/>"
-        
+
     except Exception as e:
         print(f"Problem executing hash - {str(e)}")
-    
+
     return "Hash Test executed"
 
 class Test:

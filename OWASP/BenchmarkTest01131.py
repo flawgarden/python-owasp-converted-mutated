@@ -13,11 +13,11 @@ def benchmark_test():
 
     response = make_response()
     param = ""
-    
+
     for name in request.headers:
         if name in ['User-Agent', 'Accept', 'Content-Type', 'Host']:  # Add other standard headers here
             continue
-            
+
         param = name
         break
 

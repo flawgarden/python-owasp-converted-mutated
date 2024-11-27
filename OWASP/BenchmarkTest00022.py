@@ -19,7 +19,7 @@ def benchmark_test():
         input_data = b'?'
         if isinstance(param, str):
             input_data = param.encode()
-        
+
         md.update(input_data)
 
         result = md.digest()

@@ -13,17 +13,17 @@ def benchmark_test():
         user_cookie.set_cookie("BenchmarkTest01873", "my_user_id", max_age=60*3, secure=True, path=request.path, domain=request.host)
         response.headers.add('Set-Cookie', user_cookie.cookies)
         return response
-    
+
     if request.method == 'POST':
         cookies = request.cookies
         param = "noCookieValueSupplied"
-        
+
         if 'BenchmarkTest01873' in cookies:
             param = cookies['BenchmarkTest01873']
-        
+
         bar = do_something(param)
         request.session['userid'] = bar
-        
+
         return f"Item: 'userid' with value: '{encode_for_html(bar)}' saved in session."
 
 def do_something(param):

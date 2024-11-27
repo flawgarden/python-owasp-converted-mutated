@@ -9,7 +9,7 @@ app = Flask(__name__, static_url_path='/static', static_folder='static')
 def benchmark_test():
     if request.method == 'POST':
         param = request.form.get("BenchmarkTest00436", "")
-        
+
         bar = ""
         num = 86
         if (7 * 42) - num > 200:
@@ -18,7 +18,7 @@ def benchmark_test():
             bar = param
 
         sql = f"SELECT * from USERS where USERNAME='foo' and PASSWORD='{bar}'"
-        
+
         try:
             conn = sqlite3.connect('database.db')
             cursor = conn.cursor()

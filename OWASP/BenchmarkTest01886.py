@@ -18,10 +18,10 @@ def benchmark_test():
     if request.method == 'POST':
         param = "noCookieValueSupplied"
         cookies = request.cookies
-        
+
         if 'BenchmarkTest01886' in cookies:
             param = cookies['BenchmarkTest01886']
-        
+
         bar = do_something(param)
 
         sql = f"SELECT * from USERS where USERNAME='foo' and PASSWORD='{bar}'"
@@ -49,7 +49,7 @@ def do_something(param):
     d16884 = c16884[:-1]
     e16884 = base64.b64decode(base64.b64encode(d16884.encode())).decode()
     f16884 = e16884.split(" ")[0]
-    
+
     # Simulation of creating an instance of ThingInterface
     # This would need to be defined based on your context
     thing = create_thing()

@@ -20,7 +20,7 @@ def benchmark_test():
 
     response.data = ("Created cookie: 'SomeCookie': with value: '" +
                      bar + "' and secure flag set to: false").encode('utf-8')
-    
+
     return response
 
 

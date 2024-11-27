@@ -19,11 +19,11 @@ def benchmark_test():
 
 def benchmark_test_post():
     param = request.args.get("BenchmarkTest01302", "")
-    
+
     bar = Test().do_something(param)
-    
+
     sql = "{call " + bar + "}"
-    
+
     try:
         connection = get_sql_connection()
         cursor = connection.cursor()

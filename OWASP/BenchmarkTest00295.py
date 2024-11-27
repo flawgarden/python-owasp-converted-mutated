@@ -30,7 +30,7 @@ def benchmark_test_post():
     else:
         a1 = "sh"
         a2 = "-c"
-    
+
     args = [a1, a2, "echo " + bar]
 
     try:

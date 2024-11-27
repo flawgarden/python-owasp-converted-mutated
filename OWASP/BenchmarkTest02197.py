@@ -14,7 +14,7 @@ def benchmark_test():
 
 def benchmark_test_post(request):
     response = "text/html;charset=UTF-8"
-    
+
     param = ''
     if request.method == 'POST':
         map = request.form
@@ -26,13 +26,13 @@ def benchmark_test_post(request):
     bar = do_something(request, param)
 
     file_target = os.path.join('path/to/test/files', bar)
-    
+
     response_text = "Access to file: '{}' created.".format(file_target)
     if os.path.exists(file_target):
         response_text += " And file already exists."
     else:
         response_text += " But file doesn't exist yet."
-    
+
     return response_text
 
 def do_something(request, param):

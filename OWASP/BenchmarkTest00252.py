@@ -15,7 +15,7 @@ def benchmark_test():
             if name not in ['User-Agent', 'Accept', 'Accept-Encoding', 'Accept-Language', 'Connection']:  # Common headers
                 param = name
                 break
-        
+
         bar = "alsosafe"
         if param:
             values_list = ["safe", param, "moresafe"]

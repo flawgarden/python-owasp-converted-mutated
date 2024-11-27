@@ -11,7 +11,7 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = app.response_class(
         content_type='text/html;charset=UTF-8'
     )
@@ -19,7 +19,7 @@ def benchmark_test():
     param = ""
     flag = True
     names = request.args.keys()
-    
+
     for name in names:
         values = request.args.getlist(name)
         if values and flag:
@@ -41,7 +41,7 @@ def benchmark_test():
     except Exception as e:
         print("Problem executing cmdi - TestCase")
         response.data = str(e)
-    
+
     return response
 
 

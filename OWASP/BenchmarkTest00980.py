@@ -18,7 +18,7 @@ def benchmark_test():
         the_cookies = request.cookies
         if "BenchmarkTest00980" in the_cookies:
             param = the_cookies.get("BenchmarkTest00980")
-        
+
         bar = Test().do_something(request, param)
         cmd = Utils.get_insecure_os_command_string()
         args = [cmd]

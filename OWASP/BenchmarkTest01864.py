@@ -16,18 +16,18 @@ def benchmark_get():
 def benchmark_post():
     cookies = request.cookies
     param = "noCookieValueSupplied"
-    
+
     if 'BenchmarkTest01864' in cookies:
         param = cookies['BenchmarkTest01864']
 
     bar = do_something(request, param)
     cmd = ""
-    
+
     if os.name == 'nt':
         cmd = "echo "  # Windows command
 
     args_env = ['Foo=bar']
-    
+
     try:
         process = os.popen(cmd + bar)  # run the command
         output = process.read()  # get the output

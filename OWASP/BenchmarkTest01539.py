@@ -33,7 +33,7 @@ def benchmark_test():
 def benchmark_test_post():
     response = make_response()
     param = request.args.get("BenchmarkTest01539", "")
-    
+
     bar = Test().do_something(param)
 
     try:
@@ -62,7 +62,7 @@ def benchmark_test_post():
             response.data = f"{user} has been remembered with cookie: {remember_me[0]} whose value is: {remember_me[1]}<br/>"
     except Exception as e:
         response.data = f"Problem executing SecureRandom.nextBytes() - {str(e)}"
-    
+
     response.data += "Randomness Test executed"
     return response
 

@@ -15,7 +15,7 @@ def benchmark_test_post():
     param = ""
     flag = True
     names = request.values.keys()
-    
+
     for name in names:
         values = request.values.getlist(name)
         if values is not None:

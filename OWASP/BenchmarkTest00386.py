@@ -16,7 +16,7 @@ def benchmark_test_post():
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
 
     param = request.args.get("BenchmarkTest00386", "")
-    
+
     bar = "safe!"
     map_8057 = {
         "keyA-8057": "a_Value",
@@ -28,7 +28,7 @@ def benchmark_test_post():
 
     response.headers['X-XSS-Protection'] = "0"
     response.data = "Formatted like: {} and {}.".format(bar, "b")
-    
+
     return response
 
 if __name__ == "__main__":

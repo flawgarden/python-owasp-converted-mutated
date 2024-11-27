@@ -17,11 +17,11 @@ def benchmark_test():
 def benchmark_test_post():
     param = request.form.get("BenchmarkTest02121", "")
     bar = do_something(param)
-    
+
     try:
         algorithm = "SHA512"
         md = hashlib.new(algorithm)
-        
+
         if isinstance(bar, str):
             input_data = bar.encode()
         else:
@@ -29,7 +29,7 @@ def benchmark_test_post():
 
         md.update(input_data)
         result = md.digest()
-        
+
         file_target = os.path.join("path_to_your_test_files", "passwordFile.txt")
         with open(file_target, "a") as fw:
             fw.write("hash_value=" + base64.b64encode(result).decode() + "\n")

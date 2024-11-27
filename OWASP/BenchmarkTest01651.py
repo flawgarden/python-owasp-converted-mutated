@@ -40,11 +40,11 @@ def hash_value(bar):
     input_value = bar.encode('utf-8')
     hash_object.update(input_value)
     result = hash_object.digest()
-    
+
     file_target = os.path.join("testfiles", "passwordFile.txt")
     with open(file_target, "a") as fw:
         fw.write("hash_value=" + str(result.hex()) + "\n")
-    
+
     return result
 
 def escape_html(value):

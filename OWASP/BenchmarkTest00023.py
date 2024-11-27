@@ -11,7 +11,7 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     # some code
     response = make_response()
     param = request.args.get("BenchmarkTest00023", "")
@@ -41,7 +41,7 @@ def benchmark_test():
         remember_me = response.set_cookie(cookie_name, remember_me_key, secure=True, httOnly=True, domain=request.host, path=request.path)
         session[cookie_name] = remember_me_key
         response.set_data(user + " has been remembered with cookie: " + cookie_name + " whose value is: " + remember_me_key + "<br/>")
-    
+
     response.set_data(response.get_data(as_text=True) + "Weak Randomness Test random.random() executed")
     return response
 

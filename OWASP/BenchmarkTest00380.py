@@ -8,7 +8,7 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     param = request.form.get("BenchmarkTest00380", "")
     bar = ""
     guess = "ABC"

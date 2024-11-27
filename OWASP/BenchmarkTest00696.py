@@ -34,7 +34,7 @@ def benchmark_test():
         response.set_data(response.get_data(as_text=True) + " And file already exists.<br>")
     else:
         response.set_data(response.get_data(as_text=True) + " But file doesn't exist yet.<br>")
-    
+
     return response
 
 if __name__ == "__main__":

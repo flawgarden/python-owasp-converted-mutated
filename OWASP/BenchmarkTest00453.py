@@ -12,9 +12,9 @@ def benchmark_test():
         return benchmark_test()
 
     response = make_response()
-    
+
     param = request.args.get("BenchmarkTest00453", "")
-    
+
     bar = ""
     if param:
         bar = base64.b64decode(base64.b64encode(param.encode())).decode()

@@ -28,7 +28,7 @@ def benchmark_test_post():
     param = base64.b64decode(base64.b64encode(param.encode())).decode()
 
     bar = do_something(param)
-  
+
     sql = f"INSERT INTO users (username, password) VALUES ('foo','{bar}')"
 
     try:

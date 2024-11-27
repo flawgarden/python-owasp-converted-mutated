@@ -14,7 +14,7 @@ def benchmark_test00620():
 
 def benchmark_test00620_post():
     param = request.args.get("BenchmarkTest00620", "")
-    
+
     bar = "alsosafe"
     if param:
         values_list = ["safe", param, "moresafe"]
@@ -28,7 +28,7 @@ def benchmark_test00620_post():
         response_message += " And file already exists."
     else:
         response_message += " But file doesn't exist yet."
-    
+
     return response_message
 
 def escape(string):

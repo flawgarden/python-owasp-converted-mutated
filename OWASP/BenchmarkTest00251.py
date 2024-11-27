@@ -8,22 +8,22 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = app.response_class()
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
-    
+
     param = ""
     names = request.headers.keys()
-    
+
     for name in names:
         if name not in common_headers:
             param = name
             break
-    
+
     bar = ""
     if param:
         bar = param.split(" ")[0]
-    
+
     request.environ['werkzeug.session'].setdefault('userid', bar)
 
     response.set_data(
@@ -34,7 +34,7 @@ def benchmark_test():
     return response
 
 common_headers = set(["Accept", "Accept-Encoding", "User-Agent", "Host", "Connection"])
-    
+
 def encode_for_html(value):
     from html import escape
     return escape(value)

@@ -11,7 +11,7 @@ def benchmark_test_01547():
     else:
         response = app.response_class()
         param = request.values.get("BenchmarkTest01547", "")
-        
+
         bar = Test().do_something(request, param)
 
         session['userid'] = bar

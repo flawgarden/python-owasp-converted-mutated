@@ -27,12 +27,12 @@ def do_post(request):
 
         result = md.digest()
         file_target = os.path.join("path_to_your_testfiles_dir", "passwordFile.txt")
-        
+
         with open(file_target, "a") as fw:
             fw.write("hash_value=" + result.hex() + "\n")
 
         response_str = f"Sensitive value '{input_param.decode()}' hashed and stored<br/>"
-        
+
     except Exception as e:
         print("Problem executing hash")
         raise e

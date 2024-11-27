@@ -56,7 +56,7 @@ def benchmark_test_post(request):
     return response
 
 class Test:
-    
+
     def do_something(self, request, param):
         bar = "safe!"
         map_97890 = {

@@ -19,7 +19,7 @@ def benchmark_test():
 def benchmark_test_post():
     values = request.args.getlist("BenchmarkTest00774")
     param = values[0] if values else ""
-    
+
     bar = ""
     guess = "ABC"
     switch_target = guess[1]  # condition 'B', which is safe

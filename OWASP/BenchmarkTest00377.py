@@ -12,7 +12,7 @@ def benchmark_test():
 
 def benchmark_test_post():
     param = request.args.get("BenchmarkTest00377", "")
-    
+
     bar = "alsosafe"
     if param:
         values_list = ["safe", param, "moresafe"]

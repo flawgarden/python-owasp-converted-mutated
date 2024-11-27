@@ -15,7 +15,7 @@ def benchmark_test():
     if request.method == 'POST':
         param = "noCookieValueSupplied"
         the_cookies = request.cookies
-        
+
         if 'BenchmarkTest00104' in the_cookies:
             param = urllib.parse.unquote(the_cookies['BenchmarkTest00104'])
 

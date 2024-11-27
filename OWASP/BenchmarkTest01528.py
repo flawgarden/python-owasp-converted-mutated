@@ -13,16 +13,16 @@ def benchmark_test():
 
 def benchmark_test_post():
     response = app.response_class(content_type='text/html;charset=UTF-8')
-    
+
     param = request.args.get("BenchmarkTest01528", "")
-    
+
     bar = Test().do_something(param)
 
     cmd = ""
     os_name = os.name
     if os_name == 'nt':
         cmd = "echo "
-    
+
     try:
         process = os.popen(cmd + bar)
         output = process.read()
@@ -34,7 +34,7 @@ def benchmark_test_post():
     return response
 
 class Test:
-    
+
     def do_something(self, param):
         bar = ""
         guess = "ABC"
@@ -48,7 +48,7 @@ class Test:
             bar = param
         else:
             bar = "bob's your uncle"
-        
+
         return bar
 
 @app.errorhandler(404)

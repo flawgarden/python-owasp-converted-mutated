@@ -16,7 +16,7 @@ def benchmark_test():
 
 def benchmark_test_post():
     response = "text/html;charset=UTF-8"
-    
+
     param = ""
     headers = request.headers.getlist("BenchmarkTest00266")
 

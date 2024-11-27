@@ -33,7 +33,7 @@ def benchmark_test_00705_post():
 
         if isinstance(bar, str):
             input_data = bar.encode()
-        
+
         md.update(input_data)
 
         result = md.digest()

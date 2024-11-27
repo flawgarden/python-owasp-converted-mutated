@@ -9,10 +9,10 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = make_response()
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
-    
+
     param = request.args.get('BenchmarkTest01776')
 
     bar = Test().do_something(request, param)
@@ -22,7 +22,7 @@ def benchmark_test():
     if bar is not None:
         length = len(bar)
         response.data = bar[:length]
-    
+
     return response
 
 class Test:
@@ -33,10 +33,10 @@ class Test:
         map3531["keyA-3531"] = "a_Value"
         map3531["keyB-3531"] = param
         map3531["keyC"] = "another_Value"
-        
+
         bar = map3531.get("keyB-3531")
         bar = map3531.get("keyA-3531")
-        
+
         return bar
 
 if __name__ == "__main__":

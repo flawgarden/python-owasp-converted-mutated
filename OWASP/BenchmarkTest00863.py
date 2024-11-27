@@ -39,12 +39,12 @@ def benchmark_test_post():
 
     file_target = os.path.join(bar, "Test.txt")
     response.set_data(f"Access to file: '{file_target}' created.<br>")
-    
+
     if os.path.exists(file_target):
         response.set_data(response.get_data(as_text=True) + " And file already exists.<br>")
     else:
         response.set_data(response.get_data(as_text=True) + " But file doesn't exist yet.<br>")
-    
+
     return response
 
 @app.errorhandler(404)

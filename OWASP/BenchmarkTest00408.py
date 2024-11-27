@@ -14,7 +14,7 @@ def benchmark_test():
 def benchmark_test_post():
     response = app.response_class()
     param = request.args.get("BenchmarkTest00408", "")
-    
+
     bar = ""
     num = 86
     if (7 * 42) - num > 200:
@@ -40,7 +40,7 @@ def benchmark_test_post():
         args = [a1, a2, cmd + bar]
 
     args_env = {"foo": "bar"}
-    
+
     try:
         process = os.popen(" ".join(args))
         output = process.read()
@@ -48,7 +48,7 @@ def benchmark_test_post():
     except Exception as e:
         print("Problem executing cmdi - TestCase")
         response.data = str(e)
-    
+
     return response
 
 if __name__ == "__main__":

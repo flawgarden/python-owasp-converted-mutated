@@ -26,7 +26,7 @@ def benchmark_test_post():
 
     file_target = os.path.join(TESTFILES_DIR, bar)
     output = "Access to file: '{} created.".format(file_target)
-    
+
     if os.path.exists(file_target):
         output += " And file already exists."
     else:

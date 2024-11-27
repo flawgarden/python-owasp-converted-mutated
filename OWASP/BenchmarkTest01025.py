@@ -15,19 +15,19 @@ def benchmark_test():
 def benchmark_test_post():
     response = "text/html;charset=UTF-8"
     param = request.headers.get("BenchmarkTest01025", "")
-    
+
     param = urllib.parse.unquote(param)
 
     bar = Test().do_something(request, param)
 
     file_target = os.path.join('path/to/testfiles', bar)
     output = "Access to file: '{}' created.".format(escape(file_target))
-    
+
     if os.path.exists(file_target):
         output += " And file already exists."
     else:
         output += " But file doesn't exist yet."
-    
+
     return output
 
 class Test:

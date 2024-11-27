@@ -32,7 +32,7 @@ def benchmark_test():
     except Exception as e:
         print("Problem executing cmdi - TestCase")
         response.set_data(str(e))
-    
+
     return response
 
 class Test:

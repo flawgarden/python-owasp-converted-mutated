@@ -14,7 +14,7 @@ def benchmark_test():
 
 def benchmark_test_post():
     response = make_response()
-    
+
     param = request.args.get('BenchmarkTest01543', "")
     bar = Test().do_something(request, param)
 
@@ -45,7 +45,7 @@ def benchmark_test_post():
             request.environ['werkzeug.http'] = {cookie_name: remember_me_key}  # simulating session attribute
             response.data = (f"{user} has been remembered with cookie: "
                              f"{cookie_name} whose value is: {remember_me_key}<br/>")
-        
+
     except Exception as e:
         print("Problem executing SecureRandom.random() - TestCase")
         raise e

@@ -20,9 +20,9 @@ def benchmark_test():
             str_param = "No cookie value supplied"
 
         response = make_response(render_template("index.html"))
-        
+
         response.set_cookie("SomeCookie", str_param, secure=True, httponly=True, path=request.path)
-        
+
         return response, f"Created cookie: 'SomeCookie': with value: '{str_param}' and secure flag set to: true"
 
 def do_something(param):

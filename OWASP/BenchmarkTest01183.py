@@ -72,7 +72,7 @@ class Test:
             bar = param
         else:
             bar = "bobs_your_uncle"
-        
+
         return bar
 
 if __name__ == "__main__":

@@ -25,7 +25,7 @@ def benchmark_test():
 
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
-    
+
     bar = param
     if param and len(param) > 1:
         bar = param[:-1]

@@ -35,12 +35,12 @@ def benchmark_test():
 
             if isinstance(param, str):
                 input_data = param.encode()
-            
+
             md.update(input_data)
 
             result = md.digest()
             file_target = os.path.join('path_to_your_test_directory', 'passwordFile.txt')
-            
+
             with open(file_target, 'a') as fw:
                 fw.write("hash_value=" + base64.b64encode(result).decode('utf-8') + "\n")
 

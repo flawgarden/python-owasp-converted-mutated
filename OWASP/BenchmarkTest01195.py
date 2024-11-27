@@ -39,7 +39,7 @@ def benchmark_test():
         full_class_name = __name__
         test_case_number = full_class_name.split('.')[-1][len("BenchmarkTest"):]
         user += test_case_number
-        
+
         cookie_name = "rememberMe" + test_case_number
         found_user = False
 

@@ -14,7 +14,7 @@ def benchmark_test():
 
     response = make_response()
     param = ""
-    
+
     for name in request.headers:
         if name in ["Content-Type", "User-Agent", "Accept", "Accept-Encoding", "Connection"]:
             continue
@@ -23,7 +23,7 @@ def benchmark_test():
         break
 
     bar = do_something(request, param)
-    
+
     bytes = random.randbytes(10)
     remember_me_key = base64.b64encode(bytes).decode('utf-8')
 
@@ -51,7 +51,7 @@ def benchmark_test():
         response.set_cookie(cookie_name, remember_me_key, secure=True, httponly=True)
         response.data = f"{user} has been remembered with cookie: {cookie_name} whose value is: {remember_me_key}<br/>"
         request.environ['werkzeug.session'].set(cookie_name, remember_me_key)
-        
+
     response.data += "Weak Randomness Test executed"
     return response
 

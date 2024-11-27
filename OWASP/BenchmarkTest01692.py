@@ -19,7 +19,7 @@ def benchmark_test_post():
     if param_loc == -1:
         return "getQueryString() couldn't find expected parameter 'BenchmarkTest01692' in query string."
 
-    param = query_string[param_loc + len(paramval):]  
+    param = query_string[param_loc + len(paramval):]
     ampersand_loc = query_string.find("&", param_loc)
     if ampersand_loc != -1:
         param = query_string[param_loc + len(paramval):ampersand_loc]
@@ -29,7 +29,7 @@ def benchmark_test_post():
 
     cmd = ""
     os_name = os.name
-    if os_name == "nt":  
+    if os_name == "nt":
         cmd = "echo "
 
     args_env = {"Foo": "bar"}
@@ -44,20 +44,20 @@ def benchmark_test_post():
 
 class Test:
     def do_something(self, param):
-        a28453 = param  
-        b28453 = a28453 + " SafeStuff"  
-        b28453 = b28453[:-1] + "Chars"  
-        
+        a28453 = param
+        b28453 = a28453 + " SafeStuff"
+        b28453 = b28453[:-1] + "Chars"
+
         map28453 = {}
-        map28453["key28453"] = b28453   
-        c28453 = map28453["key28453"]  
-        d28453 = c28453[:-1]  
-        e28453 = base64.b64decode(base64.b64encode(d28453.encode())).decode()  
-        f28453 = e28453.split(" ")[0]  
-        
+        map28453["key28453"] = b28453
+        c28453 = map28453["key28453"]
+        d28453 = c28453[:-1]
+        e28453 = base64.b64decode(base64.b64encode(d28453.encode())).decode()
+        f28453 = e28453.split(" ")[0]
+
         thing = create_thing()
-        g28453 = "barbarians_at_the_gate"  
-        bar = thing.do_something(g28453)  
+        g28453 = "barbarians_at_the_gate"
+        bar = thing.do_something(g28453)
 
         return bar
 
@@ -65,7 +65,7 @@ def create_thing():
     class ThingInterface:
         def do_something(self, input_str):
             return f"Processed {input_str}"
-    
+
     return ThingInterface()
 
 @app.errorhandler(404)

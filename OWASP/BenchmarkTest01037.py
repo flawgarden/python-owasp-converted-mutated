@@ -17,7 +17,7 @@ def benchmark_test():
 def benchmark_test_post():
     param = request.headers.get("BenchmarkTest01037", "")
     param = urllib.parse.unquote(param)
-    
+
     bar = Test().do_something(param)
 
     try:

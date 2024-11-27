@@ -15,10 +15,10 @@ def benchmark_test():
 def handle_post(request):
     response = ""
     response += "Content Type: text/html;charset=UTF-8\n"
-    
+
     param = ""
     map = request.form.to_dict()
-    
+
     if map:
         values = map.get("BenchmarkTest02198")
         if values:
@@ -28,12 +28,12 @@ def handle_post(request):
 
     file_target = os.path.join("your_test_files_directory", bar)
     response += "Access to file: '{}' created.".format(file_target)
-    
+
     if os.path.exists(file_target):
         response += " And file already exists."
     else:
         response += " But file doesn't exist yet."
-    
+
     return response
 
 def do_something(request, param):

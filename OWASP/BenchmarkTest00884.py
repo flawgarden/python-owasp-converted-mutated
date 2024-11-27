@@ -9,7 +9,7 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'GET':
         return benchmark_test()
-    
+
     response = app.response_class()
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
 
@@ -26,7 +26,7 @@ def benchmark_test():
 
     response.headers['X-XSS-Protection'] = '0'
     response.data = "Formatted like: {} and {}.".format("a", bar)
-    
+
     return response
 
 if __name__ == "__main__":

@@ -49,7 +49,7 @@ def benchmark_test_post():
 
     except Exception as e:
         response += "Problem executing SecureRandom.random() - TestCase"
-    
+
     response += "Weak Randomness Test random.SystemRandom().random() executed"
     return response
 

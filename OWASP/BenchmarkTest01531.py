@@ -15,11 +15,11 @@ def benchmark_test():
 def benchmark_test_post():
     param = request.args.get("BenchmarkTest01531", "")
     bar = Test().do_something(param)
-    
+
     cmd = get_insecure_os_command_string()
     args = [cmd]
     args_env = [bar]
-    
+
     try:
         process = subprocess.Popen(args, env={"BAR": bar}, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output, error = process.communicate()

@@ -9,7 +9,7 @@ app.config['DEBUG'] = True
 def benchmark_test():
     if request.method == 'POST':
         param = request.form.get("BenchmarkTest01313", "")
-        
+
         bar = Test().do_something(request, param)
 
         sql = f"INSERT INTO users (username, password) VALUES ('foo','{bar}')"

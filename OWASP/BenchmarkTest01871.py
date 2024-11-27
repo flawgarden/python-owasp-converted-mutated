@@ -52,7 +52,7 @@ def benchmark_test():
     except Exception as e:
         print("Problem executing SecureRandom.nextInt() - TestCase")
         raise
-    
+
     return "Weak Randomness Test executed"
 
 def do_something(param):

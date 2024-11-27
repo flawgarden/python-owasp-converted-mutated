@@ -27,7 +27,7 @@ def benchmark_test():
         try:
             md = hashlib.new('sha512')
             input_param = bar.encode() if isinstance(bar, str) else bar
-            
+
             md.update(input_param)
 
             result = md.digest()

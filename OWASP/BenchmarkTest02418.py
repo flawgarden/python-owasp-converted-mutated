@@ -42,7 +42,7 @@ def benchmark_test():
         remember_me.set_cookie(cookie_name, remember_me_key, secure=True, httponly=True, path=request.path)
         request.environ['werkzeug.session'].set(cookie_name, remember_me_key)
         response.data = f"{user} has been remembered with cookie: {cookie_name} whose value is: {remember_me_key}<br/>"
-    
+
     response.data += "Weak Randomness Test random.random() executed"
     return response
 

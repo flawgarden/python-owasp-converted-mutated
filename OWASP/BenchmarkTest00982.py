@@ -47,7 +47,7 @@ class Test:
         return bar
 
 class Utils:
-    
+
     @staticmethod
     def get_insecure_os_command_string():
         return "your_command_here"

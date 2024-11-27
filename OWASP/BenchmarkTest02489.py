@@ -22,7 +22,7 @@ def benchmark_test_post():
     response.headers['X-XSS-Protection'] = '0'
     obj = ["a", "b"]
     response.data = bar % tuple(obj)
-    
+
     return response
 
 def do_something(param):

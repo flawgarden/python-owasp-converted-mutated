@@ -27,7 +27,7 @@ def benchmark_test_post():
         cmd = "echo "  # Adjust for Windows if necessary
 
     args_env = {"Foo": "bar"}
-    
+
     try:
         current_dir = os.getcwd()
         process = os.popen(f"{cmd} {bar}", "r")

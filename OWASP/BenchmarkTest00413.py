@@ -16,7 +16,7 @@ def benchmark_test():
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
 
     param = request.args.get("BenchmarkTest00413", "")
-    
+
     bar = "safe!"
     map27963 = {
         "keyA-27963": "a-Value",
@@ -30,7 +30,7 @@ def benchmark_test():
         remember_me_key = ''.join(
             [string.ascii_letters[random.randint(0, len(string.ascii_letters) - 1)] for _ in range(40)]
         )
-        
+
         user = "SafeByron"
         full_class_name = benchmark_test.__module__ + '.' + benchmark_test.__name__
         test_case_number = full_class_name.split('.')[-1].replace("BenchmarkTest", "")
@@ -44,7 +44,7 @@ def benchmark_test():
                 if cookie_name == key:
                     if value == request.cookies.get(cookie_name):
                         found_user = True
-        
+
         if found_user:
             response.data = f"Welcome back: {user}<br/>".encode()
         else:

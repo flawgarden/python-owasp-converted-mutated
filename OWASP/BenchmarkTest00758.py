@@ -20,6 +20,6 @@ def benchmark_test():
         session['userid'] = bar
 
         return f"Item: 'userid' with value: '{bar}' saved in session."
-    
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0')

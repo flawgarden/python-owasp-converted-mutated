@@ -43,7 +43,7 @@ def benchmark_test_post():
         cursor.execute(sql)
         connection.commit()
         connection.close()
-        
+
         return f"No results can be displayed for query: {sql}<br> because the execution method doesn't return results."
     except Exception as e:
         return "Error processing request."

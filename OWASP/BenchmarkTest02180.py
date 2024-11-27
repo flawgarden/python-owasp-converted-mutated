@@ -17,7 +17,7 @@ def benchmark_test():
         param = request.form.get('BenchmarkTest02180', '')
         bar = do_something(param)
         sql = f"SELECT userid FROM USERS WHERE USERNAME='foo' AND PASSWORD='{bar}'"
-        
+
         session = Session()
         try:
             result = session.execute(sql).fetchone()

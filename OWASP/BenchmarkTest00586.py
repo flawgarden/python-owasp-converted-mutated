@@ -28,7 +28,7 @@ def benchmark_test():
         "keyB-58886": param,
         "keyC": "another_Value"
     }
-    
+
     bar = map58886.get("keyB-58886")
     bar = map58886.get("keyA-58886")
 

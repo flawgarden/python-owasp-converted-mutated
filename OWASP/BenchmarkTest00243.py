@@ -14,11 +14,11 @@ def benchmark_test():
 
     response = make_response()
     param = ""
-    
+
     for name in request.headers:
         if name in ['User-Agent', 'Accept', 'Accept-Language', 'Referer', 'Cookie']:
             continue
-        
+
         values = request.headers.getlist(name)
         if values:
             param = name

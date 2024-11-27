@@ -22,12 +22,12 @@ def benchmark_test_helper(request):
 
         result = md.digest()
         file_target = os.path.join('testfiles/', 'passwordFile.txt')
-        
+
         with open(file_target, 'a') as fw:
             fw.write("hash_value=" + result.hex() + "\n")
 
         return f"Sensitive value '{bar}' hashed and stored<br/>"
-    
+
     except Exception as e:
         print("Problem executing hash - TestCase hashlib.new('sha1')")
         raise e

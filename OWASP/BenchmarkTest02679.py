@@ -20,11 +20,11 @@ def benchmark_test_post():
 
     response.headers['X-XSS-Protection'] = '0'
     obj = ["a", bar]
-    
+
     html_content = f"<!DOCTYPE html>\n<html>\n<body>\n<p>"
     html_content += f"Formatted like: {obj[0]} and {obj[1]}."
     html_content += "\n</p>\n</body>\n</html>"
-    
+
     response.set_data(html_content)
     return response
 

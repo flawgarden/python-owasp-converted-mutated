@@ -37,7 +37,7 @@ def handle_post():
             return response
         else:
             raise Exception(e)
-    
+
     return response
 
 def do_something(param):

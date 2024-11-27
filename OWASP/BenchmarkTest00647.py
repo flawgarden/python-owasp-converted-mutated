@@ -12,7 +12,7 @@ def benchmark_test_00647():
 def benchmark_test_00647_post(request):
     response = make_response()
     response.headers['Content-Type'] = 'text/html;charset=UTF-8'
-    
+
     param = request.args.get('BenchmarkTest00647', '')  # Similar to scr.getTheParameter
     bar = escape_html(param)  # Function to encode for HTML (similar to ESAPI.encoder().encodeForHTML)
 

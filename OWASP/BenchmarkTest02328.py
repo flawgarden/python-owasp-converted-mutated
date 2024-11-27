@@ -32,7 +32,7 @@ def benchmark_test():
     if bar is not None:
         length = len(bar)
         response.set_data(bar)
-    
+
     return response
 
 def do_something(request, param):

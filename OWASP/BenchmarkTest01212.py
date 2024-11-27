@@ -22,7 +22,7 @@ def benchmark_test_post():
     headers = request.headers.get("BenchmarkTest01212")
 
     if headers:
-        param = headers  
+        param = headers
 
     param = urllib.parse.unquote(param)
 

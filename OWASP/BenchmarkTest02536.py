@@ -24,13 +24,13 @@ def do_post(request):
 
     try:
         sql = "SELECT * from USERS where USERNAME='foo' and PASSWORD='" + bar + "'"
-        
+
         # Assuming DatabaseHelper.JDBCtemplate.batchUpdate(sql) is defined in your application
         # org.owasp.benchmark.helpers.DatabaseHelper.JDBCtemplate.batchUpdate(sql)
         response_text += "No results can be displayed for query: " + encode_for_html(sql) + "<br>"
         response_text += " because the Spring batchUpdate method doesn't return results."
         return response_text
-    except Exception as e:  
+    except Exception as e:
         return "Error processing request."
 
 def do_something(request, param):
