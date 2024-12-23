@@ -1,20 +1,3 @@
-#Snyk original results: [643]
-#CodeQL original results: [643]
-#Bearer original results: []
-#Semgrep original results: []
-#Bandit original results: []
-#-------------
-#Snyk analysis results: [611, 643]
-#Bearer analysis results: []
-#CodeQL analysis results: [570, 561, 571]
-#Semgrep analysis results: [489, 668]
-#Bandit analysis results: [20, 605]
-#Original file name: OWASP/BenchmarkTest00442.py
-#Original file CWE's: [643]
-#Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/record/record.tmt with name nested_record_positive
-#Used extensions:
-#Program:
 from Record import *
 from Exceptions import *
 from Concurrency import *

@@ -1,20 +1,3 @@
-#Snyk original results: [78]
-#Bandit original results: [78]
-#Bearer original results: []
-#CodeQL original results: []
-#Semgrep original results: []
-#-------------
-#Snyk analysis results: []
-#Bearer analysis results: [79]
-#CodeQL analysis results: []
-#Semgrep analysis results: [489, 668]
-#Bandit analysis results: [78, 605]
-#Original file name: OWASP/BenchmarkTest02344.py
-#Original file CWE's: [78]
-#Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/magic/magic.tmt with name magic_method_eq_negative
-#Used extensions:
-#Program:
 from Record import *
 from Exceptions import *
 from Concurrency import *

@@ -1,20 +1,3 @@
-#Snyk original results: [78]
-#CodeQL original results: [78]
-#Semgrep original results: [78]
-#Bandit original results: [78]
-#Bearer original results: []
-#-------------
-#Snyk analysis results: [209, 79, 78]
-#Bearer analysis results: []
-#CodeQL analysis results: [563, 88, 78]
-#Semgrep analysis results: [489, 78, 668]
-#Bandit analysis results: []
-#Original file name: OWASP/BenchmarkTest02429.py
-#Original file CWE's: [78]
-#Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/conditional/switch.tmt with name switch_operator_any_negative
-#Used extensions: MACRO_Any_str -> ~[VAR_str]~
-#Program:
 from Record import *
 from Exceptions import *
 from Concurrency import *

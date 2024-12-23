@@ -1,20 +1,3 @@
-#Snyk original results: [78]
-#Bearer original results: [78]
-#CodeQL original results: [78]
-#Semgrep original results: [78]
-#Bandit original results: [78]
-#-------------
-#Snyk analysis results: []
-#Bearer analysis results: []
-#CodeQL analysis results: [563]
-#Semgrep analysis results: [489, 668]
-#Bandit analysis results: [78, 605]
-#Original file name: OWASP/BenchmarkTest01942.py
-#Original file CWE's: [78]
-#Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/varargs/varargs.tmt with name varargs_with_generics_negative
-#Used extensions: EXPR_str -> ~[EXPR_str]~.strip()
-#Program:
 from typing import TypeVar
 from Record import *
 from Exceptions import *

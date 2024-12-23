@@ -1,20 +1,3 @@
-#Snyk original results: [643]
-#CodeQL original results: [643]
-#Bearer original results: []
-#Semgrep original results: []
-#Bandit original results: []
-#-------------
-#Bearer analysis results: [79]
-#Snyk analysis results: [611]
-#CodeQL analysis results: [643, 79, 116]
-#Semgrep analysis results: [489, 668]
-#Bandit analysis results: [20, 605]
-#Original file name: OWASP/BenchmarkTest02189.py
-#Original file CWE's: [643]
-#Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/collections/map.tmt with name map_simple_get_1_positive
-#Used extensions: MACRO_Create_Map -> ~[MACRO_MapName]~ = dict() | MACRO_MapName -> map787234 | MACRO_MapName -> map787234 | MACRO_MapName -> map787234
-#Program:
 from GenericClass import *
 from SuperClass import *
 from SuperInterface import *

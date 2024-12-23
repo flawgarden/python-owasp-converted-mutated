@@ -1,20 +1,3 @@
-#Snyk original results: [22]
-#CodeQL original results: [22]
-#Bearer original results: []
-#Semgrep original results: []
-#Bandit original results: []
-#-------------
-#Snyk analysis results: []
-#Bearer analysis results: []
-#CodeQL analysis results: [497, 209, 22, 36, 23, 73, 99, 116, 79]
-#Semgrep analysis results: [668]
-#Bandit analysis results: []
-#Original file name: OWASP/BenchmarkTest02113.py
-#Original file CWE's: [22]
-#Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/pm.tmt with name pattern_matching_simple_4_positive
-#Used extensions:
-#Program:
 from typing import Any
 from Record import *
 from Exceptions import *

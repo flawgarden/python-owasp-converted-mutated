@@ -1,20 +1,3 @@
-#Snyk original results: [643]
-#Bearer original results: [643]
-#CodeQL original results: [643]
-#Semgrep original results: []
-#Bandit original results: []
-#-------------
-#Snyk analysis results: [611, 79, 643]
-#Bearer analysis results: []
-#CodeQL analysis results: [497, 209, 116, 79, 643]
-#Semgrep analysis results: [489, 79, 668]
-#Bandit analysis results: [20, 605]
-#Original file name: OWASP/BenchmarkTest02100.py
-#Original file CWE's: [643]
-#Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/tuples.tmt with name tuple_unpacking_positive
-#Used extensions:
-#Program:
 from Record import *
 from Exceptions import *
 from Concurrency import *

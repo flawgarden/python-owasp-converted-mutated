@@ -1,20 +1,3 @@
-#Bearer original results: [89]
-#Snyk original results: [89]
-#CodeQL original results: [89]
-#Semgrep original results: [89]
-#Bandit original results: [89]
-#-------------
-#Bearer analysis results: []
-#Snyk analysis results: [89]
-#CodeQL analysis results: [89]
-#Semgrep analysis results: [489, 915, 704, 89, 668]
-#Bandit analysis results: [89, 605]
-#Original file name: OWASP/BenchmarkTest01971.py
-#Original file CWE's: [89]
-#Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/conditional/if.tmt with name if_else_operator_neutral
-#Used extensions: EXPR_bool -> isinstance(~[EXPR_Any]~, SuperInterface) | EXPR_Any -> ImplementingSuperSideClass()
-#Program:
 from GenericClass import *
 from SuperClass import *
 from SuperInterface import *

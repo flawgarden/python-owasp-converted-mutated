@@ -1,20 +1,3 @@
-#Snyk original results: [643]
-#Bearer original results: [643]
-#CodeQL original results: [643]
-#Semgrep original results: []
-#Bandit original results: []
-#-------------
-#Snyk analysis results: [643, 611]
-#Bearer analysis results: [79]
-#CodeQL analysis results: [563]
-#Semgrep analysis results: [668]
-#Bandit analysis results: [20, 605]
-#Original file name: OWASP/BenchmarkTest01223.py
-#Original file CWE's: [643]
-#Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/exceptions/tryCatchFinally.tmt with name try_cath_negative
-#Used extensions: EXPR_str -> ~[EXPR_str]~.lower() | EXPR_str -> ~[EXPR_str]~ + ~[EXPR_str]~
-#Program:
 from Record import *
 from Exceptions import *
 from Concurrency import *

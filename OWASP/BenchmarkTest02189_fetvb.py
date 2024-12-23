@@ -1,20 +1,3 @@
-#Snyk original results: [643]
-#CodeQL original results: [643]
-#Bearer original results: []
-#Semgrep original results: []
-#Bandit original results: []
-#-------------
-#Snyk analysis results: [611]
-#Bearer analysis results: [79]
-#CodeQL analysis results: [116, 79, 643]
-#Semgrep analysis results: [489, 668]
-#Bandit analysis results: [20, 605]
-#Original file name: OWASP/BenchmarkTest02189.py
-#Original file CWE's: [643]
-#Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/varargs/varargs.tmt with name varargs_get_string_with_index_negative
-#Used extensions:
-#Program:
 from typing import TypeVar
 from Record import *
 from Exceptions import *

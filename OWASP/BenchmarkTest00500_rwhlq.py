@@ -1,18 +1,3 @@
-#Snyk original results: [78]
-#CodeQL original results: [78]
-#Bandit original results: [78]
-#Semgrep original results: []
-#-------------
-#Snyk analysis results: []
-#CodeQL analysis results: [563]
-#Semgrep analysis results: [489, 668]
-#Bandit analysis results: [78, 605]
-#Original file name: OWASP/BenchmarkTest00500.py
-#Original file CWE's: [78]
-#Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/virtuality/interface.tmt with name base_binary_op_interface_negative
-#Used extensions:
-#Program:
 from GenericClass import *
 from SuperClass import *
 from SuperInterface import *

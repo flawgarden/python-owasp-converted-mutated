@@ -1,20 +1,3 @@
-#CodeQL original results: [89]
-#Semgrep original results: [89]
-#Snyk original results: []
-#Bearer original results: []
-#Bandit original results: []
-#-------------
-#Snyk analysis results: [79]
-#Bearer analysis results: []
-#CodeQL analysis results: [563]
-#Semgrep analysis results: [489, 89, 668]
-#Bandit analysis results: [605]
-#Original file name: OWASP/BenchmarkTest02625.py
-#Original file CWE's: [89]
-#Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/queue.tmt with name two_queues_positive
-#Used extensions: EXPR_str -> ~[EXPR_str]~[~[EXPR_int]~:~[EXPR_int]~] | EXPR_str -> ~[EXPR_Match]~.group(~[EXPR_int]~) | EXPR_int -> 42
-#Program:
 from queue import SimpleQueue, Queue, PriorityQueue
 from Record import *
 from Exceptions import *

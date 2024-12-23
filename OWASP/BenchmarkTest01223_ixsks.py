@@ -1,20 +1,3 @@
-#Bearer original results: [643]
-#Snyk original results: [643]
-#CodeQL original results: [643]
-#Semgrep original results: []
-#Bandit original results: []
-#-------------
-#Bearer analysis results: [79, 643]
-#Snyk analysis results: [611]
-#CodeQL analysis results: [563]
-#Semgrep analysis results: [79, 668]
-#Bandit analysis results: [20, 605]
-#Original file name: OWASP/BenchmarkTest01223.py
-#Original file CWE's: [643]
-#Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/field/staticField.tmt with name class_with_static_string_field_negative
-#Used extensions:
-#Program:
 from GenericClass import *
 from SuperClass import *
 from SuperInterface import *

@@ -1,20 +1,3 @@
-#Snyk original results: [22]
-#CodeQL original results: [22]
-#Bearer original results: []
-#Semgrep original results: []
-#Bandit original results: []
-#-------------
-#Bearer analysis results: []
-#Snyk analysis results: []
-#CodeQL analysis results: [563, 23, 99, 22, 36, 73, 79, 116, 497, 209]
-#Semgrep analysis results: [668]
-#Bandit analysis results: [605]
-#Original file name: OWASP/BenchmarkTest00783.py
-#Original file CWE's: [22]
-#Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/varargs/varargs.tmt with name varargs_get_first_string_from_array_positive
-#Used extensions:
-#Program:
 from typing import TypeVar
 from GenericClass import *
 from SuperClass import *
