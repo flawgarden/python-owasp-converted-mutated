@@ -1,20 +1,3 @@
-#Bearer original results: [78]
-#CodeQL original results: [78]
-#Semgrep original results: [78]
-#Bandit original results: [78]
-#Snyk original results: []
-#-------------
-#Snyk analysis results: [209]
-#Bearer analysis results: []
-#CodeQL analysis results: [563, 88, 78]
-#Semgrep analysis results: [489, 78, 668]
-#Bandit analysis results: [78, 605]
-#Original file name: OWASP/BenchmarkTest00303.py
-#Original file CWE's: [78]
-#Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/exceptions/causeThrows.tmt with name null_pointer_exception_negative
-#Used extensions:
-#Program:
 from Record import *
 from Exceptions import *
 from Concurrency import *

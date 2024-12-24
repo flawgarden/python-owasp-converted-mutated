@@ -1,20 +1,3 @@
-#CodeQL original results: [89]
-#Semgrep original results: [89]
-#Snyk original results: []
-#Bearer original results: []
-#Bandit original results: []
-#-------------
-#Snyk analysis results: []
-#Bearer analysis results: []
-#CodeQL analysis results: []
-#Semgrep analysis results: [489, 89, 668]
-#Bandit analysis results: [605]
-#Original file name: OWASP/BenchmarkTest01302.py
-#Original file CWE's: [89]
-#Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/import/import.tmt with name import_string_module_negative
-#Used extensions:
-#Program:
 from Record import *
 from Exceptions import *
 from Concurrency import *

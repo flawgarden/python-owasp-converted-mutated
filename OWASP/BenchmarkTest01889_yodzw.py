@@ -1,20 +1,3 @@
-#Snyk original results: [89]
-#CodeQL original results: [89]
-#Semgrep original results: [89]
-#Bandit original results: [89]
-#Bearer original results: []
-#-------------
-#Snyk analysis results: [1004]
-#Bearer analysis results: []
-#CodeQL analysis results: [563, 89]
-#Semgrep analysis results: [489, 614, 915, 704, 89, 668]
-#Bandit analysis results: [89, 605]
-#Original file name: OWASP/BenchmarkTest01889.py
-#Original file CWE's: [89]
-#Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/set.tmt with name set_add_simple_negative
-#Used extensions: MACRO_Create_Set -> ~[MACRO_SetName]~ = set() | MACRO_Add_Fixed_CONST_ToSet -> ~[MACRO_SetName]~.add(~[VAR_~[TYPE@1]~@1]~) | MACRO_SetName -> set787231 | MACRO_SetName -> set787231 | MACRO_SetName -> set787231
-#Program:
 from Record import *
 from Exceptions import *
 from Concurrency import *

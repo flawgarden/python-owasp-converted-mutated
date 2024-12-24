@@ -1,20 +1,3 @@
-#Snyk original results: [89]
-#Bearer original results: [89]
-#CodeQL original results: [89]
-#Bandit original results: [89]
-#Semgrep original results: []
-#-------------
-#Snyk analysis results: [89]
-#Bearer analysis results: [89]
-#CodeQL analysis results: [563, 89]
-#Semgrep analysis results: [489, 915, 704, 668]
-#Bandit analysis results: []
-#Original file name: OWASP/BenchmarkTest02177.py
-#Original file CWE's: [89]
-#Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/conditional/switch.tmt with name switch_operator_positive
-#Used extensions:
-#Program:
 from Record import *
 from Exceptions import *
 from Concurrency import *

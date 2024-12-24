@@ -1,20 +1,3 @@
-#Snyk original results: [89]
-#CodeQL original results: [89]
-#Semgrep original results: [89]
-#Bandit original results: [89]
-#Bearer original results: []
-#-------------
-#Snyk analysis results: []
-#Bearer analysis results: []
-#CodeQL analysis results: [563, 89]
-#Semgrep analysis results: [915, 704, 89, 668]
-#Bandit analysis results: [89, 605]
-#Original file name: OWASP/BenchmarkTest00681.py
-#Original file CWE's: [89]
-#Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/set.tmt with name set_union_negative
-#Used extensions: EXPR_Any -> ImplementingSubClass()
-#Program:
 from Record import *
 from Exceptions import *
 from Concurrency import *

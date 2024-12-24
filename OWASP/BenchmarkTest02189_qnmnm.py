@@ -1,16 +1,3 @@
-#Snyk original results: [643]
-#CodeQL original results: [643]
-#Semgrep original results: []
-#-------------
-#Snyk analysis results: [611]
-#CodeQL analysis results: [116, 79, 643]
-#Semgrep analysis results: [489, 668]
-#Original file name: OWASP/BenchmarkTest02189.py
-#Original file CWE's: [643]
-#Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/map.tmt with name map_simple_get_1_positive
-#Used extensions: MACRO_Create_Map -> ~[MACRO_MapName]~ = dict() | MACRO_MapName -> map787234 | MACRO_MapName -> map787234 | MACRO_MapName -> map787234
-#Program:
 from Record import *
 from Exceptions import *
 from Concurrency import *

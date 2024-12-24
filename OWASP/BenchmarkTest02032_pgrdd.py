@@ -1,20 +1,3 @@
-#Snyk original results: [22]
-#CodeQL original results: [22]
-#Bearer original results: []
-#Semgrep original results: []
-#Bandit original results: []
-#-------------
-#Snyk analysis results: []
-#Bearer analysis results: [79]
-#CodeQL analysis results: [36, 99, 23, 73, 22]
-#Semgrep analysis results: [489, 668]
-#Bandit analysis results: [605]
-#Original file name: OWASP/BenchmarkTest02032.py
-#Original file CWE's: [22]
-#Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/queue.tmt with name queue_is_empty_1_negative
-#Used extensions: MACRO_Create_Queue -> ~[MACRO_QueueName]~ = PriorityQueue() | MACRO_Add_Fixed_VAR_ToQueue -> ~[MACRO_QueueName]~.put(~[VAR_~[TYPE@1]~@1]~) | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231
-#Program:
 from queue import SimpleQueue, Queue, PriorityQueue
 from Record import *
 from Exceptions import *

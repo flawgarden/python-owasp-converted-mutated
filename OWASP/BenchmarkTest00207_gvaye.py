@@ -1,20 +1,3 @@
-#Bearer original results: [643]
-#CodeQL original results: [643]
-#Snyk original results: []
-#Semgrep original results: []
-#Bandit original results: []
-#-------------
-#Snyk analysis results: [611]
-#Bearer analysis results: []
-#CodeQL analysis results: [79, 116, 643]
-#Semgrep analysis results: [489, 79, 668]
-#Bandit analysis results: [20, 605]
-#Original file name: OWASP/BenchmarkTest00207.py
-#Original file CWE's: [643]
-#Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/magic/magic.tmt with name magic_method_len_positive
-#Used extensions:
-#Program:
 from Record import *
 from Exceptions import *
 from Concurrency import *

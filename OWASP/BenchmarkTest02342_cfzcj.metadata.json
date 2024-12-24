@@ -1,0 +1,49 @@
+{
+    "original_file_metadata": {
+        "file_name": "OWASP/BenchmarkTest02342.py",
+        "CWEs": [
+            78
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "sensitivity/collections/yield",
+                "template_name": "generator_yield_from_negative"
+            }
+        ],
+        "used_extensions": [],
+        "region": null
+    },
+    "tool_results": [
+        {
+            "tool_name": "Snyk",
+            "original_found_CWEs": [
+                78
+            ],
+            "mutated_found_CWEs": [
+                78
+            ]
+        },
+        {
+            "tool_name": "CodeQL",
+            "original_found_CWEs": [
+                78
+            ],
+            "mutated_found_CWEs": []
+        },
+        {
+            "tool_name": "Semgrep",
+            "original_found_CWEs": [
+                78
+            ],
+            "mutated_found_CWEs": [
+                489,
+                78,
+                668
+            ]
+        }
+    ]
+}

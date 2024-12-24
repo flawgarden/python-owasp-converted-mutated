@@ -1,20 +1,3 @@
-#Snyk original results: [89]
-#CodeQL original results: [89]
-#Semgrep original results: [89]
-#Bandit original results: [89]
-#Bearer original results: []
-#-------------
-#Snyk analysis results: [79, 89]
-#Bearer analysis results: []
-#CodeQL analysis results: [685, 563, 79, 116]
-#Semgrep analysis results: [489, 79, 915, 704, 89, 668]
-#Bandit analysis results: [89, 605]
-#Original file name: OWASP/BenchmarkTest01891.py
-#Original file CWE's: [89]
-#Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/monkey/patching.tmt with name monkey_patch_class_method_with_arg_positive
-#Used extensions:
-#Program:
 import string
 from string import capwords
 from Record import *

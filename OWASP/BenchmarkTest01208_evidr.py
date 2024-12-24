@@ -1,20 +1,3 @@
-#Bearer original results: [89]
-#Snyk original results: [89]
-#CodeQL original results: [89]
-#Semgrep original results: [89]
-#Bandit original results: []
-#-------------
-#Bearer analysis results: [89]
-#Snyk analysis results: [89]
-#CodeQL analysis results: []
-#Semgrep analysis results: [489, 89, 668]
-#Bandit analysis results: [605]
-#Original file name: OWASP/BenchmarkTest01208.py
-#Original file CWE's: [89]
-#Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/collections/tuples.tmt with name tuple_as_dict_key_negative
-#Used extensions:
-#Program:
 from GenericClass import *
 from SuperClass import *
 from SuperInterface import *

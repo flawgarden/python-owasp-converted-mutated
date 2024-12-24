@@ -1,20 +1,3 @@
-#Snyk original results: [78]
-#CodeQL original results: [78]
-#Semgrep original results: [78]
-#Bandit original results: [78]
-#Bearer original results: []
-#-------------
-#Snyk analysis results: [1004]
-#Bearer analysis results: [1004]
-#CodeQL analysis results: [563]
-#Semgrep analysis results: [489, 614, 668]
-#Bandit analysis results: [78, 605]
-#Original file name: OWASP/BenchmarkTest01852.py
-#Original file CWE's: [78]
-#Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/field/constructors.tmt with name class_with_string_initialization_negative
-#Used extensions:
-#Program:
 from Record import *
 from Exceptions import *
 from Concurrency import *

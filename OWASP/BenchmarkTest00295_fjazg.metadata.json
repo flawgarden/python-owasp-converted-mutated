@@ -1,0 +1,78 @@
+{
+    "original_file_metadata": {
+        "file_name": "OWASP/BenchmarkTest00295.py",
+        "CWEs": [
+            78
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "sensitivity/collections/map",
+                "template_name": "map_remove_1_positive"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_Create_Map -> ~[MACRO_MapName]~ = dict()",
+            "MACRO_MapName -> map787234",
+            "MACRO_MapName -> map787234",
+            "MACRO_MapName -> map787234",
+            "MACRO_MapName -> map787234"
+        ],
+        "region": null
+    },
+    "tool_results": [
+        {
+            "tool_name": "Snyk",
+            "original_found_CWEs": [
+                78
+            ],
+            "mutated_found_CWEs": [
+                78,
+                79
+            ]
+        },
+        {
+            "tool_name": "Bearer",
+            "original_found_CWEs": [
+                78
+            ],
+            "mutated_found_CWEs": []
+        },
+        {
+            "tool_name": "CodeQL",
+            "original_found_CWEs": [
+                78
+            ],
+            "mutated_found_CWEs": [
+                497,
+                209,
+                78,
+                88
+            ]
+        },
+        {
+            "tool_name": "Semgrep",
+            "original_found_CWEs": [
+                78
+            ],
+            "mutated_found_CWEs": [
+                489,
+                78,
+                668
+            ]
+        },
+        {
+            "tool_name": "Bandit",
+            "original_found_CWEs": [
+                78
+            ],
+            "mutated_found_CWEs": [
+                78,
+                605
+            ]
+        }
+    ]
+}

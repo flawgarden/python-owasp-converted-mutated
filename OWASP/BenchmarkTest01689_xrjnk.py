@@ -1,20 +1,3 @@
-#Snyk original results: [78]
-#CodeQL original results: [78]
-#Bandit original results: [78]
-#Bearer original results: []
-#Semgrep original results: []
-#-------------
-#Snyk analysis results: [78, 79]
-#Bearer analysis results: []
-#CodeQL analysis results: [563, 497, 209]
-#Semgrep analysis results: [489, 668]
-#Bandit analysis results: [78, 605]
-#Original file name: OWASP/BenchmarkTest01689.py
-#Original file CWE's: [78]
-#Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/none.tmt with name simple_none_negative
-#Used extensions:
-#Program:
 from Record import *
 from Exceptions import *
 from Concurrency import *

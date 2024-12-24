@@ -1,18 +1,3 @@
-#Bearer original results: [89]
-#Snyk original results: [89]
-#CodeQL original results: [89]
-#Bandit original results: [89]
-#-------------
-#Bearer analysis results: [89]
-#Snyk analysis results: [89]
-#CodeQL analysis results: [563]
-#Bandit analysis results: [89, 605]
-#Original file name: OWASP/BenchmarkTest01209.py
-#Original file CWE's: [89]
-#Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/none.tmt with name conditional_expression_none_negative
-#Used extensions:
-#Program:
 from GenericClass import *
 from SuperClass import *
 from SuperInterface import *

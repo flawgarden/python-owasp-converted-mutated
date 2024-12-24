@@ -1,20 +1,3 @@
-#Snyk original results: [78]
-#CodeQL original results: [78]
-#Bandit original results: [78]
-#Bearer original results: []
-#Semgrep original results: []
-#-------------
-#Snyk analysis results: []
-#Bearer analysis results: [79]
-#CodeQL analysis results: [209, 497]
-#Semgrep analysis results: [489, 668]
-#Bandit analysis results: [78, 605]
-#Original file name: OWASP/BenchmarkTest02512.py
-#Original file CWE's: [78]
-#Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/virtuality/class.tmt with name derived_binary_op1_negative
-#Used extensions:
-#Program:
 from Record import *
 from Exceptions import *
 from Concurrency import *

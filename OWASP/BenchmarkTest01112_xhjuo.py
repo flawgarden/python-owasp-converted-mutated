@@ -1,20 +1,3 @@
-#Snyk original results: [22]
-#CodeQL original results: [22]
-#Bearer original results: []
-#Semgrep original results: []
-#Bandit original results: []
-#-------------
-#Bearer analysis results: [79, 73]
-#Snyk analysis results: [23]
-#CodeQL analysis results: []
-#Semgrep analysis results: [668]
-#Bandit analysis results: [605]
-#Original file name: OWASP/BenchmarkTest01112.py
-#Original file CWE's: [22]
-#Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/exceptions/tryCatchFinally.tmt with name try_cath_negative
-#Used extensions: EXPR_str -> ~[EXPR_str]~.strip()
-#Program:
 from GenericClass import *
 from SuperClass import *
 from SuperInterface import *

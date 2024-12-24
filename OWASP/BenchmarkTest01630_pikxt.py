@@ -1,20 +1,3 @@
-#CodeQL original results: [89]
-#Semgrep original results: [89]
-#Bandit original results: [89]
-#Bearer original results: []
-#Snyk original results: []
-#-------------
-#Bearer analysis results: []
-#Snyk analysis results: []
-#CodeQL analysis results: [563]
-#Semgrep analysis results: [489, 915, 704, 89, 668]
-#Bandit analysis results: [89, 605]
-#Original file name: OWASP/BenchmarkTest01630.py
-#Original file CWE's: [89]
-#Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/virtuality/class.tmt with name derived_binary_op_negative
-#Used extensions:
-#Program:
 from GenericClass import *
 from SuperClass import *
 from SuperInterface import *

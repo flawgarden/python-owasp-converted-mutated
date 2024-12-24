@@ -1,20 +1,3 @@
-#CodeQL original results: [78]
-#Bandit original results: [78]
-#Snyk original results: []
-#Bearer original results: []
-#Semgrep original results: []
-#-------------
-#Snyk analysis results: []
-#Bearer analysis results: []
-#CodeQL analysis results: [563, 209, 497]
-#Semgrep analysis results: [489, 668]
-#Bandit analysis results: [78, 605]
-#Original file name: OWASP/BenchmarkTest02243.py
-#Original file CWE's: [78]
-#Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/lambdas/mutation.tmt with name unary_lambda_mutation_positive
-#Used extensions:
-#Program:
 from Record import *
 from Exceptions import *
 from Concurrency import *

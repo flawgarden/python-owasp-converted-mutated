@@ -1,20 +1,3 @@
-#Snyk original results: [643]
-#CodeQL original results: [643]
-#Bearer original results: []
-#Semgrep original results: []
-#Bandit original results: []
-#-------------
-#Snyk analysis results: [79, 611]
-#Bearer analysis results: []
-#CodeQL analysis results: [570, 571, 563, 116, 79, 643]
-#Semgrep analysis results: [489, 611, 668]
-#Bandit analysis results: [20, 605]
-#Original file name: OWASP/BenchmarkTest01561.py
-#Original file CWE's: [643]
-#Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/conditional/while.tmt with name while_operator_positive
-#Used extensions: EXPR_bool -> ~[EXPR_str]~ == ~[EXPR_str]~
-#Program:
 from Record import *
 from Exceptions import *
 from Concurrency import *

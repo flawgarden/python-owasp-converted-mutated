@@ -1,20 +1,3 @@
-#Snyk original results: [89]
-#CodeQL original results: [89]
-#Semgrep original results: [89]
-#Bandit original results: [89]
-#Bearer original results: []
-#-------------
-#Bearer analysis results: []
-#Snyk analysis results: []
-#CodeQL analysis results: []
-#Semgrep analysis results: [489, 915, 704, 89, 668]
-#Bandit analysis results: [89, 605]
-#Original file name: OWASP/BenchmarkTest02092.py
-#Original file CWE's: [89]
-#Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/lambdas/mutation.tmt with name nested_unary_lambda_mutation_positive
-#Used extensions:
-#Program:
 from GenericClass import *
 from SuperClass import *
 from SuperInterface import *

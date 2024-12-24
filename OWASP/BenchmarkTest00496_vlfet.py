@@ -1,20 +1,3 @@
-#CodeQL original results: [78]
-#Semgrep original results: [78]
-#Bandit original results: [78]
-#Bearer original results: []
-#Snyk original results: []
-#-------------
-#Bearer analysis results: []
-#Snyk analysis results: []
-#CodeQL analysis results: [209, 497]
-#Semgrep analysis results: [489, 78, 668]
-#Bandit analysis results: [78, 605]
-#Original file name: OWASP/BenchmarkTest00496.py
-#Original file CWE's: [78]
-#Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/field/constructors.tmt with name class_with_array_initialization_positive
-#Used extensions: MACRO_Empty_String_Array -> ["", "", ""]
-#Program:
 from GenericClass import *
 from SuperClass import *
 from SuperInterface import *

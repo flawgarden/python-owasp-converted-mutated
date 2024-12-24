@@ -1,20 +1,3 @@
-#Snyk original results: [89]
-#Bearer original results: [89]
-#CodeQL original results: [89]
-#Bandit original results: [89]
-#Semgrep original results: []
-#-------------
-#Snyk analysis results: [79, 1004]
-#Bearer analysis results: [1004]
-#CodeQL analysis results: [563]
-#Semgrep analysis results: [489, 614, 915, 704, 668]
-#Bandit analysis results: [89, 605]
-#Original file name: OWASP/BenchmarkTest01882.py
-#Original file CWE's: [89]
-#Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/queue.tmt with name simple_peek_negative
-#Used extensions: MACRO_Create_Queue -> ~[MACRO_QueueName]~ = SimpleQueue() | MACRO_Add_Fixed_VAR_ToQueue -> ~[MACRO_QueueName]~.put_nowait(~[VAR_~[TYPE@1]~@1]~) | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231
-#Program:
 from queue import SimpleQueue, Queue, PriorityQueue
 from Record import *
 from Exceptions import *

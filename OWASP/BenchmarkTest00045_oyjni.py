@@ -1,20 +1,3 @@
-#Snyk original results: [22]
-#CodeQL original results: [22]
-#Bearer original results: []
-#Semgrep original results: []
-#Bandit original results: []
-#-------------
-#Snyk analysis results: [23, 79]
-#Bearer analysis results: []
-#CodeQL analysis results: []
-#Semgrep analysis results: [489, 668]
-#Bandit analysis results: [605]
-#Original file name: OWASP/BenchmarkTest00045.py
-#Original file CWE's: [22]
-#Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/duck/typing.tmt with name duck_typing_quack_method_negative
-#Used extensions:
-#Program:
 from Record import *
 from Exceptions import *
 from Concurrency import *

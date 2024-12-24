@@ -1,20 +1,3 @@
-#Bearer original results: [89]
-#CodeQL original results: [89]
-#Bandit original results: [89]
-#Snyk original results: []
-#Semgrep original results: []
-#-------------
-#Bearer analysis results: []
-#Snyk analysis results: [79]
-#CodeQL analysis results: [563, 89]
-#Semgrep analysis results: [489, 915, 704, 668]
-#Bandit analysis results: [89, 605]
-#Original file name: OWASP/BenchmarkTest02178.py
-#Original file CWE's: [89]
-#Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/field/regularField.tmt with name class_with_string_field_positive
-#Used extensions:
-#Program:
 from GenericClass import *
 from SuperClass import *
 from SuperInterface import *

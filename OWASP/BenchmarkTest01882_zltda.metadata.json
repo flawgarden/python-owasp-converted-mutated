@@ -1,0 +1,78 @@
+{
+    "original_file_metadata": {
+        "file_name": "OWASP/BenchmarkTest01882.py",
+        "CWEs": [
+            89
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "sensitivity/collections/queue",
+                "template_name": "simple_peek_negative"
+            }
+        ],
+        "used_extensions": [
+            " MACRO_Create_Queue -> ~[MACRO_QueueName]~ = SimpleQueue()",
+            "MACRO_Add_Fixed_VAR_ToQueue -> ~[MACRO_QueueName]~.put_nowait(~[VAR_~[TYPE@1]~@1]~)",
+            "MACRO_QueueName -> queue787231",
+            "MACRO_QueueName -> queue787231",
+            "MACRO_QueueName -> queue787231",
+            "MACRO_QueueName -> queue787231"
+        ],
+        "region": null
+    },
+    "tool_results": [
+        {
+            "tool_name": "Snyk",
+            "original_found_CWEs": [
+                89
+            ],
+            "mutated_found_CWEs": [
+                79,
+                1004
+            ]
+        },
+        {
+            "tool_name": "Bearer",
+            "original_found_CWEs": [
+                89
+            ],
+            "mutated_found_CWEs": [
+                1004
+            ]
+        },
+        {
+            "tool_name": "CodeQL",
+            "original_found_CWEs": [
+                89
+            ],
+            "mutated_found_CWEs": [
+                563
+            ]
+        },
+        {
+            "tool_name": "Bandit",
+            "original_found_CWEs": [
+                89
+            ],
+            "mutated_found_CWEs": [
+                89,
+                605
+            ]
+        },
+        {
+            "tool_name": "Semgrep",
+            "original_found_CWEs": [],
+            "mutated_found_CWEs": [
+                489,
+                614,
+                915,
+                704,
+                668
+            ]
+        }
+    ]
+}

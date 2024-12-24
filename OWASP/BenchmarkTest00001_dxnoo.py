@@ -1,20 +1,3 @@
-#Snyk original results: [22]
-#CodeQL original results: [22]
-#Bearer original results: []
-#Semgrep original results: []
-#Bandit original results: []
-#-------------
-#Snyk analysis results: [614, 1004, 79, 23]
-#Bearer analysis results: [1004, 614]
-#CodeQL analysis results: [497, 209]
-#Semgrep analysis results: [614, 668]
-#Bandit analysis results: [605]
-#Original file name: OWASP/BenchmarkTest00001.py
-#Original file CWE's: [22]
-#Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/record/record.tmt with name simple_record_positive
-#Used extensions:
-#Program:
 from Record import *
 from Exceptions import *
 from Concurrency import *

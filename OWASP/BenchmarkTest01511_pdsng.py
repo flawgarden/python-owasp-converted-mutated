@@ -1,20 +1,3 @@
-#Snyk original results: [79]
-#CodeQL original results: [79]
-#Bearer original results: []
-#Semgrep original results: []
-#Bandit original results: []
-#-------------
-#Bearer analysis results: []
-#Snyk analysis results: [79]
-#CodeQL analysis results: [563]
-#Semgrep analysis results: [489, 668]
-#Bandit analysis results: [605]
-#Original file name: OWASP/BenchmarkTest01511.py
-#Original file CWE's: [79]
-#Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/collections/list.tmt with name list_union_positive
-#Used extensions: MACRO_Create_List -> ~[MACRO_ListName]~ = [] | MACRO_Add_VAR_ToList -> ~[MACRO_ListName]~.append(~[VAR_~[TYPE@1]~@1]~) | MACRO_ListName -> list787231 | MACRO_ListName -> list787231 | MACRO_ListName -> list787231
-#Program:
 from GenericClass import *
 from SuperClass import *
 from SuperInterface import *

@@ -1,20 +1,3 @@
-#Snyk original results: [89]
-#Bearer original results: [89]
-#CodeQL original results: [89]
-#Semgrep original results: [89]
-#Bandit original results: []
-#-------------
-#Snyk analysis results: [79]
-#Bearer analysis results: [89]
-#CodeQL analysis results: [563]
-#Semgrep analysis results: [489, 89, 668]
-#Bandit analysis results: [605]
-#Original file name: OWASP/BenchmarkTest01712.py
-#Original file CWE's: [89]
-#Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/decorator/decorator.tmt with name simple_class_decorator_positive
-#Used extensions:
-#Program:
 from Record import *
 from Exceptions import *
 from Concurrency import *

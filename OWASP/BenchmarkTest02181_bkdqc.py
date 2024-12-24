@@ -1,20 +1,3 @@
-#Bearer original results: [89]
-#Snyk original results: [89]
-#CodeQL original results: [89]
-#Bandit original results: [89]
-#Semgrep original results: []
-#-------------
-#Bearer analysis results: [89]
-#Snyk analysis results: [79]
-#CodeQL analysis results: [89]
-#Semgrep analysis results: [489, 915, 704, 668]
-#Bandit analysis results: [89, 605]
-#Original file name: OWASP/BenchmarkTest02181.py
-#Original file CWE's: [89]
-#Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/collections/set.tmt with name set_remove_simple_negative
-#Used extensions: MACRO_Create_Set -> ~[MACRO_SetName]~ = set() | MACRO_Add_Fixed_EXPR_ToSet -> ~[MACRO_SetName]~.add(~[EXPR_~[TYPE@1]~@1]~) | MACRO_Add_Fixed_VAR_ToSet -> ~[MACRO_SetName]~.add(~[VAR_~[TYPE@1]~@1]~) | MACRO_SetName -> set787231 | MACRO_SetName -> set787231 | MACRO_SetName -> set787231 | MACRO_SetName -> set787231 | MACRO_SetName -> set787231
-#Program:
 from GenericClass import *
 from SuperClass import *
 from SuperInterface import *

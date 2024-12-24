@@ -1,20 +1,3 @@
-#Snyk original results: [89]
-#Bearer original results: [89]
-#CodeQL original results: [89]
-#Bandit original results: [89]
-#Semgrep original results: []
-#-------------
-#Snyk analysis results: [79, 89]
-#Bearer analysis results: [79]
-#CodeQL analysis results: [116, 79, 89]
-#Semgrep analysis results: [489, 915, 704, 668]
-#Bandit analysis results: [89, 605]
-#Original file name: OWASP/BenchmarkTest01964.py
-#Original file CWE's: [89]
-#Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/conditional/for.tmt with name for_operator_strcpy_negative
-#Used extensions:
-#Program:
 from Record import *
 from Exceptions import *
 from Concurrency import *

@@ -1,20 +1,3 @@
-#Snyk original results: [643]
-#CodeQL original results: [643]
-#Bearer original results: []
-#Semgrep original results: []
-#Bandit original results: []
-#-------------
-#Snyk analysis results: [79, 643, 611]
-#Bearer analysis results: []
-#CodeQL analysis results: []
-#Semgrep analysis results: [489, 668]
-#Bandit analysis results: [20, 605]
-#Original file name: OWASP/BenchmarkTest01734.py
-#Original file CWE's: [643]
-#Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/collections/queue.tmt with name simple_poll_negative
-#Used extensions: MACRO_Create_Queue -> ~[MACRO_QueueName]~ = SimpleQueue() | MACRO_Add_EXPR_ToQueue -> ~[MACRO_QueueName]~.put(~[EXPR_~[TYPE@1]~]~) | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | MACRO_QueueName -> queue787231 | EXPR_str -> ""
-#Program:
 from queue import SimpleQueue, Queue, PriorityQueue
 from Record import *
 from Exceptions import *

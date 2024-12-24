@@ -1,0 +1,58 @@
+{
+    "original_file_metadata": {
+        "file_name": "OWASP/BenchmarkTest01505.py",
+        "CWEs": [
+            79
+        ],
+        "kind": "fail",
+        "region": null
+    },
+    "mutated_file_metadata": {
+        "used_templates": [
+            {
+                "template_file": "sensitivity/magic/magic",
+                "template_name": "magic_method_init_positive"
+            }
+        ],
+        "used_extensions": [],
+        "region": null
+    },
+    "tool_results": [
+        {
+            "tool_name": "Snyk",
+            "original_found_CWEs": [
+                79
+            ],
+            "mutated_found_CWEs": [
+                79
+            ]
+        },
+        {
+            "tool_name": "CodeQL",
+            "original_found_CWEs": [
+                79
+            ],
+            "mutated_found_CWEs": []
+        },
+        {
+            "tool_name": "Bearer",
+            "original_found_CWEs": [],
+            "mutated_found_CWEs": []
+        },
+        {
+            "tool_name": "Semgrep",
+            "original_found_CWEs": [],
+            "mutated_found_CWEs": [
+                489,
+                668
+            ]
+        },
+        {
+            "tool_name": "Bandit",
+            "original_found_CWEs": [],
+            "mutated_found_CWEs": [
+                605
+            ]
+        }
+    ]
+}

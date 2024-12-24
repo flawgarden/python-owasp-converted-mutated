@@ -1,20 +1,3 @@
-#Snyk original results: [78]
-#CodeQL original results: [78]
-#Semgrep original results: [78]
-#Bandit original results: [78]
-#Bearer original results: []
-#-------------
-#Snyk analysis results: [209]
-#Bearer analysis results: []
-#CodeQL analysis results: []
-#Semgrep analysis results: [489, 78, 668]
-#Bandit analysis results: [78, 605]
-#Original file name: OWASP/BenchmarkTest02429.py
-#Original file CWE's: [78]
-#Original file kind: fail
-#Mutation info: Insert template from /home/stepanov/f/psi-fuzz/templates-db/languages/python/sensitivity/field/nested.tmt with name nested_field_depth_3_array_negative
-#Used extensions:
-#Program:
 from Record import *
 from Exceptions import *
 from Concurrency import *

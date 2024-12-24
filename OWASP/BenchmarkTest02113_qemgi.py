@@ -1,20 +1,3 @@
-#Snyk original results: [22]
-#CodeQL original results: [22]
-#Bearer original results: []
-#Semgrep original results: []
-#Bandit original results: []
-#-------------
-#Bearer analysis results: []
-#Snyk analysis results: [23]
-#CodeQL analysis results: [497, 209]
-#Semgrep analysis results: [79, 668]
-#Bandit analysis results: [605]
-#Original file name: OWASP/BenchmarkTest02113.py
-#Original file CWE's: [22]
-#Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/monkey/patching.tmt with name monkey_patch_module_function_positive
-#Used extensions:
-#Program:
 import string
 from string import capwords
 from GenericClass import *

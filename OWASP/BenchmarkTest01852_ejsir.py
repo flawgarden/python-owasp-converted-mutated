@@ -1,20 +1,3 @@
-#Snyk original results: [78]
-#CodeQL original results: [78]
-#Semgrep original results: [78]
-#Bandit original results: [78]
-#Bearer original results: []
-#-------------
-#Bearer analysis results: [94, 1004]
-#Snyk analysis results: [1004]
-#CodeQL analysis results: []
-#Semgrep analysis results: [489, 614, 78, 668]
-#Bandit analysis results: [78, 605]
-#Original file name: OWASP/BenchmarkTest01852.py
-#Original file CWE's: [78]
-#Original file kind: fail
-#Mutation info: Insert template from /home/zver/IdeaProjects/psi-fuzz/templates-db/languages/python/sensitivity/reflection/reflection.tmt with name simple_reflection_positive
-#Used extensions:
-#Program:
 from GenericClass import *
 from SuperClass import *
 from SuperInterface import *
