@@ -5,7 +5,7 @@
         {
             "tool": {
                 "driver": {
-                    "name": "owasp-python-converted-mutated"
+                    "name": "python-owasp-converted-mutated"
                 }
             },
             "results": [
