@@ -18,7 +18,8 @@
             " EXPR_bool -> isinstance(~[EXPR_Any]~, SuperInterface)",
             "EXPR_Any -> ImplementingSuperSideClass()"
         ],
-        "region": null
+        "region": null,
+        "kind": "pass"
     },
     "tool_results": [
         {

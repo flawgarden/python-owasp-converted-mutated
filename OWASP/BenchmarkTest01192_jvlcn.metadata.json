@@ -17,7 +17,8 @@
         "used_extensions": [
             " EXPR_bool -> isinstance(~[VAR_Any]~, SideInterface)"
         ],
-        "region": null
+        "region": null,
+        "kind": "pass"
     },
     "tool_results": [
         {

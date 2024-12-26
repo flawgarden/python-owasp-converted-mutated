@@ -18,7 +18,8 @@
             " EXPR_str -> ~[EXPR_str]~.replace('/', '.')",
             "EXPR_str -> ~[EXPR_str]~.strip()"
         ],
-        "region": null
+        "region": null,
+        "kind": "pass"
     },
     "tool_results": [
         {

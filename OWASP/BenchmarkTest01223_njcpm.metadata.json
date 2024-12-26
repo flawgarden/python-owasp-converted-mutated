@@ -18,7 +18,8 @@
             " EXPR_str -> ~[EXPR_str]~.lower()",
             "EXPR_str -> ~[EXPR_str]~ + ~[EXPR_str]~"
         ],
-        "region": null
+        "region": null,
+        "kind": "pass"
     },
     "tool_results": [
         {

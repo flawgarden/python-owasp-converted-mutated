@@ -5898,7 +5898,7 @@
                     ]
                 },
                 {
-                    "kind": "pass",
+                    "kind": "fail",
                     "ruleId": "CWE-89",
                     "message": {
                         "text": "message to match scheme"

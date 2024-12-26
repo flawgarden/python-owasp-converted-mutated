@@ -18,7 +18,8 @@
             " EXPR_int -> ~[EXPR_int]~ + ~[EXPR_int]~",
             "EXPR_int -> -1"
         ],
-        "region": null
+        "region": null,
+        "kind": "pass"
     },
     "tool_results": [
         {
