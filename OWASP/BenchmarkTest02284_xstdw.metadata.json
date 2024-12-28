@@ -22,7 +22,8 @@
             "MACRO_QueueName -> queue787231",
             "EXPR_str -> ~[EXPR_str]~.strip()"
         ],
-        "region": null
+        "region": null,
+        "kind": "pass"
     },
     "tool_results": [
         {

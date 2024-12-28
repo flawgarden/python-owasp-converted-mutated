@@ -18,7 +18,8 @@
             " EXPR_str -> ~[EXPR_str]~.strip()",
             "EXPR_str -> ~[EXPR_str]~.upper()"
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": [
         {

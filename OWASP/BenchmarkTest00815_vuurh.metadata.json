@@ -20,7 +20,8 @@
             "EXPR_str -> ~[EXPR_str]~[~[EXPR_int]~:~[EXPR_int]~]",
             "EXPR_str -> ~[EXPR_UnaryOpInterface]~.interface_call(~[EXPR_str]~)"
         ],
-        "region": null
+        "region": null,
+        "kind": "pass"
     },
     "tool_results": [
         {

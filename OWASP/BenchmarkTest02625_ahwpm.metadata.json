@@ -19,7 +19,8 @@
             "EXPR_str -> ~[EXPR_Match]~.group(~[EXPR_int]~)",
             "EXPR_int -> 42"
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": [
         {

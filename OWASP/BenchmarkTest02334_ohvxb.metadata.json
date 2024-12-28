@@ -17,7 +17,8 @@
         "used_extensions": [
             " EXPR_bool -> ~[EXPR_bool@1]~ and not ~[EXPR_bool@1]~"
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": [
         {

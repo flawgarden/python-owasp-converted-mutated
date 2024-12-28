@@ -17,7 +17,8 @@
         "used_extensions": [
             " EXPR_str -> \"\""
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": [
         {

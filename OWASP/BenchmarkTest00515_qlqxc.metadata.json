@@ -18,7 +18,8 @@
             " EXPR_str -> ~[EXPR_str]~.upper()",
             "EXPR_str -> ~[EXPR_str]~.replace('/', '.')"
         ],
-        "region": null
+        "region": null,
+        "kind": "pass"
     },
     "tool_results": [
         {

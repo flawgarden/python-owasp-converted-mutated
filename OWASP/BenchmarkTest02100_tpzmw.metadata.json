@@ -24,7 +24,8 @@
             "EXPR_str -> ~[EXPR_str]~.upper()",
             "MACRO_SetName -> set787231"
         ],
-        "region": null
+        "region": null,
+        "kind": "pass"
     },
     "tool_results": [
         {

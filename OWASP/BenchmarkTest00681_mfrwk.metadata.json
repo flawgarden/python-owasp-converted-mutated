@@ -17,7 +17,8 @@
         "used_extensions": [
             " EXPR_Any -> ImplementingSubClass()"
         ],
-        "region": null
+        "region": null,
+        "kind": "pass"
     },
     "tool_results": [
         {

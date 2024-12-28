@@ -17,7 +17,8 @@
         "used_extensions": [
             " EXPR_bool -> ~[EXPR_str@1]~ is not None and ~[EXPR_str@1]~[~[CONST_int]~] == ~[CONST_str]~"
         ],
-        "region": null
+        "region": null,
+        "kind": "fail"
     },
     "tool_results": [
         {
